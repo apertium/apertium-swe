@@ -1,0 +1,78 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
+ 
+SETS
+
+LIST N = (n) ;
+LIST A = (adj) ;
+LIST CS = (cnjsub) ;
+LIST Adv = (adv) ;
+LIST V = (vblex) (vbser) (vbmod) ;
+LIST Vbser = (vbser)  ;
+LIST PREP = (pr) ;
+LIST Interj = (ij) ;
+LIST Pron = (prn) ;
+LIST Pcle = (part) ;
+LIST Copula = (vbser);
+LIST Itg = (itg);
+
+LIST Pers = (pers) ;
+LIST Num = (num) ;
+
+LIST TV = (tv) ;
+LIST IV = (iv) ;
+
+LIST Imprt = (imp) ;
+LIST Pii = (pii) ;
+LIST Aor = (aor) ;
+LIST Prs = (pres) ;
+LIST Past = (past) ;
+
+LIST Sg = (sg) ;
+LIST Pl = (pl) ;
+LIST Count = (ct) ;
+
+LIST Sg1 = (p1 sg) ;
+LIST Sg2 = (p2 sg) ;
+LIST Sg3 = (p3 sg) ;
+LIST Pl1 = (p1 pl) ;
+LIST Pl2 = (p2 pl) ;
+LIST Pl3 = (p3 pl) ;
+
+LIST Nom = (nom) ;
+LIST Acc = (acc) ;
+LIST Gen = (gen) ;
+LIST Dat = (dat) ;
+LIST Voc = (voc) ;
+
+LIST Def = (def) ;
+LIST Ind = (ind) ;
+
+
+LIST NUMBER = sg pl ;
+LIST GENDER = m f nt mfn ;
+LIST PERSON = (p1 sg) (p2 sg) (p3 sg) (p1 pl) (p2 pl) (p3 pl) ;
+LIST NAGDV = nom acc dat gen voc ;
+
+SET V-IND-FIN = Prs OR Aor OR Pii ;
+SET V-COP = Copula ;
+SET SG2-OR-SG3 = Sg2 OR Sg3 ;
+SET REL-OR-ITG = (prn rel) OR (prn itg) ;
+SET S-BOUNDARY  = (prn itg) OR (prn rel) OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
+
+###############################################################################
+#  Morphological disambiguation
+#
+
+SECTION
+
+
+SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) 
+SELECT:r2 Num IF (0 ("sex")) (1 N) ;
+SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
+#SELECT:r4 Itg IF (O ("<var>")) (1 V) ;
+SELECT:r4 Vbser IF (O ("<var>")) (NOT 1 V) ;
+SELECT:r5 Pers IF (O ("<det>")) (1 V) ;
+SELECT:r6 Pers IF (O ("<den>")) (1 V) ;
+SELECT:r7 Pers IF (O ("<de>")) (1 V) ;
+SELECT:r8 Past IF (O ("<var>")) ((-1 N) OR (-1 Pron));
+SELECT (n);

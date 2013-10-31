@@ -1,0 +1,7 @@
+prefix=/home/fran/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: apertium-swe
+Description: Finite-state morphological transducer and constraint grammar for Swedish 
+Version: 0.1.0
