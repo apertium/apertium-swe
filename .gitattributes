@@ -10,5 +10,6 @@
 /apertium-swe.swe.rlx -text
 /autogen.sh -text
 /configure.ac -text
+dev/adj[!!-~](5e).wiktionary-infl.speling -text
 dev/wiktionary-infl.spelling -text
 /modes.xml -text
