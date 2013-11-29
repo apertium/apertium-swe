@@ -12,4 +12,5 @@
 /configure.ac -text
 dev/adj[!!-~](5e).wiktionary-infl.speling -text
 dev/vb.wiktionary-infl.speling -text
+dev/wiktionary-nouns.speling -text
 /modes.xml -text
