@@ -11,6 +11,9 @@ TARGETS_COMMON = $(LANG1).automorf.bin $(LANG1).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
         $(LANG1).rlx.bin
 
+# This include defines goals for install-modes, .deps/.d and .mode files:
+@ap_include@
+
 ###############################################################################
 ## Swedish transducer
 ###############################################################################
@@ -57,18 +60,16 @@ apertium_swe_DATA=$(TARGETS_COMMON)
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
 
-# Modes are not installed since they're all just "debug modes". All
-# modes are created by this goal.
-modes/$(LANG1)-morph.mode: modes.xml
-	apertium-validate-modes modes.xml
-	apertium-gen-modes modes.xml
-
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local:
 	test -d $(DESTDIR)$(apertium_swe_srcdir) || mkdir -p $(DESTDIR)$(apertium_swe_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_swe_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_swe_srcdir)
+
+###############################################################################
+## Cleanup
+###############################################################################
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
