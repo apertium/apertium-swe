@@ -4764,6 +4764,7 @@ obj = object form changed to the traditional acc = accusative
 
 <!-- PT: <e lm="ideal">           <i>ideal</i><par n="afrikansk__adj"/></e> FEL -->
 <!-- <e lm="liknande">        <i>liknande</i><par n="extra__adj"/></e> -->
+
 <!-- PT: FEL. Inget adjektiv? Pronomen? -->
 <e lm="många">           <i></i><par n="/många__adj"/></e>
 <e lm="övrig">           <i>övrig</i><par n="övrig__adj"/></e>
@@ -5925,6 +5926,8 @@ obj = object form changed to the traditional acc = accusative
     <!-- Adverbs -->
 
 <e lm="väldigt" a="PT">             <i>väldigt</i><par n="väldig/t__adv"/></e>
+<e lm="sjukt" c="domain:general style:fam" a="PT">             <i>väldigt</i><par n="väldig/t__adv"/></e>
+
 <e lm="då">             <i>då</i><par n="var__adv"/></e>
 <e lm="aldrig">          <i>aldrig</i><par n="var__adv"/></e>
 <e lm="utomhus">          <i>utomhus</i><par n="var__adv"/></e>
