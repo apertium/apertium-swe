@@ -7,6 +7,7 @@
 /README -text
 /apertium-swe.pc.in -text
 /apertium-swe.post-swe.dix -text
+/apertium-swe.swe.acx -text svneol=unset#text/plain
 /apertium-swe.swe.dix -text
 /apertium-swe.swe.rlx -text
 /apertium-swe.swe.tsx -text
