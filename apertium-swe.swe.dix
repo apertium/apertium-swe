@@ -627,10 +627,10 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="hur/dan__prn"> <!-- PT -->
   <e>       <p><l>dan</l>        <r>dan<s n="prn"/><s n="itg"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
-  <e>       <p><l><dant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>dant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
   <e>       <p><l>dana</l>         <r>dana<s n="prn"/><s n="itg"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
   <e r="LR">       <p><l>udan</l>        <r>dan<s n="prn"/><s n="itg"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
-  <e r="LR">       <p><l><udant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e r="LR">       <p><l>udant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
   <e r="LR">       <p><l>udana</l>         <r>dana<s n="prn"/><s n="itg"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -639,8 +639,9 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>etdera</l>        <r>en<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
 </pardef>
 
-<!-- PT: incorrect --
-<pardef n="v/em__prn"> <!-- from the pair is-sv -->
+<!-- from the pair is-sv -->
+<!-- PT: incorrect 
+<pardef n="v/em__prn"> 
   <e a="is">       <p><l>em</l>        <r>em<s n="prn"/><s n="itg"/><s n="ut"/></r></p><par n="S__case"/></e>
   <e>       <p><l>ad</l>        <r>em<s n="prn"/><s n="itg"/><s n="nt"/></r></p></e>
 </pardef>
@@ -4519,7 +4520,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vad">             <i>vad</i><par n="vad__prn"/></e> <!-- PT: Might be treated as interogating pronoun. -->
 <e lm="vars">             <i>vars</i><par n="vad__prn"/></e>  <!-- PT: This is the only 100% sure member of this group. -->
 
-<e lm="som">             <i></i><par n="/vad__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
+<!--<e lm="som">             <i></i><par n="/vad__prn"/></e>--> <!-- PT: Nowdays mostly treated as subjunction only. -->
 
 <!-- PT: Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
 <e lm="vem" a="is">      <i>vem</i><par n="vad__prn"/></e>
@@ -6536,7 +6537,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="klubb">           <i>klubb</i><par n="bil__n"/></e>
 <e lm="kniv">            <i>kniv</i><par n="bil__n"/></e>
 <e lm="knut">            <i>knut</i><par n="bil__n"/></e>
-<e lm="kompis">          <i>kompis</i><par n="adress__n"/></e>
 <e lm="korg">            <i>korg</i><par n="bil__n"/></e>
 <e lm="kran">            <i>kran</i><par n="bil__n"/></e>
 <e lm="krog">            <i>krog</i><par n="bil__n"/></e>
@@ -6551,7 +6551,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ledning">         <i>ledning</i><par n="bil__n"/></e>
 <e lm="lind">            <i>lind</i><par n="bil__n"/></e>
 <e lm="mening">          <i>mening</i><par n="bil__n"/></e>
-<e lm="miss" a=PT">            <i>miss</i><par n="adress__n"/></e>
+<e lm="miss" a="PT">            <i>miss</i><par n="adress__n"/></e>
 <e lm="motorväg">        <i>motorväg</i><par n="bil__n"/></e>
 <e lm="nykomling">       <i>nykomling</i><par n="bil__n"/></e>
 <e lm="omgång">          <i>omgång</i><par n="bil__n"/></e>
@@ -6823,7 +6823,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="försäljning">     <i>försäljning</i><par n="bil__n"/></e>
 <e lm="försäljningsframgång"><i>försäljningsframgång</i><par n="bil__n"/></e>
 <e lm="försämring">      <i>försämring</i><par n="bil__n"/></e>
-<e lm="fors" a=PT">            <i>fors</i><par n="adress__n"/></e>
+<e lm="fors" a="PT">            <i>fors</i><par n="adress__n"/></e>
 <e lm="forskarutbildning"><i>forskarutbildning</i><par n="bil__n"/></e>
 <e lm="förskjutning">    <i>förskjutning</i><par n="bil__n"/></e>
 <e lm="försoning">       <i>försoning</i><par n="bil__n"/></e>
@@ -6897,7 +6897,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="helgedom">        <i>helgedom</i><par n="bil__n"/></e>
 <e lm="hembygdsförening"><i>hembygdsförening</i><par n="bil__n"/></e>
 <e lm="herrgård">        <i>herrgård</i><par n="bil__n"/></e>
-<e lm="hets" a=PT">            <i>hets</i><par n="adress__n"/></e>
+<e lm="hets" a="PT">            <i>hets</i><par n="adress__n"/></e>
 <e lm="himlakropp">      <i>himlakropp</i><par n="bil__n"/></e>
 <e lm="hingst">          <i>hingst</i><par n="bil__n"/></e>
 <e lm="hiss" a="PT">            <i>hiss</i><par n="adress__n"/></e>
@@ -9830,7 +9830,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="hals">            <i>hals</i><par n="adress__n"/></e>
 <e lm="hiss">            <i>hiss</i><par n="adress__n"/></e>
 <e lm="is">              <i>is</i><par n="adress__n"/></e>
-<e lm="kompis a="PT">          <i>kompis</i><par n="adress__n"/></e>
+<e lm="kompis">          <i>kompis</i><par n="adress__n"/></e>
 <e lm="potatis">         <i>potatis</i><par n="adress__n"/></e>
 <e lm="prins">           <i>prins</i><par n="adress__n"/></e>
 <e lm="spis">            <i>spis</i><par n="adress__n"/></e>
