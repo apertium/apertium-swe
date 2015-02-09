@@ -613,6 +613,10 @@ obj = object form changed to the traditional acc = accusative
 
 	<!-- Relativa pronomen: vars vad vilken vilket vilka (som: eg. subjunktion) -->
 
+<pardef n="vad__prn">
+  <e a="PT">       <p><l></l>       <r><s n="prn"/><s n="rel"/><s n="un"/><s n="sp"/><s n="nom"/></r></p></e>
+</pardef>
+
 <pardef n="vilk/en__prn">
   <e>       <p><l>en</l>        <r>en<s n="prn"/><s n="rel"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
   <e>       <p><l>et</l>        <r>en<s n="prn"/><s n="rel"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
@@ -3707,9 +3711,11 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 </pardef>
 
+<!-- PT: pronoun
 <pardef n="var__adv">
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
 </pardef>
+-->
 
 <pardef n="aldrig__adv">
   <e>       <p><l></l>          <r><s n="adv"/><s n="pst"/></r></p></e>
@@ -4493,9 +4499,12 @@ obj = object form changed to the traditional acc = accusative
 <e lm="varannan">        <i>var</i><par n="var/annan__prn"/></e>
 <e lm="vardera">         <i>var</i><par n="var/dera__prn"/></e>
 <e lm="varenda">         <i>varenda</i><par n="varenda__prn"/></e>
-<e lm="vilken">          <i>vilk</i><par n="vilk/en__prn"/></e>
 
-<e lm="som">             <i></i><par n="/som__prn"/></e>
+<!-- PT: Relativa pronomen (vad, vilken, vars --->
+<e lm="vilken">          <i>vilk</i><par n="vilk/en__prn"/></e>
+<e lm="vad">             <i>vad</i><par n="vad__prn"/></e>  <!-- Jacob: ="what". Hope wordclass is OK, Francis? PT: Rather averb.--> <!-- Pronoun -->
+
+<e lm="som">             <i></i><par n="/som__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
 
 <!-- Added from the pair is-sv BEGIN -->
 
@@ -4507,8 +4516,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="varifrån" a="is"> <i>varifrån</i><par n="varifrån__prn"/></e>
 
 <!-- Added from the pair is-sv END -->
-
-<e lm="vad">             <i>vad</i><par n="hur__adv"/></e>  <!-- Jacob: ="what". Hope wordclass is OK, Francis? --> <!-- Pronoun -->
 
     <!-- Prepositions -->
 
