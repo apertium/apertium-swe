@@ -12501,8 +12501,10 @@ obj = object form changed to the traditional acc = accusative
 
 <e lm="kon" a="PT">              <i>kon</i><par n="accent__n"/></e>
 <e lm="stolpe" a="PT"><i>stolp</i><par n="abborr/e__n"/></e>
+<e lm="elstolpe" a="PT"><i>elstolp</i><par n="abborr/e__n"/></e>
 <e lm="lyktstolpe" a="PT"><i>lyktstolp</i><par n="abborr/e__n"/></e>
 <e lm="målstolpe" a="PT"><i>målstolp</i><par n="abborr/e__n"/></e>
+<e lm="telefonstolpe" a="PT"><i>telefonstolp</i><par n="abborr/e__n"/></e>
  
     <!-- Proper nouns -->
 
