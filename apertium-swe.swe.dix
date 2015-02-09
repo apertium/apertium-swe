@@ -4517,6 +4517,8 @@ obj = object form changed to the traditional acc = accusative
 
 <!-- Added from the pair is-sv END -->
 
+<e lm="vad">             <i>vad</i><par n="hur__adv"/></e>  <!-- Jacob: ="what". Hope wordclass is OK, Francis? --> <!-- Pronoun -->
+
     <!-- Prepositions -->
 
 <e lm="förutom">         <i>förutom</i><par n="på__pr"/></e>
@@ -5931,13 +5933,16 @@ obj = object form changed to the traditional acc = accusative
 
     <!-- Adverbs -->
 
-<e lm="nej">             <i>nej</i><par n="var__adv"/></e>
+<e lm="väldigt">             <i>väldigt</i><par n="var__adv"/></e>
+<e lm="då">             <i>då</i><par n="var__adv"/></e>
 <e lm="aldrig">          <i>aldrig</i><par n="var__adv"/></e>
+<e lm="utomhus">          <i>utomhus</i><par n="var__adv"/></e>
 <e lm="alldeles">        <i>alldeles</i><par n="var__adv"/></e>
 <e lm="an">              <i>an</i><par n="var__adv"/></e>
 <e lm="automatiskt" a="PT">          <i>automatiskt</i><par n="var__adv"/></e>
 <e lm="blankt" a="PT">          <i>blankt</i><par n="var__adv"/></e>
 <e lm="dit">             <i>dit</i><par n="var__adv"/></e>
+<e lm="hem">             <i>hem</i><par n="var__adv"/></e>
 <e lm="diverse" a="PT">          <i>diverse</i><par n="var__adv"/></e>
 
 <e lm="endast">          <i>endast</i><par n="var__adv"/></e>
@@ -6352,10 +6357,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="rätt">            <i>rätt</i><par n="rätt__adv"/></e>
 
 <e lm="hur">             <i>hur</i><par n="hur__adv"/></e>
+<e lm="varför">          <i>varför</i><par n="hur__adv"/></e>
 
-<e lm="väldigt" a="PT">             <i>hur</i><par n="väldig/t__adv"/></e>
-
-<e lm="vad">             <i>vad</i><par n="hur__adv"/></e>  <!-- Jacob: ="what". Hope wordclass is OK, Francis? -->
 
     <!-- Nouns -->
 
@@ -12700,6 +12703,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Olof">            <i>Olof</i><par n="Trond__np"/></e>
 <e lm="Peter">           <i>Peter</i><par n="Trond__np"/></e>
 <e lm="Robert">          <i>Robert</i><par n="Trond__np"/></e>
+<e lm="Jaakko">          <i>Jaakko</i><par n="Trond__np"/></e>
 <e lm="Thomas">          <i>Thomas</i><par n="Trond__np"/></e>
 <e lm="Trond">           <i>Trond</i><par n="Trond__np"/></e>
 
@@ -12707,6 +12711,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Eva">             <i>Eva</i><par n="Eva__np"/></e>
 <e lm="Maria">           <i>Maria</i><par n="Eva__np"/></e>
 <e lm="Madeleine">       <i>Madeleine</i><par n="Eva__np"/></e>
+<e lm="Mari">            <i>Mari</i><par n="Eva__np"/></e>
 
 
 <e lm="Abrahamsson">     <i>Abrahamsson</i><par n="Magnusson__np"/></e>
