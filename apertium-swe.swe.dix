@@ -3721,11 +3721,15 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 </pardef>
 
-<!-- PT: pronoun
+<!-- PT
 <pardef n="var__adv">
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
 </pardef>
 -->
+
+<pardef n="då__adv"> <!-- PT -->
+  <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
+</pardef>
 
 <pardef n="aldrig__adv">
   <e>       <p><l></l>          <r><s n="adv"/><s n="pst"/></r></p></e>
@@ -4787,12 +4791,12 @@ obj = object form changed to the traditional acc = accusative
 <!-- PT: <e lm="ideal">           <i>ideal</i><par n="afrikansk__adj"/></e> FEL -->
 <!-- <e lm="liknande">        <i>liknande</i><par n="extra__adj"/></e> -->
 
-<!-- PT: FEL. Inget adjektiv? Pronomen? -->
+<!-- PT: FEL. Inget adjektiv? Pronomen? Pronoun?? -->
 <e lm="många">           <i></i><par n="/många__adj"/></e>
 <e lm="övrig">           <i>övrig</i><par n="övrig__adj"/></e>
 <!-- PT: Slut Inget adjektiv -->
 
-<!-- PT: CHECK END: kolla alla adjektiv ovan! olika fel. -->
+<!-- PT: CHECK END: kolla alla adjektiv ovan! olika fel. Check all adjectives above! -->
 
 <e lm="grund">           <i>grun</i><par n="grun/d__adj"/></e>
 <e lm="rund">            <i>run</i><par n="grun/d__adj"/></e>
@@ -5946,117 +5950,124 @@ obj = object form changed to the traditional acc = accusative
 <!-- Added from the pair is-sv END -->
 
     <!-- Adverbs -->
+<!-- Frågande adverb/interrogating adverbs -->
+
+<e lm="när">             <i>när</i><par n="hur__adv"/></e>
+<e lm="var" a="PT">             <i>var</i><par n="hur__adv"/></e>
+<e lm="hur">             <i>hur</i><par n="hur__adv"/></e>
+<e lm="varför">          <i>varför</i><par n="hur__adv"/></e>
+
+<!-- Other adverbs -->
 
 <e lm="väldigt" a="PT">             <i>väldigt</i><par n="väldig/t__adv"/></e>
 <e lm="sjukt" c="domain:general style:fam" a="PT">             <i>väldigt</i><par n="väldig/t__adv"/></e>
 
-<e lm="då">             <i>då</i><par n="var__adv"/></e>
-<e lm="aldrig">          <i>aldrig</i><par n="var__adv"/></e>
-<e lm="utomhus">          <i>utomhus</i><par n="var__adv"/></e>
-<e lm="alldeles">        <i>alldeles</i><par n="var__adv"/></e>
-<e lm="an">              <i>an</i><par n="var__adv"/></e>
-<e lm="automatiskt" a="PT">          <i>automatiskt</i><par n="var__adv"/></e>
-<e lm="blankt" a="PT">          <i>blankt</i><par n="var__adv"/></e>
-<e lm="dit">             <i>dit</i><par n="var__adv"/></e>
-<e lm="hem">             <i>hem</i><par n="var__adv"/></e>
-<e lm="diverse" a="PT">          <i>diverse</i><par n="var__adv"/></e>
+<e lm="då">             <i>då</i><par n="då__adv"/></e>
+<e lm="aldrig">          <i>aldrig</i><par n="då__adv"/></e>
+<e lm="utomhus">          <i>utomhus</i><par n="då__adv"/></e>
+<e lm="alldeles">        <i>alldeles</i><par n="då__adv"/></e>
+<e lm="an">              <i>an</i><par n="då__adv"/></e>
+<e lm="automatiskt" a="PT">          <i>automatiskt</i><par n="då__adv"/></e>
+<e lm="blankt" a="PT">          <i>blankt</i><par n="då__adv"/></e>
+<e lm="dit">             <i>dit</i><par n="då__adv"/></e>
+<e lm="hem">             <i>hem</i><par n="då__adv"/></e>
+<e lm="diverse" a="PT">          <i>diverse</i><par n="då__adv"/></e>
 
-<e lm="endast">          <i>endast</i><par n="var__adv"/></e>
+<e lm="endast">          <i>endast</i><par n="då__adv"/></e>
 
-<e lm="för">             <i>för</i><par n="var__adv"/></e>
-<e lm="hellre">          <i>hellre</i><par n="var__adv"/></e>
-<e lm="hit">             <i>hit</i><par n="var__adv"/></e>
-<e lm="ibland">          <i>ibland</i><par n="var__adv"/></e>
-<e lm="inne">            <i>inne</i><par n="var__adv"/></e>
-<e lm="mera">            <i>mera</i><par n="var__adv"/></e>
-<e lm="nere">            <i>nere</i><par n="var__adv"/></e>
-<e lm="snart">           <i>snart</i><par n="var__adv"/></e>
-<e lm="tillhopa">        <i>tillhopa</i><par n="var__adv"/></e>
-<e lm="troligtvis">      <i>troligtvis</i><par n="var__adv"/></e>
-<e lm="upptill">         <i>upptill</i><par n="var__adv"/></e>
-<e lm="ytterligare">     <i>ytterligare</i><par n="var__adv"/></e>
-<e lm="utöver">          <i>utöver</i><par n="var__adv"/></e>
-<e lm="noga" a="PT">          <i>noga</i><par n="var__adv"/></e>
-<e lm="noggrant" a="PT">          <i>noggrant</i><par n="var__adv"/></e>
+<e lm="för">             <i>för</i><par n="då__adv"/></e>
+<e lm="hellre">          <i>hellre</i><par n="då__adv"/></e>
+<e lm="hit">             <i>hit</i><par n="då__adv"/></e>
+<e lm="ibland">          <i>ibland</i><par n="då__adv"/></e>
+<e lm="inne">            <i>inne</i><par n="då__adv"/></e>
+<e lm="mera">            <i>mera</i><par n="då__adv"/></e>
+<e lm="nere">            <i>nere</i><par n="då__adv"/></e>
+<e lm="snart">           <i>snart</i><par n="då__adv"/></e>
+<e lm="tillhopa">        <i>tillhopa</i><par n="då__adv"/></e>
+<e lm="troligtvis">      <i>troligtvis</i><par n="då__adv"/></e>
+<e lm="upptill">         <i>upptill</i><par n="då__adv"/></e>
+<e lm="ytterligare">     <i>ytterligare</i><par n="då__adv"/></e>
+<e lm="utöver">          <i>utöver</i><par n="då__adv"/></e>
+<e lm="noga" a="PT">          <i>noga</i><par n="då__adv"/></e>
+<e lm="noggrant" a="PT">          <i>noggrant</i><par n="då__adv"/></e>
 
-<e lm="numera">          <i>numera</i><par n="var__adv"/></e>
+<e lm="numera">          <i>numera</i><par n="då__adv"/></e>
 
-<e lm="dessutom">        <i>dessutom</i><par n="var__adv"/></e>
-<e lm="trots">           <i>trots</i><par n="var__adv"/></e>
-<e lm="ute">             <i>ute</i><par n="var__adv"/></e>
-<e lm="icke">            <i>icke</i><par n="var__adv"/></e>
-<e lm="inte">            <i>inte</i><par n="var__adv"/></e>
-<e lm="ej">              <i>ej</i><par n="var__adv"/></e>
-<e lm="även">            <i>även</i><par n="var__adv"/></e>
-<e lm="här">             <i>här</i><par n="var__adv"/></e>
-<e lm="där">             <i>där</i><par n="var__adv"/></e>
-<e lm="ock">             <i>ock</i><par n="var__adv"/></e>
-<e lm="också">           <i>också</i><par n="var__adv"/></e>
-<e lm="upp">             <i>upp</i><par n="var__adv"/></e>
-<e lm="in">              <i>in</i><par n="var__adv"/></e>
-<e lm="alltid">          <i>alltid</i><par n="var__adv"/></e>
-<e lm="emellan">         <i>emellan</i><par n="var__adv"/></e>
-<e lm="bara">            <i>bara</i><par n="var__adv"/></e>
-<e lm="bort">            <i>bort</i><par n="var__adv"/></e>
-<e lm="bra">             <i>bra</i><par n="var__adv"/></e>
-<e lm="cirka">           <i>cirka</i><par n="var__adv"/></e>
-<e lm="dock">            <i>dock</i><par n="var__adv"/></e>
-<e lm="idag">            <i>idag</i><par n="var__adv"/></e>
-<e lm="ju">              <i>ju</i><par n="var__adv"/></e>
-<e lm="kvar">            <i>kvar</i><par n="var__adv"/></e>
-<e lm="tillsammans">     <i>tillsammans</i><par n="var__adv"/></e>
-<e lm="tillbaka">        <i>tillbaka</i><par n="var__adv"/></e>
-<e lm="fram">            <i>fram</i><par n="var__adv"/></e>
-<e lm="kring">           <i>kring</i><par n="var__adv"/></e>
-<e lm="omkring">         <i>omkring</i><par n="var__adv"/></e>
-<e lm="inom">            <i>inom</i><par n="var__adv"/></e>
-<e lm="utanför">         <i>utanför</i><par n="var__adv"/></e>
-<e lm="i går">           <i>i<b/>går</i><par n="var__adv"/></e>
+<e lm="dessutom">        <i>dessutom</i><par n="då__adv"/></e>
+<e lm="trots">           <i>trots</i><par n="då__adv"/></e>
+<e lm="ute">             <i>ute</i><par n="då__adv"/></e>
+<e lm="icke">            <i>icke</i><par n="då__adv"/></e>
+<e lm="inte">            <i>inte</i><par n="då__adv"/></e>
+<e lm="ej">              <i>ej</i><par n="då__adv"/></e>
+<e lm="även">            <i>även</i><par n="då__adv"/></e>
+<e lm="här">             <i>här</i><par n="då__adv"/></e>
+<e lm="där">             <i>där</i><par n="då__adv"/></e>
+<e lm="ock">             <i>ock</i><par n="då__adv"/></e>
+<e lm="också">           <i>också</i><par n="då__adv"/></e>
+<e lm="upp">             <i>upp</i><par n="då__adv"/></e>
+<e lm="in">              <i>in</i><par n="då__adv"/></e>
+<e lm="alltid">          <i>alltid</i><par n="då__adv"/></e>
+<e lm="emellan">         <i>emellan</i><par n="då__adv"/></e>
+<e lm="bara">            <i>bara</i><par n="då__adv"/></e>
+<e lm="bort">            <i>bort</i><par n="då__adv"/></e>
+<e lm="bra">             <i>bra</i><par n="då__adv"/></e>
+<e lm="cirka">           <i>cirka</i><par n="då__adv"/></e>
+<e lm="dock">            <i>dock</i><par n="då__adv"/></e>
+<e lm="idag">            <i>idag</i><par n="då__adv"/></e>
+<e lm="ju">              <i>ju</i><par n="då__adv"/></e>
+<e lm="kvar">            <i>kvar</i><par n="då__adv"/></e>
+<e lm="tillsammans">     <i>tillsammans</i><par n="då__adv"/></e>
+<e lm="tillbaka">        <i>tillbaka</i><par n="då__adv"/></e>
+<e lm="fram">            <i>fram</i><par n="då__adv"/></e>
+<e lm="kring">           <i>kring</i><par n="då__adv"/></e>
+<e lm="omkring">         <i>omkring</i><par n="då__adv"/></e>
+<e lm="inom">            <i>inom</i><par n="då__adv"/></e>
+<e lm="utanför">         <i>utanför</i><par n="då__adv"/></e>
+<e lm="i går">           <i>i<b/>går</i><par n="då__adv"/></e>
 
-<e lm="verkligen">       <i>verkligen</i><par n="var__adv"/></e>
-<e lm="så">              <i>så</i><par n="var__adv"/></e>
-<e lm="på">              <i>på</i><par n="var__adv"/></e>
-<e lm="var">             <i>var</i><par n="var__adv"/></e>
-<e lm="igen">            <i>igen</i><par n="var__adv"/></e>
-<e lm="kanske">          <i>kanske</i><par n="var__adv"/></e>
-<e lm="istället">        <i>istället</i><par n="var__adv"/></e>
-<e lm="först">           <i>först</i><par n="var__adv"/></e>
-<e lm="exempelvis">      <i>exempelvis</i><par n="var__adv"/></e>
-<e lm="därmed">          <i>därmed</i><par n="var__adv"/></e>
-<e lm="därför">          <i>därför</i><par n="var__adv"/></e>
-<e lm="därefter">        <i>därefter</i><par n="var__adv"/></e>
-<e lm="ännu">            <i>ännu</i><par n="var__adv"/></e>
-<e lm="alltså">          <i>alltså</i><par n="var__adv"/></e>
-<e lm="nästan">          <i>nästan</i><par n="var__adv"/></e>
-<e lm="redan">           <i>redan</i><par n="var__adv"/></e>
-<e lm="nära">            <i>nära</i><par n="var__adv"/></e>
-<e lm="ungefär">         <i>ungefär</i><par n="var__adv"/></e>
-<e lm="fortfarande">     <i>fortfarande</i><par n="var__adv"/></e>
-<e lm="länge">           <i>länge</i><par n="var__adv"/></e>
-<e lm="ganska">          <i>ganska</i><par n="var__adv"/></e>
-<e lm="ihop">            <i>ihop</i><par n="var__adv"/></e>
-<e lm="liksom">          <i>liksom</i><par n="var__adv"/></e>
-<e lm="nog">             <i>nog</i><par n="var__adv"/></e>
-<e lm="emot">            <i>emot</i><par n="var__adv"/></e>
-<e lm="igenom">          <i>igenom</i><par n="var__adv"/></e>
-<e lm="åter">            <i>åter</i><par n="var__adv"/></e>
-<e lm="heller">          <i>heller</i><par n="var__adv"/></e>
-<e lm="ändå">            <i>ändå</i><par n="var__adv"/></e>
-<e lm="huvudsakligen">   <i>huvudsakligen</i><par n="var__adv"/></e>
-<e lm="troligen">        <i>troligen</i><par n="var__adv"/></e>
-<e lm="däremot">         <i>däremot</i><par n="var__adv"/></e>
-<e lm="delvis">          <i>delvis</i><par n="var__adv"/></e>
-<e lm="samman">          <i>samman</i><par n="var__adv"/></e>
-<e lm="egentligen">      <i>egentligen</i><par n="var__adv"/></e>
-<e lm="ursprungligen">   <i>ursprungligen</i><par n="var__adv"/></e>
-<e lm="emellertid">      <i>emellertid</i><par n="var__adv"/></e>
-<e lm="vanligen">        <i>vanligen</i><par n="var__adv"/></e>
-<e lm="framför">         <i>framför</i><par n="var__adv"/></e>
-<e lm="än">              <i>än</i><par n="var__adv"/></e>
-<e lm="uppe">            <i>uppe</i><par n="var__adv"/></e>
-<e lm="precis">          <i>precis</i><par n="var__adv"/></e>
-<e lm="nord">            <i>nord</i><par n="var__adv"/></e>
-<e lm="nu">              <i>nu</i><par n="var__adv"/></e>
+<e lm="verkligen">       <i>verkligen</i><par n="då__adv"/></e>
+<e lm="så">              <i>så</i><par n="då__adv"/></e>
+<e lm="på">              <i>på</i><par n="då__adv"/></e>
+<e lm="igen">            <i>igen</i><par n="då__adv"/></e>
+<e lm="kanske">          <i>kanske</i><par n="då__adv"/></e>
+<e lm="istället">        <i>istället</i><par n="då__adv"/></e>
+<e lm="först">           <i>först</i><par n="då__adv"/></e>
+<e lm="exempelvis">      <i>exempelvis</i><par n="då__adv"/></e>
+<e lm="därmed">          <i>därmed</i><par n="då__adv"/></e>
+<e lm="därför">          <i>därför</i><par n="då__adv"/></e>
+<e lm="därefter">        <i>därefter</i><par n="då__adv"/></e>
+<e lm="ännu">            <i>ännu</i><par n="då__adv"/></e>
+<e lm="alltså">          <i>alltså</i><par n="då__adv"/></e>
+<e lm="nästan">          <i>nästan</i><par n="då__adv"/></e>
+<e lm="redan">           <i>redan</i><par n="då__adv"/></e>
+<e lm="nära">            <i>nära</i><par n="då__adv"/></e>
+<e lm="ungefär">         <i>ungefär</i><par n="då__adv"/></e>
+<e lm="fortfarande">     <i>fortfarande</i><par n="då__adv"/></e>
+<e lm="länge">           <i>länge</i><par n="då__adv"/></e>
+<e lm="ganska">          <i>ganska</i><par n="då__adv"/></e>
+<e lm="ihop">            <i>ihop</i><par n="då__adv"/></e>
+<e lm="liksom">          <i>liksom</i><par n="då__adv"/></e>
+<e lm="nog">             <i>nog</i><par n="då__adv"/></e>
+<e lm="emot">            <i>emot</i><par n="då__adv"/></e>
+<e lm="igenom">          <i>igenom</i><par n="då__adv"/></e>
+<e lm="åter">            <i>åter</i><par n="då__adv"/></e>
+<e lm="heller">          <i>heller</i><par n="då__adv"/></e>
+<e lm="ändå">            <i>ändå</i><par n="då__adv"/></e>
+<e lm="huvudsakligen">   <i>huvudsakligen</i><par n="då__adv"/></e>
+<e lm="troligen">        <i>troligen</i><par n="då__adv"/></e>
+<e lm="däremot">         <i>däremot</i><par n="då__adv"/></e>
+<e lm="delvis">          <i>delvis</i><par n="då__adv"/></e>
+<e lm="samman">          <i>samman</i><par n="då__adv"/></e>
+<e lm="egentligen">      <i>egentligen</i><par n="då__adv"/></e>
+<e lm="ursprungligen">   <i>ursprungligen</i><par n="då__adv"/></e>
+<e lm="emellertid">      <i>emellertid</i><par n="då__adv"/></e>
+<e lm="vanligen">        <i>vanligen</i><par n="då__adv"/></e>
+<e lm="framför">         <i>framför</i><par n="då__adv"/></e>
+<e lm="än">              <i>än</i><par n="då__adv"/></e>
+<e lm="uppe">            <i>uppe</i><par n="då__adv"/></e>
+<e lm="precis">          <i>precis</i><par n="då__adv"/></e>
+<e lm="nord">            <i>nord</i><par n="då__adv"/></e>
+<e lm="nu">              <i>nu</i><par n="då__adv"/></e>
 
 <e lm="lite">            <i></i><par n="/lite__adv"/></e>
 
@@ -6071,298 +6082,298 @@ obj = object form changed to the traditional acc = accusative
 	
 <!-- Added from the pair is-sv BEGIN -->
 
-<e lm="i går morse" a="is"><i>i<b/>går<b/>morse</i><par n="var__adv"/></e>
-<e lm="i går morgon" a="is"><i>i<b/>går<b/>morgon</i><par n="var__adv"/></e>
-<e lm="i går kväll" a="is"><i>i<b/>går<b/>kväll</i><par n="var__adv"/></e>
-<e lm="i dag" a="is">    <i>i<b/>dag</i><par n="var__adv"/></e>
-<e lm="i morse" a="is">  <i>i<b/>morse</i><par n="var__adv"/></e>
-<e lm="i kväll" a="is">  <i>i<b/>kväll</i><par n="var__adv"/></e>
-<e lm="i morgon" a="is"> <i>i<b/>morgon</i><par n="var__adv"/></e>
-<e lm="de senaste dagarna" a="is"><i>de<b/>senaste<b/>dagarna</i><par n="var__adv"/></e>
-<e lm="på söndag kväll" a="is"><i>på<b/>söndag<b/>kväll</i><par n="var__adv"/></e>
-<e lm="under de kommande månaderna" a="is"><i>under<b/>de<b/>kommande<b/>månaderna</i><par n="var__adv"/></e>
-<e lm="i morgon kväll" a="is"><i>i<b/>morgon<b/>kväll</i><par n="var__adv"/></e>
-<e lm="i år" a="is">     <i>i<b/>år</i><par n="var__adv"/></e>
-<e lm="i fjol" a="is">   <i>i<b/>fjol</i><par n="var__adv"/></e>
-<e lm="i fjor" a="is">   <i>i<b/>fjor</i><par n="var__adv"/></e>
-<e lm="i förfjol" a="is"><i>i<b/>förfjol</i><par n="var__adv"/></e>
-<e lm="i början" a="is"> <i>i<b/>början</i><par n="var__adv"/></e>
-<e lm="från början" a="is"><i>från<b/>början</i><par n="var__adv"/></e>
-<e lm="i framtiden" a="is"><i>i<b/>framtiden</i><par n="var__adv"/></e>
-<e lm="för tillfället" a="is"><i>för<b/>tillfället</i><par n="var__adv"/></e>
-<e lm="i veckan" a="is"> <i>i<b/>veckan</i><par n="var__adv"/></e>
-<e lm="i vår" a="is">    <i>i<b/>vår</i><par n="var__adv"/></e>
-<e lm="i sommar" a="is"> <i>i<b/>sommar</i><par n="var__adv"/></e>
-<e lm="i höst" a="is">   <i>i<b/>höst</i><par n="var__adv"/></e>
-<e lm="i vinter" a="is"> <i>i<b/>vinter</i><par n="var__adv"/></e>
-<e lm="i våras" a="is">  <i>i<b/>våras</i><par n="var__adv"/></e>
-<e lm="i somras" a="is"> <i>i<b/>somras</i><par n="var__adv"/></e>
-<e lm="i höstas" a="is"> <i>i<b/>höstas</i><par n="var__adv"/></e>
-<e lm="i vintras" a="is"><i>i<b/>vintras</i><par n="var__adv"/></e>
-<e lm="klockan ett" a="is"><i>klockan<b/>ett</i><par n="var__adv"/></e>
-<e lm="klockan två" a="is"><i>klockan<b/>två</i><par n="var__adv"/></e>
-<e lm="klockan tre" a="is"><i>klockan<b/>tre</i><par n="var__adv"/></e>
-<e lm="klockan fyra" a="is"><i>klockan<b/>fyra</i><par n="var__adv"/></e>
-<e lm="klockan fem" a="is"><i>klockan<b/>fem</i><par n="var__adv"/></e>
-<e lm="klockan sex" a="is"><i>klockan<b/>sex</i><par n="var__adv"/></e>
-<e lm="klockan sju" a="is"><i>klockan<b/>sju</i><par n="var__adv"/></e>
-<e lm="klockan åtta" a="is"><i>klockan<b/>åtta</i><par n="var__adv"/></e>
-<e lm="klockan nio" a="is"><i>klockan<b/>nio</i><par n="var__adv"/></e>
-<e lm="klockan tio" a="is"><i>klockan<b/>tio</i><par n="var__adv"/></e>
-<e lm="klockan elva" a="is"><i>klockan<b/>elva</i><par n="var__adv"/></e>
-<e lm="klockan tolv" a="is"><i>klockan<b/>tolv</i><par n="var__adv"/></e>
-<e lm="klockan halv ett" a="is"><i>klockan<b/>halv<b/>ett</i><par n="var__adv"/></e>
-<e lm="klockan halv två" a="is"><i>klockan<b/>halv<b/>två</i><par n="var__adv"/></e>
-<e lm="klockan halv tre" a="is"><i>klockan<b/>halv<b/>tre</i><par n="var__adv"/></e>
-<e lm="klockan halv fyra" a="is"><i>klockan<b/>halv<b/>fyra</i><par n="var__adv"/></e>
-<e lm="klockan halv fem" a="is"><i>klockan<b/>halv<b/>fem</i><par n="var__adv"/></e>
-<e lm="klockan halv sex" a="is"><i>klockan<b/>halv<b/>sex</i><par n="var__adv"/></e>
-<e lm="klockan halv sju" a="is"><i>klockan<b/>halv<b/>sju</i><par n="var__adv"/></e>
-<e lm="klockan halv åtta" a="is"><i>klockan<b/>halv<b/>åtta</i><par n="var__adv"/></e>
-<e lm="klockan halv nio" a="is"><i>klockan<b/>halv<b/>nio</i><par n="var__adv"/></e>
-<e lm="klockan halv tio" a="is"><i>klockan<b/>halv<b/>tio</i><par n="var__adv"/></e>
-<e lm="klockan halv elva" a="is"><i>klockan<b/>halv<b/>elva</i><par n="var__adv"/></e>
-<e lm="klockan halv tolv" a="is"><i>klockan<b/>halv<b/>tolv</i><par n="var__adv"/></e>
-<e lm="kvart över" a="is"><i>kvart<b/>över</i><par n="var__adv"/></e>
-<e lm="kvart i" a="is">  <i>kvart<b/>i</i><par n="var__adv"/></e>
-<e lm="varav" a="is">    <i>varav</i><par n="var__adv"/></e>
-<e lm="bakåt" a="is">    <i>bakåt</i><par n="var__adv"/></e>
-<e lm="återigen" a="is"> <i>återigen</i><par n="var__adv"/></e>
-<e lm="inte alls" a="is"><i>inte<b/>alls</i><par n="var__adv"/></e>
-<e lm="överallt" a="is"> <i>överallt</i><par n="var__adv"/></e>
-<e lm="alltför" a="is">  <i>alltför</i><par n="var__adv"/></e>
-<e lm="annanstans" a="is"><i>annanstans</i><par n="var__adv"/></e>
-<e lm="annars" a="is">   <i>annars</i><par n="var__adv"/></e>
-<e lm="österut" a="is">  <i>österut</i><par n="var__adv"/></e>
-<e lm="därutöver" a="is"><i>därutöver</i><par n="var__adv"/></e>
-<e lm="i gengäld" a="is"><i>i<b/>gengäld</i><par n="var__adv"/></e>
-<e lm="avslutningsvis" a="is"><i>avslutningsvis</i><par n="var__adv"/></e>
-<e lm="minst" a="is">    <i>minst</i><par n="var__adv"/></e>
-<e lm="åtminstone" a="is"><i>åtminstone</i><par n="var__adv"/></e>
-<e lm="dels" a="is">     <i>dels</i><par n="var__adv"/></e>
-<e lm="skriftligen" a="is"><i>skriftligen</i><par n="var__adv"/></e>
-<e lm="iväg" a="is">     <i>iväg</i><par n="var__adv"/></e>
-<e lm="undan" a="is">    <i>undan</i><par n="var__adv"/></e>
-<e lm="bokstavligen" a="is"><i>bokstavligen</i><par n="var__adv"/></e>
-<e lm="dagligen" a="is"> <i>dagligen</i><par n="var__adv"/></e>
-<e lm="efteråt" a="is">  <i>efteråt</i><par n="var__adv"/></e>
-<e lm="någonstans" a="is"><i>någonstans</i><par n="var__adv"/></e>
-<e lm="likt" a="is">     <i>likt</i><par n="var__adv"/></e>
-<e lm="en gång" a="is">  <i>en<b/>gång</i><par n="var__adv"/></e>
-<e lm="två gånger" a="is"><i>två<b/>gånger</i><par n="var__adv"/></e>
-<e lm="tre gånger" a="is"><i>tre<b/>gånger</i><par n="var__adv"/></e>
-<e lm="enbart" a="is">   <i>enbart</i><par n="var__adv"/></e>
-<e lm="nödvändigtvis" a="is"><i>nödvändigtvis</i><par n="var__adv"/></e>
-<e lm="likväl" a="is">   <i>likväl</i><par n="var__adv"/></e>
-<e lm="utomlands" a="is"><i>utomlands</i><par n="var__adv"/></e>
-<e lm="alltfler" a="is"> <i>alltfler</i><par n="var__adv"/></e>
-<e lm="förbi" a="is">    <i>förbi</i><par n="var__adv"/></e>
-<e lm="fullkomligt" a="is"><i>fullkomligt</i><par n="var__adv"/></e>
-<e lm="förhand" a="is">  <i>förhand</i><par n="var__adv"/></e>
-<e lm="förut" a="is">    <i>förut</i><par n="var__adv"/></e>
-<e lm="i förväg" a="is"> <i>i<b/>förväg</i><par n="var__adv"/></e>
-<e lm="förr" a="is">     <i>förr</i><par n="var__adv"/></e>
-<e lm="synnerligen" a="is"><i>synnerligen</i><par n="var__adv"/></e>
-<e lm="nåväl" a="is">    <i>nåväl</i><par n="var__adv"/></e>
-<e lm="tydligen" a="is"> <i>tydligen</i><par n="var__adv"/></e>
-<e lm="uppenbarligen" a="is"><i>uppenbarligen</i><par n="var__adv"/></e>
-<e lm="hemma" a="is">    <i>hemma</i><par n="var__adv"/></e>
-<e lm="helst" a="is">    <i>helst</i><par n="var__adv"/></e>
-<e lm="hittills" a="is"> <i>hittills</i><par n="var__adv"/></e>
-<e lm="respektive" a="is"><i>respektive</i><par n="var__adv"/></e>
-<e lm="ingenstans" a="is"><i>ingenstans</i><par n="var__adv"/></e>
-<e lm="sakta" a="is">    <i>sakta</i><par n="var__adv"/></e>
-<e lm="härigenom" a="is"><i>härigenom</i><par n="var__adv"/></e>
-<e lm="härmed" a="is">   <i>härmed</i><par n="var__adv"/></e>
-<e lm="fortsättningsvis" a="is"><i>fortsättningsvis</i><par n="var__adv"/></e>
-<e lm="hädanefter" a="is"><i>hädanefter</i><par n="var__adv"/></e>
-<e lm="härifrån" a="is"> <i>härifrån</i><par n="var__adv"/></e>
-<e lm="illa" a="is">     <i>illa</i><par n="var__adv"/></e>
-<e lm="lika" a="is">     <i>lika</i><par n="var__adv"/></e>
-<e lm="vida" a="is">     <i>vida</i><par n="var__adv"/></e>
-<e lm="definitivt" a="aronsson"><i>definitivt</i><par n="var__adv"/></e>
-<e lm="slutligen" a="is"><i>slutligen</i><par n="var__adv"/></e>
-<e lm="äntligen" a="is"> <i>äntligen</i><par n="var__adv"/></e>
-<e lm="sinsemellan" a="is"><i>sinsemellan</i><par n="var__adv"/></e>
-<e lm="nämligen" a="is"> <i>nämligen</i><par n="var__adv"/></e>
-<e lm="någonsin" a="is"> <i>någonsin</i><par n="var__adv"/></e>
-<e lm="vidare" a="is">   <i>vidare</i><par n="var__adv"/></e>
-<e lm="givetvis" a="is"> <i>givetvis</i><par n="var__adv"/></e>
-<e lm="naturligtvis" a="is"><i>naturligtvis</i><par n="var__adv"/></e>
-<e lm="därpå" a="is">    <i>därpå</i><par n="var__adv"/></e>
-<e lm="tillräckligt" a="is"><i>tillräckligt</i><par n="var__adv"/></e>
-<e lm="nyligen" a="is">  <i>nyligen</i><par n="var__adv"/></e>
-<e lm="i förtid" a="is"> <i>i<b/>förtid</i><par n="var__adv"/></e>
-<e lm="personligen" a="is"><i>personligen</i><par n="var__adv"/></e>
-<e lm="faktiskt" a="is"> <i>faktiskt</i><par n="var__adv"/></e>
-<e lm="nyss" a="is">     <i>nyss</i><par n="var__adv"/></e>
-<e lm="drygt" a="is">    <i>drygt</i><par n="var__adv"/></e>
-<e lm="sammantaget" a="is"><i>sammantaget</i><par n="var__adv"/></e>
-<e lm="totalt" a="is">   <i>totalt</i><par n="var__adv"/></e>
-<e lm="lyckligtvis" a="is"><i>lyckligtvis</i><par n="var__adv"/></e>
-<e lm="antagligen" a="is"><i>antagligen</i><par n="var__adv"/></e>
-<e lm="förmodligen" a="is"><i>förmodligen</i><par n="var__adv"/></e>
-<e lm="sällan" a="is">   <i>sällan</i><par n="var__adv"/></e>
-<e lm="plötsligt" a="is"><i>plötsligt</i><par n="var__adv"/></e>
-<e lm="gradvis" a="is">  <i>gradvis</i><par n="var__adv"/></e>
-<e lm="stegvis" a="is">  <i>stegvis</i><par n="var__adv"/></e>
-<e lm="så småningom" a="is"><i>så<b/>småningom</i><par n="var__adv"/></e>
-<e lm="allteftersom" a="is"><i>allteftersom</i><par n="var__adv"/></e>
-<e lm="tidigt" a="is">   <i>tidigt</i><par n="var__adv"/></e>
-<e lm="genast" a="is">   <i>genast</i><par n="var__adv"/></e>
-<e lm="omgående" a="is"> <i>omgående</i><par n="var__adv"/></e>
-<e lm="strax" a="is">    <i>strax</i><par n="var__adv"/></e>
-<e lm="alltjämt" a="is"> <i>alltjämt</i><par n="var__adv"/></e>
-<e lm="isär" a="is">     <i>isär</i><par n="var__adv"/></e>
-<e lm="sönder" a="is">   <i>sönder</i><par n="var__adv"/></e>
-<e lm="tämligen" a="is"> <i>tämligen</i><par n="var__adv"/></e>
-<e lm="framförallt" a="is"><i>framförallt</i><par n="var__adv"/></e>
-<e lm="i synnerhet" a="is"><i>i<b/>synnerhet</i><par n="var__adv"/></e>
-<e lm="sist" a="is">     <i>sist</i><par n="var__adv"/></e>
-<e lm="likaledes" a="is"><i>likaledes</i><par n="var__adv"/></e>
-<e lm="likaså" a="is">   <i>likaså</i><par n="var__adv"/></e>
-<e lm="förgäves" a="is"> <i>förgäves</i><par n="var__adv"/></e>
-<e lm="till godo" a="is"><i>till<b/>godo</i><par n="var__adv"/></e>
-<e lm="vederbörligen" a="is"><i>vederbörligen</i><par n="var__adv"/></e>
-<e lm="förhållandevis" a="is"><i>förhållandevis</i><par n="var__adv"/></e>
-<e lm="ombord" a="is">   <i>ombord</i><par n="var__adv"/></e>
-<e lm="uppåt" a="is">    <i>uppåt</i><par n="var__adv"/></e>
-<e lm="inledningsvis" a="is"><i>inledningsvis</i><par n="var__adv"/></e>
-<e lm="utifrån" a="is">  <i>utifrån</i><par n="var__adv"/></e>
-<e lm="gärna" a="is">    <i>gärna</i><par n="var__adv"/></e>
-<e lm="förvisso" a="is"> <i>förvisso</i><par n="var__adv"/></e>
-<e lm="sannerligen" a="is"><i>sannerligen</i><par n="var__adv"/></e>
-<e lm="säkerligen" a="is"><i>säkerligen</i><par n="var__adv"/></e>
-<e lm="apropå" a="is">   <i>apropå</i><par n="var__adv"/></e>
-<e lm="förhoppningsvis" a="is"><i>förhoppningsvis</i><par n="var__adv"/></e>
-<e lm="överhuvud" a="is"><i>överhuvud</i><par n="var__adv"/></e>
-<e lm="överhuvudtaget" a="is"><i>överhuvudtaget</i><par n="var__adv"/></e>
-<e lm="vanligtvis" a="is"><i>vanligtvis</i><par n="var__adv"/></e>
-<e lm="tvärtemot" a="is"><i>tvärtemot</i><par n="var__adv"/></e>
-<e lm="tvärtom" a="is">  <i>tvärtom</i><par n="var__adv"/></e>
-<e lm="i sinom tid" a="is"><i>i<b/>sinom<b/>tid</i><par n="var__adv"/></e>
-<e lm="framåt" a="is">   <i>framåt</i><par n="var__adv"/></e>
-<e lm="oavsett" a="is">  <i>oavsett</i><par n="var__adv"/></e>
-<e lm="visserligen" a="is"><i>visserligen</i><par n="var__adv"/></e>
-<e lm="årligen" a="is">  <i>årligen</i><par n="var__adv"/></e>
-<e lm="borta" a="is">    <i>borta</i><par n="var__adv"/></e>
-<e lm="i slutändan" a="is"><i>i<b/>slutändan</i><par n="var__adv"/></e>
-<e lm="rentav" a="is">   <i>rentav</i><par n="var__adv"/></e>
-<e lm="onekligen" a="is"><i>onekligen</i><par n="var__adv"/></e>
-<e lm="utåt" a="is">     <i>utåt</i><par n="var__adv"/></e>
-<e lm="överbord" a="is"> <i>överbord</i><par n="var__adv"/></e>
-<e lm="til sjöss" a="is"><i>til<b/>sjöss</i><par n="var__adv"/></e>
-<e lm="däribland" a="is"><i>däribland</i><par n="var__adv"/></e>
-<e lm="därigenom" a="is"><i>därigenom</i><par n="var__adv"/></e>
-<e lm="således" a="is">  <i>således</i><par n="var__adv"/></e>
-<e lm="sålunda" a="is">  <i>sålunda</i><par n="var__adv"/></e>
-<e lm="följaktligen" a="is"><i>följaktligen</i><par n="var__adv"/></e>
-<e lm="därtill" a="is">  <i>därtill</i><par n="var__adv"/></e>
-<e lm="förresten" a="is"><i>förresten</i><par n="var__adv"/></e>
-<e lm="därvid" a="is">   <i>därvid</i><par n="var__adv"/></e>
-<e lm="inklusive" a="is"><i>inklusive</i><par n="var__adv"/></e>
-<e lm="däri" a="is">     <i>däri</i><par n="var__adv"/></e>
-<e lm="därifrån" a="is"> <i>därifrån</i><par n="var__adv"/></e>
-<e lm="dessvärre" a="is"><i>dessvärre</i><par n="var__adv"/></e>
-<e lm="olyckligtvis" a="is"><i>olyckligtvis</i><par n="var__adv"/></e>
-<e lm="tyvärr" a="is">   <i>tyvärr</i><par n="var__adv"/></e>
-<e lm="därav" a="is">    <i>därav</i><par n="var__adv"/></e>
-<e lm="allmänt" a="PT"> <i>allmänt</i><par n="var__adv"/></e>
-<e lm="alls" a="is">     <i>alls</i><par n="var__adv"/></e>
-<e lm="bakom" a="is">    <i>bakom</i><par n="var__adv"/></e>
+<e lm="i går morse" a="is"><i>i<b/>går<b/>morse</i><par n="då__adv"/></e>
+<e lm="i går morgon" a="is"><i>i<b/>går<b/>morgon</i><par n="då__adv"/></e>
+<e lm="i går kväll" a="is"><i>i<b/>går<b/>kväll</i><par n="då__adv"/></e>
+<e lm="i dag" a="is">    <i>i<b/>dag</i><par n="då__adv"/></e>
+<e lm="i morse" a="is">  <i>i<b/>morse</i><par n="då__adv"/></e>
+<e lm="i kväll" a="is">  <i>i<b/>kväll</i><par n="då__adv"/></e>
+<e lm="i morgon" a="is"> <i>i<b/>morgon</i><par n="då__adv"/></e>
+<e lm="de senaste dagarna" a="is"><i>de<b/>senaste<b/>dagarna</i><par n="då__adv"/></e>
+<e lm="på söndag kväll" a="is"><i>på<b/>söndag<b/>kväll</i><par n="då__adv"/></e>
+<e lm="under de kommande månaderna" a="is"><i>under<b/>de<b/>kommande<b/>månaderna</i><par n="då__adv"/></e>
+<e lm="i morgon kväll" a="is"><i>i<b/>morgon<b/>kväll</i><par n="då__adv"/></e>
+<e lm="i år" a="is">     <i>i<b/>år</i><par n="då__adv"/></e>
+<e lm="i fjol" a="is">   <i>i<b/>fjol</i><par n="då__adv"/></e>
+<e lm="i fjor" a="is">   <i>i<b/>fjor</i><par n="då__adv"/></e>
+<e lm="i förfjol" a="is"><i>i<b/>förfjol</i><par n="då__adv"/></e>
+<e lm="i början" a="is"> <i>i<b/>början</i><par n="då__adv"/></e>
+<e lm="från början" a="is"><i>från<b/>början</i><par n="då__adv"/></e>
+<e lm="i framtiden" a="is"><i>i<b/>framtiden</i><par n="då__adv"/></e>
+<e lm="för tillfället" a="is"><i>för<b/>tillfället</i><par n="då__adv"/></e>
+<e lm="i veckan" a="is"> <i>i<b/>veckan</i><par n="då__adv"/></e>
+<e lm="i vår" a="is">    <i>i<b/>vår</i><par n="då__adv"/></e>
+<e lm="i sommar" a="is"> <i>i<b/>sommar</i><par n="då__adv"/></e>
+<e lm="i höst" a="is">   <i>i<b/>höst</i><par n="då__adv"/></e>
+<e lm="i vinter" a="is"> <i>i<b/>vinter</i><par n="då__adv"/></e>
+<e lm="i våras" a="is">  <i>i<b/>våras</i><par n="då__adv"/></e>
+<e lm="i somras" a="is"> <i>i<b/>somras</i><par n="då__adv"/></e>
+<e lm="i höstas" a="is"> <i>i<b/>höstas</i><par n="då__adv"/></e>
+<e lm="i vintras" a="is"><i>i<b/>vintras</i><par n="då__adv"/></e>
+<e lm="klockan ett" a="is"><i>klockan<b/>ett</i><par n="då__adv"/></e>
+<e lm="klockan två" a="is"><i>klockan<b/>två</i><par n="då__adv"/></e>
+<e lm="klockan tre" a="is"><i>klockan<b/>tre</i><par n="då__adv"/></e>
+<e lm="klockan fyra" a="is"><i>klockan<b/>fyra</i><par n="då__adv"/></e>
+<e lm="klockan fem" a="is"><i>klockan<b/>fem</i><par n="då__adv"/></e>
+<e lm="klockan sex" a="is"><i>klockan<b/>sex</i><par n="då__adv"/></e>
+<e lm="klockan sju" a="is"><i>klockan<b/>sju</i><par n="då__adv"/></e>
+<e lm="klockan åtta" a="is"><i>klockan<b/>åtta</i><par n="då__adv"/></e>
+<e lm="klockan nio" a="is"><i>klockan<b/>nio</i><par n="då__adv"/></e>
+<e lm="klockan tio" a="is"><i>klockan<b/>tio</i><par n="då__adv"/></e>
+<e lm="klockan elva" a="is"><i>klockan<b/>elva</i><par n="då__adv"/></e>
+<e lm="klockan tolv" a="is"><i>klockan<b/>tolv</i><par n="då__adv"/></e>
+<e lm="klockan halv ett" a="is"><i>klockan<b/>halv<b/>ett</i><par n="då__adv"/></e>
+<e lm="klockan halv två" a="is"><i>klockan<b/>halv<b/>två</i><par n="då__adv"/></e>
+<e lm="klockan halv tre" a="is"><i>klockan<b/>halv<b/>tre</i><par n="då__adv"/></e>
+<e lm="klockan halv fyra" a="is"><i>klockan<b/>halv<b/>fyra</i><par n="då__adv"/></e>
+<e lm="klockan halv fem" a="is"><i>klockan<b/>halv<b/>fem</i><par n="då__adv"/></e>
+<e lm="klockan halv sex" a="is"><i>klockan<b/>halv<b/>sex</i><par n="då__adv"/></e>
+<e lm="klockan halv sju" a="is"><i>klockan<b/>halv<b/>sju</i><par n="då__adv"/></e>
+<e lm="klockan halv åtta" a="is"><i>klockan<b/>halv<b/>åtta</i><par n="då__adv"/></e>
+<e lm="klockan halv nio" a="is"><i>klockan<b/>halv<b/>nio</i><par n="då__adv"/></e>
+<e lm="klockan halv tio" a="is"><i>klockan<b/>halv<b/>tio</i><par n="då__adv"/></e>
+<e lm="klockan halv elva" a="is"><i>klockan<b/>halv<b/>elva</i><par n="då__adv"/></e>
+<e lm="klockan halv tolv" a="is"><i>klockan<b/>halv<b/>tolv</i><par n="då__adv"/></e>
+<e lm="kvart över" a="is"><i>kvart<b/>över</i><par n="då__adv"/></e>
+<e lm="kvart i" a="is">  <i>kvart<b/>i</i><par n="då__adv"/></e>
+<e lm="varav" a="is">    <i>varav</i><par n="då__adv"/></e>
+<e lm="bakåt" a="is">    <i>bakåt</i><par n="då__adv"/></e>
+<e lm="återigen" a="is"> <i>återigen</i><par n="då__adv"/></e>
+<e lm="inte alls" a="is"><i>inte<b/>alls</i><par n="då__adv"/></e>
+<e lm="överallt" a="is"> <i>överallt</i><par n="då__adv"/></e>
+<e lm="alltför" a="is">  <i>alltför</i><par n="då__adv"/></e>
+<e lm="annanstans" a="is"><i>annanstans</i><par n="då__adv"/></e>
+<e lm="annars" a="is">   <i>annars</i><par n="då__adv"/></e>
+<e lm="österut" a="is">  <i>österut</i><par n="då__adv"/></e>
+<e lm="därutöver" a="is"><i>därutöver</i><par n="då__adv"/></e>
+<e lm="i gengäld" a="is"><i>i<b/>gengäld</i><par n="då__adv"/></e>
+<e lm="avslutningsvis" a="is"><i>avslutningsvis</i><par n="då__adv"/></e>
+<e lm="minst" a="is">    <i>minst</i><par n="då__adv"/></e>
+<e lm="åtminstone" a="is"><i>åtminstone</i><par n="då__adv"/></e>
+<e lm="dels" a="is">     <i>dels</i><par n="då__adv"/></e>
+<e lm="skriftligen" a="is"><i>skriftligen</i><par n="då__adv"/></e>
+<e lm="iväg" a="is">     <i>iväg</i><par n="då__adv"/></e>
+<e lm="undan" a="is">    <i>undan</i><par n="då__adv"/></e>
+<e lm="bokstavligen" a="is"><i>bokstavligen</i><par n="då__adv"/></e>
+<e lm="dagligen" a="is"> <i>dagligen</i><par n="då__adv"/></e>
+<e lm="efteråt" a="is">  <i>efteråt</i><par n="då__adv"/></e>
+<e lm="någonstans" a="is"><i>någonstans</i><par n="då__adv"/></e>
+<e lm="likt" a="is">     <i>likt</i><par n="då__adv"/></e>
+<e lm="en gång" a="is">  <i>en<b/>gång</i><par n="då__adv"/></e>
+<e lm="två gånger" a="is"><i>två<b/>gånger</i><par n="då__adv"/></e>
+<e lm="tre gånger" a="is"><i>tre<b/>gånger</i><par n="då__adv"/></e>
+<e lm="enbart" a="is">   <i>enbart</i><par n="då__adv"/></e>
+<e lm="nödvändigtvis" a="is"><i>nödvändigtvis</i><par n="då__adv"/></e>
+<e lm="likväl" a="is">   <i>likväl</i><par n="då__adv"/></e>
+<e lm="utomlands" a="is"><i>utomlands</i><par n="då__adv"/></e>
+<e lm="alltfler" a="is"> <i>alltfler</i><par n="då__adv"/></e>
+<e lm="förbi" a="is">    <i>förbi</i><par n="då__adv"/></e>
+<e lm="fullkomligt" a="is"><i>fullkomligt</i><par n="då__adv"/></e>
+<e lm="förhand" a="is">  <i>förhand</i><par n="då__adv"/></e>
+<e lm="förut" a="is">    <i>förut</i><par n="då__adv"/></e>
+<e lm="i förväg" a="is"> <i>i<b/>förväg</i><par n="då__adv"/></e>
+<e lm="förr" a="is">     <i>förr</i><par n="då__adv"/></e>
+<e lm="synnerligen" a="is"><i>synnerligen</i><par n="då__adv"/></e>
+<e lm="nåväl" a="is">    <i>nåväl</i><par n="då__adv"/></e>
+<e lm="tydligen" a="is"> <i>tydligen</i><par n="då__adv"/></e>
+<e lm="uppenbarligen" a="is"><i>uppenbarligen</i><par n="då__adv"/></e>
+<e lm="hemma" a="is">    <i>hemma</i><par n="då__adv"/></e>
+<e lm="helst" a="is">    <i>helst</i><par n="då__adv"/></e>
+<e lm="hittills" a="is"> <i>hittills</i><par n="då__adv"/></e>
+<e lm="respektive" a="is"><i>respektive</i><par n="då__adv"/></e>
+<e lm="ingenstans" a="is"><i>ingenstans</i><par n="då__adv"/></e>
+<e lm="sakta" a="is">    <i>sakta</i><par n="då__adv"/></e>
+<e lm="härigenom" a="is"><i>härigenom</i><par n="då__adv"/></e>
+<e lm="härmed" a="is">   <i>härmed</i><par n="då__adv"/></e>
+<e lm="fortsättningsvis" a="is"><i>fortsättningsvis</i><par n="då__adv"/></e>
+<e lm="hädanefter" a="is"><i>hädanefter</i><par n="då__adv"/></e>
+<e lm="härifrån" a="is"> <i>härifrån</i><par n="då__adv"/></e>
+<e lm="illa" a="is">     <i>illa</i><par n="då__adv"/></e>
+<e lm="lika" a="is">     <i>lika</i><par n="då__adv"/></e>
+<e lm="vida" a="is">     <i>vida</i><par n="då__adv"/></e>
+<e lm="definitivt" a="aronsson"><i>definitivt</i><par n="då__adv"/></e>
+<e lm="slutligen" a="is"><i>slutligen</i><par n="då__adv"/></e>
+<e lm="äntligen" a="is"> <i>äntligen</i><par n="då__adv"/></e>
+<e lm="sinsemellan" a="is"><i>sinsemellan</i><par n="då__adv"/></e>
+<e lm="nämligen" a="is"> <i>nämligen</i><par n="då__adv"/></e>
+<e lm="någonsin" a="is"> <i>någonsin</i><par n="då__adv"/></e>
+<e lm="vidare" a="is">   <i>vidare</i><par n="då__adv"/></e>
+<e lm="givetvis" a="is"> <i>givetvis</i><par n="då__adv"/></e>
+<e lm="naturligtvis" a="is"><i>naturligtvis</i><par n="då__adv"/></e>
+<e lm="därpå" a="is">    <i>därpå</i><par n="då__adv"/></e>
+<e lm="tillräckligt" a="is"><i>tillräckligt</i><par n="då__adv"/></e>
+<e lm="nyligen" a="is">  <i>nyligen</i><par n="då__adv"/></e>
+<e lm="i förtid" a="is"> <i>i<b/>förtid</i><par n="då__adv"/></e>
+<e lm="personligen" a="is"><i>personligen</i><par n="då__adv"/></e>
+<e lm="faktiskt" a="is"> <i>faktiskt</i><par n="då__adv"/></e>
+<e lm="nyss" a="is">     <i>nyss</i><par n="då__adv"/></e>
+<e lm="drygt" a="is">    <i>drygt</i><par n="då__adv"/></e>
+<e lm="sammantaget" a="is"><i>sammantaget</i><par n="då__adv"/></e>
+<e lm="totalt" a="is">   <i>totalt</i><par n="då__adv"/></e>
+<e lm="lyckligtvis" a="is"><i>lyckligtvis</i><par n="då__adv"/></e>
+<e lm="antagligen" a="is"><i>antagligen</i><par n="då__adv"/></e>
+<e lm="förmodligen" a="is"><i>förmodligen</i><par n="då__adv"/></e>
+<e lm="sällan" a="is">   <i>sällan</i><par n="då__adv"/></e>
+<e lm="plötsligt" a="is"><i>plötsligt</i><par n="då__adv"/></e>
+<e lm="gradvis" a="is">  <i>gradvis</i><par n="då__adv"/></e>
+<e lm="stegvis" a="is">  <i>stegvis</i><par n="då__adv"/></e>
+<e lm="så småningom" a="is"><i>så<b/>småningom</i><par n="då__adv"/></e>
+<e lm="allteftersom" a="is"><i>allteftersom</i><par n="då__adv"/></e>
+<e lm="tidigt" a="is">   <i>tidigt</i><par n="då__adv"/></e>
+<e lm="genast" a="is">   <i>genast</i><par n="då__adv"/></e>
+<e lm="omgående" a="is"> <i>omgående</i><par n="då__adv"/></e>
+<e lm="strax" a="is">    <i>strax</i><par n="då__adv"/></e>
+<e lm="alltjämt" a="is"> <i>alltjämt</i><par n="då__adv"/></e>
+<e lm="isär" a="is">     <i>isär</i><par n="då__adv"/></e>
+<e lm="sönder" a="is">   <i>sönder</i><par n="då__adv"/></e>
+<e lm="tämligen" a="is"> <i>tämligen</i><par n="då__adv"/></e>
+<e lm="framförallt" a="is"><i>framförallt</i><par n="då__adv"/></e>
+<e lm="i synnerhet" a="is"><i>i<b/>synnerhet</i><par n="då__adv"/></e>
+<e lm="sist" a="is">     <i>sist</i><par n="då__adv"/></e>
+<e lm="likaledes" a="is"><i>likaledes</i><par n="då__adv"/></e>
+<e lm="likaså" a="is">   <i>likaså</i><par n="då__adv"/></e>
+<e lm="förgäves" a="is"> <i>förgäves</i><par n="då__adv"/></e>
+<e lm="till godo" a="is"><i>till<b/>godo</i><par n="då__adv"/></e>
+<e lm="vederbörligen" a="is"><i>vederbörligen</i><par n="då__adv"/></e>
+<e lm="förhållandevis" a="is"><i>förhållandevis</i><par n="då__adv"/></e>
+<e lm="ombord" a="is">   <i>ombord</i><par n="då__adv"/></e>
+<e lm="uppåt" a="is">    <i>uppåt</i><par n="då__adv"/></e>
+<e lm="inledningsvis" a="is"><i>inledningsvis</i><par n="då__adv"/></e>
+<e lm="utifrån" a="is">  <i>utifrån</i><par n="då__adv"/></e>
+<e lm="gärna" a="is">    <i>gärna</i><par n="då__adv"/></e>
+<e lm="förvisso" a="is"> <i>förvisso</i><par n="då__adv"/></e>
+<e lm="sannerligen" a="is"><i>sannerligen</i><par n="då__adv"/></e>
+<e lm="säkerligen" a="is"><i>säkerligen</i><par n="då__adv"/></e>
+<e lm="apropå" a="is">   <i>apropå</i><par n="då__adv"/></e>
+<e lm="förhoppningsvis" a="is"><i>förhoppningsvis</i><par n="då__adv"/></e>
+<e lm="överhuvud" a="is"><i>överhuvud</i><par n="då__adv"/></e>
+<e lm="överhuvudtaget" a="is"><i>överhuvudtaget</i><par n="då__adv"/></e>
+<e lm="vanligtvis" a="is"><i>vanligtvis</i><par n="då__adv"/></e>
+<e lm="tvärtemot" a="is"><i>tvärtemot</i><par n="då__adv"/></e>
+<e lm="tvärtom" a="is">  <i>tvärtom</i><par n="då__adv"/></e>
+<e lm="i sinom tid" a="is"><i>i<b/>sinom<b/>tid</i><par n="då__adv"/></e>
+<e lm="framåt" a="is">   <i>framåt</i><par n="då__adv"/></e>
+<e lm="oavsett" a="is">  <i>oavsett</i><par n="då__adv"/></e>
+<e lm="visserligen" a="is"><i>visserligen</i><par n="då__adv"/></e>
+<e lm="årligen" a="is">  <i>årligen</i><par n="då__adv"/></e>
+<e lm="borta" a="is">    <i>borta</i><par n="då__adv"/></e>
+<e lm="i slutändan" a="is"><i>i<b/>slutändan</i><par n="då__adv"/></e>
+<e lm="rentav" a="is">   <i>rentav</i><par n="då__adv"/></e>
+<e lm="onekligen" a="is"><i>onekligen</i><par n="då__adv"/></e>
+<e lm="utåt" a="is">     <i>utåt</i><par n="då__adv"/></e>
+<e lm="överbord" a="is"> <i>överbord</i><par n="då__adv"/></e>
+<e lm="til sjöss" a="is"><i>til<b/>sjöss</i><par n="då__adv"/></e>
+<e lm="däribland" a="is"><i>däribland</i><par n="då__adv"/></e>
+<e lm="därigenom" a="is"><i>därigenom</i><par n="då__adv"/></e>
+<e lm="således" a="is">  <i>således</i><par n="då__adv"/></e>
+<e lm="sålunda" a="is">  <i>sålunda</i><par n="då__adv"/></e>
+<e lm="följaktligen" a="is"><i>följaktligen</i><par n="då__adv"/></e>
+<e lm="därtill" a="is">  <i>därtill</i><par n="då__adv"/></e>
+<e lm="förresten" a="is"><i>förresten</i><par n="då__adv"/></e>
+<e lm="därvid" a="is">   <i>därvid</i><par n="då__adv"/></e>
+<e lm="inklusive" a="is"><i>inklusive</i><par n="då__adv"/></e>
+<e lm="däri" a="is">     <i>däri</i><par n="då__adv"/></e>
+<e lm="därifrån" a="is"> <i>därifrån</i><par n="då__adv"/></e>
+<e lm="dessvärre" a="is"><i>dessvärre</i><par n="då__adv"/></e>
+<e lm="olyckligtvis" a="is"><i>olyckligtvis</i><par n="då__adv"/></e>
+<e lm="tyvärr" a="is">   <i>tyvärr</i><par n="då__adv"/></e>
+<e lm="därav" a="is">    <i>därav</i><par n="då__adv"/></e>
+<e lm="allmänt" a="PT"> <i>allmänt</i><par n="då__adv"/></e>
+<e lm="alls" a="is">     <i>alls</i><par n="då__adv"/></e>
+<e lm="bakom" a="is">    <i>bakom</i><par n="då__adv"/></e>
 <e lm="betydligt" a="is"><i>betydlig</i><par n="försiktig/t__adv"/></e>
-<e lm="egendomligt" a="is"><i>egendomligt</i><par n="var__adv"/></e>
-<e lm="enormt" a="is">   <i>enormt</i><par n="var__adv"/></e>
-<e lm="extremt" a="is">  <i>extremt</i><par n="var__adv"/></e>
-<e lm="fast" a="is">     <i>fast</i><par n="var__adv"/></e>
-<e lm="framdeles" a="is"><i>framdeles</i><par n="var__adv"/></e>
-<e lm="framme" a="is">   <i>framme</i><par n="var__adv"/></e>
-<e lm="frekvent" a="is"> <i>frekvent</i><par n="var__adv"/></e>
-<e lm="fruktansvärt" a="is"><i>fruktansvärt</i><par n="var__adv"/></e>
-<e lm="fullständigt" a="is"><i>fullständigt</i><par n="var__adv"/></e>
-<e lm="följande" a="is"> <i>följande</i><par n="var__adv"/></e>
+<e lm="egendomligt" a="is"><i>egendomligt</i><par n="då__adv"/></e>
+<e lm="enormt" a="is">   <i>enormt</i><par n="då__adv"/></e>
+<e lm="extremt" a="is">  <i>extremt</i><par n="då__adv"/></e>
+<e lm="fast" a="is">     <i>fast</i><par n="då__adv"/></e>
+<e lm="framdeles" a="is"><i>framdeles</i><par n="då__adv"/></e>
+<e lm="framme" a="is">   <i>framme</i><par n="då__adv"/></e>
+<e lm="frekvent" a="is"> <i>frekvent</i><par n="då__adv"/></e>
+<e lm="fruktansvärt" a="is"><i>fruktansvärt</i><par n="då__adv"/></e>
+<e lm="fullständigt" a="is"><i>fullständigt</i><par n="då__adv"/></e>
+<e lm="följande" a="is"> <i>följande</i><par n="då__adv"/></e>
 <e lm="försiktigt" a="is"><i>försiktig</i><par n="försiktig/t__adv"/></e>
-<e lm="förstås" a="is">  <i>förstås</i><par n="var__adv"/></e>
-<e lm="givmilt" a="is">  <i>givmilt</i><par n="var__adv"/></e>
+<e lm="förstås" a="is">  <i>förstås</i><par n="då__adv"/></e>
+<e lm="givmilt" a="is">  <i>givmilt</i><par n="då__adv"/></e>
 <e lm="grundligt" a="is"><i>grundlig</i><par n="försiktig/t__adv"/></e>
-<e lm="halv" a="is">     <i>halv</i><par n="var__adv"/></e>
+<e lm="halv" a="is">     <i>halv</i><par n="då__adv"/></e>
 <e lm="hastigt" a="is">  <i>hastig</i><par n="försiktig/t__adv"/></e>
-<e lm="helt enkelt" a="is"><i>helt<b/>enkelt</i><par n="var__adv"/></e>
-<e lm="hemifrån" a="is"> <i>hemifrån</i><par n="var__adv"/></e>
-<e lm="här i landet" a="is"><i>här<b/>i<b/>landet</i><par n="var__adv"/></e>
-<e lm="hårt" a="is">     <i>hårt</i><par n="var__adv"/></e>
-<e lm="högt" a="is">     <i>högt</i><par n="var__adv"/></e>
-<e lm="i alla fall" a="is"><i>i<b/>alla<b/>fall</i><par n="var__adv"/></e>
-<e lm="ikke" a="is">     <i>ikke</i><par n="var__adv"/></e>
-<e lm="ivrigt" a="is">   <i>ivrigt</i><par n="var__adv"/></e>
-<e lm="jämt" a="is">     <i>jämt</i><par n="var__adv"/></e>
-<e lm="jämväl" a="is">   <i>jämväl</i><par n="var__adv"/></e>
-<e lm="knappast" a="is"> <i>knappast</i><par n="var__adv"/></e>
-<e lm="knappt" a="is">   <i>knappt</i><par n="var__adv"/></e>
+<e lm="helt enkelt" a="is"><i>helt<b/>enkelt</i><par n="då__adv"/></e>
+<e lm="hemifrån" a="is"> <i>hemifrån</i><par n="då__adv"/></e>
+<e lm="här i landet" a="is"><i>här<b/>i<b/>landet</i><par n="då__adv"/></e>
+<e lm="hårt" a="is">     <i>hårt</i><par n="då__adv"/></e>
+<e lm="högt" a="is">     <i>högt</i><par n="då__adv"/></e>
+<e lm="i alla fall" a="is"><i>i<b/>alla<b/>fall</i><par n="då__adv"/></e>
+<e lm="ikke" a="is">     <i>ikke</i><par n="då__adv"/></e>
+<e lm="ivrigt" a="is">   <i>ivrigt</i><par n="då__adv"/></e>
+<e lm="jämt" a="is">     <i>jämt</i><par n="då__adv"/></e>
+<e lm="jämväl" a="is">   <i>jämväl</i><par n="då__adv"/></e>
+<e lm="knappast" a="is"> <i>knappast</i><par n="då__adv"/></e>
+<e lm="knappt" a="is">   <i>knappt</i><par n="då__adv"/></e>
 <e lm="konstigt" a="is"> <i>konstig</i><par n="försiktig/t__adv"/></e>
-<e lm="lika snabbt som" a="is"><i>lika<b/>snabbt<b/>som</i><par n="var__adv"/></e>
-<e lm="längre" a="is">   <i>längre</i><par n="var__adv"/></e>
+<e lm="lika snabbt som" a="is"><i>lika<b/>snabbt<b/>som</i><par n="då__adv"/></e>
+<e lm="längre" a="is">   <i>längre</i><par n="då__adv"/></e>
 <e lm="lågt" a="is">     <i>l</i><par n="l/ågt__adv"/></e>
 <e lm="långsamt" a="is"> <i>långsam</i><par n="långsam/t__adv"/></e>
-<e lm="mentalt" a="is">  <i>mentalt</i><par n="var__adv"/></e>
-<e lm="mer" a="is">      <i>mer</i><par n="var__adv"/></e>
-<e lm="nedåt" a="is">    <i>nedåt</i><par n="var__adv"/></e>
-<e lm="noggrannare" a="is"><i>noggrannare</i><par n="var__adv"/></e>
-<e lm="närmare" a="is">  <i>närmare</i><par n="var__adv"/></e>
-<e lm="någorlunda bra" a="is"><i>någorlunda<b/>bra</i><par n="var__adv"/></e>
-<e lm="obekvämt" a="is"> <i>obekvämt</i><par n="var__adv"/></e>
-<e lm="och så vidare" a="is"><i>och<b/>så<b/>vidare</i><par n="var__adv"/></e>
-<e lm="oerhört" a="is">  <i>oerhört</i><par n="var__adv"/></e>
-<e lm="oföränderligt" a="is"><i>oföränderligt</i><par n="var__adv"/></e>
-<e lm="omedelbart" a="is"><i>omedelbart</i><par n="var__adv"/></e>
-<e lm="ordentligt" a="is"><i>ordentligt</i><par n="var__adv"/></e>
-<e lm="osvikligt" a="is"><i>osvikligt</i><par n="var__adv"/></e>
-<e lm="otroligt" a="is"> <i>otroligt</i><par n="var__adv"/></e>
-<e lm="otvivelaktigt" a="is"><i>otvivelaktigt</i><par n="var__adv"/></e>
-<e lm="på allvar" a="is"><i>på<b/>allvar</i><par n="var__adv"/></e>
-<e lm="på många ställen" a="is"><i>på<b/>många<b/>ställen</i><par n="var__adv"/></e>
-<e lm="raskt" a="is">    <i>raskt</i><par n="var__adv"/></e>
-<e lm="regelbundet" a="is"><i>regelbundet</i><par n="var__adv"/></e>
+<e lm="mentalt" a="is">  <i>mentalt</i><par n="då__adv"/></e>
+<e lm="mer" a="is">      <i>mer</i><par n="då__adv"/></e>
+<e lm="nedåt" a="is">    <i>nedåt</i><par n="då__adv"/></e>
+<e lm="noggrannare" a="is"><i>noggrannare</i><par n="då__adv"/></e>
+<e lm="närmare" a="is">  <i>närmare</i><par n="då__adv"/></e>
+<e lm="någorlunda bra" a="is"><i>någorlunda<b/>bra</i><par n="då__adv"/></e>
+<e lm="obekvämt" a="is"> <i>obekvämt</i><par n="då__adv"/></e>
+<e lm="och så vidare" a="is"><i>och<b/>så<b/>vidare</i><par n="då__adv"/></e>
+<e lm="oerhört" a="is">  <i>oerhört</i><par n="då__adv"/></e>
+<e lm="oföränderligt" a="is"><i>oföränderligt</i><par n="då__adv"/></e>
+<e lm="omedelbart" a="is"><i>omedelbart</i><par n="då__adv"/></e>
+<e lm="ordentligt" a="is"><i>ordentligt</i><par n="då__adv"/></e>
+<e lm="osvikligt" a="is"><i>osvikligt</i><par n="då__adv"/></e>
+<e lm="otroligt" a="is"> <i>otroligt</i><par n="då__adv"/></e>
+<e lm="otvivelaktigt" a="is"><i>otvivelaktigt</i><par n="då__adv"/></e>
+<e lm="på allvar" a="is"><i>på<b/>allvar</i><par n="då__adv"/></e>
+<e lm="på många ställen" a="is"><i>på<b/>många<b/>ställen</i><par n="då__adv"/></e>
+<e lm="raskt" a="is">    <i>raskt</i><par n="då__adv"/></e>
+<e lm="regelbundet" a="is"><i>regelbundet</i><par n="då__adv"/></e>
 <e lm="rent" a="is">     <i>ren</i><par n="försiktig/t__adv"/></e>
 <e lm="retsamt" a="is">  <i>retsam</i><par n="långsam/t__adv"/></e>
-<e lm="runt" a="is">     <i>runt</i><par n="var__adv"/></e>
-<e lm="samtidigt" a="is"><i>samtidigt</i><par n="var__adv"/></e>
-<e lm="sannolikt" a="is"><i>sannolikt</i><par n="var__adv"/></e>
-<e lm="senare" a="is">   <i>senare</i><par n="var__adv"/></e>
-<e lm="sent" a="is">     <i>sent</i><par n="var__adv"/></e>
-<e lm="skarpt" a="is">   <i>skarpt</i><par n="var__adv"/></e>
-<e lm="skönt" a="is">    <i>skönt</i><par n="var__adv"/></e>
-<e lm="slags" a="is">    <i>slags</i><par n="var__adv"/></e>
-<e lm="snabbt" a="is">   <i>snabbt</i><par n="var__adv"/></e>
-<e lm="snarare" a="is">  <i>snarare</i><par n="var__adv"/></e>
-<e lm="ständigt" a="is"> <i>ständigt</i><par n="var__adv"/></e>
-<e lm="säkert" a="is">   <i>säkert</i><par n="var__adv"/></e>
-<e lm="särskilt" a="is"> <i>särskilt</i><par n="var__adv"/></e>
-<e lm="så där" a="is">   <i>så<b/>där</i><par n="var__adv"/></e>
-<e lm="så klart" a="is"> <i>så<b/>klart</i><par n="var__adv"/></e>
-<e lm="söder" a="is">    <i>söder</i><par n="var__adv"/></e>
-<e lm="söderifrån" a="is"><i>söderifrån</i><par n="var__adv"/></e>
-<e lm="tidigare" a="is"> <i>tidigare</i><par n="var__adv"/></e>
-<e lm="torrt" a="is">    <i>torrt</i><par n="var__adv"/></e>
-<e lm="tungt" a="is">    <i>tungt</i><par n="var__adv"/></e>
-<e lm="tydligt" a="is">  <i>tydligt</i><par n="var__adv"/></e>
-<e lm="typ av" a="is">   <i>typ<b/>av</i><par n="var__adv"/></e>
-<e lm="typiskt" a="is">  <i>typiskt</i><par n="var__adv"/></e>
-<e lm="tyst" a="is">     <i>tyst</i><par n="var__adv"/></e>
+<e lm="runt" a="is">     <i>runt</i><par n="då__adv"/></e>
+<e lm="samtidigt" a="is"><i>samtidigt</i><par n="då__adv"/></e>
+<e lm="sannolikt" a="is"><i>sannolikt</i><par n="då__adv"/></e>
+<e lm="senare" a="is">   <i>senare</i><par n="då__adv"/></e>
+<e lm="sent" a="is">     <i>sent</i><par n="då__adv"/></e>
+<e lm="skarpt" a="is">   <i>skarpt</i><par n="då__adv"/></e>
+<e lm="skönt" a="is">    <i>skönt</i><par n="då__adv"/></e>
+<e lm="slags" a="is">    <i>slags</i><par n="då__adv"/></e>
+<e lm="snabbt" a="is">   <i>snabbt</i><par n="då__adv"/></e>
+<e lm="snarare" a="is">  <i>snarare</i><par n="då__adv"/></e>
+<e lm="ständigt" a="is"> <i>ständigt</i><par n="då__adv"/></e>
+<e lm="säkert" a="is">   <i>säkert</i><par n="då__adv"/></e>
+<e lm="särskilt" a="is"> <i>särskilt</i><par n="då__adv"/></e>
+<e lm="så där" a="is">   <i>så<b/>där</i><par n="då__adv"/></e>
+<e lm="så klart" a="is"> <i>så<b/>klart</i><par n="då__adv"/></e>
+<e lm="söder" a="is">    <i>söder</i><par n="då__adv"/></e>
+<e lm="söderifrån" a="is"><i>söderifrån</i><par n="då__adv"/></e>
+<e lm="tidigare" a="is"> <i>tidigare</i><par n="då__adv"/></e>
+<e lm="torrt" a="is">    <i>torrt</i><par n="då__adv"/></e>
+<e lm="tungt" a="is">    <i>tungt</i><par n="då__adv"/></e>
+<e lm="tydligt" a="is">  <i>tydligt</i><par n="då__adv"/></e>
+<e lm="typ av" a="is">   <i>typ<b/>av</i><par n="då__adv"/></e>
+<e lm="typiskt" a="is">  <i>typiskt</i><par n="då__adv"/></e>
+<e lm="tyst" a="is">     <i>tyst</i><par n="då__adv"/></e>
 <e lm="tätt" a="is">     <i>tätt</i><par n="rätt__adv"/></e>
-<e lm="upp í" a="is">    <i>upp<b/>í</i><par n="var__adv"/></e>
-<e lm="ut i" a="is">     <i>ut<b/>i</i><par n="var__adv"/></e>
-<e lm="utan tvekan" a="is"><i>utan<b/>tvekan</i><par n="var__adv"/></e>
-<e lm="utan tvivel" a="is"><i>utan<b/>tvivel</i><par n="var__adv"/></e>
-<e lm="utmärkt" a="is">  <i>utmärkt</i><par n="var__adv"/></e>
-<e lm="vanvettigt" a="is"><i>vanvettigt</i><par n="var__adv"/></e>
-<e lm="verkligen mycket" a="is"><i>verkligen<b/>mycket</i><par n="var__adv"/></e>
-<e lm="visst" a="is">    <i>visst</i><par n="var__adv"/></e>
-<e lm="västerifrån" a="is"><i>västerifrån</i><par n="var__adv"/></e>
-<e lm="vårdslöst" a="is"><i>vårdslöst</i><par n="var__adv"/></e>
-<e lm="ynkligt" a="is">  <i>ynkligt</i><par n="var__adv"/></e>
-<e lm="ytter" a="is">    <i>ytter</i><par n="var__adv"/></e>
-<e lm="österifrån" a="is"><i>österifrån</i><par n="var__adv"/></e>
+<e lm="upp í" a="is">    <i>upp<b/>í</i><par n="då__adv"/></e>
+<e lm="ut i" a="is">     <i>ut<b/>i</i><par n="då__adv"/></e>
+<e lm="utan tvekan" a="is"><i>utan<b/>tvekan</i><par n="då__adv"/></e>
+<e lm="utan tvivel" a="is"><i>utan<b/>tvivel</i><par n="då__adv"/></e>
+<e lm="utmärkt" a="is">  <i>utmärkt</i><par n="då__adv"/></e>
+<e lm="vanvettigt" a="is"><i>vanvettigt</i><par n="då__adv"/></e>
+<e lm="verkligen mycket" a="is"><i>verkligen<b/>mycket</i><par n="då__adv"/></e>
+<e lm="visst" a="is">    <i>visst</i><par n="då__adv"/></e>
+<e lm="västerifrån" a="is"><i>västerifrån</i><par n="då__adv"/></e>
+<e lm="vårdslöst" a="is"><i>vårdslöst</i><par n="då__adv"/></e>
+<e lm="ynkligt" a="is">  <i>ynkligt</i><par n="då__adv"/></e>
+<e lm="ytter" a="is">    <i>ytter</i><par n="då__adv"/></e>
+<e lm="österifrån" a="is"><i>österifrån</i><par n="då__adv"/></e>
 
 <!-- Added from the pair is-sv END -->
 
@@ -6371,10 +6382,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="rätt">            <i>rät</i><par n="rät/t__adv"/></e>
 -->
 <e lm="rätt">            <i>rätt</i><par n="rätt__adv"/></e>
-
-<e lm="hur">             <i>hur</i><par n="hur__adv"/></e>
-<e lm="varför">          <i>varför</i><par n="hur__adv"/></e>
-
 
     <!-- Nouns -->
 
