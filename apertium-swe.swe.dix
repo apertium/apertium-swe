@@ -1350,6 +1350,13 @@ obj = object form changed to the traditional acc = accusative
   <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
+<pardef n="pris__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~er / ~erna -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
+</pardef>
+
 <pardef n="bageri__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -8205,7 +8212,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="nedslag">         <i>nedslag</i><par n="ackord__n"/></e>
 <e lm="negativ">         <i>negativ</i><par n="ackord__n"/></e>
 <e lm="nej">             <i>nej</i><par n="ackord__n"/></e>
-<e lm="pris">            <i>pris</i><par n="bageri__n"/></e>
+<e lm="pris" a="PT">            <i>pris</i><par n="pris__n"/></e>
 <e lm="nobelpris">       <i>nobelpris</i><par n="bageri__n"/></e>
 <e lm="norrsken">        <i>norrsken</i><par n="ackord__n"/></e>
 <e lm="nyval">           <i>nyval</i><par n="ackord__n"/></e>
@@ -10622,7 +10629,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="jämvikt" a="is">  <i>jämvikt</i><par n="mat__n"/></e>
 <e lm="japan" a="is">    <i>japan</i><par n="accent__n"/></e>
 <e lm="naturgas" a="PT"> <i>naturgas</i><par n="adress__n"/></e>
-<e lm="oljepris" a="is"> <i>oljepris</i><par n="bageri__n"/></e>
+<e lm="oljepris" a="PT"> <i>oljepris</i><par n="pris__n"/></e>
 <e lm="landmina" a="is"> <i>landmin</i><par n="frug/a__n"/></e>
 <e lm="avvägning" a="is"><i>avvägning</i><par n="bil__n"/></e>
 <e lm="jämställdhet" a="is"><i>jämställdhet</i><par n="mat__n"/></e>
@@ -10643,11 +10650,11 @@ obj = object form changed to the traditional acc = accusative
 <e lm="kvinnodag" a="is"><i>kvinnodag</i><par n="bil__n"/></e>
 <e lm="kungarike" a="is"><i>kungarike</i><par n="äpple__n"/></e>
 <e lm="spannmål" a="is"> <i>spannmål</i><par n="ackord__n"/></e>
-<e lm="valprocess" a="is"><i>valprocess</i><par n="accent__n"/></e>
+<e lm="valprocess" a="PT"><i>valprocess</i><par n="adress__n"/></e>
 <e lm="valkampanj" a="is"><i>valkampanj</i><par n="accent__n"/></e>
 <e lm="rösträtt" a="is"> <i>rösträtt</i><par n="accent__n"/></e>
 <e lm="bekostnad" a="is"><i>bekostnad</i><par n="accent__n"/></e>
-<e lm="kris" a="is">     <i>kris</i><par n="accent__n"/></e>
+<e lm="kris" a="PT">     <i>kris</i><par n="adress__n"/></e>
 <e lm="omständighet" a="is"><i>omständighet</i><par n="adress__n"/></e>
 <e lm="kvartett" a="is"> <i>kvartett</i><par n="accent__n"/></e>
 <e lm="gratulation" a="is"><i>gratulation</i><par n="accent__n"/></e>
@@ -10660,7 +10667,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="kurd" a="is">     <i>kurd</i><par n="accent__n"/></e>
 <e lm="kurdiska" a="is"> <i>kurdisk</i><par n="afghansk/a__n"/></e>
 <e lm="låt" a="is">      <i>låt</i><par n="bil__n"/></e>
-<e lm="lagstiftningsprocess" a="is"><i>lagstiftningsprocess</i><par n="accent__n"/></e>
+<e lm="lagstiftningsprocess" a="is"><i>lagstiftningsprocess</i><par n="adress__n"/></e>
 <e lm="gränskontroll" a="is"><i>gränskontroll</i><par n="accent__n"/></e>
 <e lm="gränsvärd" a="is"><i>gränsvärd</i><par n="bil__n"/></e>
 <e lm="jordbruksproduktion" a="is"><i>jordbruksproduktion</i><par n="accent__n"/></e>
@@ -10676,7 +10683,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vägledare" a="is"><i>vägledar</i><par n="apotekar/e__n"/></e>
 <e lm="vägledning" a="is"><i>vägledning</i><par n="bil__n"/></e>
 <e lm="toppmöte" a="is"> <i>toppmöte</i><par n="äpple__n"/></e>
-<e lm="licens" a="is">   <i>licens</i><par n="accent__n"/></e>
+<e lm="licens" a="PT">   <i>licens</i><par n="adress__n"/></e>
 <e lm="tillåtelse" a="is"><i>tillåtelse</i><par n="aktie__n"/></e>
 <e lm="avseende" a="is"> <i>avseende</i><par n="äpple__n"/></e>
 <e lm="konstnär" a="is"> <i>konstnär</i><par n="accent__n"/></e>
