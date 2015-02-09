@@ -1,0 +1,11 @@
+
+LIST N = n ;
+LIST Prep = pr ;
+LIST Past = (vblex past) ;
+LIST Verb-Fin = (vblex past) (vblex pres) ;
+LIST Rel = ("som" prn rel) ;
+LIST Adv = adv ;
+
+SECTION
+
+SELECT Past IF (0C Prep OR Past) (NOT 1* Verb-Fin) (1* Adv) ;

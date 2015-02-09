@@ -6,17 +6,23 @@
 /NEWS -text
 /README -text
 /apertium-swe.pc.in -text
+/apertium-swe.post-swe.dix -text
 /apertium-swe.swe.dix -text
 /apertium-swe.swe.rlx -text
+/apertium-swe.swe.tsx -text
 /autogen.sh -text
 /configure.ac -text
 dev/adj[!!-~](5e).wiktionary-infl.speling -text
+dev/apertium-swe-dan.swe-dan.rlx -text
+dev/apertium-swe-dan.swe.comments.tsx -text
+dev/apertium-swe-dan.swe_old.tsx -text
 dev/saldo/saldo.nouns.dix -text
 dev/saldo/saldo.verbs.dix -text
 dev/saldo/scripts/getParadigms.sh -text
 dev/saldo/scripts/getSpelings.py -text
 dev/saldo/scripts/swedishParser.py -text
+dev/swe-nor.prob -text svneol=unset#unset
 dev/vb.wiktionary-infl.speling -text
 dev/wiktionary-nouns.speling -text
 /modes.xml -text
-/swe.prob -text svneol=unset#unset
+/swe.prob -text
