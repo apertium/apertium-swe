@@ -622,15 +622,15 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>et</l>        <r>en<s n="prn"/><s n="rel"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
   <e>       <p><l>a</l>         <r>en<s n="prn"/><s n="rel"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
 </pardef>	
-	
-<pardef n="/som__prn"> <!-- This needs to be checked probably -->
-  <e>       <p><l>som</l>       <r>som<s n="prn"/><s n="rel"/><s n="un"/><s n="sp"/><s n="nom"/></r></p></e>
-  <e>       <p><l>vars</l>      <r>som<s n="prn"/><s n="rel"/><s n="un"/><s n="sp"/><s n="gen"/></r></p></e>
-  <e>       <p><l>vilkas</l>    <r>som<s n="prn"/><s n="rel"/><s n="un"/><s n="pl"/><s n="gen"/></r></p></e>
-</pardef>
 
 <!-- Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
 
+<!-- PT: incorrect --
+<pardef n="v/em__prn"> <!-- from the pair is-sv -->
+  <e a="is">       <p><l>em</l>        <r>em<s n="prn"/><s n="itg"/><s n="ut"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>ad</l>        <r>em<s n="prn"/><s n="itg"/><s n="nt"/></r></p></e>
+</pardef>
+-->
 
 <!-- -->
 	
@@ -723,10 +723,6 @@ obj = object form changed to the traditional acc = accusative
   <e a="is">       <p><l></l>          <r><s n="prn"/><s n="qnt"/></r></p></e>
 </pardef>
 
-<pardef n="v/em__prn">
-  <e a="is">       <p><l>em</l>        <r>em<s n="prn"/><s n="itg"/><s n="ut"/></r></p><par n="S__case"/></e>
-  <e>       <p><l>ad</l>        <r>em<s n="prn"/><s n="itg"/><s n="nt"/></r></p></e>
-</pardef>
 
 <pardef n="varifrån__prn">
   <e a="is">       <p><l></l>        <r><s n="prn"/><s n="itg"/></r></p></e>
@@ -4500,12 +4496,16 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vardera">         <i>var</i><par n="var/dera__prn"/></e>
 <e lm="varenda">         <i>varenda</i><par n="varenda__prn"/></e>
 
-<!-- PT: Relativa pronomen (vad, vilken, vars --->
+<!-- PT: Relativa pronomen: vars vad vilken vilket vilka (som: eg. subjunktion) -->
 <e lm="vilken">          <i>vilk</i><par n="vilk/en__prn"/></e> <!-- PT: Might be treated as interogating pronoun. -->
 <e lm="vad">             <i>vad</i><par n="vad__prn"/></e> <!-- PT: Might be treated as interogating pronoun. -->
 <e lm="vars">             <i>vars</i><par n="vad__prn"/></e>  <!-- PT: This is the only 100% sure member of this group. -->
 
-<e lm="som">             <i></i><par n="/som__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
+<e lm="som">             <i></i><par n="/vad__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
+
+<!-- PT: Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
+<e lm="vem" a="is">      <i>v</i><par n="vad__prn"/></e>
+
 
 <!-- Added from the pair is-sv BEGIN -->
 
@@ -4513,7 +4513,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="densamma" a="is"> <i>densamm</i><par n="samm/a__prn"/></e>
 <e lm="samtliga" a="is"> <i>samtliga</i><par n="samtliga__prn"/></e>
 <e lm="bägge" a="is">    <i>bägge</i><par n="båda__prn"/></e>
-<e lm="vem" a="is">      <i>v</i><par n="v/em__prn"/></e>
 <e lm="varifrån" a="is"> <i>varifrån</i><par n="varifrån__prn"/></e>
 
 <!-- Added from the pair is-sv END -->
