@@ -625,6 +625,15 @@ obj = object form changed to the traditional acc = accusative
 
 <!-- Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
 
+<pardef n="hur/dan__prn"> <!-- PT -->
+  <e>       <p><l>dan</l>        <r>dan<s n="prn"/><s n="itg"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e>       <p><l><dant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>dana</l>         <r>dana<s n="prn"/><s n="itg"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
+  <e r="LR">       <p><l>udan</l>        <r>dan<s n="prn"/><s n="itg"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e r="LR">       <p><l><udant</l>        <r>dant<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p><par n="S__case"/></e>
+  <e r="LR">       <p><l>udana</l>         <r>dana<s n="prn"/><s n="itg"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
+</pardef>
+
 <!-- PT: incorrect --
 <pardef n="v/em__prn"> <!-- from the pair is-sv -->
   <e a="is">       <p><l>em</l>        <r>em<s n="prn"/><s n="itg"/><s n="ut"/></r></p><par n="S__case"/></e>
@@ -4504,7 +4513,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="som">             <i></i><par n="/vad__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
 
 <!-- PT: Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
-<e lm="vem" a="is">      <i>v</i><par n="vad__prn"/></e>
+<e lm="vem" a="is">      <i>vem</i><par n="vad__prn"/></e>
+<e lm="hurdan" a="PT">      <i>hurd</i><par n="hur/dan__prn"/></e>
+
 
 
 <!-- Added from the pair is-sv BEGIN -->
