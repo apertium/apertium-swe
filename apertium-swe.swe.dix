@@ -4501,8 +4501,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="varenda">         <i>varenda</i><par n="varenda__prn"/></e>
 
 <!-- PT: Relativa pronomen (vad, vilken, vars --->
-<e lm="vilken">          <i>vilk</i><par n="vilk/en__prn"/></e>
-<e lm="vad">             <i>vad</i><par n="vad__prn"/></e>  <!-- Jacob: ="what". Hope wordclass is OK, Francis? PT: Rather averb.--> <!-- Pronoun -->
+<e lm="vilken">          <i>vilk</i><par n="vilk/en__prn"/></e> <!-- PT: Might be treated as interogating pronoun. -->
+<e lm="vad">             <i>vad</i><par n="vad__prn"/></e> <!-- PT: Might be treated as interogating pronoun. -->
+<e lm="vars">             <i>vars</i><par n="vad__prn"/></e>  <!-- PT: This is the only 100% sure member of this group. -->
 
 <e lm="som">             <i></i><par n="/som__prn"/></e> <!-- PT: Nowdays mostly treated as subjunction only. -->
 
