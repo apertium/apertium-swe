@@ -5924,7 +5924,7 @@ obj = object form changed to the traditional acc = accusative
 
     <!-- Adverbs -->
 
-<e lm="väldigt">             <i>väldigt</i><par n="var__adv"/></e>
+<e lm="väldigt" a="PT">             <i>väldigt</i><par n="väldig/t__adv"/></e>
 <e lm="då">             <i>då</i><par n="var__adv"/></e>
 <e lm="aldrig">          <i>aldrig</i><par n="var__adv"/></e>
 <e lm="utomhus">          <i>utomhus</i><par n="var__adv"/></e>
