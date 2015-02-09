@@ -5953,9 +5953,11 @@ obj = object form changed to the traditional acc = accusative
 <!-- Frågande adverb/interrogating adverbs -->
 
 <e lm="när">             <i>när</i><par n="hur__adv"/></e>
-<e lm="var" a="PT">             <i>var</i><par n="hur__adv"/></e>
+<e lm="var" a="PT">             <i>var</i><par n="hur__adv"/></e> <!-- PT: Presence -->
 <e lm="hur">             <i>hur</i><par n="hur__adv"/></e>
 <e lm="varför">          <i>varför</i><par n="hur__adv"/></e>
+<e lm="vart" a="PT">             <i>vart</i><par n="hur__adv"/></e> <!-- PT: Direction -->
+
 
 <!-- Other adverbs -->
 
