@@ -1251,13 +1251,6 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
-<pardef n="glass__n" c="autoconcord:ut,sgpl"> <!-- PT: No -s in genitive. Common; ~ / ~en / ~ar / ~arna -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="No_S__case"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="No_S__case"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="No_S__case"/></e>
-</pardef>
-
 <pardef n="karl__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1326,6 +1319,12 @@ obj = object form changed to the traditional acc = accusative
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p></e>
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p></e>
   <e a="PT">       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
+</pardef>
+
+<pardef n="jeans__n"> <!-- PT: Common; # / # / ~ / ~en;  -->
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p></e>
   <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -1417,14 +1416,6 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>ter</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>terna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
-</pardef>
-
-<pardef n="glass__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna; invariant in singular indefinite genitive -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
 <pardef n="bal__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna -->
@@ -6466,7 +6457,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="borg">            <i>borg</i><par n="bil__n"/></e>
 <e lm="brunn">           <i>brunn</i><par n="bil__n"/></e>
 <e lm="burk">            <i>burk</i><par n="bil__n"/></e>
-<e lm="buss">            <i>buss</i><par n="bil__n"/></e>
+<e lm="buss" a="PT">            <i>buss</i><par n="adress__n"/></e>
 <e lm="cykelväg">        <i>cykelväg</i><par n="bil__n"/></e>
 <e lm="damm">            <i>damm</i><par n="bil__n"/></e>
 <e lm="deltävling">      <i>deltävling</i><par n="bil__n"/></e>
@@ -6492,7 +6483,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="grabb">           <i>grabb</i><par n="bil__n"/></e>
 <e lm="grav">            <i>grav</i><par n="bil__n"/></e>
 <e lm="grind">           <i>grind</i><par n="bil__n"/></e>
-<e lm="gris">            <i>gris</i><par n="bil__n"/></e>
+<e lm="gris" a="PT">            <i>gris</i><par n="adress__n"/></e>
 <e lm="häck">            <i>häck</i><par n="bil__n"/></e>
 <e lm="hall">            <i>hall</i><par n="bil__n"/></e>
 <e lm="hamn">            <i>hamn</i><par n="bil__n"/></e>
@@ -6506,12 +6497,12 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ishall">          <i>ishall</i><par n="bil__n"/></e>
 <e lm="järnväg">         <i>järnväg</i><par n="bil__n"/></e>
 <e lm="julklapp">        <i>julklapp</i><par n="bil__n"/></e>
-<e lm="kändis">          <i>kändis</i><par n="bil__n"/></e>
+<e lm="kändis" a="PT">          <i>kändis</i><par n="adress__n"/></e>
 <e lm="käpp">            <i>käpp</i><par n="bil__n"/></e>
 <e lm="klubb">           <i>klubb</i><par n="bil__n"/></e>
 <e lm="kniv">            <i>kniv</i><par n="bil__n"/></e>
 <e lm="knut">            <i>knut</i><par n="bil__n"/></e>
-<e lm="kompis">          <i>kompis</i><par n="bil__n"/></e>
+<e lm="kompis">          <i>kompis</i><par n="adress__n"/></e>
 <e lm="korg">            <i>korg</i><par n="bil__n"/></e>
 <e lm="kran">            <i>kran</i><par n="bil__n"/></e>
 <e lm="krog">            <i>krog</i><par n="bil__n"/></e>
@@ -6526,7 +6517,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ledning">         <i>ledning</i><par n="bil__n"/></e>
 <e lm="lind">            <i>lind</i><par n="bil__n"/></e>
 <e lm="mening">          <i>mening</i><par n="bil__n"/></e>
-<e lm="miss">            <i>miss</i><par n="bil__n"/></e>
+<e lm="miss" a=PT">            <i>miss</i><par n="adress__n"/></e>
 <e lm="motorväg">        <i>motorväg</i><par n="bil__n"/></e>
 <e lm="nykomling">       <i>nykomling</i><par n="bil__n"/></e>
 <e lm="omgång">          <i>omgång</i><par n="bil__n"/></e>
@@ -6555,7 +6546,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="skytt">           <i>skytt</i><par n="bil__n"/></e>
 <e lm="släkting">        <i>släkting</i><par n="bil__n"/></e>
 <e lm="slakt">           <i>slakt</i><par n="bil__n"/></e>
-<e lm="slips">           <i>slips</i><par n="bil__n"/></e>
+<e lm="slips">           <i>slips</i><par n="adress__n"/></e>
 <e lm="smäll">           <i>smäll</i><par n="bil__n"/></e>
 <e lm="söndag">          <i>söndag</i><par n="bil__n"/></e>
 <e lm="spaning">         <i>spaning</i><par n="bil__n"/></e>
@@ -6694,7 +6685,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="bokskog">         <i>bokskog</i><par n="bil__n"/></e>
 <e lm="bombning">        <i>bombning</i><par n="bil__n"/></e>
 <e lm="bondgård">        <i>bondgård</i><par n="bil__n"/></e>
-<e lm="bonus">           <i>bonus</i><par n="bil__n"/></e>
+<e lm="bonus">           <i>bonus</i><par n="adress__n"/></e>
 <e lm="borrning">        <i>borrning</i><par n="bil__n"/></e>
 <e lm="borst">           <i>borst</i><par n="bil__n"/></e>
 <e lm="bosättning">      <i>bosättning</i><par n="bil__n"/></e>
@@ -6714,7 +6705,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="bygg">            <i>bygg</i><par n="bil__n"/></e>
 <e lm="camping">         <i>camping</i><par n="bil__n"/></e>
 <e lm="check">           <i>check</i><par n="bil__n"/></e>
-<e lm="cirkus">          <i>cirkus</i><par n="bil__n"/></e>
+<e lm="cirkus">          <i>cirkus</i><par n="adress__n"/></e>
 <e lm="cykling">         <i>cykling</i><par n="bil__n"/></e>
 <e lm="dagstidning">     <i>dagstidning</i><par n="bil__n"/></e>
 <e lm="dalgång">         <i>dalgång</i><par n="bil__n"/></e>
@@ -6798,7 +6789,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="försäljning">     <i>försäljning</i><par n="bil__n"/></e>
 <e lm="försäljningsframgång"><i>försäljningsframgång</i><par n="bil__n"/></e>
 <e lm="försämring">      <i>försämring</i><par n="bil__n"/></e>
-<e lm="fors">            <i>fors</i><par n="bil__n"/></e>
+<e lm="fors" a=PT">            <i>fors</i><par n="adress__n"/></e>
 <e lm="forskarutbildning"><i>forskarutbildning</i><par n="bil__n"/></e>
 <e lm="förskjutning">    <i>förskjutning</i><par n="bil__n"/></e>
 <e lm="försoning">       <i>försoning</i><par n="bil__n"/></e>
@@ -6832,7 +6823,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="gestaltning">     <i>gestaltning</i><par n="bil__n"/></e>
 <e lm="gissning">        <i>gissning</i><par n="bil__n"/></e>
 <e lm="gjutning">        <i>gjutning</i><par n="bil__n"/></e>
-<e lm="glass" a="PT">           <i>glass</i><par n="glass__n"/></e>
+<e lm="glass" a="PT">           <i>glass</i><par n="adress__n"/></e>
 <e lm="golfklubb">       <i>golfklubb</i><par n="bil__n"/></e>
 <e lm="gran">            <i>gran</i><par n="bil__n"/></e>
 <e lm="gränsdragning">   <i>gränsdragning</i><par n="bil__n"/></e>
@@ -6856,13 +6847,13 @@ obj = object form changed to the traditional acc = accusative
 <e lm="gymnastiksal">    <i>gymnastiksal</i><par n="bil__n"/></e>
 <e lm="hållning">        <i>hållning</i><par n="bil__n"/></e>
 <e lm="halsduk">         <i>halsduk</i><par n="bil__n"/></e>
-<e lm="hals">            <i>hals</i><par n="bil__n"/></e>
+<e lm="hals" a="PT">            <i>hals</i><par n="adress__n"/></e>
 <e lm="hälsning">        <i>hälsning</i><par n="bil__n"/></e>
 <e lm="halvlek">         <i>halvlek</i><par n="bil__n"/></e>
 <e lm="handboll">        <i>handboll</i><par n="bil__n"/></e>
 <e lm="handling">        <i>handling</i><par n="bil__n"/></e>
 <e lm="hängning">        <i>hängning</i><par n="bil__n"/></e>
-<e lm="hänvisning">      <i>hänvisning</i><par n="bil__n"/></e>
+<e lm="hänvisning" a="PT">      <i>hänvisning</i><par n="adress__n"/></e>
 <e lm="hårddisk">        <i>hårddisk</i><par n="bil__n"/></e>
 <e lm="hastighetsbegränsning"><i>hastighetsbegränsning</i><par n="bil__n"/></e>
 <e lm="hatt">            <i>hatt</i><par n="bil__n"/></e>
@@ -6872,10 +6863,10 @@ obj = object form changed to the traditional acc = accusative
 <e lm="helgedom">        <i>helgedom</i><par n="bil__n"/></e>
 <e lm="hembygdsförening"><i>hembygdsförening</i><par n="bil__n"/></e>
 <e lm="herrgård">        <i>herrgård</i><par n="bil__n"/></e>
-<e lm="hets">            <i>hets</i><par n="bil__n"/></e>
+<e lm="hets" a=PT">            <i>hets</i><par n="adress__n"/></e>
 <e lm="himlakropp">      <i>himlakropp</i><par n="bil__n"/></e>
 <e lm="hingst">          <i>hingst</i><par n="bil__n"/></e>
-<e lm="hiss">            <i>hiss</i><par n="bil__n"/></e>
+<e lm="hiss" a="PT">            <i>hiss</i><par n="adress__n"/></e>
 <e lm="hitlåt">          <i>hitlåt</i><par n="bil__n"/></e>
 <e lm="hjälm">           <i>hjälm</i><par n="bil__n"/></e>
 <e lm="hjort">           <i>hjort</i><par n="bil__n"/></e>
@@ -9390,7 +9381,7 @@ obj = object form changed to the traditional acc = accusative
 
 <e lm="bal">             <i>bal</i><par n="bal__n"/></e>
 <e lm="bank">            <i>bank</i><par n="bal__n"/></e>
-<e lm="glass">           <i>glass</i><par n="glass__n"/></e>
+<e lm="glass">           <i>glass</i><par n="adress__n"/></e>
 
 <e lm="grad">            <i>grad</i><par n="accent__n"/></e>
 <e lm="gram">            <i>gram</i><par n="gram__n"/></e>
@@ -9801,17 +9792,17 @@ obj = object form changed to the traditional acc = accusative
 
 <e lm="historia">        <i>histori</i><par n="histori/a__n"/></e>
 
-<e lm="cirkus">          <i>cirkus</i><par n="glass__n"/></e>
-<e lm="hals">            <i>hals</i><par n="glass__n"/></e>
-<e lm="hiss">            <i>hiss</i><par n="glass__n"/></e>
-<e lm="is">              <i>is</i><par n="glass__n"/></e>
-<e lm="kompis">          <i>kompis</i><par n="glass__n"/></e>
-<e lm="potatis">         <i>potatis</i><par n="glass__n"/></e>
-<e lm="prins">           <i>prins</i><par n="glass__n"/></e>
-<e lm="spis">            <i>spis</i><par n="glass__n"/></e>
-<e lm="svans">           <i>svans</i><par n="glass__n"/></e>
-<e lm="sax">             <i>sax</i><par n="glass__n"/></e>
-<e lm="lax">             <i>lax</i><par n="glass__n"/></e>
+<e lm="cirkus">          <i>cirkus</i><par n="adress__n"/></e>
+<e lm="hals">            <i>hals</i><par n="adress__n"/></e>
+<e lm="hiss">            <i>hiss</i><par n="adress__n"/></e>
+<e lm="is">              <i>is</i><par n="adress__n"/></e>
+<e lm="kompis a="PT">          <i>kompis</i><par n="adress__n"/></e>
+<e lm="potatis">         <i>potatis</i><par n="adress__n"/></e>
+<e lm="prins">           <i>prins</i><par n="adress__n"/></e>
+<e lm="spis">            <i>spis</i><par n="adress__n"/></e>
+<e lm="svans">           <i>svans</i><par n="adress__n"/></e>
+<e lm="sax">             <i>sax</i><par n="adress__n"/></e>
+<e lm="lax">             <i>lax</i><par n="adress__n"/></e>
 
 <e lm="te">              <i>te</i><par n="bageri__n"/></e>
 <e lm="teater">          <i>teat</i><par n="kalend/er__n"/></e>
@@ -9987,8 +9978,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="restaurering">    <i>restaurering</i><par n="bil__n"/></e>
 <e lm="förskingring">    <i>förskingring</i><par n="bil__n"/></e>
 <e lm="bark">            <i>bark</i><par n="bil__n"/></e>
-<e lm="ås">              <i>ås</i><par n="bil__n"/></e>
-<e lm="nos">             <i>nos</i><par n="bil__n"/></e>
+<e lm="ås" a="PT">              <i>ås</i><par n="adress__n"/></e>
+<e lm="nos" a="PT">             <i>nos</i><par n="adress__n"/></e>
 <e lm="rim">             <i>rim</i><par n="gram__n"/></e>
 <e lm="decennium">       <i>decenni</i><par n="laboratori/um__n"/></e>
 <e lm="flickvän">        <i>flickvän</i><par n="vän__n"/></e>
@@ -10170,7 +10161,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="användarnamn">    <i>användarnamn</i><par n="dragspel__n"/></e>
 <e lm="begrepp">         <i>begrepp</i><par n="dragspel__n"/></e>
 <e lm="postkontor">      <i>postkontor</i><par n="dragspel__n"/></e>
-<e lm="sjukhus">         <i>sjukhus</i><par n="dragspel__n"/></e>
 <e lm="magnetfält">      <i>magnetfält</i><par n="dragspel__n"/></e>
 
 <!-- Added from the pair is-sv BEGIN -->
@@ -10178,7 +10168,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="enhällighet" a="is"><i>enhällighet</i><par n="adress__n"/></e>
 <e lm="samstämmighet" a="is"><i>samstämmighet</i><par n="adress__n"/></e>
 <e lm="prestation" a="is"><i>prestation</i><par n="accent__n"/></e>
-<e lm="konsekvens" a="is"><i>konsekvens</i><par n="accent__n"/></e>
+<e lm="konsekvens" a="PT"><i>konsekvens</i><par n="adress__n"/></e>
 <e lm="påföljd" a="is">  <i>påföljd</i><par n="accent__n"/></e>
 <e lm="avskaffande" a="is"><i>avskaffande</i><par n="äpple__n"/></e>
 <e lm="upphävande" a="is"><i>upphävande</i><par n="äpple__n"/></e>
@@ -10190,7 +10180,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="plenarsammanträde" a="is"><i>plenarsammanträde</i><par n="äpple__n"/></e>
 <e lm="plenum" a="is">   <i>plenum</i><par n="ackord__n"/></e>
 <e lm="generalförsamling" a="is"><i>generalförsamling</i><par n="bil__n"/></e>
-<e lm="aids" a="is">     <i>aids</i><par n="samverkan__n"/></e>
+<e lm="aids" a="PT">     <i>aids</i><par n="adress__n"/></e>
 <e lm="allvar" a="is">   <i>allvar</i><par n="ackord__n"/></e>
 <e lm="parlamentsval" a="is"><i>parlamentsval</i><par n="ackord__n"/></e>
 <e lm="folkrätt" a="is"> <i>folkrätt</i><par n="adress__n"/></e>
@@ -10213,18 +10203,18 @@ obj = object form changed to the traditional acc = accusative
 <e lm="biprodukt" a="is"><i>biprodukt</i><par n="accent__n"/></e>
 <e lm="förlorare" a="is"><i>förlorar</i><par n="apotekar/e__n"/></e>
 <e lm="öst" a="is">      <i>öst</i><par n="mat__n"/></e>
-<e lm="resurs" a="is">   <i>resurs</i><par n="accent__n"/></e>
+<e lm="resurs" a="PT">   <i>resurs</i><par n="adress__n"/></e>
 <e lm="självklarhet" a="is"><i>självklarhet</i><par n="adress__n"/></e>
 <e lm="välstånd" a="is"> <i>välstånd</i><par n="ackord__n"/></e>
 <e lm="kärnpunkt" a="is"><i>kärnpunkt</i><par n="bil__n"/></e>
-<e lm="substans" a="is"> <i>substans</i><par n="accent__n"/></e>
+<e lm="substans" a="PT"> <i>substans</i><par n="adress__n"/></e>
 <e lm="beundran" a="is"> <i>beundran</i><par n="samverkan__n"/></e>
 <e lm="tillträde" a="is"><i>tillträde</i><par n="äpple__n"/></e>
 <e lm="tillgänglighet" a="is"><i>tillgänglighet</i><par n="adress__n"/></e>
 <e lm="handlingsplan" a="is"><i>handlingsplan</i><par n="accent__n"/></e>
 <e lm="differentiering" a="is"><i>differentiering</i><par n="bil__n"/></e>
 <e lm="sjukvård" a="is"> <i>sjukvård</i><par n="bil__n"/></e>
-<e lm="anslutningsprocess" a="is"><i>anslutningsprocess</i><par n="accent__n"/></e>
+<e lm="anslutningsprocess" a="PT"><i>anslutningsprocess</i><par n="adress__n"/></e>
 <e lm="anslutningsland" a="is"><i>anslutningsl</i><par n="l/and__n"/></e>
 <e lm="medlemsland" a="is"><i>medlemsl</i><par n="l/and__n"/></e>
 <e lm="anslutningsfördrag" a="is"><i>anslutningsfördrag</i><par n="ackord__n"/></e>
@@ -10233,7 +10223,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="åtskillnad" a="is"><i>åtskillnad</i><par n="accent__n"/></e>
 <e lm="medarbetare" a="is"><i>medarbetar</i><par n="apotekar/e__n"/></e>
 <e lm="eftertanke" a="is"><i>eftertank</i><par n="apotekar/e__n"/></e>
-<e lm="allians" a="is">  <i>allians</i><par n="accent__n"/></e>
+<e lm="allians" a="PT">  <i>allians</i><par n="adress__n"/></e>
 <e lm="us-dollar" a="PT"><i>us-dollar</i><par n="dollar__n"/></e>
 <e lm="bekämpning" a="is"><i>bekämpning</i><par n="bil__n"/></e>
 <e lm="barnomsorg" a="is"><i>barnomsorg</i><par n="accent__n"/></e>
@@ -10256,7 +10246,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="brottmål" a="is"> <i>brottmål</i><par n="ackord__n"/></e>
 <e lm="uppbyggnad" a="is"><i>uppbyggnad</i><par n="accent__n"/></e>
 <e lm="våg" a="is">      <i>våg</i><par n="bil__n"/></e>
-<e lm="tillsats" a="is"> <i>tillsats</i><par n="accent__n"/></e>
+<e lm="tillsats" a="PT"> <i>tillsats</i><par n="adress__n"/></e>
 <e lm="bilindustri" a="is"><i>bilindustri</i><par n="geometri__n"/></e>
 <e lm="väntan" a="is">   <i>väntan</i><par n="samverkan__n"/></e>
 <e lm="avvaktan" a="is"> <i>avvaktan</i><par n="samverkan__n"/></e>
@@ -10373,7 +10363,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="budgetunderskott" a="is"><i>budgetunderskott</i><par n="ackord__n"/></e>
 <e lm="budgetmedel" a="is"><i>budgetmed</i><par n="med/el__n"/></e>
 <e lm="finans" a="is">   <i>finans</i><par n="adress__n"/></e>
-<e lm="finanskris" a="is"><i>finanskris</i><par n="accent__n"/></e>
+<e lm="finanskris" a="PT"><i>finanskris</i><par n="adress__n"/></e>
 <e lm="finansmarknad" a="is"><i>finansmarknad</i><par n="accent__n"/></e>
 <e lm="finansinstitut" a="is"><i>finansinstitut</i><par n="ackord__n"/></e>
 <e lm="finansiering" a="is"><i>finansiering</i><par n="bil__n"/></e>
@@ -10397,7 +10387,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="transportsystem" a="is"><i>transportsystem</i><par n="ackord__n"/></e>
 <e lm="migration" a="is"><i>migration</i><par n="accent__n"/></e>
 <e lm="bukt" a="is">     <i>bukt</i><par n="accent__n"/></e>
-<e lm="flyktingstatus" a="is"><i>flyktingstatus</i><par n="mat__n"/></e>
+<e lm="flyktingstatus" a="PT"><i>flyktingstatus</i><par n="adress__n"/></e>
 <e lm="fördom" a="is">   <i>fördom</i><par n="bil__n"/></e>
 <e lm="prioritering" a="is"><i>prioritering</i><par n="bil__n"/></e>
 <e lm="företräde" a="is"><i>företräde</i><par n="blod__n"/></e>
@@ -10418,14 +10408,14 @@ obj = object form changed to the traditional acc = accusative
 <e lm="förverkligande" a="is"><i>förverkligande</i><par n="äpple__n"/></e>
 <e lm="presidium" a="is"><i>presidi</i><par n="laboratori/um__n"/></e>
 <e lm="verkställande direktör" a="is"><i>verkställande<b/>direktör</i><par n="accent__n"/></e>
-<e lm="insats" a="is">   <i>insats</i><par n="accent__n"/></e>
+<e lm="insats" a="PT">   <i>insats</i><par n="adress__n"/></e>
 <e lm="tillverkare" a="is"><i>tillverkar</i><par n="apotekar/e__n"/></e>
 <e lm="tillverkning" a="is"><i>tillverkning</i><par n="bil__n"/></e>
 <e lm="utlämning" a="is"><i>utlämning</i><par n="bil__n"/></e>
 <e lm="representation" a="is"><i>representation</i><par n="accent__n"/></e>
 <e lm="frestelse" a="is"><i>frestelse</i><par n="aktie__n"/></e>
 <e lm="tidsfrist" a="is"><i>tidsfrist</i><par n="accent__n"/></e>
-<e lm="fredsprocess" a="is"><i>fredsprocess</i><par n="accent__n"/></e>
+<e lm="fredsprocess" a="PT"><i>fredsprocess</i><par n="adress__n"/></e>
 <e lm="företagande" a="is"><i>företagande</i><par n="syre__n"/></e>
 <e lm="egenföretagare" a="is"><i>egenföretagar</i><par n="apotekar/e__n"/></e>
 <e lm="entreprenör" a="is"><i>entreprenör</i><par n="accent__n"/></e>
@@ -10459,9 +10449,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="foder" a="is">    <i>fod</i><par n="pill/er__n"/></e>
 <e lm="funktionshinder" a="is"><i>funktionshind</i><par n="pill/er__n"/></e>
 <e lm="önskning" a="is"> <i>önskning</i><par n="bil__n"/></e>
-<e lm="databas" a="is">  <i>databas</i><par n="accent__n"/></e>
+<e lm="databas" a="PT">  <i>databas</i><par n="adress__n"/></e>
 <e lm="ömsesidighet" a="is"><i>ömsesidighet</i><par n="adress__n"/></e>
-<e lm="jeans" a="is">    <i>jeans</i><par n="mat__n"/></e>
+<e lm="jeans" a="PT">    <i>jeans</i><par n="jeans__n"/></e>
 <e lm="takt" a="is">     <i>takt</i><par n="accent__n"/></e>
 <e lm="georgiska" a="is"><i>georgisk</i><par n="afghansk/a__n"/></e>
 <e lm="massförstörelsevapen" a="is"><i>massförstörelsevap</i><par n="teck/en__n"/></e>
@@ -10476,7 +10466,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="klausul" a="is">  <i>klausul</i><par n="ackord__n"/></e>
 <e lm="utbetalning" a="is"><i>utbetalning</i><par n="bil__n"/></e>
 <e lm="moratorium" a="is"><i>moratori</i><par n="laboratori/um__n"/></e>
-<e lm="basis" a="is">    <i>basis</i><par n="mat__n"/></e>
+<e lm="basis" a="PT">    <i>basis</i><par n="adress__n"/></e>
 <e lm="infrastruktur" a="is"><i>infrastruktur</i><par n="accent__n"/></e>
 <e lm="bas" a="is">      <i>bas</i><par n="accent__n"/></e>
 <e lm="grundvatten" a="is"><i>grundvatt</i><par n="teck/en__n"/></e>
@@ -11756,11 +11746,11 @@ obj = object form changed to the traditional acc = accusative
 <e lm="adjutant" a="PT">      <i>adjutant</i><par n="accent__n"/></e>
 <e lm="accept" a="PT">      <i>accept</i><par n="accent__n"/></e>
 <e lm="åra" a="PT">      <i>år</i><par n="frug/a__n"/></e>
-<e lm="boss" a="PT">            <i>boss</i><par n="glass__n"/></e>
+<e lm="boss" a="PT">            <i>boss</i><par n="adress__n"/></e>
 <e lm="boss" c="domain:lantliv" a="PT">            <i>boss</i><par n="badhus__n"/></e>
 <e lm="bostadsrättsförening" a="PT"><i>bostadsrättsförening</i><par n="bil__n"/></e>
-<e lm="kyss" a="PT">            <i>kyss</i><par n="glass__n"/></e>
-<e lm="skjuts" a="PT">          <i>skjuts</i><par n="glass__n"/></e>
+<e lm="kyss" a="PT">            <i>kyss</i><par n="adress__n"/></e>
+<e lm="skjuts" a="PT">          <i>skjuts</i><par n="adress__n"/></e>
 <e lm="task" c="style:vulg" a="PT">            <i>task</i><par n="bil__n"/></e>
 <e lm="veranda" a="PT">    <i>verand</i><par n="frug/a__n"/></e>
 <e lm="våldtäkt" a="PT">        <i>våldtäkt</i><par n="ed__n"/></e>
@@ -11772,7 +11762,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="harts" a="PT">           <i>harts</i><par n="badhus__n"/></e>
 <e lm="preposition" a="PT">      <i>preposition</i><par n="accent__n"/></e>
 <e lm="separation" a="PT">      <i>separation</i><par n="accent__n"/></e>
-<e lm="broms" c="äv. insekt" a="PT">           <i>broms</i><par n="glass__n"/></e>
+<e lm="broms" c="äv. insekt" a="PT">           <i>broms</i><par n="adress__n"/></e>
 <e lm="hy" a="PT">              <i>hy</i><par n="hy__n"/></e>
 <e lm="rede" c="domain:djur" a="PT">            <i>rede</i><par n="äpple__n"/></e>
 <e lm="sångtext" a="PT">      <i>sångtext</i><par n="accent__n"/></e>
@@ -11788,7 +11778,7 @@ obj = object form changed to the traditional acc = accusative
     <e lm="asplöv" a="SVINF"><i>asplöv</i><par n="ackord__n"/></e>
     <e lm="bakdörr" a="SVINF"><i>bakdörr</i><par n="bil__n"/></e>
     <e lm="barnvagn" a="SVINF"><i>barnvagn</i><par n="bil__n"/></e>
-    <e lm="blus" a="SVINF"><i>blus</i><par n="glass__n"/></e>
+    <e lm="blus" a="SVINF"><i>blus</i><par n="adress__n"/></e>
     <e lm="blåställ" a="SVINF"><i>blåställ</i><par n="ackord__n"/></e>
     <e lm="brandvägg" a="SVINF"><i>brandvägg</i><par n="bil__n"/></e>
     <e lm="brasa" a="SVINF"><i>bras</i><par n="frug/a__n"/></e>
