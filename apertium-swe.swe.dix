@@ -1426,6 +1426,11 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
+<pardef n="konsensus__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / # / #; uncountable -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+</pardef>
+
 <pardef n="ed__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -10729,7 +10734,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="syfte" a="is">    <i>syfte</i><par n="äpple__n"/></e>
 <e lm="massa" a="is">    <i>mass</i><par n="frug/a__n"/></e>
 <e lm="livsmedel" a="is"><i>livsmed</i><par n="med/el__n"/></e>
-<e lm="livsmedelspris" a="is"><i>livsmedelspris</i><par n="bageri__n"/></e>
+<e lm="livsmedelspris" a="PT"><i>livsmedelspris</i><par n="pris__n"/></e>
 <e lm="huvudsak" a="is"> <i>huvudsak</i><par n="accent__n"/></e>
 <e lm="flertal" a="is">  <i>flertal</i><par n="ackord__n"/></e>
 <e lm="merpart" a="is">  <i>merpart</i><par n="adress__n"/></e>
@@ -10811,7 +10816,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="gissel" a="is">   <i>giss</i><par n="med/el__n"/></e>
 <e lm="bekämpningsmedel" a="is"><i>bekämpningsmed</i><par n="med/el__n"/></e>
 <e lm="prov" a="is">     <i>prov</i><par n="ackord__n"/></e>
-<e lm="examensbevis" a="is"><i>examensbevis</i><par n="ackord__n"/></e>
+<e lm="examensbevis" a="PT"><i>examensbevis</i><par n="badhus__n"/></e>
 <e lm="procent" a="PT">         <i>procent</i><par n="procent__n"/></e>
 <e lm="posttjänst" a="is"><i>posttjänst</i><par n="accent__n"/></e>
 <e lm="reservation" a="is"><i>reservation</i><par n="accent__n"/></e>
@@ -10831,27 +10836,27 @@ obj = object form changed to the traditional acc = accusative
 <e lm="oegentlighet" a="is"><i>oegentlighet</i><par n="adress__n"/></e>
 <e lm="ansvarighet" a="is"><i>ansvarighet</i><par n="adress__n"/></e>
 <e lm="spårbarhet" a="is"><i>spårbarhet</i><par n="adress__n"/></e>
-<e lm="praxis" a="is">   <i>praxis</i><par n="mat__n"/></e>
+<e lm="praxis" a="PT">   <i>praxis</i><par n="is__n"/></e>
 <e lm="erfarenhet" a="is"><i>erfarenhet</i><par n="adress__n"/></e>
-<e lm="kaos" a="is">     <i>kaos</i><par n="blod__n"/></e>
+<e lm="kaos" a="PT">     <i>kaos</i><par n="badhus__n"/></e>
 <e lm="förvirring" a="is"><i>förvirring</i><par n="bil__n"/></e>
 <e lm="rådgivare" a="is"><i>rådgivar</i><par n="apotekar/e__n"/></e>
 <e lm="rådgivning" a="is"><i>rådgivning</i><par n="bil__n"/></e>
 <e lm="ministerråd" a="is"><i>ministerråd</i><par n="ackord__n"/></e>
 <e lm="bemanningsföretag" a="is"><i>bemanningsföretag</i><par n="ackord__n"/></e>
-<e lm="konferens" a="is"><i>konferens</i><par n="accent__n"/></e>
+<e lm="konferens" a="PT"><i>konferens</i><par n="adress__n"/></e>
 <e lm="medborgarskap" a="is"><i>medborgarskap</i><par n="ackord__n"/></e>
 <e lm="diplomati" a="is"><i>diplomati</i><par n="geometri__n"/></e>
 <e lm="romfördrag" a="is"><i>romfördrag</i><par n="ackord__n"/></e>
 <e lm="logik" a="is">    <i>logik</i><par n="mat__n"/></e>
 <e lm="kapacitet" a="is"><i>kapacitet</i><par n="accent__n"/></e>
-<e lm="ryss" a="is">     <i>ryss</i><par n="bil__n"/></e>
+<e lm="ryss" a="PT">     <i>ryss</i><par n="is__n"/></e>
 <e lm="åklagarmyndighet" a="is"><i>åklagarmyndighet</i><par n="adress__n"/></e>
 <e lm="åklagare" a="is"> <i>åklagar</i><par n="apotekar/e__n"/></e>
 <e lm="jämförelse" a="is"><i>jämförelse</i><par n="aktie__n"/></e>
 <e lm="federation" a="is"><i>federation</i><par n="accent__n"/></e>
 <e lm="federalist" a="is"><i>federalist</i><par n="accent__n"/></e>
-<e lm="samexistens" a="is"><i>samexistens</i><par n="mat__n"/></e>
+<e lm="samexistens" a="PT"><i>samexistens</i><par n="badhus__n"/></e>
 <e lm="integrering" a="is"><i>integrering</i><par n="bil__n"/></e>
 <e lm="kontinuitet" a="is"><i>kontinuitet</i><par n="accent__n"/></e>
 <e lm="gemenskap" a="is"><i>gemenskap</i><par n="ackord__n"/></e>
@@ -10866,8 +10871,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="konvergens" a="is"><i>konvergens</i><par n="adress__n"/></e>
 <e lm="förhandlingsbord" a="is"><i>förhandlingsbord</i><par n="ackord__n"/></e>
 <e lm="förhandlare" a="is"><i>förhandlar</i><par n="apotekar/e__n"/></e>
-<e lm="förhandlingsprocess" a="is"><i>förhandlingsprocess</i><par n="accent__n"/></e>
-<e lm="integrationsprocess" a="is"><i>integrationsprocess</i><par n="accent__n"/></e>
+<e lm="förhandlingsprocess" a="is"><i>förhandlingsprocess</i><par n="adress__n"/></e>
+<e lm="integrationsprocess" a="is"><i>integrationsprocess</i><par n="adress__n"/></e>
 <e lm="enlighet" a="is"> <i>enlighet</i><par n="mat__n"/></e>
 <e lm="överensstämmelse" a="is"><i>överensstämmelse</i><par n="aktie__n"/></e>
 <e lm="harmonisering" a="is"><i>harmonisering</i><par n="bil__n"/></e>
@@ -10879,7 +10884,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="partnerskapsavtal" a="is"><i>partnerskapsavtal</i><par n="ackord__n"/></e>
 <e lm="samarbetsavtal" a="is"><i>samarbetsavtal</i><par n="ackord__n"/></e>
 <e lm="enighet" a="is">  <i>enighet</i><par n="mat__n"/></e>
-<e lm="konsensus" a="is"><i>konsensus</i><par n="mat__n"/></e>
+<e lm="konsensus" a="PT"><i>konsensus</i><par n="konsensus__n"/></e>
 <e lm="samsyn" a="is">   <i>samsyn</i><par n="mat__n"/></e>
 <e lm="solidaritet" a="is"><i>solidaritet</i><par n="mat__n"/></e>
 <e lm="koalition" a="is"><i>koalition</i><par n="accent__n"/></e>
