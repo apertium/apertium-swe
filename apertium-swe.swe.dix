@@ -15013,11 +15013,11 @@ obj = object form changed to the traditional acc = accusative
 
   <!-- PT: Danish old nouns now translated END -->
 
-
-<!--
-    <e lm="störta"><i>störta</i><par n="adressera__vblex"/></e>
+<e lm="störta"><i>störta</i><par n="adressera__vblex"/></e>
+<e lm="täta"><i>täta</i><par n="adressera__vblex"/></e>
+	
+<!-- PT: Adjective: hårdför 
     <e lm="hårdföra"><i>hårdför</i><par n="hör/a__vblex"/></e>
-    <e lm="täta"><i>täta</i><par n="adressera__vblex"/></e>
 -->
 
 
