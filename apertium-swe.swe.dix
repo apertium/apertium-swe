@@ -10779,7 +10779,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="nämnare" a="is">  <i>nämnar</i><par n="apotekar/e__n"/></e>
 <e lm="kommitté" a="is"> <i>kommitté</i><par n="aktie__n"/></e>
 <e lm="kommittéförfarande" a="is"><i>kommittéförfarande</i><par n="äpple__n"/></e>
-<e lm="studerande" a="is"><i>studerande</i><par n="äpple__n"/></e>
+
+<e lm="studerande" a="is"><i>studerande</i><par n="studerande__n"/></e>
+
 <e lm="konsumtion" a="is"><i>konsumtion</i><par n="accent__n"/></e>
 <e lm="nöd" a="is">      <i>nöd</i><par n="ackord__n"/></e>
 <e lm="nödsituation" a="is"><i>nödsituation</i><par n="accent__n"/></e>
@@ -11625,7 +11627,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="strumpa" a="is">  <i>strump</i><par n="frug/a__n"/></e>
 <e lm="stråle" a="is">   <i>strål</i><par n="abborr/e__n"/></e>
 <e lm="ström" a="is">    <i>ström</i><par n="stam__n"/></e>
-<e lm="studerande" a="is"><i>studerande</i><par n="studerande__n"/></e>
+
 <e lm="stäv" a="is">     <i>stäv</i><par n="ed__n"/></e>
 <e lm="stång" a="is">    <i>stång</i><par n="bil__n"/></e>
 <e lm="sula" a="is">     <i>sul</i><par n="frug/a__n"/></e>
