@@ -684,13 +684,12 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>a</l>         <r><s n="prn"/><s n="def"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
 </pardef>
 
-<!-- PT: Oegentlig för svenska; ej använd
+<!-- PT: Oegentlig för svenska; This is a bit strange for Swedish. Should we really us it? -->
 <pardef n="all__predet">
   <e>       <p><l></l>          <r><s n="predet"/><s n="ut"/><s n="sg"/></r></p></e>
   <e>       <p><l>t</l>         <r><s n="predet"/><s n="nt"/><s n="sg"/></r></p></e>
   <e>       <p><l>a</l>         <r><s n="predet"/><s n="un"/><s n="pl"/></r></p></e>
 </pardef>
--->
  
 <pardef n="var/dera__prn">
   <e>       <p><l>dera</l>      <r>dera<s n="prn"/><s n="def"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
@@ -4522,7 +4521,7 @@ obj = object form changed to the traditional acc = accusative
 <!-- slut på genitiv av personliga pronomen jfr 3:e person han/hon! -->
 
 <e lm="all">             <i>all</i><par n="all__prn"/></e>
-<!-- PT <e lm="all">             <i>all</i><par n="all__predet"/></e> -->
+<e lm="all">             <i>all</i><par n="all__predet"/></e> <!-- PT: a bit strange for Swedish. -->
 <e lm="allting">         <i>allting</i><par n="allting__prn"/></e>
 <e lm="annan">           <i>an</i><par n="an/nan__prn"/></e>
 <e lm="denna">           <i>d</i><par n="d/enna__prn"/></e>
