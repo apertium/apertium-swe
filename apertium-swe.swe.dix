@@ -6784,7 +6784,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="bygg">            <i>bygg</i><par n="bil__n"/></e>
 <e lm="camping">         <i>camping</i><par n="bil__n"/></e>
 <e lm="check">           <i>check</i><par n="bil__n"/></e>
-<e lm="cirkus">          <i>cirkus</i><par n="is__n"/></e>
+
 <e lm="cykling">         <i>cykling</i><par n="bil__n"/></e>
 <e lm="dagstidning">     <i>dagstidning</i><par n="bil__n"/></e>
 <e lm="dalgång">         <i>dalgång</i><par n="bil__n"/></e>
