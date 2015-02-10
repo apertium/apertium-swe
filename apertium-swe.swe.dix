@@ -9459,7 +9459,6 @@ obj = object form changed to the traditional acc = accusative
 
 <e lm="bal">             <i>bal</i><par n="bal__n"/></e>
 <e lm="bank">            <i>bank</i><par n="bal__n"/></e>
-<e lm="glass">           <i>glass</i><par n="adress__n"/></e>
 
 <e lm="grad">            <i>grad</i><par n="accent__n"/></e>
 <e lm="gram">            <i>gram</i><par n="gram__n"/></e>
