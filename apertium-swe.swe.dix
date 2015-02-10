@@ -1260,7 +1260,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="is__n" c="autoconcord:ut,sgpl"> <!-- PT: Common; ~ / ~en / ~ar / ~arna  genitive without s in singualar, indefinite-->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e> 
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1339,15 +1339,15 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="chips__n"> <!-- PT: Neuter; # / # / ~ / ~en;  -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p><par n="No_S__case"/></e>
   <e a="PT">       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
 <pardef n="jeans__n"> <!-- PT: Common; # / # / ~ / ~en;  -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p><par n="No_S__case"/></e>
   <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -1390,8 +1390,8 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="godis__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / # / #; no plural, indefinite genitive in ~ø -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -1418,8 +1418,8 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="blues__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / # / #; uncountable, genitive in ~ø -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -1471,7 +1471,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="ans__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna; invariant in singular indefinite genitive -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
   <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
@@ -1547,8 +1547,8 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="ros__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~or / ~orna; singular indefinite invariant -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>or</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>orna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1578,7 +1578,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="bris__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er | (~ar) / ~erna -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e r="LR"><p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
@@ -1598,8 +1598,8 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="mars__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~månaden / ~månader / ~månaderna; invariant in singular indefinite genitive -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
+  <!-- PT: <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e> -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>månaden</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>månader</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>månaderna</l> <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1899,8 +1899,11 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="ras__n" c="autoconcord:ut,sgpl">
+<!-- PT
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
+-->
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1954,8 +1957,11 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="sex__n" c="autoconcord:nt,sgpl">
+<!-- PT
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
+-->
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
