@@ -626,6 +626,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>	
 
 <!-- Frågande pronomen: vad, vem, vilken, vilket, vilka, hurdan/t, hurudan/t:old, vilkendera, vilketdera, hur många-->
+<!--  PT: "vad" treated as interrogativ adverb (not pronoun), to accord with da and no. -->
 
 <pardef n="hur/dan__prn"> <!-- PT -->
   <e>       <p><l>dan</l>        <r>dan<s n="prn"/><s n="itg"/><s n="ut"/><s n="sg"/></r></p><par n="S__case"/></e>
@@ -5975,6 +5976,9 @@ obj = object form changed to the traditional acc = accusative
 
     <!-- Adverbs -->
 <!-- Frågande adverb/interrogating adverbs -->
+<!--  PT: "vad" treated as interrogativ adverb (not pronoun), to accord with da and no. -->
+
+<e lm="vad">             <i>vad</i><par n="hur__adv"/></e>
 
 <e lm="när">             <i>när</i><par n="hur__adv"/></e>
 <e lm="var" a="PT">             <i>var</i><par n="hur__adv"/></e> <!-- PT: Presence -->
