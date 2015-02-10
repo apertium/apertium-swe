@@ -11823,7 +11823,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="boss" a="PT">            <i>boss</i><par n="adress__n"/></e>
 <e lm="boss" c="domain:lantliv" a="PT">            <i>boss</i><par n="badhus__n"/></e>
 <e lm="bostadsrättsförening" a="PT"><i>bostadsrättsförening</i><par n="bil__n"/></e>
-<e lm="kyss" a="PT">            <i>kyss</i><par n="adress__n"/></e>
+
+<e lm="kyss" a="SVINF"><i>kyss</i><par n="bil__n"/></e>
+
 <e lm="skjuts" a="PT">          <i>skjuts</i><par n="adress__n"/></e>
 <e lm="task" c="style:vulg" a="PT">            <i>task</i><par n="bil__n"/></e>
 <e lm="veranda" a="PT">    <i>verand</i><par n="frug/a__n"/></e>
@@ -11880,7 +11882,7 @@ obj = object form changed to the traditional acc = accusative
     <e lm="kram" a="SVINF"><i>kram</i><par n="bil__n"/></e>
     <e lm="kryddmått" a="SVINF"><i>kryddmått</i><par n="ackord__n"/></e>
     <e lm="kryp" a="SVINF"><i>kryp</i><par n="ackord__n"/></e>
-    <e lm="kyss" a="SVINF"><i>kyss</i><par n="bil__n"/></e>
+
     <e lm="kätting" a="SVINF"><i>kätting</i><par n="bil__n"/></e>
     <e lm="lagerblad" a="SVINF"><i>lagerblad</i><par n="ackord__n"/></e>
     <e lm="lakan" a="SVINF"><i>lakan</i><par n="ackord__n"/></e>
