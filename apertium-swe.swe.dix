@@ -253,6 +253,8 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="numeros">
   <e>       <re>[0-9]+([.,][0-9]+)?(%)?</re><p><l></l><r><s n="num"/></r></p></e>
+  
+  
 
   <e a="PT">       <re>[0-9]+([.,][0-9]+)?</re><p><l><b/>DKK</l><r><b/>DKK<s n="num"/></r></p></e>
   <e a="PT">       <re>[0-9]+([.,][0-9]+)?</re><p><l><b/>EUR</l><r><b/>EUR<s n="num"/></r></p></e>
@@ -3743,7 +3745,7 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="adv"/><s n="itg"/></r></p></e>
 </pardef>
 
-<!-- PT
+<!-- PT: use the paradigm above instead
 <pardef n="var__adv">
   <e>       <p><l></l>          <r><s n="adv"/></r></p></e>
 </pardef>
