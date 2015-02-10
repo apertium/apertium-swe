@@ -253,7 +253,7 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="numeros">
   <e>       <re>[0-9]+([.,][0-9]+)?(%)?</re><p><l></l><r><s n="num"/></r></p></e>
-  
+  <e a="is">       <re>[0-9]+([.,][0-9]+)?</re><i>-</i><re>[0-9]+([.,][0-9]+)?%?</re><p><l></l><r><s n="num"/></r></p></e>
   
 
   <e a="PT">       <re>[0-9]+([.,][0-9]+)?</re><p><l><b/>DKK</l><r><b/>DKK<s n="num"/></r></p></e>
@@ -6413,6 +6413,19 @@ obj = object form changed to the traditional acc = accusative
 <e lm="rätt">            <i>rätt</i><par n="rätt__adv"/></e>
 
     <!-- Nouns -->
+	
+<e lm="januari"><i>januari</i><par n="april__n"/></e>
+<e lm="februari"><i>februari</i><par n="april__n"/></e>
+<e lm="mars"><i>mars</i><par n="mars__n"/></e>
+<e lm="april"><i>april</i><par n="april__n"/></e>
+<e lm="maj"><i>maj</i><par n="april__n"/></e>
+<e lm="juni"><i>juni</i><par n="april__n"/></e>
+<e lm="juli"><i>juli</i><par n="april__n"/></e>
+<e lm="augusti"><i>augusti</i><par n="april__n"/></e>
+<e lm="september"><i>september</i><par n="april__n"/></e>
+<e lm="oktober"><i>oktober</i><par n="april__n"/></e>
+<e lm="november"><i>november</i><par n="april__n"/></e>
+<e lm="december"><i>december</i><par n="april__n"/></e>
 
 <e lm="polis">           <i>polis</i><par n="adress__n"/></e>
 <e lm="frekvens">        <i>frekvens</i><par n="adress__n"/></e>
@@ -8810,7 +8823,6 @@ obj = object form changed to the traditional acc = accusative
 
 
 <e lm="apparat">         <i>apparat</i><par n="accent__n"/></e>
-<e lm="april">           <i>april</i><par n="april__n"/></e>
 <e lm="arab">            <i>arab</i><par n="accent__n"/></e>
 <e lm="arbetare">        <i>arbetar</i><par n="apotekar/e__n"/></e>
 <e lm="artilleri">       <i>artilleri</i><par n="blod__n"/></e>
@@ -8820,7 +8832,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="atlas">           <i>atlas</i><par n="adress__n"/></e>
 <e lm="atom">            <i>atom</i><par n="accent__n"/></e>
 <e lm="attack">          <i>attack</i><par n="accent__n"/></e>
-<e lm="augusti">         <i>augusti</i><par n="april__n"/></e>
 <e lm="auktion">         <i>auktion</i><par n="accent__n"/></e>
 <e lm="automat">         <i>automat</i><par n="accent__n"/></e>
 <e lm="baby">            <i>baby</i><par n="bro__n"/></e>
@@ -9222,7 +9233,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="cylinder">        <i>cylind</i><par n="kalend/er__n"/></e>
 <e lm="damm">            <i>damm</i><par n="blod__n"/></e>
 <e lm="dammsugare">      <i>dammsugar</i><par n="apotekar/e__n"/></e>
-<e lm="december">        <i>december</i><par n="april__n"/></e>
 <e lm="detalj">          <i>detalj</i><par n="accent__n"/></e>
 <e lm="detektiv">        <i>detektiv</i><par n="accent__n"/></e>
 <e lm="diagnos">         <i>diagnos</i><par n="adress__n"/></e>
@@ -9502,12 +9512,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="italienare">      <i>italienar</i><par n="apotekar/e__n"/></e>
 <e lm="jakt">            <i>jakt</i><par n="accent__n"/></e>
 <e lm="biljakt">         <i>biljakt</i><par n="accent__n"/></e>
-<e lm="januari">         <i>januari</i><par n="april__n"/></e>
-<e lm="februari">        <i>februari</i><par n="april__n"/></e>
 <e lm="jordgubbe">       <i>jordgubb</i><par n="abborr/e__n"/></e>
 <e lm="journal">         <i>journal</i><par n="accent__n"/></e>
-<e lm="juli">            <i>juli</i><par n="april__n"/></e>
-<e lm="juni">            <i>juni</i><par n="april__n"/></e>
 
 <e lm="väte">            <i>väte</i><par n="syre__n"/></e>
 <e lm="fiske">           <i>fiske</i><par n="syre__n"/></e>
@@ -9618,12 +9624,10 @@ obj = object form changed to the traditional acc = accusative
 <e lm="lycka">           <i>lycka</i><par n="adel__n"/></e>
 <e lm="mage">            <i>mag</i><par n="abborr/e__n"/></e>
 <e lm="magnet">          <i>magnet</i><par n="accent__n"/></e>
-<e lm="maj">             <i>maj</i><par n="april__n"/></e>
 <e lm="makrill">         <i>makrill</i><par n="bil__n"/></e>
 <e lm="mark">            <i>mark</i><par n="accent__n"/></e>
 <e lm="marmelad">        <i>marmelad</i><par n="accent__n"/></e>
 <e lm="marmor">          <i>marmor</i><par n="adel__n"/></e>
-<e lm="mars">            <i>mars</i><par n="mars__n"/></e>
 <e lm="martyr">          <i>martyr</i><par n="accent__n"/></e>
 <e lm="mask">            <i>mask</i><par n="ed__n"/></e>
 <e lm="maskin">          <i>maskin</i><par n="accent__n"/></e>
@@ -9680,10 +9684,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="natur">           <i>natur</i><par n="accent__n"/></e>
 <e lm="nerv">            <i>nerv</i><par n="accent__n"/></e>
 <e lm="novell">          <i>novell</i><par n="accent__n"/></e>
-<e lm="november">        <i>november</i><par n="april__n"/></e>
 <e lm="nummer">          <i>num</i><par n="num/mer__n"/></e>
 <e lm="oenighet">        <i>oenighet</i><par n="koppar__n"/></e>
-<e lm="oktober">         <i>oktober</i><par n="april__n"/></e>
 <e lm="operation">       <i>operation</i><par n="accent__n"/></e>
 <e lm="organisation">    <i>organisation</i><par n="accent__n"/></e>
 <e lm="orkester">        <i>orkest</i><par n="kalend/er__n"/></e>
@@ -9770,7 +9772,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="sekund">          <i>sekund</i><par n="accent__n"/></e>
 <e lm="semester">        <i>semest</i><par n="kalend/er__n"/></e>
 <e lm="senap">           <i>senap</i><par n="koppar__n"/></e>
-<e lm="september">       <i>september</i><par n="april__n"/></e>
 <e lm="serie">           <i>serie</i><par n="aktie__n"/></e>
 <e lm="sex">             <i>sex</i><par n="sex__n"/></e>
 <e lm="signal">          <i>signal</i><par n="accent__n"/></e>
