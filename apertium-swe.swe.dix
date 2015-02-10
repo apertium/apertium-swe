@@ -9439,7 +9439,9 @@ obj = object form changed to the traditional acc = accusative
     <e lm="vända"><i>vänd</i><par n="frug/a__n"/></e>
 -->
 <e lm="vecka">           <i>veck</i><par n="frug/a__n"/></e>
+
 <e lm="vila">            <i>vil</i><par n="frug/a__n"/></e>
+
 <e lm="vilja">           <i>vilj</i><par n="frug/a__n"/></e>
 <e lm="yta">             <i>yt</i><par n="frug/a__n"/></e>
 
@@ -9952,7 +9954,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vetenskap">       <i>vetenskap</i><par n="accent__n"/></e>
 <e lm="vik">             <i>vik</i><par n="bil__n"/></e>
 <e lm="vikt">            <i>vikt</i><par n="accent__n"/></e>
-<e lm="vila">            <i>vila</i><par n="adel__n"/></e>
+
 <e lm="vin">             <i>vin</i><par n="bageri__n"/></e>
 <e lm="vinge">           <i>ving</i><par n="abborr/e__n"/></e>
 <e lm="vinter">          <i>vint</i><par n="kalend/er__n"/></e>
