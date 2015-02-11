@@ -685,7 +685,7 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>a</l>         <r><s n="prn"/><s n="def"/><s n="un"/><s n="pl"/></r></p><par n="S__case"/></e>
 </pardef>
 
-<!-- PT: Oegentlig för svenska; This is a bit strange for Swedish. Should we really us it? -->
+<!-- PT: Oegentlig för svenska; This is a bit strange for Swedish. Should we really use it? -->
 <pardef n="all__predet">
   <e>       <p><l></l>          <r><s n="predet"/><s n="ut"/><s n="sg"/></r></p></e>
   <e>       <p><l>t</l>         <r><s n="predet"/><s n="nt"/><s n="sg"/></r></p></e>
@@ -1322,8 +1322,17 @@ obj = object form changed to the traditional acc = accusative
 <pardef n="bi__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
+</pardef>
+
+<pardef n="raseri__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>er</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>erna</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
 <pardef n="alfabet__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en; invariable indefinite -->
@@ -1448,6 +1457,13 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
+<pardef n="reaktor__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~ar / ~arna -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
+</pardef>
+
 <pardef n="get__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ter / ~terna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1506,7 +1522,6 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
 </pardef>
 
-
 <pardef n="frug/a__n" c="autoconcord:ut,sgpl"> <!-- Common; ~a / ~an / ~or / ~orna -->
   <e>       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1548,7 +1563,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="aktie__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~r / ~rna -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="No_S__case"/></e>
   <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
   <e>       <p><l>r</l>         <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
   <e>       <p><l>rna</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -3192,20 +3207,23 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>de</l>        <r>na<s n="vblex"/><s n="pp"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
 </pardef>
 
-<pardef n="skil/ja__vblex">
-  <e>       <p><l>a</l>         <r>ja<s n="vblex"/><s n="inf"/></r></p><par n="S__voice"/></e>
-  <e>       <p><l>er</l>        <r>ja<s n="vblex"/><s n="pres"/><s n="actv"/></r></p></e>
+<pardef n="skil/ja__vblex"> <!-- PT: corrected and extended -->
+  <e>       <p><l>ja</l>         <r>ja<s n="vblex"/><s n="inf"/></r></p><par n="S__voice"/></e>
+  <e>       <p><l>jer</l>        <r>ja<s n="vblex"/><s n="pres"/><s n="actv"/></r></p></e>
+  <e r="LR">       <p><l>js</l>         <r>ja<s n="vblex"/><s n="pres"/><s n="pasv"/></r></p></e>
+  <e r="LR">       <p><l>jde</l>        <r>ja<s n="vblex"/><s n="past"/></r></p><par n="S__voice"/></e>
+  <e r="LR">       <p><l>jt</l>         <r>ja<s n="vblex"/><s n="supn"/></r></p><par n="S__voice"/></e>
   <e>       <p><l>s</l>         <r>ja<s n="vblex"/><s n="pres"/><s n="pasv"/></r></p></e>
   <e>       <p><l>de</l>        <r>ja<s n="vblex"/><s n="past"/></r></p><par n="S__voice"/></e>
   <e>       <p><l>t</l>         <r>ja<s n="vblex"/><s n="supn"/></r></p><par n="S__voice"/></e>
-  <e>       <p><l></l>          <r>ja<s n="vblex"/><s n="imp"/></r></p></e>
-  <e>       <p><l>ande</l>      <r>ja<s n="vblex"/><s n="pprs"/></r></p></e>
-  <e>       <p><l>jd</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e>       <p><l>jt</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e>       <p><l>jda</l>       <r>ja<s n="vblex"/><s n="pp"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
-  <e r="LR"><p><l>d</l>         <r>ja<s n="vblex"/><s n="pp"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e r="LR"><p><l>t</l>         <r>ja<s n="vblex"/><s n="pp"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e r="LR"><p><l>da</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
+  <e>       <p><l>j</l>          <r>ja<s n="vblex"/><s n="imp"/></r></p></e>
+  <e>       <p><l>jande</l>      <r>ja<s n="vblex"/><s n="pprs"/></r></p></e>
+  <e r="LR">       <p><l>jd</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e r="LR">       <p><l>jt</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e r="LR">       <p><l>jda</l>       <r>ja<s n="vblex"/><s n="pp"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
+  <e><p><l>d</l>         <r>ja<s n="vblex"/><s n="pp"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e><p><l>t</l>         <r>ja<s n="vblex"/><s n="pp"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e><p><l>da</l>        <r>ja<s n="vblex"/><s n="pp"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
 </pardef>
 
 <pardef n="löp/a__vblex">
@@ -9738,7 +9756,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="radio">           <i>radio</i><par n="aktie__n"/></e>
 <e lm="raket">           <i>raket</i><par n="ed__n"/></e>
 
-<e lm="ras">             <i>ras</i><par n="film__n"/></e>
+<e lm="ras" a="PT">             <i>ras</i><par n="ras__n"/></e> <!-- släkte -->
+<e lm="ras" a="PT">             <i>ras</i><par n="badhus__n"/></e> <!-- skred -->
+
 <e lm="reklam">          <i>reklam</i><par n="ed__n"/></e>
 <e lm="rekommendation">  <i>rekommendation</i><par n="ed__n"/></e>
 <e lm="relation">        <i>relation</i><par n="ed__n"/></e>
@@ -10651,7 +10671,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="instruktion" a="is"><i>instruktion</i><par n="ed__n"/></e>
 <e lm="undervisning" a="is"><i>undervisning</i><par n="bil__n"/></e>
 <e lm="konkurrent" a="is"><i>konkurrent</i><par n="ed__n"/></e>
-<e lm="reaktor" a="is">  <i>reaktor</i><par n="ed__n"/></e>
+<e lm="reaktor" a="PT">  <i>reaktor</i><par n="reaktor__n"/></e>
 <e lm="kärnvapen" a="is"><i>kärnvap</i><par n="teck/en__n"/></e>
 <e lm="kärnenergi" a="is"><i>kärnenergi</i><par n="oro__n"/></e>
 <e lm="kärnkraft" a="is"><i>kärnkraft</i><par n="mat__n"/></e>
@@ -10918,7 +10938,10 @@ obj = object form changed to the traditional acc = accusative
 <e lm="centralbank" a="is"><i>centralbank</i><par n="ed__n"/></e>
 <e lm="sjöfart" a="is">  <i>sjöfart</i><par n="adress__n"/></e>
 <e lm="sjösäkerhet" a="is"><i>sjösäkerhet</i><par n="mat__n"/></e>
-<e lm="sikt" a="is">     <i>sikt</i><par n="ed__n"/></e>
+
+<e lm="sikt" a="PT">     <i>sikt</i><par n="konsensus__n"/></e> <!-- view/visibility -->
+<e lm="sikt" a="PT">     <i>sikt</i><par n="bil__n"/></e> <!-- sieve -->
+
 <e lm="vinnare" a="is">  <i>vinnar</i><par n="apotekar/e__n"/></e>
 <e lm="uppförandekod" a="is"><i>uppförandekod</i><par n="ed__n"/></e>
 <e lm="uppförandekodex" a="is"><i>uppförandekodex</i><par n="bil__n"/></e>
@@ -11553,7 +11576,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="orb" a="is">      <i>orb</i><par n="ed__n"/></e>
 <e lm="papegoja" a="is"> <i>papegoj</i><par n="frug/a__n"/></e>
 <e lm="partikongress" a="is"><i>partikongress</i><par n="ed__n"/></e>
-<e lm="pastor" a="is">   <i>pastor</i><par n="ed__n"/></e>
+<e lm="pastor" a="PT">   <i>pastor</i><par n="geometri__n"/></e>
 <e lm="pekfinger" a="is"><i>pekfing</i><par n="fing/er__n"/></e>
 <e lm="pengar" a="is">   <i>pengar</i><par n="böter__n"/></e>
 <e lm="penning" a="is">  <i>penning</i><par n="bil__n"/></e>
@@ -11568,8 +11591,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="puss" a="is">     <i>puss</i><par n="bil__n"/></e>
 <e lm="påse" a="is">     <i>pås</i><par n="abborr/e__n"/></e>
 <e lm="pöl" a="is">      <i>pöl</i><par n="bil__n"/></e>
-<e lm="rand" a="is">     <i>rand</i><par n="ed__n"/></e>
-<e lm="raseri" a="is">   <i>raseri</i><par n="geometri__n"/></e>
+<e lm="rand" a="PT">     <i>r</i><par n="h/and__n"/></e>
+<e lm="raseri" a="PT">   <i>raseri</i><par n="raseri__n"/></e>
 <e lm="recession" a="is"><i>recession</i><par n="ed__n"/></e>
 <e lm="redaktionschef" a="is"><i>redaktionschef</i><par n="ed__n"/></e>
 <e lm="redare" a="is">   <i>redar</i><par n="apotekar/e__n"/></e>
@@ -11587,9 +11610,12 @@ obj = object form changed to the traditional acc = accusative
 <e lm="sejval" a="is">   <i>sejval</i><par n="bil__n"/></e>
 <e lm="sekreterare" a="is"><i>sekreterar</i><par n="apotekar/e__n"/></e>
 <e lm="senglacialtid" a="is"><i>senglacialtid</i><par n="ed__n"/></e>
-<e lm="simbasäng" a="is"><i>simbasäng</i><par n="ed__n"/></e>
+<e lm="simbassäng" a="PT"><i>simbassäng</i><par n="ed__n"/></e>
 <e lm="simning" a="is">  <i>simning</i><par n="bil__n"/></e>
-<e lm="sjöjungfru" a="is"><i>sjöjungfru</i><par n="bro__n"/></e>
+
+<e lm="sjöjungfru" a="PT"><i>sjöjungfru</i><par n="aktie__n"/></e>
+<e lm="jungfru" a="PT"><i>jungfru</i><par n="aktie__n"/></e>
+
 <e lm="sjömil" a="is">   <i>sjömil</i><par n="början__n"/></e>
 <e lm="skakning" a="is"> <i>skakning</i><par n="bil__n"/></e>
 <e lm="skalle" a="is">   <i>skall</i><par n="abborr/e__n"/></e>
@@ -11775,8 +11801,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="nervsystem" a="is"><i>nervsystem</i><par n="ackord__n"/></e>
 <e lm="nominalvärde" a="is"><i>nominalvärde</i><par n="aktstycke__n"/></e>
 <e lm="nonsens" a="is">  <i>nonsens</i><par n="ackord__n"/></e>
-<e lm="pastej" a="is">   <i>pastej</i><par n="ackord__n"/></e>
-<e lm="pubertet" a="is"> <i>pubertet</i><par n="ackord__n"/></e>
+<e lm="pastej" a="is">   <i>pastej</i><par n="ed__n"/></e>
+<e lm="pubertet" a="PT"> <i>pubertet</i><par n="ed__n"/></e>
 <e lm="resesällskap" a="is"><i>resesällskap</i><par n="ackord__n"/></e>
 <e lm="räcke" a="is">    <i>räcke</i><par n="aktstycke__n"/></e>
 <e lm="samtycke" a="is"> <i>samtycke</i><par n="aktstycke__n"/></e>
@@ -12462,7 +12488,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ren" c="domain:djur" a="PT">              <i>ren</i><par n="bil__n"/></e>
 <e lm="rätt" c="domain:mat" a="PT">              <i>rätt</i><par n="bil__n"/></e>
 <e lm="scooter" a="PT">              <i>scoot</i><par n="kalend/er__n"/></e>
-<e lm="sheik" a="PT">              <i>sheik</i><par n="bil__n"/></e>
+<e lm="shejk" a="PT">              <i>shejk</i><par n="bil__n"/></e>
+<e lm="schejk" a="PT">              <i>schejk</i><par n="bil__n"/></e>
 
 <e lm="skogvaktare" c="domain:lantliv" a="PT">              <i>skogvaktar</i><par n="apotekar/e__n"/></e>
 <e lm="skorpa" c="domain:mat" a="PT">              <i>skorp</i><par n="afghansk/a__n"/></e>
