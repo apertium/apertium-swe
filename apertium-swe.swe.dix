@@ -54,9 +54,9 @@ obj = object form changed to the traditional acc = accusative
     <sdef n="pr" 	c="Preposition"/> 
     <sdef n="pers" 	c="Personal pronoun"/> 
     <sdef n="prn" 	c="Pronoun"/> 
-	<!-- PT: not used
-    <sdef n="predet" 	c="Predeterminer"/> 
-	-->
+	
+    <sdef n="predet" 	c="Predeterminer"/> <!-- PT: a bit strange for Swedish -->
+	
     <sdef n="num" 	c="Numeral"/> 
     <sdef n="vaux" 	c="Auxiliary verb (hjälpverb)"/> 
     <sdef n="vblex" 	c="Lexical (normal) verb"/> 
