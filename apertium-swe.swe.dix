@@ -10556,8 +10556,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="moratorium" a="is"><i>moratori</i><par n="laboratori/um__n"/></e>
 <e lm="basis" a="PT">    <i>basis</i><par n="adress__n"/></e>
 <e lm="infrastruktur" a="is"><i>infrastruktur</i><par n="ed__n"/></e>
-<e lm="bas" a="PT">      <i>bas</i><par n="adress_n"/></e>
-<e lm="bas" a="PT" c="domain:music style:neu">      <i>bas</i><par n="adress_n"/></e>
+<e lm="bas" a="PT">      <i>bas</i><par n="adress__n"/></e>
+<e lm="bas" a="PT" c="domain:music style:neu">      <i>bas</i><par n="adress__n"/></e>
 <e lm="grundvatten" a="is"><i>grundvatt</i><par n="teck/en__n"/></e>
 <e lm="grönsak" a="is">  <i>grönsak</i><par n="ed__n"/></e>
 <e lm="klartecken" a="is"><i>klarteck</i><par n="teck/en__n"/></e>
@@ -11486,7 +11486,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="höghet" a="is">   <i>höghet</i><par n="ed__n"/></e>
 <e lm="inkomster" a="is"><i>inkomster</i><par n="böter__n"/></e>
 <e lm="instrumentalist" a="is"><i>instrumentalist</i><par n="ed__n"/></e>
-<e lm="intelligens" a="PT"><i>intelligens</i><par n="adress_n"/></e>
+<e lm="intelligens" a="PT"><i>intelligens</i><par n="adress__n"/></e>
 <e lm="intervju" a="is"> <i>intervju</i><par n="ed__n"/></e>
 <e lm="intervjuare" a="is"><i>intervjuar</i><par n="apotekar/e__n"/></e>
 <e lm="introspektion" a="is"><i>introspektion</i><par n="ed__n"/></e>
