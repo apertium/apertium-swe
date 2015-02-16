@@ -16,6 +16,11 @@
 <!-- added the attribute(?) sdef n="org" like in the pair is-sv -->
  
 <!-- PT Scanned through all paradigms and corrected blatant errors -->
+<!-- PT Expanded the dictionaries, checked misspelled words and corrected lots of errors.
+	Unfortunately even more persist.  The most common errors are:
+	1. Wrong stem.
+	2. Wrong paradigm.
+	3. A new paradigm is needed. -->
 
 <!-- PT pronouns: corrections and additions - up to 25% of a text are pronouns -->
 
@@ -12409,7 +12414,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="enbärsdricka" c="domain:mat" a="PT">              <i>enbärsdrick</i><par n="frug/a__n"/></e>
 <e lm="fik" c="style:fam" a="PT">              <i>fik</i><par n="ackord__n"/></e>
 <e lm="flakvagn" c="domain:lantliv" a="PT">              <i>flakvagn</i><par n="bil__n"/></e>
-<e lm="folkdans" a="PT">              <i>folkdans</i><par n="adressen__n"/></e>
+<e lm="folkdans" a="PT">              <i>folkdans</i><par n="adress__n"/></e>
 <e lm="folkdansklubb" a="PT">              <i>folkdansklubb</i><par n="bil__n"/></e>
 <e lm="frikadell" c="domain:mat" a="PT">              <i>frikadell</i><par n="ed__n"/></e>
 <e lm="frossa" c="domain:sjukvård" a="PT">              <i>fross</i><par n="frug/a__n"/></e>
