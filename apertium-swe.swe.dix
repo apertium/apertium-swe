@@ -892,13 +892,17 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>aste</l>      <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
 </pardef>
 
-<pardef n="samhällelig__adj"> <!-- Kompareras med mer och mest eller inte alls -->
+<pardef n="samhällelig__adj"> <!-- PT: Kompareras med mer och mest eller inte alls -->
   <e>       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
   <e>       <p><l>t</l>         <r><s n="adj"/><s n="pst"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
   <e>       <p><l>e</l>         <r><s n="adj"/><s n="pst"/><s n="m"/><s n="sg"/><s n="def"/></r></p></e>
   <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="pl"/><s n="ind"/></r></p></e>
   <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
-</pardef>
+
+  <e r="RL" c="style:fam" a="PT">       <p><l>are</l>       <r><s n="adj"/><s n="comp"/><s n="un"/><s n="sp"/></r></p></e>
+  <e r="RL" c="style:fam" a="PT">       <p><l>ast</l>       <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="ind"/></r></p></e>
+  <e r="RL" c="style:fam" a="PT">       <p><l>aste</l>      <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
+  </pardef>
 
 <pardef n="lat__adj">
   <e a="PT">       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
