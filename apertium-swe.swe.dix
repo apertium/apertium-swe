@@ -902,7 +902,7 @@ obj = object form changed to the traditional acc = accusative
   <e r="RL" c="style:fam" a="PT">       <p><l>are</l>       <r><s n="adj"/><s n="comp"/><s n="un"/><s n="sp"/></r></p></e>
   <e r="RL" c="style:fam" a="PT">       <p><l>ast</l>       <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="ind"/></r></p></e>
   <e r="RL" c="style:fam" a="PT">       <p><l>aste</l>      <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
-  </pardef>
+ </pardef>
 
 <pardef n="lat__adj">
   <e a="PT">       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
