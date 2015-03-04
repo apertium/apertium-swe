@@ -892,6 +892,14 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>aste</l>      <r><s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
 </pardef>
 
+<pardef n="samhällelig__adj"> <!-- Kompareras med mer och mest eller inte alls -->
+  <e>       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e>       <p><l>t</l>         <r><s n="adj"/><s n="pst"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
+  <e>       <p><l>e</l>         <r><s n="adj"/><s n="pst"/><s n="m"/><s n="sg"/><s n="def"/></r></p></e>
+  <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="pl"/><s n="ind"/></r></p></e>
+  <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
+</pardef>
+
 <pardef n="lat__adj">
   <e a="PT">       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
   <e>       <p><l>e</l>         <r><s n="adj"/><s n="pst"/><s n="m"/><s n="sg"/><s n="def"/></r></p></e>
@@ -5738,7 +5746,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="noggrann" a="PT"> <i>noggran</i><par n="san/n__adj"/></e>
 <e lm="kompetent" a="is"><i>kompetent</i><par n="diskret__adj"/></e>
 <e lm="nationalistisk" a="is"><i>nationalistisk</i><par n="afrikansk__adj"/></e>
-<e lm="samhällelig" a="is"><i>samhällelig</i><par n="aktiv__adj"/></e>
+<e lm="samhällelig" a="is"><i>samhällelig</i><par n="samhällelig__adj"/></e>
 <e lm="makroekonomisk" a="is"><i>makroekonomisk</i><par n="afrikansk__adj"/></e>
 <e lm="national" a="is"> <i>national</i><par n="afrikansk__adj"/></e>
 <e lm="snäv" a="is">     <i>snäv</i><par n="aktiv__adj"/></e>
