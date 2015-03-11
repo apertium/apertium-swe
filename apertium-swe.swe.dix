@@ -999,7 +999,7 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>rast</l>      <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="ind"/></r></p></e>
 </pardef>
 
-<!-- böjs normalt med mer, mest men andra ord med detta paradigm kompareras normalt: två paradigm? -->
+<!-- PT: böjs vanligen med mer, mest men andra ord med detta paradigm kompareras normalt: två paradigm? -->
 <pardef n="afrikansk__adj">
   <e>       <p><l></l>          <r><s n="adj"/><s n="pst"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
   <e>       <p><l>t</l>         <r><s n="adj"/><s n="pst"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
@@ -1007,7 +1007,7 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="pl"/><s n="ind"/></r></p></e>
   <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
   
-  <e r="LR" c="ibland ej korrekt" a="PT">       <p><l>are</l>      <r>er<s n="adj"/><s n="comp"/><s n="un"/><s n="sp"/></r></p></e>
+  <e r="LR" a="PT">       <p><l>are</l>      <r>er<s n="adj"/><s n="comp"/><s n="un"/><s n="sp"/></r></p></e>
   <e r="LR" a="PT">       <p><l>aste</l>     <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
   <e r="LR" a="PT">       <p><l>ast</l>      <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="ind"/></r></p></e>
 
