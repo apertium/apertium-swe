@@ -1008,9 +1008,8 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>a</l>         <r><s n="adj"/><s n="pst"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
   
   <e r="LR" a="PT">       <p><l>are</l>      <r>er<s n="adj"/><s n="comp"/><s n="un"/><s n="sp"/></r></p></e>
-  <e r="LR" a="PT">       <p><l>aste</l>     <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
   <e r="LR" a="PT">       <p><l>ast</l>      <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="ind"/></r></p></e>
-
+  <e r="LR" a="PT">       <p><l>aste</l>     <r>er<s n="adj"/><s n="sup"/><s n="un"/><s n="sp"/><s n="def"/></r></p></e>
 </pardef>
 
 <pardef n="blin/d__adj">
