@@ -13065,6 +13065,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Liese" a="is">    <i>Liese</i><par n="Magnusson__np"/></e>
 <e lm="Lissabon" a="is"> <i>Lissabon</i><par n="Afrika__np"/></e>
 <e lm="Louis" a="is">    <i>Louis</i><par n="Trond__np"/></e>
+<e lm="Louis d'or">    <i>Louis<b/>d'or</i><par n="Trond__np"/></e>
+<e lm="d'or">    <i>d'or</i><par n="Wikipedia__np"/></e>
 <e lm="Lucas" a="is">    <i>Lucas</i><par n="Trond__np"/></e>
 <e lm="Ludford" a="is">  <i>Ludford</i><par n="Magnusson__np"/></e>
 <e lm="Luis" a="is">     <i>Luis</i><par n="Trond__np"/></e>
