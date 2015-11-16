@@ -1185,32 +1185,32 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="advent__n" c="autoconcord:nt,sgpl"> <!-- Neuter; but not inflected. Invariable. -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l></l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="procent__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="undr/an__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l>an</l>          <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
   <e r="RL" c="style:fam" a="PT">       <p><l>ing</l>          <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e a="PT">       <p><l>an</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="RL" c="style:fam" a="PT">       <p><l>ingen</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="RL" c="style:fam" a="PT">       <p><l>ingar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="RL" c="style:fam" a="PT">       <p><l>ingarna</l>      <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>an</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="RL" c="style:fam" a="PT">       <p><l>ingen</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="RL" c="style:fam" a="PT">       <p><l>ingar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="RL" c="style:fam" a="PT">       <p><l>ingarna</l>      <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="hy__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en | (~n) / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="herr__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
@@ -1219,25 +1219,25 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="flop/p__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l>p</l>          <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e a="PT">       <p><l>pen</l>        <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e a="PT">       <p><l>par</l>        <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e a="PT">       <p><l>parna</l>      <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>pen</l>        <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e a="PT">       <p><l>par</l>        <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e a="PT">       <p><l>parna</l>      <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e r="RL" a="PT">       <p><l></l>          <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e r="RL" a="PT">       <p><l>en</l>        <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="RL" a="PT">       <p><l>ar</l>        <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="RL" a="PT">       <p><l>arna</l>      <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e r="RL" a="PT">       <p><l>en</l>        <r>p<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="RL" a="PT">       <p><l>ar</l>        <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="RL" a="PT">       <p><l>arna</l>      <r>p<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <!-- PT: for the multiword spices: sabal oelek and garam masala START  -->
 
 <pardef n="oelek__n" c="autoconcord:ut,sgpl"> <!-- PT: onaturligt i plural -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="masala__n" c="autoconcord:ut,sgpl"> <!-- PT: onaturligt i plural -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <!-- PT: for the multiword spices: sabal oelek and garam masala END  -->
@@ -1252,655 +1252,655 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="bil__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="is__n" c="autoconcord:ut,sgpl"> <!-- PT: Common; ~ / ~en / ~ar / ~arna  genitive without s in singualar, indefinite-->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bil_cp__n" c="Test of compounds breaks autoconcord"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="no-cp\Ø\S__case"/></e>
   <!-- <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e> -->
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="karl__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR">       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR">       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="dollar__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="yen__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sp"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sp"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mott__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="lire__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>an</l>        <r><s n="n"/><s n="ut"/><s n="sp"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>an</l>        <r><s n="n"/><s n="ut"/><s n="sp"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="contain/er__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
   <e a="PT">       <p><l>er</l>          <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ern</l>        <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rar</l>        <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rarna</l>      <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ern</l>        <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rar</l>        <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rarna</l>      <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="äpple__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~t / ~n / ~na -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bi__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="raseri__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" a="PT">       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="alfabet__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en; invariable indefinite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="badhus__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en; indefinite genitive in ~ø -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/><s n="gen"/></r></p></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="chips__n"> <!-- PT: Neuter; # / # / ~ / ~en;  -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p><par n="Ø__case"/></e>
-  <e a="PT">       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="jeans__n"> <!-- PT: Common; # / # / ~ / ~en;  -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p><par n="Ø__case"/></e>
-  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <!-- PT -->
 <pardef n="pris__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bageri__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="gram__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~met / ~ / ~men -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>met</l>       <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>men</l>       <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>met</l>       <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>men</l>       <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bo__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ankar/e__n" c="autoconcord:nt,sp"> <!-- Neuter; ~e / ~et / ~e / ~na; invariable indefinite -->
-  <e>       <p><l>e</l>         <r>e<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r>e<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>e</l>         <r>e<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r>e<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="antiken__n" c="autoconcord:ut,sgpl"> <!-- Common; # / ~ / # / #; only definite, no plural -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="godis__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / # / #; no plural, indefinite genitive in ~ø -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="blod__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / # / #; no plural -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="syre__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~t / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kaffe__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~t / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="vän__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~nen / ~ner / ~nerna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>nen</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ner</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nerna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>nen</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ner</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nerna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="blues__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / # / #; uncountable, genitive in ~ø -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mat__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="konsensus__n" c="autoconcord:ut,sgpl"> <!-- PT: Common; ~ / ~en / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ed__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bro__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~ar / ~arna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="reaktor__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~ar / ~arna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="get__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ter / ~terna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ter</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>terna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ter</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>terna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bal__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="adress__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna; invariant in singular indefinite genitive -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ans__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er / ~erna; invariant in singular indefinite genitive -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
-  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="him/mel__n"> <!-- PT: autoconcord möjlig?? -->
   <e  a="PT">       <p><l>mlens</l>          <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
   <e>       <p><l>mel</l>          <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l>lar</l>        <r>mel<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>len</l>        <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" c="style:sol">       <p><l>melen</l>        <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>larna</l>      <r>mel<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>lar</l>        <r>mel<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>len</l>        <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" c="style:sol">       <p><l>melen</l>        <r>mel<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>larna</l>      <r>mel<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="nöt__n" c="autoconcord:ut,sgpl"> <!-- PT: ; ~ / ~en / ~ter / ~terna -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ter</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>terna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ter</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>terna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="geometri__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="akademi__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en | (~n) / ~er / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="frug/a__n" c="autoconcord:ut,sgpl"> <!-- Common; ~a / ~an / ~or / ~orna -->
   <e>       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>or</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>orna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>or</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>orna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="afghansk/a__n" c="autoconcord:ut,sgpl"> <!-- Common; ~a / ~an / # / #; Uncountable --> <!-- To reflect usage in da.dix -->
   <e>       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="stam__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~men / ~mar / ~marna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>men</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mar</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>marna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>men</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mar</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>marna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mun__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~nen / ~nar / ~narna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>nen</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nar</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>narna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>nen</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nar</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>narna</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="order__n" c="autoconcord:ut,sp"> <!-- Common; ~ / ~n / ~ / ~na; invariant in singular/plural indefinite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ros__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~or / ~orna; singular indefinite invariant -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>or</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>orna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>or</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>orna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="aktie__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~r / ~rna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>r</l>         <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rna</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>r</l>         <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rna</l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="koppar__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="början__n" c="autoconcord:ut,sp"> <!-- Common; ~ / ~ / ~ / #; uncountable, no plural definite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="skam__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~men / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>men</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>men</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bris__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~er | (~ar) / ~erna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" a="PT"><p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" a="PT"><p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="adel__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mytologi__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n | (~en) / # / #; uncountable -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mars__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~månaden / ~månader / ~månaderna; invariant in singular indefinite genitive -->
   <!-- PT: <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e> -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>månaden</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>månader</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>månaderna</l> <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>månaden</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>månader</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>månaderna</l> <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="april__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~månaden / ~månader / ~månaderna -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>månaden</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>månader</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>månaderna</l> <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>månaden</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>månader</l>   <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>månaderna</l> <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 
 </pardef>
 
 <pardef n="histori/a__n" c="autoconcord:ut,sgpl"> <!-- Common; ~a / ~en | (~an) / ~er / ~erna -->
   <e>       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kolleg/a__n" c="autoconcord:ut,sgpl"> <!-- Common; ~a / ~an / ~er | (~or) / ~erna | (~orna) -->
   <e>       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e a="PT">       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>or</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>orna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>an</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>or</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>orna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="st/ad__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ad / ~aden / ~äder / ~äderna -->
   <e>       <p><l>ad</l>        <r>ad<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>aden</l>      <r>ad<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" c="style:fam" a="PT">       <p><l>an</l>      <r>ad<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äder</l>      <r>ad<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äderna</l>    <r>ad<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>aden</l>      <r>ad<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" c="style:fam" a="PT">       <p><l>an</l>      <r>ad<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äder</l>      <r>ad<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äderna</l>    <r>ad<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="m/an__n" c="autoconcord:ut,sgpl"> <!-- Common; ~an / ~annen / ~än / ~ännen -->
   <e>       <p><l>an</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>annen</l>     <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>än</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ännen</l>     <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>annen</l>     <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>än</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ännen</l>     <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="l/and__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~and / ~andet / ~änder / ~änderna -->
   <e>       <p><l>and</l>       <r>and<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>andet</l>     <r>and<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>änder</l>     <r>and<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>änderna</l>   <r>and<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>andet</l>     <r>and<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>änder</l>     <r>and<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>änderna</l>   <r>and<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="h/and__n" c="autoconcord:ut,sgpl"> <!-- Common; ~and / ~anden / ~änder / ~änderna -->
   <e>       <p><l>and</l>       <r>and<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>anden</l>     <r>and<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>änder</l>     <r>and<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>änderna</l>   <r>and<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>anden</l>     <r>and<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>änder</l>     <r>and<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>änderna</l>   <r>and<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="n/att__n" c="autoconcord:ut,sgpl"> <!-- Common; ~att / ~atten / ~ätter / ~ätterna -->
   <e>       <p><l>att</l>       <r>att<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>atten</l>     <r>att<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ätter</l>     <r>att<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ätterna</l>   <r>att<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>atten</l>     <r>att<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ätter</l>     <r>att<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ätterna</l>   <r>att<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bokst/av__n" c="autoconcord:ut,sgpl"> <!-- Common; ~av / ~aven / ~äver / ~äverna -->
   <e>       <p><l>av</l>        <r>av<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>aven</l>      <r>av<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äver</l>      <r>av<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äverna</l>    <r>av<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>aven</l>      <r>av<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äver</l>      <r>av<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äverna</l>    <r>av<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="abborr/e__n" c="autoconcord:ut,sgpl"> <!-- Common; ~e / ~en / ~ar / ~arna -->
   <e>       <p><l>e</l>         <r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>        <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>      <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="apotekar/e__n" c="autoconcord:ut,sp"> <!-- Common; ~e / ~en / ~e / ~na; invariant singular/plural indefinite -->
-  <e>       <p><l>e</l>         <r>e<s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>e</l>         <r>e<s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r>e<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kis/el__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~el / ~let / # / #; uncountable -->
   <e>       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="sek/el__n" c="autoconcord:nt,sp"> <!-- Neuter; ~el / ~let / ~el / ~len; invariant singular/plural indefinite -->
-  <e>       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>len</l>       <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>len</l>       <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="cyk/el__n" c="autoconcord:ut,sgpl"> <!-- Common; ~el / ~eln / ~lar / ~larna -->
   <e>       <p><l>el</l>        <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>lar</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>larna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>lar</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>larna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="toff/el__n" c="autoconcord:ut,sgpl"> <!-- Common; ~el / ~eln / ~lor / ~lorna -->
   <e>       <p><l>el</l>        <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>lor</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>lorna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>lor</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>lorna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="dragspel__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en; invariable in indefinite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="teck/en__n" c="autoconcord:nt,sp"> <!-- Neuter; ~en / ~net / ~en / ~nen; invariable in indefinite -->
-  <e>       <p><l>en</l>        <r>en<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>net</l>       <r>en<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nen</l>       <r>en<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r>en<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>net</l>       <r>en<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nen</l>       <r>en<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="pill/er__n" c="autoconcord:nt,sp"> <!-- Common; ~er / ~ret / ~er / ~ren; invariant in indefinite -->
-  <e>       <p><l>er</l>        <r>er<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ren</l>       <r>er<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r>er<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ren</l>       <r>er<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kalend/er__n" c="autoconcord:ut,sgpl"> <!-- Common; ~er / ~ern / ~rar / ~rarna -->
   <e>       <p><l>er</l>        <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ern</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rar</l>       <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rarna</l>     <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ern</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rar</l>       <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rarna</l>     <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="fing/er__n" c="autoconcord:ut,sgpl"> <!-- Common; ~er / ~ret / ~rar / ~rarna -->
   <e>       <p><l>er</l>        <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rar</l>       <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rarna</l>     <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rar</l>       <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rarna</l>     <r>er<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kvicksilv/er__n" c="autoconcord:ut,sgpl"> <!-- Common; ~er / ~ret / # / #; uncountable -->
   <e>       <p><l>er</l>        <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="som/mar__n" c="autoconcord:ut,sgpl"> <!-- Common; ~mar / ~maren / ~rar / ~rarna -->
   <e>       <p><l>mar</l>       <r>mar<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>maren</l>     <r>mar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" c="style: fam" a="PT">       <p><l>marn</l>     <r>mar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rar</l>       <r>mar<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rarna</l>     <r>mar<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>maren</l>     <r>mar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" c="style: fam" a="PT">       <p><l>marn</l>     <r>mar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rar</l>       <r>mar<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rarna</l>     <r>mar<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ham/mare__n" c="autoconcord:ut,sp"> <!-- Common; ~mare / ~maren / ~mare | (~rar) / ~marna | (~rarna) -->
-  <e>       <p><l>maren</l>     <r>mare<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mare</l>      <r>mare<s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>rar</l>       <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>marna</l>     <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>rarna</l>     <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>maren</l>     <r>mare<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mare</l>      <r>mare<s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>rar</l>       <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>marna</l>     <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>rarna</l>     <r>mare<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="num/mer__n" c="autoconcord:nt,sp"> <!-- Neuter; ~mer / ~ret / ~mer / ~ren; invariant in indefinite -->
-  <e>       <p><l>mer</l>       <r>mer<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ret</l>       <r>mer<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ren</l>       <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>mer</l>       <r>mer<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ret</l>       <r>mer<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ren</l>       <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="hum/mer__n" c="autoconcord:ut,sgpl"> <!-- Common; ~mer / ~mern / ~rar / ~rarna -->
   <e>       <p><l>mer</l>       <r>mer<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>mern</l>      <r>mer<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rar</l>       <r>mer<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>rarna</l>     <r>mer<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>mern</l>      <r>mer<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rar</l>       <r>mer<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>rarna</l>     <r>mer<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="b/ok__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ok / ~oken / ~öcker / ~öckerna -->
   <e>       <p><l>ok</l>        <r>ok<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>oken</l>      <r>ok<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öcker</l>     <r>ok<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öckerna</l>   <r>ok<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>oken</l>      <r>ok<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öcker</l>     <r>ok<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öckerna</l>   <r>ok<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="morg/on__n" c="autoconcord:ut,sgpl"> <!-- Common; ~on / ~onen / ~nar / ~narna -->
   <e>       <p><l>on</l>        <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>onen</l>      <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nar</l>       <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>narna</l>     <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>onen</l>      <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nar</l>       <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>narna</l>     <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="br/or__n" c="autoconcord:ut,sgpl"> <!-- Common; ~or / ~orn / ~röder / ~röderna -->
   <e c="style:fam" a="PT">       <p><l>or</l>        <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
   <e c="style:sol" a="PT">       <p><l>oder</l>        <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e c="style:fam" a="PT">       <p><l>orn</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e c="style:sol" a="PT">       <p><l>odern</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öder</l>     <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öderna</l>   <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e c="style:fam" a="PT">       <p><l>orn</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e c="style:sol" a="PT">       <p><l>odern</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öder</l>     <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öderna</l>   <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <!--<pardef n="br/oder__n" c="autoconcord:ut,sgpl"> <!{1}** Common; ~oder / ~odern / ~öder / ~öderna **{1}>
   <e>       <p><l>oder</l>      <r>oder<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>odern</l>     <r>oder<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öder</l>      <r>oder<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öderna</l>    <r>oder<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>odern</l>     <r>oder<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öder</l>      <r>oder<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öderna</l>    <r>oder<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>-->
 
 <!--<pardef n="farbr/or__n" c="autoconcord:ut,sgpl"> <!{1}** Common; ~or / ~orn / ~röder / ~röderna **{1}>
   <e c="style:fam" a="PT">       <p><l>or</l>        <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
   <e c="style:sol" a="PT">       <p><l>oder</l>        <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e c="style:fam" a="PT">       <p><l>orn</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e c="style:sol" a="PT">       <p><l>odern</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>röder</l>     <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>röderna</l>   <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e c="style:fam" a="PT">       <p><l>orn</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e c="style:sol" a="PT">       <p><l>odern</l>       <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>röder</l>     <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>röderna</l>   <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>-->
 
 <pardef n="s/on__n" c="autoconcord:ut,sgpl"> <!-- Common; ~on / ~onen / ~öner / ~önerna -->
   <e>       <p><l>on</l>        <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>onen</l>      <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öner</l>      <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>önerna</l>    <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>onen</l>      <r>on<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öner</l>      <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>önerna</l>    <r>on<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="b/onde__n" c="autoconcord:ut,sgpl"> <!-- Common; ~onde / ~onden / ~önder / ~önderna -->
   <e>       <p><l>onde</l>      <r>onde<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>onden</l>     <r>onde<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>önder</l>     <r>onde<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>önderna</l>   <r>onde<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>onden</l>     <r>onde<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>önder</l>     <r>onde<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>önderna</l>   <r>onde<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ledam/ot__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ot / ~oten / ~öter / ~öterna -->
   <e>       <p><l>ot</l>        <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>oten</l>      <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öter</l>      <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öterna</l>    <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>oten</l>      <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öter</l>      <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öterna</l>    <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 
 <pardef n="mor/ot__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ot / ~oten / ~ötter / ~ötterna -->
   <e>       <p><l>ot</l>        <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>oten</l>      <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ötter</l>     <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ötterna</l>   <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>oten</l>      <r>ot<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ötter</l>     <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ötterna</l>   <r>ot<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="d/otter__n" c="autoconcord:ut,sgpl"> <!-- Common; ~otter / ~ottern / ~öttrar / ~öttrarna -->
   <e>       <p><l>otter</l>     <r>otter<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ottern</l>    <r>otter<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öttrar</l>    <r>otter<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öttrarna</l>  <r>otter<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ottern</l>    <r>otter<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öttrar</l>    <r>otter<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öttrarna</l>  <r>otter<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="fakt/um__n" c="autoconcord:nt,sp"> <!-- Neuter; ~um / ~umet | (~um) / ~um | (~a) / ~men | (~a) -->
-  <e>       <p><l>umet</l>      <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>um</l>        <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>um</l>        <r>um<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>a</l>         <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>umen</l>      <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>a</l>         <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>umet</l>      <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>um</l>        <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>um</l>        <r>um<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>a</l>         <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>umen</l>      <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>a</l>         <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="laboratori/um__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~um / ~et / ~er / ~erna -->
   <e>       <p><l>um</l>        <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>et</l>        <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r>um<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r>um<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="mini/mum__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~um / ~et / ~er / ~erna -->
   <e a="PT">       <p><l>mum</l>        <r>mum<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>mumet</l>        <r>mum<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR">       <p><l>met</l>        <r>mum<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mum</l>        <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR">       <p><l>a</l>        <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mumen</l>      <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>mumet</l>        <r>mum<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR">       <p><l>met</l>        <r>mum<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mum</l>        <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR">       <p><l>a</l>        <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mumen</l>      <r>mum<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="heli/um__n" c="autoconcord:ut,sgpl"> <!-- Common; ~um / ~umet | (~et) | (~um) / # / #; uncountable -->
   <e>       <p><l>um</l>        <r>um<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>umet</l>      <r>um<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>et</l>        <r>um<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>umet</l>      <r>um<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>et</l>        <r>um<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 
 <pardef n="l/us__n" c="autoconcord:ut,sgpl"> <!-- Common; ~us / ~usen / ~öss / ~össen -->
   <e>       <p><l>us</l>        <r>us<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>usen</l>      <r>us<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>öss</l>       <r>us<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>össen</l>     <r>us<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>usen</l>      <r>us<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>öss</l>       <r>us<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>össen</l>     <r>us<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="film__n" c="autoconcord:ut,sgpl">
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ras__n" c="autoconcord:ut,sgpl">
@@ -1909,36 +1909,36 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
 -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="godtycke__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~t / # / #; no plural -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 <pardef n="bott/en__n" c="autoconcord:ut,sgpl"> <!-- Common; ~en / ~nen | ~en / ~nar / ~narna -->
   <e>       <p><l>en</l>        <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e r="LR"><p><l>en</l>        <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nen</l>       <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>nar</l>       <r>en<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>narna</l>     <r>en<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e r="LR"><p><l>en</l>        <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nen</l>       <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>nar</l>       <r>en<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>narna</l>     <r>en<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 <pardef n="djung/el__n" c="autoconcord:ut,sgpl"> <!-- Common; ~el / ~eln / ~ler / ~lerna -->
   <e>       <p><l>el</l>        <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ler</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>lerna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>eln</l>       <r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ler</l>       <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>lerna</l>     <r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 <pardef n="oro__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / # / # ; no plural -->
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 <pardef n="garage__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~t / ~ / ~n; invariant in indefinite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 
@@ -1949,16 +1949,16 @@ obj = object form changed to the traditional acc = accusative
 
 
 <pardef n="saltvatt/en__n">
-  <e>       <p><l>net</l>       <r>en<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>net</l>       <r>en<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l>en</l>        <r>en<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
 </pardef>
 
 
 <pardef n="mil__n">
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="sex__n" c="autoconcord:nt,sgpl">
@@ -1967,12 +1967,12 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/><s n="gen"/></r></p></e>
 -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="prov__n" c="autoconcord:nt,sp">
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="altare__n" c="autoconcord:nt,sgpl">
@@ -1980,77 +1980,77 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l>ns</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="gen"/></r></p></e>
   <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/><s n="nom"/></r></p></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
 </pardef>
 
 <pardef n="aktstycke__n" c="autoconcord:nt,sgpl">
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
 </pardef>
 
 <pardef n="back/e__n" c="autoconcord:nt,sgpl"> <!--PT: backe, backen, backar, backarna-->
   <e a="PT">       <p><l>e</l>          <r>e<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>en</l>         <r>e<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ar</l>         <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>arna</l>        <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>en</l>         <r>e<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ar</l>         <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>arna</l>        <r>e<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="huv/ud__n" c="autoconcord:nt,sgpl">
-  <e>       <p><l>ud</l>          <r>ud<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>udet</l>        <r>ud<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>uden</l>        <r>ud<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ud</l>          <r>ud<s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>udet</l>        <r>ud<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>uden</l>        <r>ud<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e r="LR" c="style:fam" a="PT">       <p><l>e</l>          <r>ud<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e r="LR" c="style:fam" a="PT">       <p><l>et</l>        <r>ud<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR" c="style:fam" a="PT">       <p><l>en</l>       <r>ud<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/><s n="gen"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e r="LR" c="style:fam" a="PT">       <p><l>et</l>        <r>ud<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR" c="style:fam" a="PT">       <p><l>en</l>       <r>ud<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/><s n="gen"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ackord__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en ; invariant in indefinite -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="solo__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en ; invariant in indefinite -->
   <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="data__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en ; invariant in indefinite -->
-  <e c="sing eg. datum!" a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e c="style: fam">       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e c="sing eg. datum!" a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>t</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e c="style: fam">       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ög/a__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~et / ~ / ~en ; invariant in indefinite -->
   <e>       <p><l>a</l>          <r>a<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>at</l>          <r>a<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>on</l>        <r>a<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>onen</l>        <r>a<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>at</l>          <r>a<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>on</l>        <r>a<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>onen</l>        <r>a<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="ackord_cp__n" c="Test of compounds breaks autoconcord"> <!-- Neuter; ~ / ~et / ~ / ~en ; invariant in indefinite -->
   <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sp"/><s n="ind"/></r></p><par n="no-cp\Ø\S__case"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <!-- PT: alfabet__n istället
 <pardef n="spädbarn__n" c="autoconcord:nt,sgpl">
-  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>et</l>        <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 -->
 <pardef n="öl__n" c="autoconcord:ut,sp"> <!-- Common; ~ / ~en / ~ / ~en -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sp"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 
@@ -2064,123 +2064,123 @@ obj = object form changed to the traditional acc = accusative
 
 <pardef n="samverkan__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l></l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="verk/an__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>an</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>an</l>       <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ningar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ningarna</l>       <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>an</l>       <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ningar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ningarna</l>       <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="med/el__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~el / ~let / ~el / ~len; invariant singular/plural indefinite -->
   <e a="is">       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>len</l>       <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>let</l>       <r>el<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>el</l>        <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>len</l>       <r>el<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="kilo__n" c="autoconcord:nt,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>         <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>        <r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="pengar__n" c="autoconcord:ut,sgpl">
-  <e a="is">       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="is">       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="f/ar__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>ar</l>        <r>ar<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
   <e r="LR">       <p><l>ader</l>      <r>ar<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>adern</l>      <r>ar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äder</l>      <r>ar<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äderna</l>    <r>ar<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>adern</l>      <r>ar<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äder</l>      <r>ar<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äderna</l>    <r>ar<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="medi/a__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>a</l>         <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e a="PT">       <p><l>et</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="PT">       <p><l>et</l>        <r>a<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>er</l>        <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>erna</l>      <r>a<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="försäkr/an__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>an</l>        <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>an</l>       <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ingar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ingarna</l>       <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>an</l>       <r>an<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ingar</l>        <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ingarna</l>       <r>an<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="politiker__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l></l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bull/er__n" c="autoconcord:nt,sp">
   <e a="is">       <p><l>er</l>        <r>er<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>ret</l>       <r>er<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="böter__n" c="autoconcord:ut,sgpl"> <!-- Common; ~er / ~ern / ~rar / ~rarna -->
-  <e a="is">       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e a="is">       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>na</l>     <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="anhörig__n" c="autoconcord:ut,sgpl"> <!-- Neuter; ~ / ~et / ~n / ~na -->
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>a</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e r="LR"><p><l>e</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>a</l>         <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>a</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>a</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e r="LR"><p><l>e</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>a</l>         <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>a</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="spelrum__n" c="autoconcord:nt,sp"> <!-- Neuter; ~ / ~met / ~ / ~men -->
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>met</l>       <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>met</l>       <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bekym/mer__n" c="autoconcord:nt,sp"> <!-- Common; ~er / ~ret / ~er / ~ren; invariant in indefinite -->
   <e a="is">       <p><l>mer</l>        <r>mer<s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>mret</l>       <r>mer<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mer</l>        <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>mren</l>       <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>mret</l>       <r>mer<s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mer</l>        <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>mren</l>       <r>mer<s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bane__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~n / ~r / ~rna -->
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="förf/ader__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>ader</l>        <r>ader<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>adern</l>      <r>ader<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äder</l>      <r>ader<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>äderna</l>    <r>ader<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>adern</l>      <r>ader<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äder</l>      <r>ader<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>äderna</l>    <r>ader<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="m/or__n" c="autoconcord:ut,sgpl">
   <e a="is">       <p><l>or</l>         <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>odern</l>      <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ödrar</l>      <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>ödrarna</l>    <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>odern</l>      <r>or<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ödrar</l>      <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>ödrarna</l>    <r>or<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="studerande__n" c="autoconcord:ut,sp"> <!-- Common; ~ / ~n / ~ / ~na; invariant in singular/plural indefinite -->
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
-  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>         <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
+  <e>       <p><l>n</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 <pardef n="bokträ__n" c="autoconcord:nt,sgpl">
   <e a="is">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
-  <e>       <p><l>t</l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><s n="cp-R"/></e>
+  <e>       <p><l>t</l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
 
 
