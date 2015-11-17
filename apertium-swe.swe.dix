@@ -258,6 +258,8 @@ obj = object form changed to the traditional acc = accusative
 <pardef n="numeros">
   <e>       <re>[0-9]+([.,][0-9]+)?(%)?</re><p><l></l><r><s n="num"/></r></p></e>
   <e a="is">       <re>[0-9]+([.,][0-9]+)?</re><i>-</i><re>[0-9]+([.,][0-9]+)?%?</re><p><l></l><r><s n="num"/></r></p></e>
+  <!-- Make nicer-->
+  <e>              <re>[IVXM]+</re><p><l>:s</l><r><s n="num"/><s n="gen"/></r></p></e>
 
 
   <e a="PT">       <re>[0-9]+([.,][0-9]+)?</re><p><l><b/>DKK</l><r><b/>DKK<s n="num"/></r></p></e>
