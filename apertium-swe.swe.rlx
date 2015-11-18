@@ -1,5 +1,5 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
- 
+
 SETS
 
 LIST N = (n) ;
@@ -65,8 +65,11 @@ SET S-BOUNDARY  = (prn itg) OR (prn rel) OR ("\;") OR (":") OR ("-") OR ("–") 
 
 SECTION
 
+"<jag>" REMOVE (n);
+"<Jag>" REMOVE (n);
 
-SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) 
+
+SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def)
 SELECT:r2 Num IF (0 ("sex")) (1 N) ;
 SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
 #SELECT:r4 Itg IF (O ("<var>")) (1 V) ;

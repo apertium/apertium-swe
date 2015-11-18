@@ -8794,6 +8794,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="löpare">          <i>löpar</i><par n="apotekar/e__n"/></e>
 <e lm="sångare">         <i>sångar</i><par n="apotekar/e__n"/></e>
 <e lm="invandrare">      <i>invandrar</i><par n="apotekar/e__n"/></e>
+<e lm="svävare">      <i>svävar</i><par n="abborr/e__n"/></e>
+
 <e lm="självmordsbombare"><i>självmordsbombar</i><par n="apotekar/e__n"/></e>
 <e lm="krigare">         <i>krigar</i><par n="apotekar/e__n"/></e>
 <e lm="brevbärare">      <i>brevbärar</i><par n="apotekar/e__n"/></e>
