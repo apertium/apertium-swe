@@ -2215,6 +2215,11 @@ obj = object form changed to the traditional acc = accusative
 <pardef n="Afrika__np">
   <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="sg"/></r></p><par n="S__case"/></e>
 </pardef>
+<pardef n="EEC__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e r="LR">       <p><l>s</l>          <r><s n="np"/><s n="top"/><s n="sg"/><s n="gen"/></r></p></e>
+  <e>       <p><l>:s</l>          <r><s n="np"/><s n="top"/><s n="sg"/><s n="gen"/></r></p></e>
+</pardef>
 
 <pardef n="Paris__np">
   <e>       <p><l></l>          <r><s n="np"/><s n="top"/><s n="sg"/><s n="gen"/></r></p></e>
@@ -4575,6 +4580,7 @@ obj = object form changed to the traditional acc = accusative
     <!-- Prepositions -->
 
 <e lm="förutom">         <i>förutom</i><par n="på__pr"/></e>
+<e lm="utöver">          <i>utöver</i><par n="på__pr"/></e>
 <e lm="via">             <i>via</i><par n="på__pr"/></e>
 <e lm="trots">           <i>trots</i><par n="på__pr"/></e>
 <e lm="av">              <i>av</i><par n="på__pr"/></e>
@@ -6683,6 +6689,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="prick">           <i>prick</i><par n="bil__n"/></e>
 <e lm="pump">            <i>pump</i><par n="bil__n"/></e>
 <e lm="räkning">         <i>räkning</i><par n="bil__n"/></e>
+<e lm="uppräkning">      <i>uppräkning</i><par n="bil__n"/></e>
 <e lm="ring">            <i>ring</i><par n="bil__n"/></e>
 <e lm="robot">           <i>robot</i><par n="bil__n"/></e>
 <e lm="sändning">        <i>sändning</i><par n="bil__n"/></e>
@@ -7518,6 +7525,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="erotik">          <i>erotik</i><par n="mat__n"/></e>
 <e lm="historik">        <i>historik</i><par n="mat__n"/></e>
 <e lm="makt">            <i>makt</i><par n="mat__n"/></e>
+<e lm="krigsmakt">            <i>krigsmakt</i><par n="mat__n"/></e>
 <e lm="friktion">        <i>friktion</i><par n="mat__n"/></e>
 <e lm="utveckling">      <i>utveckling</i><par n="mat__n"/></e>
 <e lm="egoism">          <i>egoism</i><par n="mat__n"/></e>
@@ -7746,6 +7754,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="gädda">           <i>gädd</i><par n="frug/a__n"/></e>
 
 
+<e lm="ämbetsman">        <i>ämbetsm</i><par n="m/an__n"/></e>
 <e lm="fransman">        <i>fransm</i><par n="m/an__n"/></e>
 <e lm="man">             <i>m</i><par n="m/an__n"/></e>
 <e lm="talman">          <i>talm</i><par n="m/an__n"/></e>
@@ -7865,6 +7874,10 @@ obj = object form changed to the traditional acc = accusative
 <e lm="boningshus">      <i>boningshus</i><par n="badhus__n"/></e>
 <e lm="bord">            <i>bord</i><par n="ackord__n"/></e>
 <e lm="bostadshus">      <i>bostadshus</i><par n="badhus__n"/></e>
+<e lm="mellankrigshus">  <i>mellankrigshus</i><par n="badhus__n"/></e>
+<e lm="servicehus">  <i>servicehus</i><par n="badhus__n"/></e>
+<e lm="naturahus">  <i>naturahus</i><par n="badhus__n"/></e>
+<e lm="kanslihus">  <i>kanslihus</i><par n="badhus__n"/></e>
 <e lm="brev">            <i>brev</i><par n="ackord__n"/></e>
 <e lm="bromssystem">     <i>bromssystem</i><par n="ackord__n"/></e>
 <e lm="brons">           <i>brons</i><par n="badhus__n"/></e>
@@ -8821,6 +8834,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="geografi">        <i>geografi</i><par n="adel__n"/></e>
 <e lm="grädde">          <i>grädde</i><par n="adel__n"/></e>
 <e lm="miljö">           <i>miljö</i><par n="adel__n"/></e>
+<e lm="kulturmiljö">           <i>kulturmiljö</i><par n="hy__n"/></e>
 <e lm="biologi">         <i>biologi</i><par n="adel__n"/></e>
 <e lm="filosofi">        <i>filosofi</i><par n="adel__n"/></e>
 <e lm="oro">             <i>oro</i><par n="adel__n"/></e>
@@ -9567,6 +9581,19 @@ obj = object form changed to the traditional acc = accusative
 <e lm="grep">            <i>grep</i><par n="bil__n"/></e>
 <e lm="greve">           <i>grev</i><par n="abborr/e__n"/></e>
 <e lm="grupp">           <i>grupp</i><par n="ed__n"/></e>
+    <e lm="barngrupp"><i>barngrupp</i><par n="ed__n"/></e>
+    <e lm="familjegrupp"><i>familjegrupp</i><par n="ed__n"/></e>
+    <e lm="flickgrupp"><i>flickgrupp</i><par n="ed__n"/></e>
+    <e lm="invandrargrupp"><i>invandrargrupp</i><par n="ed__n"/></e>
+    <e lm="kanslihusgrupp"><i>kanslihusgrupp</i><par n="ed__n"/></e>
+    <e lm="lönegrupp"><i>lönegrupp</i><par n="ed__n"/></e>
+    <e lm="pojkgrupp"><i>pojkgrupp</i><par n="ed__n"/></e>
+    <e lm="primärgrupp"><i>primärgrupp</i><par n="ed__n"/></e>
+    <e lm="samhällsgrupp"><i>samhällsgrupp</i><par n="ed__n"/></e>
+    <e lm="särgrupp"><i>särgrupp</i><par n="ed__n"/></e>
+    <e lm="sekundärgrupp"><i>sekundärgrupp</i><par n="ed__n"/></e>
+    <e lm="socialgrupp"><i>socialgrupp</i><par n="ed__n"/></e>
+
 <e lm="separatiskgrupp"> <i>separatistgrupp</i><par n="ed__n"/></e>
 <e lm="gud">             <i>gud</i><par n="bil__n"/></e>
 <e lm="guldsmed">        <i>guldsmed</i><par n="ed__n"/></e>
@@ -9993,6 +10020,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="text">            <i>text</i><par n="ed__n"/></e>
 <e lm="tid">             <i>tid</i><par n="ed__n"/></e>
 <e lm="fritid">          <i>fritid</i><par n="ed__n"/></e>
+<e lm="heltid">          <i>heltid</i><par n="ed__n"/></e>
 <e lm="tiger">           <i>tig</i><par n="kalend/er__n"/></e>
 <e lm="tiggare">         <i>tiggar</i><par n="apotekar/e__n"/></e>
 <e lm="tik">             <i>tik</i><par n="bil__n"/></e>
@@ -11281,6 +11309,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ändpunkt" a="is"> <i>ändpunkt</i><par n="ed__n"/></e>
 <e lm="konvention" a="is"><i>konvention</i><par n="ed__n"/></e>
 <e lm="tillhörighet" a="is"><i>tillhörighet</i><par n="adress__n"/></e>
+<e lm="grupptillhörighet" a="is"><i>grupptillhörighet</i><par n="adress__n"/></e>
 <e lm="arbetsuppgift" a="is"><i>arbetsuppgift</i><par n="ed__n"/></e>
 <e lm="aktion" a="is">   <i>aktion</i><par n="ed__n"/></e>
 <e lm="inflytande" a="is"><i>inflytande</i><par n="äpple__n"/></e>
@@ -14705,6 +14734,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Libyen" a="is">   <i>Libyen</i><par n="Afrika__np"/></e>
 <e lm="Macau" a="is">    <i>Macau</i><par n="Afrika__np"/></e>
 <e lm="Mexiko" a="is">   <i>Mexiko</i><par n="Afrika__np"/></e>
+<e lm="Mexiko" a="is" r="LR">   <p><l>Mexico</l><r>Mexiko</r></p><par n="Afrika__np"/></e>
 <e lm="Aruba" a="is">    <i>Aruba</i><par n="Afrika__np"/></e>
 <e lm="Vanuatu" a="is">  <i>Vanuatu</i><par n="Afrika__np"/></e>
 <e lm="Cooköarna" a="is"><i>Cooköarna</i><par n="Azorerna__np"/></e>
@@ -15109,18 +15139,18 @@ obj = object form changed to the traditional acc = accusative
 
 <!-- PT: Added from sample domains BEGIN -->
 
-<e lm="EG" a="PT">             <i>EG</i><par n="Afrika__np"/></e>
-<e lm="EU">              <i>EU</i><par n="Afrika__np"/></e>
-<e lm="USSR" a="PT">             <i>USSR</i><par n="Afrika__np"/></e>
-<e lm="EEC" a="PT">             <i>EEC</i><par n="Afrika__np"/></e>
-<e lm="RFSU" a="PT">             <i>RFSU</i><par n="Afrika__np"/></e>
+<e lm="EG" a="PT">             <i>EG</i><par n="EEC__np"/></e>
+<e lm="EU">              <i>EU</i><par n="EEC__np"/></e>
+<e lm="USSR" a="PT">             <i>USSR</i><par n="EEC__np"/></e>
+<e lm="EEC" a="PT">             <i>EEC</i><par n="EEC__np"/></e>
+<e lm="RFSU" a="PT">             <i>RFSU</i><par n="EEC__np"/></e>
 <e lm="Skagerack" a="PT">        <i>Skagerack</i><par n="Afrika__np"/></e>
 <e lm="Kattegatt" a="PT">        <i>Kattegatt</i><par n="Afrika__np"/></e>
 <e lm="Strömstad" a="PT">        <i>Strömstad</i><par n="Afrika__np"/></e>
 <e lm="Koster" a="PT">        <i>Koster</i><par n="Afrika__np"/></e>
 <e lm="Oslo" a="PT">        <i>Oslo</i><par n="Afrika__np"/></e>
-<e lm="DN"  r="LR" a="PT">              <i>DN</i><par n="Afrika__np"/></e>
-<e lm="SvD"  r="LR" a="PT">              <i>SvD</i><par n="Afrika__np"/></e>
+<e lm="DN"  r="LR" a="PT">              <i>DN</i><par n="EEC__np"/></e>
+<e lm="SvD"  r="LR" a="PT">              <i>SvD</i><par n="EEC__np"/></e>
 <e lm="Dagens Nyheter" a="PT">              <i>Dagens<b/>Nyheter</i><par n="Afrika__np"/></e>
 <e lm="Svenska Dagbladet" a="PT">              <i>Svenska<b/>Dagbladet</i><par n="Afrika__np"/></e>
 
