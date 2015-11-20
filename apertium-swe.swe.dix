@@ -98,6 +98,7 @@ obj = object form changed to the traditional acc = accusative
     <sdef n="inf" 	c="Infinitive"/>
     <sdef n="pp" 	c="Past participle"/>
     <sdef n="pres" 	c="Present"/>
+    <sdef n="pis" 	c="Past subjunctive"/>
     <sdef n="past" 	c="Past (formerly 'da')"/>
     <sdef n="supn" 	c="Supine"/>
     <sdef n="imp" 	c="Imperfect"/>
@@ -2346,6 +2347,7 @@ obj = object form changed to the traditional acc = accusative
 <pardef n="/vara__vbser">
   <e>       <p><l>vara</l>      <r>vara<s n="vbser"/><s n="inf"/><s n="actv"/></r></p></e>
   <e c="ej varar!" a="PT">       <p><l>är</l>        <r>vara<s n="vbser"/><s n="pres"/><s n="actv"/></r></p></e>
+  <e>       <p><l>vore</l>       <r>vara<s n="vbser"/><s n="pis"/><s n="actv"/></r></p></e>
   <e>       <p><l>var</l>       <r>vara<s n="vbser"/><s n="past"/><s n="actv"/></r></p></e>
   <e>       <p><l>varit</l>     <r>vara<s n="vbser"/><s n="supn"/><s n="actv"/></r></p></e>
   <e>       <p><l>vara</l>      <r>vara<s n="vbser"/><s n="imp"/></r></p></e>
