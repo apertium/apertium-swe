@@ -9,4 +9,7 @@
     <equiv-char value="`"/>
     <equiv-char value="’"/>
   </char>
+  <char value="é">
+    <equiv-char value="e"/>
+  </char>
 </analysis-chars>

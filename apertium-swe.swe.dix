@@ -2394,10 +2394,10 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="sk/ola__vbmod"> <!-- modal AND tens: modalt och tempusbildande! PT -->
-  <e>       <p><l>ola</l>       <r>ola<s n="vbmod"/><s n="inf"/></r></p></e>
-  <e r="LR" c="style:old" a="PT">       <p><l>all</l>       <r>ola<s n="vbmod"/><s n="pres"/></r></p></e>
-  <e a="PT"><p><l>a</l>         <r>ola<s n="vbmod"/><s n="pres"/></r></p></e>
-  <e>       <p><l>ulle</l>      <r>ola<s n="vbmod"/><s n="past"/></r></p></e>
+  <e>       <p><l>ola</l>       <r>ola<s n="vbmod"/><s n="inf"/><s n="actv"/></r></p></e>
+  <e r="LR" c="style:old" a="PT">       <p><l>all</l>       <r>ola<s n="vbmod"/><s n="pres"/><s n="actv"/></r></p></e>
+  <e a="PT"><p><l>a</l>         <r>ola<s n="vbmod"/><s n="pres"/><s n="actv"/></r></p></e>
+  <e>       <p><l>ulle</l>      <r>ola<s n="vbmod"/><s n="past"/><s n="actv"/></r></p></e>
 </pardef>
 
     <!-- Modal verbs PT -->
@@ -4069,6 +4069,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="anm" a="PT"><i>anm.</i><par n="t.ex.__abbr"/></e>
 <e lm="ang." a="PT"><i>ang.</i><par n="t.ex.__abbr"/></e>
 <e lm="arr" a="PT"><i>arr</i><par n="t.ex.__abbr"/></e>
+<e lm="ca." a="PT"><i>ca</i><par n="t.ex.__abbr"/></e>
 <e lm="bef." a="PT"><i>bef.</i><par n="t.ex.__abbr"/></e>
 <e lm="bef" a="PT"><i>bef.</i><par n="t.ex.__abbr"/></e>
 <e lm="bet." a="PT"><i>bet.</i><par n="t.ex.__abbr"/></e>
@@ -4809,6 +4810,64 @@ obj = object form changed to the traditional acc = accusative
 
     <!-- Adjectives -->
 
+    <e lm="akustisk"><i>akustisk</i><par n="afrikansk__adj"/></e>
+    <e lm="autokinetisk"><i>autokinetisk</i><par n="afrikansk__adj"/></e>
+    <e lm="biblisk"><i>biblisk</i><par n="afrikansk__adj"/></e>
+    <e lm="bioteknisk"><i>bioteknisk</i><par n="afrikansk__adj"/></e>
+    <e lm="byråkratisk"><i>byråkratisk</i><par n="afrikansk__adj"/></e>
+    <e lm="egoistisk"><i>egoistisk</i><par n="afrikansk__adj"/></e>
+    <e lm="erotisk"><i>erotisk</i><par n="afrikansk__adj"/></e>
+    <e lm="etologisk"><i>etologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="familjepolitisk"><i>familjepolitisk</i><par n="afrikansk__adj"/></e>
+    <e lm="familjesociologisk"><i>familjesociologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="förhistorisk"><i>förhistorisk</i><par n="afrikansk__adj"/></e>
+    <e lm="fysiologisk"><i>fysiologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="harmonisk"><i>harmonisk</i><par n="afrikansk__adj"/></e>
+    <e lm="hebreisk"><i>hebreisk</i><par n="afrikansk__adj"/></e>
+    <e lm="humanistisk"><i>humanistisk</i><par n="afrikansk__adj"/></e>
+    <e lm="hydrologisk"><i>hydrologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="immunologisk"><i>immunologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="informationsekonomisk"><i>informationsekonomisk</i><par n="afrikansk__adj"/></e>
+    <e lm="karaktäristisk"><i>karaktäristisk</i><par n="afrikansk__adj"/></e>
+    <e lm="karakteristisk"><i>karakteristisk</i><par n="afrikansk__adj"/></e>
+    <e lm="kasuistisk"><i>kasuistisk</i><par n="afrikansk__adj"/></e>
+    <e lm="kirurgisk"><i>kirurgisk</i><par n="afrikansk__adj"/></e>
+    <e lm="kriminalpolitisk"><i>kriminalpolitisk</i><par n="afrikansk__adj"/></e>
+    <e lm="kriminologisk"><i>kriminologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="lågvoltsfisk"><i>lågvoltsfisk</i><par n="afrikansk__adj"/></e>
+    <e lm="liturgisk"><i>liturgisk</i><par n="afrikansk__adj"/></e>
+    <e lm="matematikpedagogisk"><i>matematikpedagogisk</i><par n="afrikansk__adj"/></e>
+    <e lm="mentalhygienisk"><i>mentalhygienisk</i><par n="afrikansk__adj"/></e>
+    <e lm="metafysisk"><i>metafysisk</i><par n="afrikansk__adj"/></e>
+    <e lm="meteorologisk"><i>meteorologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="meterologisk"><i>meterologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="mikrobiologisk"><i>mikrobiologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="morfologisk"><i>morfologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="motorisk"><i>motorisk</i><par n="afrikansk__adj"/></e>
+    <e lm="oproblematisk"><i>oproblematisk</i><par n="afrikansk__adj"/></e>
+    <e lm="optisk"><i>optisk</i><par n="afrikansk__adj"/></e>
+    <e lm="osolidarisk"><i>osolidarisk</i><par n="afrikansk__adj"/></e>
+    <e lm="osystematisk"><i>osystematisk</i><par n="afrikansk__adj"/></e>
+    <e lm="parlamentarisk"><i>parlamentarisk</i><par n="afrikansk__adj"/></e>
+    <e lm="patriarkalisk"><i>patriarkalisk</i><par n="afrikansk__adj"/></e>
+    <e lm="pedagogisk"><i>pedagogisk</i><par n="afrikansk__adj"/></e>
+    <e lm="periodisk"><i>periodisk</i><par n="afrikansk__adj"/></e>
+    <e lm="pessimistisk"><i>pessimistisk</i><par n="afrikansk__adj"/></e>
+    <e lm="prosaisk"><i>prosaisk</i><par n="afrikansk__adj"/></e>
+    <e lm="protestantisk"><i>protestantisk</i><par n="afrikansk__adj"/></e>
+    <e lm="romantisk"><i>romantisk</i><par n="afrikansk__adj"/></e>
+    <e lm="rytmisk"><i>rytmisk</i><par n="afrikansk__adj"/></e>
+    <e lm="schematisk"><i>schematisk</i><par n="afrikansk__adj"/></e>
+    <e lm="socialpolitisk"><i>socialpolitisk</i><par n="afrikansk__adj"/></e>
+    <e lm="sociologisk"><i>sociologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="symmetrisk"><i>symmetrisk</i><par n="afrikansk__adj"/></e>
+    <e lm="taktisk"><i>taktisk</i><par n="afrikansk__adj"/></e>
+    <e lm="terapeutisk"><i>terapeutisk</i><par n="afrikansk__adj"/></e>
+    <e lm="terminologisk"><i>terminologisk</i><par n="afrikansk__adj"/></e>
+    <e lm="utrikespolitisk"><i>utrikespolitisk</i><par n="afrikansk__adj"/></e>
+    <e lm="valteknisk"><i>valteknisk</i><par n="afrikansk__adj"/></e>
+
+
 <!-- PT CHECK begin -->
 <!-- PT: CHECK ej maskulin! gynnsamme etc -->
 <e lm="gynnsam">         <i>gynnsam</i><par n="blygsam__adj"/></e>
@@ -5144,6 +5203,9 @@ obj = object form changed to the traditional acc = accusative
 <e lm="kapitalistisk" a="is"><i>kapitalistisk</i><par n="aktiv__adj"/></e>
 <e lm="tillgänglig" a="is"><i>tillgänglig</i><par n="aktiv__adj"/></e>
 <e lm="attraktiv" a="is"><i>attraktiv</i><par n="aktiv__adj"/></e>
+<e lm="positiv" a="is"><i>positiv</i><par n="aktiv__adj"/></e>
+<e lm="alternativ" a="is"><i>alternativ</i><par n="aktiv__adj"/></e>
+<e lm="negativ" a="is"><i>negativ</i><par n="aktiv__adj"/></e>
 <e lm="separat" a="is">  <i>separat</i><par n="diskret__adj"/></e>
 <e lm="skild" a="is">    <i>skil</i><par n="blin/d__adj"/></e>
 <e lm="baltisk" a="is">  <i>baltisk</i><par n="afrikansk__adj"/></e>
@@ -6009,6 +6071,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="då">             <i>då</i><par n="då__adv"/></e>
 <e lm="aldrig">          <i>aldrig</i><par n="då__adv"/></e>
 <e lm="utomhus">          <i>utomhus</i><par n="då__adv"/></e>
+<e lm="desto">          <i>desto</i><par n="då__adv"/></e>
+<e lm="sedan">           <i>sedan</i><par n="då__adv"/></e>
 <e lm="alldeles">        <i>alldeles</i><par n="då__adv"/></e>
 <e lm="an">              <i>an</i><par n="då__adv"/></e>
 <e lm="automatiskt" a="PT">          <i>automatiskt</i><par n="då__adv"/></e>
@@ -6868,7 +6932,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="förlikning">      <i>förlikning</i><par n="bil__n"/></e>
 <e lm="förlossning">     <i>förlossning</i><par n="bil__n"/></e>
 <e lm="förmedling">      <i>förmedling</i><par n="bil__n"/></e>
-<e lm="form">            <i>form</i><par n="bil__n"/></e>
+<e lm="form">            <i>form</i><par n="ed__n"/></e>
 <e lm="formulering">     <i>formulering</i><par n="bil__n"/></e>
 <e lm="fornlämning">     <i>fornlämning</i><par n="bil__n"/></e>
 <e lm="förolämpning">    <i>förolämpning</i><par n="bil__n"/></e>
@@ -7507,6 +7571,25 @@ obj = object form changed to the traditional acc = accusative
 <e lm="basket">          <i>basket</i><par n="mat__n"/></e>
 <e lm="arbetslöshet">    <i>arbetslöshet</i><par n="mat__n"/></e>
 
+
+   <e lm="aggressivitet"><i>aggressivitet</i><par n="mat__n"/></e>
+   <e lm="brutalitet"><i>brutalitet</i><par n="ed__n"/></e>
+   <e lm="Europauniversitet"><i>Europauniversitet</i><par n="mat__n"/></e> <!-- !!! -->
+   <e lm="futilitet"><i>futilitet</i><par n="ed__n"/></e>
+   <e lm="humanitet"><i>humanitet</i><par n="mat__n"/></e>
+   <e lm="intimitet"><i>intimitet</i><par n="mat__n"/></e>
+   <e lm="irritabilitet"><i>irritabilitet</i><par n="mat__n"/></e>
+   <e lm="konformitet"><i>konformitet</i><par n="mat__n"/></e>
+   <e lm="kubmentalitet"><i>kubmentalitet</i><par n="mat__n"/></e>
+   <e lm="monumentalitet"><i>monumentalitet</i><par n="mat__n"/></e>
+   <e lm="plasticitet"><i>plasticitet</i><par n="mat__n"/></e>
+   <e lm="produktivitet"><i>produktivitet</i><par n="mat__n"/></e>
+   <e lm="promiskuitet"><i>promiskuitet</i><par n="mat__n"/></e>
+   <e lm="publicitet"><i>publicitet</i><par n="mat__n"/></e>
+   <e lm="relativitet"><i>relativitet</i><par n="mat__n"/></e>
+   <e lm="sanitet"><i>sanitet</i><par n="mat__n"/></e>
+   <e lm="sentimentalitet"><i>sentimentalitet</i><par n="mat__n"/></e>
+   <e lm="sexualitet"><i>sexualitet</i><par n="ed__n"/></e>
 
 
 
@@ -9099,6 +9182,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="tamil">           <i>tamil</i><par n="ed__n"/></e>
 <e lm="present">         <i>present</i><par n="ed__n"/></e>
 <e lm="reaktion">        <i>reaktion</i><par n="ed__n"/></e>
+<e lm="kärnreaktion">    <i>kärnreaktion</i><par n="ed__n"/></e>
 <e lm="orkan">           <i>orkan</i><par n="ed__n"/></e>
 <e lm="törst">           <i>törst</i><par n="ed__n"/></e>
 <e lm="administratör">   <i>administratör</i><par n="ed__n"/></e>
@@ -9280,6 +9364,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="faktum">          <i>fakt</i><par n="fakt/um__n"/></e>
 <e lm="fakultet">        <i>fakultet</i><par n="ed__n"/></e>
 <e lm="familj">          <i>familj</i><par n="ed__n"/></e>
+<e lm="kärnfamilj">      <i>kärnfamilj</i><par n="ed__n"/></e>
 <e lm="fantasi">         <i>fantasi</i><par n="geometri__n"/></e>
 <e lm="farbror">         <i>farbr</i><par n="br/or__n"/></e>
 <e lm="fart">            <i>fart</i><par n="ed__n"/></e>
@@ -9739,6 +9824,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="pojke">           <i>pojk</i><par n="abborr/e__n"/></e>
 <e lm="pokal">           <i>pokal</i><par n="ed__n"/></e>
 <e lm="politik">         <i>politik</i><par n="koppar__n"/></e>
+<e lm="socialpolitik">   <i>socialpolitik</i><par n="koppar__n"/></e>
 <e lm="portion">         <i>portion</i><par n="ed__n"/></e>
 <e lm="post">            <i>post</i><par n="ed__n"/></e>
 <e lm="predikant">       <i>predikant</i><par n="ed__n"/></e>
@@ -9906,6 +9992,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="testamente">      <i>testamente</i><par n="aktstycke__n"/></e>
 <e lm="text">            <i>text</i><par n="ed__n"/></e>
 <e lm="tid">             <i>tid</i><par n="ed__n"/></e>
+<e lm="fritid">          <i>fritid</i><par n="ed__n"/></e>
 <e lm="tiger">           <i>tig</i><par n="kalend/er__n"/></e>
 <e lm="tiggare">         <i>tiggar</i><par n="apotekar/e__n"/></e>
 <e lm="tik">             <i>tik</i><par n="bil__n"/></e>
@@ -10673,6 +10760,12 @@ obj = object form changed to the traditional acc = accusative
 <e lm="kärnvapen" a="is"><i>kärnvap</i><par n="teck/en__n"/></e>
 <e lm="kärnenergi" a="is"><i>kärnenergi</i><par n="oro__n"/></e>
 <e lm="kärnkraft" a="is"><i>kärnkraft</i><par n="mat__n"/></e>
+<e lm="vattenkraft" a="is"><i>vattenkraft</i><par n="mat__n"/></e>
+<e lm="elkraft" a="is"><i>elkraft</i><par n="mat__n"/></e>
+<e lm="ångkraft" a="is"><i>ångkraft</i><par n="mat__n"/></e>
+<e lm="muskelkraft" a="is"><i>muskelkraft</i><par n="mat__n"/></e>
+<e lm="arbetskraft" a="is"><i>arbetskraft</i><par n="mat__n"/></e>
+<e lm="köpkraft" a="is"><i>köpkraft</i><par n="mat__n"/></e>
 <e lm="väljare" a="is">  <i>väljar</i><par n="apotekar/e__n"/></e>
 <e lm="mandatperiod" a="is"><i>mandatperiod</i><par n="ed__n"/></e>
 <e lm="dilemma" a="is">  <i>dilemm</i><par n="frug/a__n"/></e>
@@ -12735,6 +12828,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Sovjetunionen">   <i>Sovjetunionen</i><par n="Afrika__np"/></e>
 <e lm="Spanien">         <i>Spanien</i><par n="Afrika__np"/></e>
 <e lm="Stockholm">       <i>Stockholm</i><par n="Afrika__np"/></e>
+<e lm="Göteborg">        <i>Göteborg</i><par n="Afrika__np"/></e>
 <e lm="Storbritannien">  <i>Storbritannien</i><par n="Afrika__np"/></e>
 <e lm="Sudan">           <i>Sudan</i><par n="Afrika__np"/></e>
 <e lm="Surinam">         <i>Surinam</i><par n="Afrika__np"/></e>
@@ -12767,6 +12861,57 @@ obj = object form changed to the traditional acc = accusative
 <e lm="York">            <i>York</i><par n="Afrika__np"/></e>
 <e lm="Zambia">          <i>Zambia</i><par n="Afrika__np"/></e>
 <e lm="Zimbabwe">        <i>Zimbabwe</i><par n="Afrika__np"/></e>
+
+   <e lm="Abraham"><i>Abraham</i><par n="Trond__np"/></e>
+   <e lm="Bengt"><i>Bengt</i><par n="Trond__np"/></e>
+   <e lm="Bertil"><i>Bertil</i><par n="Trond__np"/></e>
+   <e lm="Birger"><i>Birger</i><par n="Trond__np"/></e>
+   <e lm="Claes"><i>Claes</i><par n="Jonas__np"/></e>
+   <e lm="Curt"><i>Curt</i><par n="Trond__np"/></e>
+   <e lm="Göran"><i>Göran</i><par n="Trond__np"/></e>
+   <e lm="Gunnar"><i>Gunnar</i><par n="Trond__np"/></e>
+   <e lm="Håkan"><i>Håkan</i><par n="Trond__np"/></e>
+   <e lm="Ho"><i>Ho</i><par n="Trond__np"/></e>
+   <e lm="Ingmar"><i>Ingmar</i><par n="Trond__np"/></e>
+   <e lm="Isak"><i>Isak</i><par n="Trond__np"/></e>
+   <e lm="Jack"><i>Jack</i><par n="Trond__np"/></e>
+   <e lm="Jan"><i>Jan</i><par n="Trond__np"/></e>
+   <e lm="Jesu"><i>Jesu</i><par n="Jonas__np"/></e>
+   <e lm="John"><i>John</i><par n="Trond__np"/></e>
+   <e lm="Jonny"><i>Jonny</i><par n="Trond__np"/></e>
+   <e lm="Krister"><i>Krister</i><par n="Trond__np"/></e>
+   <e lm="Kristus"><i>Kristus</i><par n="Jonas__np"/></e>
+   <e lm="Lars-Erik"><i>Lars-Erik</i><par n="Trond__np"/></e>
+   <e lm="Ludvig"><i>Ludvig</i><par n="Trond__np"/></e>
+   <e lm="Magne"><i>Magne</i><par n="Trond__np"/></e>
+   <e lm="Magnus"><i>Magnus</i><par n="Jonas__np"/></e>
+   <e lm="Napoleon"><i>Napoleon</i><par n="Trond__np"/></e>
+   <e lm="Niko"><i>Niko</i><par n="Trond__np"/></e>
+   <e lm="Nils"><i>Nils</i><par n="Jonas__np"/></e>
+   <e lm="Olof"><i>Olof</i><par n="Trond__np"/></e>
+   <e lm="Otto"><i>Otto</i><par n="Trond__np"/></e>
+   <e lm="Ove"><i>Ove</i><par n="Trond__np"/></e>
+   <e lm="Paulus"><i>Paulus</i><par n="Jonas__np"/></e>
+   <e lm="Steffan"><i>Steffan</i><par n="Trond__np"/></e>
+   <e lm="Sven"><i>Sven</i><par n="Trond__np"/></e>
+   <e lm="Sverker"><i>Sverker</i><par n="Trond__np"/></e>
+   <e lm="Thure"><i>Thure</i><par n="Trond__np"/></e>
+   <e lm="Tomas"><i>Tomas</i><par n="Jonas__np"/></e>
+   <e lm="Torsten"><i>Torsten</i><par n="Trond__np"/></e>
+   <e lm="Walter"><i>Walter</i><par n="Trond__np"/></e>
+
+   <e lm="Agnes"><i>Agnes</i><par n="Eva__np"/></e> <!-- genitiv blir feil -->
+   <e lm="Barbro"><i>Barbro</i><par n="Eva__np"/></e>
+   <e lm="Brita"><i>Brita</i><par n="Eva__np"/></e>
+   <e lm="Gudrun"><i>Gudrun</i><par n="Eva__np"/></e>
+   <e lm="Ingrid"><i>Ingrid</i><par n="Eva__np"/></e>
+   <e lm="Kristi"><i>Kristi</i><par n="Eva__np"/></e>
+   <e lm="Lisa"><i>Lisa</i><par n="Eva__np"/></e>
+   <e lm="Messina"><i>Messina</i><par n="Eva__np"/></e>
+   <e lm="Ruth"><i>Ruth</i><par n="Eva__np"/></e>
+   <e lm="Ulla"><i>Ulla</i><par n="Eva__np"/></e>
+
+
 
 <e lm="Anders">          <i>Anders</i><par n="Trond__np"/></e>
 <e lm="Carl">            <i>Carl</i><par n="Trond__np"/></e>
@@ -12804,6 +12949,50 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Mari">            <i>Mari</i><par n="Eva__np"/></e>
 
 
+    <e lm="Adams"><i>Adams</i><par n="Magnusson__np"/></e>
+    <e lm="Åström"><i>Åström</i><par n="Magnusson__np"/></e>
+    <e lm="Backberger"><i>Backberger</i><par n="Magnusson__np"/></e>
+    <e lm="Bergman"><i>Bergman</i><par n="Magnusson__np"/></e>
+    <e lm="Feldt"><i>Feldt</i><par n="Magnusson__np"/></e>
+    <e lm="Folkeson"><i>Folkeson</i><par n="Magnusson__np"/></e>
+    <e lm="Gejvall"><i>Gejvall</i><par n="Magnusson__np"/></e>
+    <e lm="Gerne"><i>Gerne</i><par n="Magnusson__np"/></e>
+    <e lm="Giesecke"><i>Giesecke</i><par n="Magnusson__np"/></e>
+    <e lm="Gillberg"><i>Gillberg</i><par n="Magnusson__np"/></e>
+    <e lm="Gunneson"><i>Gunneson</i><par n="Magnusson__np"/></e>
+    <e lm="Hägglöf"><i>Hägglöf</i><par n="Magnusson__np"/></e>
+    <e lm="Hasselquist"><i>Hasselquist</i><par n="Magnusson__np"/></e>
+    <e lm="Hedqvist"><i>Hedqvist</i><par n="Magnusson__np"/></e>
+    <e lm="Helen"><i>Helen</i><par n="Magnusson__np"/></e>
+    <e lm="Hemer"><i>Hemer</i><par n="Magnusson__np"/></e>
+    <e lm="Hultgren"><i>Hultgren</i><par n="Magnusson__np"/></e>
+    <e lm="Kälvestam"><i>Kälvestam</i><par n="Magnusson__np"/></e>
+    <e lm="Kälvesten"><i>Kälvesten</i><par n="Magnusson__np"/></e>
+    <e lm="Luther"><i>Luther</i><par n="Magnusson__np"/></e>
+    <e lm="Montessori"><i>Montessori</i><par n="Magnusson__np"/></e>
+    <e lm="Murdock"><i>Murdock</i><par n="Magnusson__np"/></e>
+    <e lm="Öqvist"><i>Öqvist</i><par n="Magnusson__np"/></e>
+    <e lm="Palme"><i>Palme</i><par n="Magnusson__np"/></e>
+    <e lm="Papy"><i>Papy</i><par n="Magnusson__np"/></e>
+    <e lm="Rohlin"><i>Rohlin</i><par n="Magnusson__np"/></e>
+    <e lm="Runeborg"><i>Runeborg</i><par n="Magnusson__np"/></e>
+    <e lm="Ryding"><i>Ryding</i><par n="Magnusson__np"/></e>
+    <e lm="Scheel"><i>Scheel</i><par n="Magnusson__np"/></e>
+    <e lm="Schmidt"><i>Schmidt</i><par n="Magnusson__np"/></e>
+    <e lm="Silfverberg"><i>Silfverberg</i><par n="Magnusson__np"/></e>
+    <e lm="Sohlman"><i>Sohlman</i><par n="Magnusson__np"/></e>
+    <e lm="Tinbergen"><i>Tinbergen</i><par n="Magnusson__np"/></e>
+    <e lm="Trost"><i>Trost</i><par n="Magnusson__np"/></e>
+    <e lm="Varda"><i>Varda</i><par n="Magnusson__np"/></e>
+    <e lm="Varenius"><i>Varenius</i><par n="Magnusson__np"/></e>
+    <e lm="Wagner"><i>Wagner</i><par n="Magnusson__np"/></e>
+    <e lm="Weden"><i>Weden</i><par n="Magnusson__np"/></e>
+    <e lm="Werkström"><i>Werkström</i><par n="Magnusson__np"/></e>
+    <e lm="Wickman"><i>Wickman</i><par n="Magnusson__np"/></e>
+    <e lm="Wigfors"><i>Wigfors</i><par n="Magnusson__np"/></e>
+
+
+    <e lm="de Gaulle"><i>de<b/>Gaulle</i><par n="Magnusson__np"/></e>
     <e lm="Aanonsen"><i>Aanonsen</i><par n="Magnusson__np"/></e>
     <e lm="Aanonson"><i>Aanonson</i><par n="Magnusson__np"/></e>
     <e lm="Aanonssen"><i>Aanonssen</i><par n="Magnusson__np"/></e>
@@ -14255,7 +14444,13 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Davies" a="is">   <i>Davies</i><par n="Abbas__np"/></e>
 <e lm="Deprez" a="is">   <i>Deprez</i><par n="Magnusson__np"/></e>
 <e lm="Diamantopoulou" a="is"><i>Diamantopoulou</i><par n="Magnusson__np"/></e>
-<e lm="Dimas" a="is">    <i>Dimas</i><par n="Trond__np"/></e>
+<e lm="Dimas" a="is">    <i>Dimas</i><par n="Jonas__np"/></e>
+<e lm="Per" a="is">    <i>Per</i><par n="Trond__np"/></e>
+<e lm="Per-Ola" a="is">    <i>Per-Ola</i><par n="Trond__np"/></e>
+<e lm="Ola" a="is">    <i>Ola</i><par n="Trond__np"/></e>
+<e lm="Ingemund" a="is">    <i>Ingemund</i><par n="Trond__np"/></e>
+<e lm="Jörgen" a="is">    <i>Jörgen</i><par n="Trond__np"/></e>
+<e lm="Jören" a="is">    <i>Jören</i><par n="Trond__np"/></e>
 <e lm="Doha" a="is">     <i>Doha</i><par n="Afrika__np"/></e>
 <e lm="Doris" a="is">    <i>Doris</i><par n="Eva__np"/></e>
 <e lm="Doyle" a="is">    <i>Doyle</i><par n="Magnusson__np"/></e>
@@ -14917,6 +15112,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="EG" a="PT">             <i>EG</i><par n="Afrika__np"/></e>
 <e lm="EU">              <i>EU</i><par n="Afrika__np"/></e>
 <e lm="USSR" a="PT">             <i>USSR</i><par n="Afrika__np"/></e>
+<e lm="EEC" a="PT">             <i>EEC</i><par n="Afrika__np"/></e>
+<e lm="RFSU" a="PT">             <i>RFSU</i><par n="Afrika__np"/></e>
 <e lm="Skagerack" a="PT">        <i>Skagerack</i><par n="Afrika__np"/></e>
 <e lm="Kattegatt" a="PT">        <i>Kattegatt</i><par n="Afrika__np"/></e>
 <e lm="Strömstad" a="PT">        <i>Strömstad</i><par n="Afrika__np"/></e>
@@ -15074,6 +15271,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="gälla">           <i>gäll</i><par n="gäll/a__vblex"/></e>
 <e lm="behöva">          <i>behöv</i><par n="gäll/a__vblex"/></e>
 <e lm="följa">           <i>följ</i><par n="följ/a__vblex"/></e>
+<e lm="kräva">           <i>kräv</i><par n="följ/a__vblex"/></e>
 <e lm="skrika">          <i>skr</i><par n="skr/ika__vblex"/></e>
 <e lm="leverera">        <i>leverera</i><par n="adressera__vblex"/></e>
 <e lm="lida">            <i>l</i><par n="l/ida__vblex"/></e>
@@ -15201,6 +15399,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="uppbjuda">        <i>uppbj</i><par n="bj/uda__vblex"/></e>
 <e lm="uppfostra">       <i>uppfostra</i><par n="adressera__vblex"/></e>
 <e lm="uppfylla">        <i>uppfyll</i><par n="bygg/a__vblex"/></e>
+<e lm="fylla">           <i>fyll</i><par n="bygg/a__vblex"/></e>
 <e lm="upphitta">        <i>upphitta</i><par n="adressera__vblex"/></e>
 <e lm="upprepa">         <i>upprepa</i><par n="adressera__vblex"/></e>
 <e lm="uppvisa">         <i>uppvisa</i><par n="adressera__vblex"/></e>
@@ -15530,6 +15729,10 @@ obj = object form changed to the traditional acc = accusative
 <e lm="debattera">       <i>debattera</i><par n="adressera__vblex"/></e>
 <e lm="diskutera">       <i>diskutera</i><par n="adressera__vblex"/></e>
 <e lm="diskvalificera">  <i>diskvalificera</i><par n="adressera__vblex"/></e>
+<e lm="kvalificera">     <i>kvalificera</i><par n="adressera__vblex"/></e>
+<e lm="klassificera">    <i>klassificera</i><par n="adressera__vblex"/></e>
+<e lm="specificera">     <i>specificera</i><par n="adressera__vblex"/></e>
+<e lm="okvalificera">    <i>okvalificera</i><par n="adressera__vblex"/></e>
 <e lm="dominera">        <i>dominera</i><par n="adressera__vblex"/></e>
 <e lm="donera">          <i>donera</i><par n="adressera__vblex"/></e>
 <e lm="exemplifiera">    <i>exemplifiera</i><par n="adressera__vblex"/></e>
@@ -16369,6 +16572,260 @@ obj = object form changed to the traditional acc = accusative
 <e lm="slå vad" c="domain:spel" a="PT">         <i>sl</i><par n="sl/å__vblex"/><p><l><b/>vad</l><r><g><b/>vad</g></r></p></e>
 
 <!-- PT: Added from sample domains END -->
+
+  </section>
+  <section id="pending" type="standard">
+     <e lm="äggläggning"><i>äggläggning</i><par n="bil__n"/></e>
+     <e lm="äktenskapsuppfattning"><i>äktenskapsuppfattning</i><par n="bil__n"/></e>
+     <e lm="algodling"><i>algodling</i><par n="bil__n"/></e>
+     <e lm="alstring"><i>alstring</i><par n="bil__n"/></e>
+     <e lm="aminosyrasammansättning"><i>aminosyrasammansättning</i><par n="bil__n"/></e>
+     <e lm="ämnesfördelning"><i>ämnesfördelning</i><par n="bil__n"/></e>
+     <e lm="amning"><i>amning</i><par n="bil__n"/></e>
+     <e lm="aning"><i>aning</i><par n="bil__n"/></e>
+     <e lm="anpassning"><i>anpassning</i><par n="bil__n"/></e>
+     <e lm="anställning"><i>anställning</i><par n="bil__n"/></e>
+     <e lm="arbetsfördelning"><i>arbetsfördelning</i><par n="bil__n"/></e>
+     <e lm="arbetsförmedling"><i>arbetsförmedling</i><par n="bil__n"/></e>
+     <e lm="arbetsmarknadsutbildning"><i>arbetsmarknadsutbildning</i><par n="bil__n"/></e>
+     <e lm="arbetsplacering"><i>arbetsplacering</i><par n="bil__n"/></e>
+     <e lm="arbetstidsförkortning"><i>arbetstidsförkortning</i><par n="bil__n"/></e>
+     <e lm="argumentering"><i>argumentering</i><par n="bil__n"/></e>
+     <e lm="årsundersökning"><i>årsundersökning</i><par n="bil__n"/></e>
+     <e lm="återbäring"><i>återbäring</i><par n="bil__n"/></e>
+     <e lm="återbetalning"><i>återbetalning</i><par n="bil__n"/></e>
+     <e lm="avbytning"><i>avbytning</i><par n="bil__n"/></e>
+     <e lm="avfallshantering"><i>avfallshantering</i><par n="bil__n"/></e>
+     <e lm="avkoppling"><i>avkoppling</i><par n="bil__n"/></e>
+     <e lm="avprickning"><i>avprickning</i><par n="bil__n"/></e>
+     <e lm="avrundning"><i>avrundning</i><par n="bil__n"/></e>
+     <e lm="avskrivning"><i>avskrivning</i><par n="bil__n"/></e>
+     <e lm="avvägning"><i>avvägning</i><par n="bil__n"/></e>
+     <e lm="bäddning"><i>bäddning</i><par n="bil__n"/></e>
+     <e lm="bärgning"><i>bärgning</i><par n="bil__n"/></e>
+     <e lm="barnpassning"><i>barnpassning</i><par n="bil__n"/></e>
+     <e lm="befruktning"><i>befruktning</i><par n="bil__n"/></e>
+     <e lm="begåvning"><i>begåvning</i><par n="bil__n"/></e>
+     <e lm="bekämpning"><i>bekämpning</i><par n="bil__n"/></e>
+     <e lm="belastning"><i>belastning</i><par n="bil__n"/></e>
+     <e lm="belöning"><i>belöning</i><par n="bil__n"/></e>
+     <e lm="beräkning"><i>beräkning</i><par n="bil__n"/></e>
+     <e lm="beröring"><i>beröring</i><par n="bil__n"/></e>
+     <e lm="besinning"><i>besinning</i><par n="bil__n"/></e>
+     <e lm="beställning"><i>beställning</i><par n="bil__n"/></e>
+     <e lm="betning"><i>betning</i><par n="bil__n"/></e>
+     <e lm="betoning"><i>betoning</i><par n="bil__n"/></e>
+     <e lm="bevisning"><i>bevisning</i><par n="bil__n"/></e>
+     <e lm="bisulfitlösning"><i>bisulfitlösning</i><par n="bil__n"/></e>
+     <e lm="blockläsning"><i>blockläsning</i><par n="bil__n"/></e>
+     <e lm="borrning"><i>borrning</i><par n="bil__n"/></e>
+     <e lm="bostadsförmedling"><i>bostadsförmedling</i><par n="bil__n"/></e>
+     <e lm="bränsleförbrukning"><i>bränsleförbrukning</i><par n="bil__n"/></e>
+     <e lm="byggnadslagstiftning"><i>byggnadslagstiftning</i><par n="bil__n"/></e>
+     <e lm="cigarrettrökning"><i>cigarrettrökning</i><par n="bil__n"/></e>
+     <e lm="decimering"><i>decimering</i><par n="bil__n"/></e>
+     <e lm="differentiering"><i>differentiering</i><par n="bil__n"/></e>
+     <e lm="diskning"><i>diskning</i><par n="bil__n"/></e>
+     <e lm="dragning"><i>dragning</i><par n="bil__n"/></e>
+     <e lm="drilling"><i>drilling</i><par n="bil__n"/></e>
+     <e lm="dubbelröstning"><i>dubbelröstning</i><par n="bil__n"/></e>
+     <e lm="dubbning"><i>dubbning</i><par n="bil__n"/></e>
+     <e lm="efterbehandling"><i>efterbehandling</i><par n="bil__n"/></e>
+     <e lm="efterforskning"><i>efterforskning</i><par n="bil__n"/></e>
+     <e lm="eftersläpning"><i>eftersläpning</i><par n="bil__n"/></e>
+     <e lm="energiförbrukning"><i>energiförbrukning</i><par n="bil__n"/></e>
+     <e lm="enkätundersökning"><i>enkätundersökning</i><par n="bil__n"/></e>
+     <e lm="expressutdelning"><i>expressutdelning</i><par n="bil__n"/></e>
+     <e lm="familjebildning"><i>familjebildning</i><par n="bil__n"/></e>
+     <e lm="fastfrysning"><i>fastfrysning</i><par n="bil__n"/></e>
+     <e lm="femdubbling"><i>femdubbling</i><par n="bil__n"/></e>
+     <e lm="flockbildning"><i>flockbildning</i><par n="bil__n"/></e>
+     <e lm="flykting"><i>flykting</i><par n="bil__n"/></e>
+     <e lm="folkbokföring"><i>folkbokföring</i><par n="bil__n"/></e>
+     <e lm="folkminskning"><i>folkminskning</i><par n="bil__n"/></e>
+     <e lm="folkökning"><i>folkökning</i><par n="bil__n"/></e>
+     <e lm="förädling"><i>förädling</i><par n="bil__n"/></e>
+     <e lm="förankring"><i>förankring</i><par n="bil__n"/></e>
+     <e lm="förbättring"><i>förbättring</i><par n="bil__n"/></e>
+     <e lm="fördelning"><i>fördelning</i><par n="bil__n"/></e>
+     <e lm="fördjupning"><i>fördjupning</i><par n="bil__n"/></e>
+     <e lm="fördubbling"><i>fördubbling</i><par n="bil__n"/></e>
+     <e lm="förenkling"><i>förenkling</i><par n="bil__n"/></e>
+     <e lm="företagsutbildning"><i>företagsutbildning</i><par n="bil__n"/></e>
+     <e lm="förflyttning"><i>förflyttning</i><par n="bil__n"/></e>
+     <e lm="förläggning"><i>förläggning</i><par n="bil__n"/></e>
+     <e lm="förmedling"><i>förmedling</i><par n="bil__n"/></e>
+     <e lm="formulering"><i>formulering</i><par n="bil__n"/></e>
+     <e lm="förtidsröstning"><i>förtidsröstning</i><par n="bil__n"/></e>
+     <e lm="fortplantning"><i>fortplantning</i><par n="bil__n"/></e>
+     <e lm="förväxling"><i>förväxling</i><par n="bil__n"/></e>
+     <e lm="gatuförteckning"><i>gatuförteckning</i><par n="bil__n"/></e>
+     <e lm="girering"><i>girering</i><par n="bil__n"/></e>
+     <e lm="gödsling"><i>gödsling</i><par n="bil__n"/></e>
+     <e lm="gruppbildning"><i>gruppbildning</i><par n="bil__n"/></e>
+     <e lm="gungning"><i>gungning</i><par n="bil__n"/></e>
+     <e lm="häckning"><i>häckning</i><par n="bil__n"/></e>
+     <e lm="härstamning"><i>härstamning</i><par n="bil__n"/></e>
+     <e lm="hörselnedsättning"><i>hörselnedsättning</i><par n="bil__n"/></e>
+     <e lm="humanisering"><i>humanisering</i><par n="bil__n"/></e>
+     <e lm="husdjursförädling"><i>husdjursförädling</i><par n="bil__n"/></e>
+     <e lm="hyreshöjning"><i>hyreshöjning</i><par n="bil__n"/></e>
+     <e lm="idealbildning"><i>idealbildning</i><par n="bil__n"/></e>
+     <e lm="identifiering"><i>identifiering</i><par n="bil__n"/></e>
+     <e lm="inbetalning"><i>inbetalning</i><par n="bil__n"/></e>
+     <e lm="indelning"><i>indelning</i><par n="bil__n"/></e>
+     <e lm="inkomstutjämning"><i>inkomstutjämning</i><par n="bil__n"/></e>
+     <e lm="inlärning"><i>inlärning</i><par n="bil__n"/></e>
+     <e lm="inredning"><i>inredning</i><par n="bil__n"/></e>
+     <e lm="intagning"><i>intagning</i><par n="bil__n"/></e>
+     <e lm="internatförläggning"><i>internatförläggning</i><par n="bil__n"/></e>
+     <e lm="jordning"><i>jordning</i><par n="bil__n"/></e>
+     <e lm="justering"><i>justering</i><par n="bil__n"/></e>
+     <e lm="känsloanknytning"><i>känsloanknytning</i><par n="bil__n"/></e>
+     <e lm="kärnklyvning"><i>kärnklyvning</i><par n="bil__n"/></e>
+     <e lm="kartläggning"><i>kartläggning</i><par n="bil__n"/></e>
+     <e lm="klosignalering"><i>klosignalering</i><par n="bil__n"/></e>
+     <e lm="kollning"><i>kollning</i><par n="bil__n"/></e>
+     <e lm="kommunfullmäktigeförsamling"><i>kommunfullmäktigeförsamling</i><par n="bil__n"/></e>
+     <e lm="konsensusförklaring"><i>konsensusförklaring</i><par n="bil__n"/></e>
+     <e lm="konservering"><i>konservering</i><par n="bil__n"/></e>
+     <e lm="könsrollsprägling"><i>könsrollsprägling</i><par n="bil__n"/></e>
+     <e lm="körfältsmarkering"><i>körfältsmarkering</i><par n="bil__n"/></e>
+     <e lm="kursivering"><i>kursivering</i><par n="bil__n"/></e>
+     <e lm="kvalitetsförädling"><i>kvalitetsförädling</i><par n="bil__n"/></e>
+     <e lm="kvalitetsförbättring"><i>kvalitetsförbättring</i><par n="bil__n"/></e>
+     <e lm="kylning"><i>kylning</i><par n="bil__n"/></e>
+     <e lm="laboratorieundersökning"><i>laboratorieundersökning</i><par n="bil__n"/></e>
+     <e lm="lagring"><i>lagring</i><par n="bil__n"/></e>
+     <e lm="lagstiftning"><i>lagstiftning</i><par n="bil__n"/></e>
+     <e lm="läkarundersökning"><i>läkarundersökning</i><par n="bil__n"/></e>
+     <e lm="långivning"><i>långivning</i><par n="bil__n"/></e>
+     <e lm="livsföring"><i>livsföring</i><par n="bil__n"/></e>
+     <e lm="lokaliseringsutbildning"><i>lokaliseringsutbildning</i><par n="bil__n"/></e>
+     <e lm="målsättning"><i>målsättning</i><par n="bil__n"/></e>
+     <e lm="märkning"><i>märkning</i><par n="bil__n"/></e>
+     <e lm="matlagning"><i>matlagning</i><par n="bil__n"/></e>
+     <e lm="matning"><i>matning</i><par n="bil__n"/></e>
+     <e lm="mekanisering"><i>mekanisering</i><par n="bil__n"/></e>
+     <e lm="militärutbildning"><i>militärutbildning</i><par n="bil__n"/></e>
+     <e lm="misstroendeförklaring"><i>misstroendeförklaring</i><par n="bil__n"/></e>
+     <e lm="modernisering"><i>modernisering</i><par n="bil__n"/></e>
+     <e lm="mönstring"><i>mönstring</i><par n="bil__n"/></e>
+     <e lm="motivering"><i>motivering</i><par n="bil__n"/></e>
+     <e lm="mottagning"><i>mottagning</i><par n="bil__n"/></e>
+     <e lm="nånting"><i>nånting</i><par n="bil__n"/></e>
+     <e lm="närvaropremiering"><i>närvaropremiering</i><par n="bil__n"/></e>
+     <e lm="naturahushållning"><i>naturahushållning</i><par n="bil__n"/></e>
+     <e lm="nedläggning"><i>nedläggning</i><par n="bil__n"/></e>
+     <e lm="nektarhämtning"><i>nektarhämtning</i><par n="bil__n"/></e>
+     <e lm="nettoinflyttning"><i>nettoinflyttning</i><par n="bil__n"/></e>
+     <e lm="njutning"><i>njutning</i><par n="bil__n"/></e>
+     <e lm="nyckelretning"><i>nyckelretning</i><par n="bil__n"/></e>
+     <e lm="nyinvigning"><i>nyinvigning</i><par n="bil__n"/></e>
+     <e lm="officersutbildning"><i>officersutbildning</i><par n="bil__n"/></e>
+     <e lm="oljeletning"><i>oljeletning</i><par n="bil__n"/></e>
+     <e lm="omdaning"><i>omdaning</i><par n="bil__n"/></e>
+     <e lm="omkörning"><i>omkörning</i><par n="bil__n"/></e>
+     <e lm="omställning"><i>omställning</i><par n="bil__n"/></e>
+     <e lm="omstrukturering"><i>omstrukturering</i><par n="bil__n"/></e>
+     <e lm="omvärdering"><i>omvärdering</i><par n="bil__n"/></e>
+     <e lm="omväxling"><i>omväxling</i><par n="bil__n"/></e>
+     <e lm="opinionsbildning"><i>opinionsbildning</i><par n="bil__n"/></e>
+     <e lm="orientering"><i>orientering</i><par n="bil__n"/></e>
+     <e lm="övernattning"><i>övernattning</i><par n="bil__n"/></e>
+     <e lm="övervakning"><i>övervakning</i><par n="bil__n"/></e>
+     <e lm="påfrestning"><i>påfrestning</i><par n="bil__n"/></e>
+     <e lm="parbildning"><i>parbildning</i><par n="bil__n"/></e>
+     <e lm="parning"><i>parning</i><par n="bil__n"/></e>
+     <e lm="partifördelning"><i>partifördelning</i><par n="bil__n"/></e>
+     <e lm="premiering"><i>premiering</i><par n="bil__n"/></e>
+     <e lm="prioritering"><i>prioritering</i><par n="bil__n"/></e>
+     <e lm="prisförändring"><i>prisförändring</i><par n="bil__n"/></e>
+     <e lm="prishöjning"><i>prishöjning</i><par n="bil__n"/></e>
+     <e lm="prissättning"><i>prissättning</i><par n="bil__n"/></e>
+     <e lm="provanställning"><i>provanställning</i><par n="bil__n"/></e>
+     <e lm="rådgivning"><i>rådgivning</i><par n="bil__n"/></e>
+     <e lm="rakning"><i>rakning</i><par n="bil__n"/></e>
+     <e lm="rangordning"><i>rangordning</i><par n="bil__n"/></e>
+     <e lm="reducering"><i>reducering</i><par n="bil__n"/></e>
+     <e lm="rening"><i>rening</i><par n="bil__n"/></e>
+     <e lm="rollfördelning"><i>rollfördelning</i><par n="bil__n"/></e>
+     <e lm="röstfördelning"><i>röstfördelning</i><par n="bil__n"/></e>
+     <e lm="röstning"><i>röstning</i><par n="bil__n"/></e>
+     <e lm="ruvning"><i>ruvning</i><par n="bil__n"/></e>
+     <e lm="saltvattenbevattning"><i>saltvattenbevattning</i><par n="bil__n"/></e>
+     <e lm="samhällsbildning"><i>samhällsbildning</i><par n="bil__n"/></e>
+     <e lm="sammanfattning"><i>sammanfattning</i><par n="bil__n"/></e>
+     <e lm="sammanhållning"><i>sammanhållning</i><par n="bil__n"/></e>
+     <e lm="sammanslutning"><i>sammanslutning</i><par n="bil__n"/></e>
+     <e lm="sammanställning"><i>sammanställning</i><par n="bil__n"/></e>
+     <e lm="sammanväxning"><i>sammanväxning</i><par n="bil__n"/></e>
+     <e lm="samordning"><i>samordning</i><par n="bil__n"/></e>
+     <e lm="sängbäddning"><i>sängbäddning</i><par n="bil__n"/></e>
+     <e lm="sänkning"><i>sänkning</i><par n="bil__n"/></e>
+     <e lm="särbeskattning"><i>särbeskattning</i><par n="bil__n"/></e>
+     <e lm="självförsörjning"><i>självförsörjning</i><par n="bil__n"/></e>
+     <e lm="sjukhusmottagning"><i>sjukhusmottagning</i><par n="bil__n"/></e>
+     <e lm="sjukpenning"><i>sjukpenning</i><par n="bil__n"/></e>
+     <e lm="skatteåterbäring"><i>skatteåterbäring</i><par n="bil__n"/></e>
+     <e lm="skattenedsättning"><i>skattenedsättning</i><par n="bil__n"/></e>
+     <e lm="skattesänkning"><i>skattesänkning</i><par n="bil__n"/></e>
+     <e lm="skjutning"><i>skjutning</i><par n="bil__n"/></e>
+     <e lm="skoborstning"><i>skoborstning</i><par n="bil__n"/></e>
+     <e lm="skrivning"><i>skrivning</i><par n="bil__n"/></e>
+     <e lm="sluttning"><i>sluttning</i><par n="bil__n"/></e>
+     <e lm="socialförsäkring"><i>socialförsäkring</i><par n="bil__n"/></e>
+     <e lm="sortering"><i>sortering</i><par n="bil__n"/></e>
+     <e lm="speciallegering"><i>speciallegering</i><par n="bil__n"/></e>
+     <e lm="specialundervisning"><i>specialundervisning</i><par n="bil__n"/></e>
+     <e lm="spolning"><i>spolning</i><par n="bil__n"/></e>
+     <e lm="städning"><i>städning</i><par n="bil__n"/></e>
+     <e lm="stegring"><i>stegring</i><par n="bil__n"/></e>
+     <e lm="stimbildning"><i>stimbildning</i><par n="bil__n"/></e>
+     <e lm="storstädning"><i>storstädning</i><par n="bil__n"/></e>
+     <e lm="studieinriktning"><i>studieinriktning</i><par n="bil__n"/></e>
+     <e lm="syftning"><i>syftning</i><par n="bil__n"/></e>
+     <e lm="synkronisering"><i>synkronisering</i><par n="bil__n"/></e>
+     <e lm="systematisering"><i>systematisering</i><par n="bil__n"/></e>
+     <e lm="taxering"><i>taxering</i><par n="bil__n"/></e>
+     <e lm="telefonrådfrågning"><i>telefonrådfrågning</i><par n="bil__n"/></e>
+     <e lm="teoretisering"><i>teoretisering</i><par n="bil__n"/></e>
+     <e lm="tillämpning"><i>tillämpning</i><par n="bil__n"/></e>
+     <e lm="tjänstgöring"><i>tjänstgöring</i><par n="bil__n"/></e>
+     <e lm="totalbefolkning"><i>totalbefolkning</i><par n="bil__n"/></e>
+     <e lm="trohetsförklaring"><i>trohetsförklaring</i><par n="bil__n"/></e>
+     <e lm="tudelning"><i>tudelning</i><par n="bil__n"/></e>
+     <e lm="tvättning"><i>tvättning</i><par n="bil__n"/></e>
+     <e lm="underbefälsutbildning"><i>underbefälsutbildning</i><par n="bil__n"/></e>
+     <e lm="underordning"><i>underordning</i><par n="bil__n"/></e>
+     <e lm="uppdelning"><i>uppdelning</i><par n="bil__n"/></e>
+     <e lm="uppfödning"><i>uppfödning</i><par n="bil__n"/></e>
+     <e lm="uppladdning"><i>uppladdning</i><par n="bil__n"/></e>
+     <e lm="uppläggning"><i>uppläggning</i><par n="bil__n"/></e>
+     <e lm="upplösning"><i>upplösning</i><par n="bil__n"/></e>
+     <e lm="uppräkning"><i>uppräkning</i><par n="bil__n"/></e>
+     <e lm="uppsägning"><i>uppsägning</i><par n="bil__n"/></e>
+     <e lm="uppsamlingsanläggning"><i>uppsamlingsanläggning</i><par n="bil__n"/></e>
+     <e lm="uppslutning"><i>uppslutning</i><par n="bil__n"/></e>
+     <e lm="urinundersökning"><i>urinundersökning</i><par n="bil__n"/></e>
+     <e lm="utfodring"><i>utfodring</i><par n="bil__n"/></e>
+     <e lm="utformning"><i>utformning</i><par n="bil__n"/></e>
+     <e lm="utkörning"><i>utkörning</i><par n="bil__n"/></e>
+     <e lm="utökning"><i>utökning</i><par n="bil__n"/></e>
+     <e lm="utryckning"><i>utryckning</i><par n="bil__n"/></e>
+     <e lm="utskrivning"><i>utskrivning</i><par n="bil__n"/></e>
+     <e lm="utsugning"><i>utsugning</i><par n="bil__n"/></e>
+     <e lm="vakthållning"><i>vakthållning</i><par n="bil__n"/></e>
+     <e lm="valkretsbeteckning"><i>valkretsbeteckning</i><par n="bil__n"/></e>
+     <e lm="värmealstring"><i>värmealstring</i><par n="bil__n"/></e>
+     <e lm="växtförädling"><i>växtförädling</i><par n="bil__n"/></e>
+     <e lm="verktygsuppsättning"><i>verktygsuppsättning</i><par n="bil__n"/></e>
+     <e lm="verktygsutrustning"><i>verktygsutrustning</i><par n="bil__n"/></e>
+     <e lm="vidareutveckling"><i>vidareutveckling</i><par n="bil__n"/></e>
+     <e lm="visering"><i>visering</i><par n="bil__n"/></e>
+     <e lm="yrkesorientering"><i>yrkesorientering</i><par n="bil__n"/></e>
+     <e lm="zonindelning"><i>zonindelning</i><par n="bil__n"/></e>
+     <e lm="vaccinering"><i>vaccinering</i><par n="bil__n"/></e>
 
   </section>
   <section id="final" type="inconditional">
