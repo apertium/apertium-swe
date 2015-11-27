@@ -1263,8 +1263,15 @@ obj = object form changed to the traditional acc = accusative
 
 <!-- PT: for the multiword spices: sabal oelek and garam masala END  -->
 
-<pardef n="skull__n"> <!-- Common; no inflection -->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+
+<pardef n="go__n_ut">
+  <e><p>          <l></l><r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
+</pardef>
+<pardef n="mät__n_ut">
+  <e><p>          <l></l><r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
+</pardef>
+<pardef n="lex__n_ut">
+  <e><p>          <l></l><r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
 </pardef>
 
 
@@ -11448,7 +11455,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="noa"><i>noa</i><par n="ve__n_nt"/></e>
 <e lm="oasis"><i>oasis</i><par n="trias__n_nt"/></e>
 <e lm="belcanto"><i>belcanto</i><par n="ve__n_nt"/></e>
-<e lm="bas"><i>bas</i><par n="trias__n_nt"/></e>
 <e lm="kredit"><i>kredit</i><par n="ve__n_nt"/></e>
 <e lm="styr"><i>styr</i><par n="ve__n_nt"/></e>
 <e lm="hörhåll"><i>hörhåll</i><par n="ve__n_nt"/></e>
@@ -11545,7 +11551,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="savoir-vivre"><i>savoir-vivre</i><par n="ve__n_nt"/></e>
 <e lm="mesozoikum"><i>mesozoikum</i><par n="ve__n_nt"/></e>
 <e lm="esperanto"><i>esperanto</i><par n="ve__n_nt"/></e>
-<e lm="norr" a="PT">     <i>norr</i><par n="ve__n_nt"/></e>
 <e lm="användande" a="is"><i>användande</i><par n="äpple__n"/></e>
 <e lm="användning" a="is"><i>användning</i><par n="bil__n"/></e>
 <e lm="grannland" a="is"><i>grannl</i><par n="l/and__n"/></e>
@@ -12479,7 +12484,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="rättsstatus" a="is"><i>rättsstatus</i><par n="mat__n"/></e>
 <e lm="stabilitet" a="is"><i>stabilitet</i><par n="mat__n"/></e>
 <e lm="pussel" a="is">   <i>puss</i><par n="med/el__n"/></e>
-<e lm="nonsens" a="PT">  <i>nonsens</i><par n="trias__n_nt"/></e>
 <e lm="mögel" a="is">    <i>mög</i><par n="sek/el__n"/></e>
 <e lm="mellanöra" a="is"><i>mellanör</i><par n="ög/a__n"/></e>
 <e lm="jubel" a="is">    <i>jub</i><par n="sek/el__n"/></e>
@@ -13005,7 +13009,203 @@ obj = object form changed to the traditional acc = accusative
 <e lm="skrap" a="SALDO">           <i>skrap</i><par n="bil__n"/></e>
 <e lm="skrapa" a="SALDO">          <i>skrap</i><par n="kolleg/a__n"/></e>
 <e lm="skri" a="SALDO">            <i>skri</i><par n="bi__n"/></e>
-<e lm="skull" a="aronsson">	   <i>skull</i><par n="skull__n"/></e>
+<e lm="utsago"><i>utsago</i><par n="go__n_ut"/></e>
+<e lm="nippran"><i>nippran</i><par n="mät__n_ut"/></e>
+<e lm="star"><i>star</i><par n="go__n_ut"/></e>
+<e lm="trekvart"><i>trekvart</i><par n="mät__n_ut"/></e>
+<e lm="mårtensgås"><i>mårtensgås</i><par n="lex__n_ut"/></e>
+<e lm="fiction"><i>fiction</i><par n="go__n_ut"/></e>
+<e lm="kvarto"><i>kvarto</i><par n="go__n_ut"/></e>
+<e lm="demi-sec"><i>demi-sec</i><par n="go__n_ut"/></e>
+<e lm="ayatollah"><i>ayatollah</i><par n="mät__n_ut"/></e>
+<e lm="furst"><i>furst</i><par n="go__n_ut"/></e>
+<e lm="mäster"><i>mäster</i><par n="go__n_ut"/></e>
+<e lm="salat"><i>salat</i><par n="go__n_ut"/></e>
+<e lm="lillefar"><i>lillefar</i><par n="go__n_ut"/></e>
+<e lm="en-tous-cas"><i>en-tous-cas</i><par n="mät__n_ut"/></e>
+<e lm="gullebrand"><i>gullebrand</i><par n="go__n_ut"/></e>
+<e lm="skrapnos"><i>skrapnos</i><par n="lex__n_ut"/></e>
+<e lm="tandagnisslan"><i>tandagnisslan</i><par n="mät__n_ut"/></e>
+<e lm="garderobssorg"><i>garderobssorg</i><par n="go__n_ut"/></e>
+<e lm="limes"><i>limes</i><par n="mät__n_ut"/></e>
+<e lm="genius"><i>genius</i><par n="lex__n_ut"/></e>
+<e lm="helskotta"><i>helskotta</i><par n="go__n_ut"/></e>
+<e lm="Sir"><i>Sir</i><par n="go__n_ut"/></e>
+<e lm="hausa"><i>hausa</i><par n="go__n_ut"/></e>
+<e lm="nelson"><i>nelson</i><par n="mät__n_ut"/></e>
+<e lm="cellini"><i>cellini</i><par n="go__n_ut"/></e>
+<e lm="sir"><i>sir</i><par n="go__n_ut"/></e>
+<e lm="kabel-teve"><i>kabel-teve</i><par n="go__n_ut"/></e>
+<e lm="shia"><i>shia</i><par n="go__n_ut"/></e>
+<e lm="dropin"><i>dropin</i><par n="mät__n_ut"/></e>
+<e lm="pelota"><i>pelota</i><par n="go__n_ut"/></e>
+<e lm="knähöjd"><i>knähöjd</i><par n="mät__n_ut"/></e>
+<e lm="fördevind"><i>fördevind</i><par n="mät__n_ut"/></e>
+<e lm="scrotum"><i>scrotum</i><par n="go__n_ut"/></e>
+<e lm="lodled"><i>lodled</i><par n="mät__n_ut"/></e>
+<e lm="matmor"><i>matmor</i><par n="go__n_ut"/></e>
+<e lm="noll"><i>noll</i><par n="mät__n_ut"/></e>
+<e lm="kos"><i>kos</i><par n="mät__n_ut"/></e>
+<e lm="uppsjö"><i>uppsjö</i><par n="mät__n_ut"/></e>
+<e lm="solarplexus"><i>solarplexus</i><par n="lex__n_ut"/></e>
+<e lm="lex"><i>lex</i><par n="lex__n_ut"/></e>
+<e lm="grand-guignol"><i>grand-guignol</i><par n="go__n_ut"/></e>
+<e lm="hut"><i>hut</i><par n="mät__n_ut"/></e>
+<e lm="sunna"><i>sunna</i><par n="go__n_ut"/></e>
+<e lm="valborgsmäss"><i>valborgsmäss</i><par n="lex__n_ut"/></e>
+<e lm="tipstjänst"><i>tipstjänst</i><par n="go__n_ut"/></e>
+<e lm="tax-free"><i>tax-free</i><par n="go__n_ut"/></e>
+<e lm="värjo"><i>värjo</i><par n="go__n_ut"/></e>
+<e lm="karljohan"><i>karljohan</i><par n="go__n_ut"/></e>
+<e lm="pojk"><i>pojk</i><par n="mät__n_ut"/></e>
+<e lm="lusse"><i>lusse</i><par n="go__n_ut"/></e>
+<e lm="tvåskaft"><i>tvåskaft</i><par n="mät__n_ut"/></e>
+<e lm="försorg"><i>försorg</i><par n="go__n_ut"/></e>
+<e lm="mannamån"><i>mannamån</i><par n="mät__n_ut"/></e>
+<e lm="egyptienne"><i>egyptienne</i><par n="go__n_ut"/></e>
+<e lm="tomtefar"><i>tomtefar</i><par n="go__n_ut"/></e>
+<e lm="tjugoett"><i>tjugoett</i><par n="go__n_ut"/></e>
+<e lm="mammon"><i>mammon</i><par n="go__n_ut"/></e>
+<e lm="varnagel"><i>varnagel</i><par n="mät__n_ut"/></e>
+<e lm="gravis"><i>gravis</i><par n="lex__n_ut"/></e>
+<e lm="fasingen"><i>fasingen</i><par n="go__n_ut"/></e>
+<e lm="dato"><i>dato</i><par n="mät__n_ut"/></e>
+<e lm="sternum"><i>sternum</i><par n="go__n_ut"/></e>
+<e lm="coitus"><i>coitus</i><par n="lex__n_ut"/></e>
+<e lm="fasen"><i>fasen</i><par n="go__n_ut"/></e>
+<e lm="anno"><i>anno</i><par n="mät__n_ut"/></e>
+<e lm="ringside"><i>ringside</i><par n="go__n_ut"/></e>
+<e lm="saint"><i>saint</i><par n="go__n_ut"/></e>
+<e lm="aubergin"><i>aubergin</i><par n="go__n_ut"/></e>
+<e lm="hundan"><i>hundan</i><par n="mät__n_ut"/></e>
+<e lm="charleston"><i>charleston</i><par n="go__n_ut"/></e>
+<e lm="mån"><i>mån</i><par n="mät__n_ut"/></e>
+<e lm="tvesalu"><i>tvesalu</i><par n="mät__n_ut"/></e>
+<e lm="domvärjo"><i>domvärjo</i><par n="go__n_ut"/></e>
+<e lm="splitcane"><i>splitcane</i><par n="go__n_ut"/></e>
+<e lm="hoper"><i>hoper</i><par n="mät__n_ut"/></e>
+<e lm="datavision"><i>datavision</i><par n="go__n_ut"/></e>
+<e lm="complet"><i>complet</i><par n="mät__n_ut"/></e>
+<e lm="tusan"><i>tusan</i><par n="mät__n_ut"/></e>
+<e lm="spätlese"><i>spätlese</i><par n="go__n_ut"/></e>
+<e lm="banko"><i>banko</i><par n="mät__n_ut"/></e>
+<e lm="euroislam"><i>euroislam</i><par n="go__n_ut"/></e>
+<e lm="motvärn"><i>motvärn</i><par n="mät__n_ut"/></e>
+<e lm="kangas"><i>kangas</i><par n="lex__n_ut"/></e>
+<e lm="femkort"><i>femkort</i><par n="go__n_ut"/></e>
+<e lm="skäkt"><i>skäkt</i><par n="go__n_ut"/></e>
+<e lm="galgenfrist"><i>galgenfrist</i><par n="go__n_ut"/></e>
+<e lm="missis"><i>missis</i><par n="lex__n_ut"/></e>
+<e lm="tvärhand"><i>tvärhand</i><par n="go__n_ut"/></e>
+<e lm="thai"><i>thai</i><par n="go__n_ut"/></e>
+<e lm="ågren"><i>ågren</i><par n="go__n_ut"/></e>
+<e lm="hedenhös"><i>hedenhös</i><par n="lex__n_ut"/></e>
+<e lm="misskredit"><i>misskredit</i><par n="mät__n_ut"/></e>
+<e lm="attan"><i>attan</i><par n="go__n_ut"/></e>
+<e lm="trial-and-error"><i>trial-and-error</i><par n="go__n_ut"/></e>
+<e lm="babord"><i>babord</i><par n="mät__n_ut"/></e>
+<e lm="lovart"><i>lovart</i><par n="mät__n_ut"/></e>
+<e lm="dagens"><i>dagens</i><par n="mät__n_ut"/></e>
+<e lm="brilliant"><i>brilliant</i><par n="go__n_ut"/></e>
+<e lm="topspin"><i>topspin</i><par n="mät__n_ut"/></e>
+<e lm="high-tech"><i>high-tech</i><par n="mät__n_ut"/></e>
+<e lm="mårten"><i>mårten</i><par n="go__n_ut"/></e>
+<e lm="helikobakter"><i>helikobakter</i><par n="go__n_ut"/></e>
+<e lm="septuagesima"><i>septuagesima</i><par n="go__n_ut"/></e>
+<e lm="kindergarten"><i>kindergarten</i><par n="go__n_ut"/></e>
+<e lm="halvnelson"><i>halvnelson</i><par n="mät__n_ut"/></e>
+<e lm="nadir"><i>nadir</i><par n="go__n_ut"/></e>
+<e lm="brösthöjd"><i>brösthöjd</i><par n="mät__n_ut"/></e>
+<e lm="schau"><i>schau</i><par n="go__n_ut"/></e>
+<e lm="generalissimus"><i>generalissimus</i><par n="lex__n_ut"/></e>
+<e lm="scratch"><i>scratch</i><par n="mät__n_ut"/></e>
+<e lm="avsalu"><i>avsalu</i><par n="mät__n_ut"/></e>
+<e lm="solochvår"><i>solochvår</i><par n="mät__n_ut"/></e>
+<e lm="laissez-faire"><i>laissez-faire</i><par n="mät__n_ut"/></e>
+<e lm="sydost"><i>sydost</i><par n="go__n_ut"/></e>
+<e lm="fallout"><i>fallout</i><par n="mät__n_ut"/></e>
+<e lm="vån"><i>vån</i><par n="mät__n_ut"/></e>
+<e lm="inlösen"><i>inlösen</i><par n="mät__n_ut"/></e>
+<e lm="stupor"><i>stupor</i><par n="go__n_ut"/></e>
+<e lm="dixieland"><i>dixieland</i><par n="go__n_ut"/></e>
+<e lm="gnosis"><i>gnosis</i><par n="lex__n_ut"/></e>
+<e lm="dubbelnelson"><i>dubbelnelson</i><par n="mät__n_ut"/></e>
+<e lm="krigsfot"><i>krigsfot</i><par n="mät__n_ut"/></e>
+<e lm="multum"><i>multum</i><par n="mät__n_ut"/></e>
+<e lm="valborg"><i>valborg</i><par n="go__n_ut"/></e>
+<e lm="gamman"><i>gamman</i><par n="go__n_ut"/></e>
+<e lm="ostan"><i>ostan</i><par n="go__n_ut"/></e>
+<e lm="banco"><i>banco</i><par n="mät__n_ut"/></e>
+<e lm="kem"><i>kem</i><par n="mät__n_ut"/></e>
+<e lm="hjärtanskär"><i>hjärtanskär</i><par n="go__n_ut"/></e>
+<e lm="ready-made"><i>ready-made</i><par n="mät__n_ut"/></e>
+<e lm="action"><i>action</i><par n="go__n_ut"/></e>
+<e lm="grönköping"><i>grönköping</i><par n="go__n_ut"/></e>
+<e lm="deklarationsdags"><i>deklarationsdags</i><par n="mät__n_ut"/></e>
+<e lm="fyrskaft"><i>fyrskaft</i><par n="mät__n_ut"/></e>
+<e lm="premium"><i>premium</i><par n="go__n_ut"/></e>
+<e lm="världsklass"><i>världsklass</i><par n="mät__n_ut"/></e>
+<e lm="klink"><i>klink</i><par n="mät__n_ut"/></e>
+<e lm="dekanus"><i>dekanus</i><par n="lex__n_ut"/></e>
+<e lm="fanken"><i>fanken</i><par n="go__n_ut"/></e>
+<e lm="traktan"><i>traktan</i><par n="go__n_ut"/></e>
+<e lm="monsieur"><i>monsieur</i><par n="go__n_ut"/></e>
+<e lm="pampas"><i>pampas</i><par n="lex__n_ut"/></e>
+<e lm="boston"><i>boston</i><par n="go__n_ut"/></e>
+<e lm="mät"><i>mät</i><par n="mät__n_ut"/></e>
+<e lm="antikrist"><i>antikrist</i><par n="go__n_ut"/></e>
+<e lm="skeleton"><i>skeleton</i><par n="go__n_ut"/></e>
+<e lm="lues"><i>lues</i><par n="mät__n_ut"/></e>
+<e lm="vank"><i>vank</i><par n="mät__n_ut"/></e>
+<e lm="sexagesima"><i>sexagesima</i><par n="go__n_ut"/></e>
+<e lm="pepita"><i>pepita</i><par n="go__n_ut"/></e>
+<e lm="tittut"><i>tittut</i><par n="go__n_ut"/></e>
+<e lm="drop-in"><i>drop-in</i><par n="mät__n_ut"/></e>
+<e lm="sjutusan"><i>sjutusan</i><par n="mät__n_ut"/></e>
+<e lm="ramadan"><i>ramadan</i><par n="go__n_ut"/></e>
+<e lm="nen"><i>nen</i><par n="mät__n_ut"/></e>
+<e lm="tamtam"><i>tamtam</i><par n="mät__n_ut"/></e>
+<e lm="gravor"><i>gravor</i><par n="go__n_ut"/></e>
+<e lm="pocker"><i>pocker</i><par n="go__n_ut"/></e>
+<e lm="sydöst"><i>sydöst</i><par n="go__n_ut"/></e>
+<e lm="venia"><i>venia</i><par n="mät__n_ut"/></e>
+<e lm="återvändo"><i>återvändo</i><par n="mät__n_ut"/></e>
+<e lm="zenit"><i>zenit</i><par n="go__n_ut"/></e>
+<e lm="eloquentia"><i>eloquentia</i><par n="go__n_ut"/></e>
+<e lm="nordanskog"><i>nordanskog</i><par n="mät__n_ut"/></e>
+<e lm="datten"><i>datten</i><par n="go__n_ut"/></e>
+<e lm="go"><i>go</i><par n="go__n_ut"/></e>
+<e lm="standardislam"><i>standardislam</i><par n="go__n_ut"/></e>
+<e lm="insteg"><i>insteg</i><par n="mät__n_ut"/></e>
+<e lm="beige"><i>beige</i><par n="go__n_ut"/></e>
+<e lm="kabelteve"><i>kabelteve</i><par n="go__n_ut"/></e>
+<e lm="savoir-faire"><i>savoir-faire</i><par n="go__n_ut"/></e>
+<e lm="sweepstake"><i>sweepstake</i><par n="go__n_ut"/></e>
+<e lm="glencheck"><i>glencheck</i><par n="go__n_ut"/></e>
+<e lm="diktan"><i>diktan</i><par n="go__n_ut"/></e>
+<e lm="styrbord"><i>styrbord</i><par n="mät__n_ut"/></e>
+<e lm="mister"><i>mister</i><par n="go__n_ut"/></e>
+<e lm="kejsar"><i>kejsar</i><par n="go__n_ut"/></e>
+<e lm="tuskaft"><i>tuskaft</i><par n="mät__n_ut"/></e>
+<e lm="webbteve"><i>webbteve</i><par n="go__n_ut"/></e>
+<e lm="kurragömma"><i>kurragömma</i><par n="go__n_ut"/></e>
+<e lm="numro"><i>numro</i><par n="mät__n_ut"/></e>
+<e lm="hin"><i>hin</i><par n="go__n_ut"/></e>
+<e lm="trerätters"><i>trerätters</i><par n="mät__n_ut"/></e>
+<e lm="otid"><i>otid</i><par n="mät__n_ut"/></e>
+<e lm="festivitas"><i>festivitas</i><par n="mät__n_ut"/></e>
+<e lm="guarani"><i>guarani</i><par n="go__n_ut"/></e>
+<e lm="sec"><i>sec</i><par n="mät__n_ut"/></e>
+<e lm="jugend"><i>jugend</i><par n="mät__n_ut"/></e>
+<e lm="fyrsprång"><i>fyrsprång</i><par n="mät__n_ut"/></e>
+<e lm="tafatt"><i>tafatt</i><par n="go__n_ut"/></e>
+<e lm="benjamin"><i>benjamin</i><par n="go__n_ut"/></e>
+<e lm="raglan"><i>raglan</i><par n="go__n_ut"/></e>
+<e lm="ögonsikte"><i>ögonsikte</i><par n="mät__n_ut"/></e>
+<e lm="dosis"><i>dosis</i><par n="mät__n_ut"/></e>
+<e lm="sol-och-vår"><i>sol-och-vår</i><par n="mät__n_ut"/></e>
+<e lm="nemesis"><i>nemesis</i><par n="lex__n_ut"/></e>
+<e lm="tummeliten"><i>tummeliten</i><par n="go__n_ut"/></e>
 <!-- aronsson 2013-08-03: Commented out, because of conflict with
      the much more common modal verb skulle
 <e lm="skulle" a="SALDO">          <i>skull</i><par n="abborr/e__n"/></e>
@@ -25307,7 +25507,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="spårvidd">                     <i>spårvidd</i><par n="ed__n_ut"/></e>
 <e lm="spårvägschef">                 <i>spårvägschef</i><par n="ed__n_ut"/></e>
 <e lm="squash">                       <i>squash</i><par n="ed__n_ut"/></e>
-<e lm="stabilitet">                   <i>stabilitet</i><par n="ed__n_ut"/></e>
 <e lm="stabilitetspakt">              <i>stabilitetspakt</i><par n="ed__n_ut"/></e>
 <e lm="stabschef">                    <i>stabschef</i><par n="ed__n_ut"/></e>
 <e lm="stadkant">                     <i>stadkant</i><par n="ed__n_ut"/></e>
