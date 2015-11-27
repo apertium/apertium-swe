@@ -17459,6 +17459,7 @@ obj = object form changed to the traditional acc = accusative
     <!-- Multiword verbs -->
 
 <e lm="ha rast">         <i>ha</i><par n="ha__vblex"/><p><l><b/>rast</l><r><g><b/>rast</g></r></p></e>
+<e lm="tycka om" a="PT"><i>tyck</i><par n="hys/a__vblex"/><p><l><b/>om</l><r><g><b/>om</g></r></p></e>
 
 <!-- PT: Added from sample domains BEGIN -->
 
