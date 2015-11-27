@@ -343,6 +343,13 @@ obj = object form changed to the traditional acc = accusative
   <e c="typo" r="LR"><p><l>'s</l>          <r><s n="gen"/></r></p></e>
 </pardef>
 
+<pardef n=":-__case" c="for nouns with genitive of -:">
+  <e>       <p><l></l>          <r><s n="nom"/></r></p></e>
+  <e>       <p><l>:s</l>          <r><s n="gen"/></r></p></e>
+  <e>       <p><l>-s</l>          <r><s n="gen"/></r></p></e>
+  <e c="typo" r="LR"><p><l>'s</l>          <r><s n="gen"/></r></p></e>
+</pardef>
+
     <!-- Determiners -->
 
 <pardef n="e/n__det">
@@ -12362,7 +12369,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="sekreterare" a="is"><i>sekreterar</i><par n="apotekar/e__n"/></e>
 <e lm="senglacialtid" a="is"><i>senglacialtid</i><par n="ed__n_ut"/></e>
 <e lm="bassäng"><i>bassäng</i><par n="ed__n_ut"/></e>
-<e lm="basäng" c="typo">   <p><l>basäng</l><r><r>bassäng</r></r><par n="ed__n_ut"/></e>
+<e lm="basäng" c="typo">   <p><l>basäng</l><r>bassäng</r></p><par n="ed__n_ut"/></e>
 <e lm="simning" a="is">  <i>simning</i><par n="bil__n"/></e>
 
 <e lm="sjöjungfru" a="PT"><i>sjöjungfru</i><par n="aktie__n"/></e>
@@ -17505,7 +17512,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="affärsbank">                   <i>affärsbank</i><par n="ed__n_ut"/></e>
 <e lm="affärstid">                    <i>affärstid</i><par n="ed__n_ut"/></e>
 <e lm="afghan">                       <i>afghan</i><par n="ed__n_ut"/></e>
-<E Lm="Afghanistantrupp">             <I>Afghanistantrupp</I><Par N="Ed__N_Ut"/></E>
+<e lm="afghanistantrupp">             <i>Afghanistantrupp</i><par n="ed__n_ut"/></e>
 <e lm="aforism">                      <i>aforism</i><par n="ed__n_ut"/></e>
 <e lm="afrikan">                      <i>afrikan</i><par n="ed__n_ut"/></e>
 <e lm="afroamerikan">                 <i>afroamerikan</i><par n="ed__n_ut"/></e>
@@ -17826,7 +17833,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="areal">                        <i>areal</i><par n="ed__n_ut"/></e>
 <e lm="areopag">                      <i>areopag</i><par n="ed__n_ut"/></e>
 <e lm="arian">                        <i>arian</i><par n="ed__n_ut"/></e>
-<E Lm="Arianeraket">                  <I>Arianeraket</I><Par N="Ed__N_Ut"/></E>
+<e lm="Arianeraket">                  <i>Arianeraket</i><par n="ed__n_ut"/></e>
 <e lm="arianism">                     <i>arianism</i><par n="ed__n_ut"/></e>
 <e lm="arkad">                        <i>arkad</i><par n="ed__n_ut"/></e>
 <e lm="arkaism">                      <i>arkaism</i><par n="ed__n_ut"/></e>
@@ -18100,7 +18107,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="bedräglighet">                 <i>bedräglighet</i><par n="ed__n_ut"/></e>
 <e lm="bedrövlighet">                 <i>bedrövlighet</i><par n="ed__n_ut"/></e>
 <e lm="beduin">                       <i>beduin</i><par n="ed__n_ut"/></e>
-<E Lm="Beethovensonat">               <I>Beethovensonat</I><Par N="Ed__N_Ut"/></E>
+<e lm="Beethovensonat">               <i>Beethovensonat</i><par n="ed__n_ut"/></e>
 <e lm="befintlighet">                 <i>befintlighet</i><par n="ed__n_ut"/></e>
 <e lm="befogenhet">                   <i>befogenhet</i><par n="ed__n_ut"/></e>
 <e lm="befolkningsexplosion">         <i>befolkningsexplosion</i><par n="ed__n_ut"/></e>
@@ -18749,7 +18756,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="cistern">                      <i>cistern</i><par n="ed__n_ut"/></e>
 <e lm="citation">                     <i>citation</i><par n="ed__n_ut"/></e>
 <e lm="citrin">                       <i>citrin</i><par n="ed__n_ut"/></e>
-<E Lm="Citroen">                      <I>Citroen</I><Par N="Ed__N_Ut"/></E>
+<e lm="Citroen">                      <i>Citroen</i><par n="ed__n_ut"/></e>
 <e lm="citroen">                      <i>citroen</i><par n="ed__n_ut"/></e>
 <e lm="citrondoft">                   <i>citrondoft</i><par n="ed__n_ut"/></e>
 <e lm="citrusfrukt">                  <i>citrusfrukt</i><par n="ed__n_ut"/></e>
@@ -19091,7 +19098,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="dragshow">                     <i>dragshow</i><par n="ed__n_ut"/></e>
 <e lm="draksådd">                     <i>draksådd</i><par n="ed__n_ut"/></e>
 <e lm="dram">                         <i>dram</i><par n="ed__n_ut"/></e>
-<E Lm="Dramatenchef">                 <I>Dramatenchef</I><Par N="Ed__N_Ut"/></E>
+<e lm="Dramatenchef">                 <i>Dramatenchef</i><par n="ed__n_ut"/></e>
 <e lm="dramaturg">                    <i>dramaturg</i><par n="ed__n_ut"/></e>
 <e lm="drasut">                       <i>drasut</i><par n="ed__n_ut"/></e>
 <e lm="dressin">                      <i>dressin</i><par n="ed__n_ut"/></e>
@@ -19487,9 +19494,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="fabrikation">                  <i>fabrikation</i><par n="ed__n_ut"/></e>
 <e lm="fabriksbyggnad">               <i>fabriksbyggnad</i><par n="ed__n_ut"/></e>
 <e lm="fabrikstomt">                  <i>fabrikstomt</i><par n="ed__n_ut"/></e>
-<E Lm="Facebookbild">                 <I>Facebookbild</I><Par N="Ed__N_Ut"/></E>
 <e lm="facebookbild">                 <i>facebookbild</i><par n="ed__n_ut"/></e>
-<E Lm="Facebookgrupp">                <I>Facebookgrupp</I><Par N="Ed__N_Ut"/></E>
 <e lm="facebookgrupp">                <i>facebookgrupp</i><par n="ed__n_ut"/></e>
 <e lm="facett">                       <i>facett</i><par n="ed__n_ut"/></e>
 <e lm="facilitet">                    <i>facilitet</i><par n="ed__n_ut"/></e>
@@ -20501,7 +20506,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="hartsfiol">                    <i>hartsfiol</i><par n="ed__n_ut"/></e>
 <e lm="haschcigarett">                <i>haschcigarett</i><par n="ed__n_ut"/></e>
 <e lm="hastighetskontroll">           <i>hastighetskontroll</i><par n="ed__n_ut"/></e>
-<E Lm="Hausdorffdimension">           <I>Hausdorffdimension</I><Par N="Ed__N_Ut"/></E>
+<e lm="Hausdorffdimension">           <i>Hausdorffdimension</i><par n="ed__n_ut"/></e>
 <e lm="haverikommission">             <i>haverikommission</i><par n="ed__n_ut"/></e>
 <e lm="haverist">                     <i>haverist</i><par n="ed__n_ut"/></e>
 <e lm="havsanemon">                   <i>havsanemon</i><par n="ed__n_ut"/></e>
@@ -20582,7 +20587,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="hippodrom">                    <i>hippodrom</i><par n="ed__n_ut"/></e>
 <e lm="hippolog">                     <i>hippolog</i><par n="ed__n_ut"/></e>
 <e lm="hird">                         <i>hird</i><par n="ed__n_ut"/></e>
-<E Lm="Hiroshimabomb">                <I>Hiroshimabomb</I><Par N="Ed__N_Ut"/></E>
+<e lm="hiroshimabomb">                <i>hiroshimabomb</i><par n="ed__n_ut"/></e>
 <e lm="hiskelighet">                  <i>hiskelighet</i><par n="ed__n_ut"/></e>
 <e lm="hisklighet">                   <i>hisklighet</i><par n="ed__n_ut"/></e>
 <e lm="hissinstallation">             <i>hissinstallation</i><par n="ed__n_ut"/></e>
@@ -20593,7 +20598,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="historiograf">                 <i>historiograf</i><par n="ed__n_ut"/></e>
 <e lm="historism">                    <i>historism</i><par n="ed__n_ut"/></e>
 <e lm="histrion">                     <i>histrion</i><par n="ed__n_ut"/></e>
-<E Lm="Hitchcockfilm">                <I>Hitchcockfilm</I><Par N="Ed__N_Ut"/></E>
+<e lm="hitchcockfilm">                <i>hitchcockfilm</i><par n="ed__n_ut"/></e>
 <e lm="hittelön">                     <i>hittelön</i><par n="ed__n_ut"/></e>
 <e lm="hjälmprydnad">                 <i>hjälmprydnad</i><par n="ed__n_ut"/></e>
 <e lm="hjälporganisation">            <i>hjälporganisation</i><par n="ed__n_ut"/></e>
@@ -23167,7 +23172,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="nationalsång">                 <i>nationalsång</i><par n="ed__n_ut"/></e>
 <e lm="nationsavgift">                <i>nationsavgift</i><par n="ed__n_ut"/></e>
 <e lm="nativitet">                    <i>nativitet</i><par n="ed__n_ut"/></e>
-<E Lm="Natosoldat">                   <I>Natosoldat</I><Par N="Ed__N_Ut"/></E>
+<e lm="natosoldat">                   <i>natosoldat</i><par n="ed__n_ut"/></e>
 <e lm="natriumhalt">                  <i>natriumhalt</i><par n="ed__n_ut"/></e>
 <e lm="natriumhydroxid">              <i>natriumhydroxid</i><par n="ed__n_ut"/></e>
 <e lm="natriumkonsumtion">            <i>natriumkonsumtion</i><par n="ed__n_ut"/></e>
@@ -23681,7 +23686,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="ovänlighet">                   <i>ovänlighet</i><par n="ed__n_ut"/></e>
 <e lm="ovänskap">                     <i>ovänskap</i><par n="ed__n_ut"/></e>
 <e lm="oväsentlighet">                <i>oväsentlighet</i><par n="ed__n_ut"/></e>
-<E Lm="Oxfordstudent">                <I>Oxfordstudent</I><Par N="Ed__N_Ut"/></E>
+<e lm="oxfordstudent">                <i>oxfordstudent</i><par n="ed__n_ut"/></e>
 <e lm="oxidation">                    <i>oxidation</i><par n="ed__n_ut"/></e>
 <e lm="oxidationsreaktion">           <i>oxidationsreaktion</i><par n="ed__n_ut"/></e>
 <e lm="oxroulad">                     <i>oxroulad</i><par n="ed__n_ut"/></e>
@@ -24167,7 +24172,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="privatpraktik">                <i>privatpraktik</i><par n="ed__n_ut"/></e>
 <e lm="privatsak">                    <i>privatsak</i><par n="ed__n_ut"/></e>
 <e lm="privatscen">                   <i>privatscen</i><par n="ed__n_ut"/></e>
-<E Lm="PRkupp">                       <I>PRkupp</I><Par N="Ed__N_Ut"/></E>
+<e lm="prkupp">                       <i>prkupp</i><par n="ed__n_ut"/></e>
 <e lm="PR-kupp">                      <i>PR-kupp</i><par n="ed__n_ut"/></e>
 <e lm="prkupp">                       <i>prkupp</i><par n="ed__n_ut"/></e>
 <e lm="pr-kupp">                      <i>pr-kupp</i><par n="ed__n_ut"/></e>
@@ -25596,8 +25601,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="stjärnmålvakt">                <i>stjärnmålvakt</i><par n="ed__n_ut"/></e>
 <e lm="stjärntriplett">               <i>stjärntriplett</i><par n="ed__n_ut"/></e>
 <e lm="stjärtskulptör">               <i>stjärtskulptör</i><par n="ed__n_ut"/></e>
-<E Lm="Stockholmsfotograf">           <I>Stockholmsfotograf</I><Par N="Ed__N_Ut"/></E>
-<E Lm="Stockholmshelg">               <I>Stockholmshelg</I><Par N="Ed__N_Ut"/></E>
+<e lm="stockholmsfotograf">           <i>stockholmsfotograf</i><par n="ed__n_ut"/></e>
+<e lm="stockholmshelg">               <i>stockholmshelg</i><par n="ed__n_ut"/></e>
 <e lm="stofil">                       <i>stofil</i><par n="ed__n_ut"/></e>
 <e lm="stoftmängd">                   <i>stoftmängd</i><par n="ed__n_ut"/></e>
 <e lm="stoicism">                     <i>stoicism</i><par n="ed__n_ut"/></e>
@@ -25946,7 +25951,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="tartelett">                    <i>tartelett</i><par n="ed__n_ut"/></e>
 <e lm="tartrat">                      <i>tartrat</i><par n="ed__n_ut"/></e>
 <e lm="tarvlighet">                   <i>tarvlighet</i><par n="ed__n_ut"/></e>
-<E Lm="Tarzanfilm">                   <I>Tarzanfilm</I><Par N="Ed__N_Ut"/></E>
+<e lm="tarzanfilm">                   <i>tarzanfilm</i><par n="ed__n_ut"/></e>
 <e lm="tassemark">                    <i>tassemark</i><par n="ed__n_ut"/></e>
 <e lm="tatar">                        <i>tatar</i><par n="ed__n_ut"/></e>
 <e lm="taxeringsassistent">           <i>taxeringsassistent</i><par n="ed__n_ut"/></e>
@@ -26823,7 +26828,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vidskeplighet">                <i>vidskeplighet</i><par n="ed__n_ut"/></e>
 <e lm="vidsynthet">                   <i>vidsynthet</i><par n="ed__n_ut"/></e>
 <e lm="vidunderlighet">               <i>vidunderlighet</i><par n="ed__n_ut"/></e>
-<E Lm="Vietnamveteran">               <I>Vietnamveteran</I><Par N="Ed__N_Ut"/></E>
+<e lm="vietnamveteran">               <i>vietnamveteran</i><par n="ed__n_ut"/></e>
 <e lm="vigvam">                       <i>vigvam</i><par n="ed__n_ut"/></e>
 <e lm="viktenhet">                    <i>viktenhet</i><par n="ed__n_ut"/></e>
 <e lm="viktförlust">                  <i>viktförlust</i><par n="ed__n_ut"/></e>
