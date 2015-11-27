@@ -2085,6 +2085,7 @@ obj = object form changed to the traditional acc = accusative
 <!-- Added from the pair is-sv BEGIN -->
 
 <pardef n="samverkan__n" c="autoconcord:ut,sgpl">
+  <!-- TODO: looks like some of these lemmas are simply the definite forms, e.g. «bevisbörda» should be the ind -->
   <e a="is">       <p><l></l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e>
   <e>       <p><l></l>       <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
 </pardef>
@@ -7888,7 +7889,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="vardag">          <i>vardag</i><par n="bil__n"/></e>
 <e lm="värdering">       <i>värdering</i><par n="bil__n"/></e>
 <e lm="vård">            <i>vård</i><par n="bil__n"/></e>
-<e lm="barnvård">            <i>barnvård</i><par n="bil__n"/></e>
 <e lm="värk">            <i>värk</i><par n="bil__n"/></e>
 <e lm="världscuptävling"><i>världscuptävling</i><par n="bil__n"/></e>
 <e lm="världsdel">       <i>världsdel</i><par n="bil__n"/></e>
@@ -10478,9 +10478,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="svaghet">         <i>svaghet</i><par n="ed__n_ut"/></e>
 
 
-<!--
-    <e lm="norsk"><i>norsk</i><par n="bil__n"/></e>
--->
 <e lm="syd">             <i>syd</i><par n="koppar__n"/></e>
 <e lm="symbol">          <i>symbol</i><par n="ed__n_ut"/></e>
 <e lm="symfoni">         <i>symfoni</i><par n="geometri__n"/></e>
@@ -11326,7 +11323,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="låt" a="is">      <i>låt</i><par n="bil__n"/></e>
 <e lm="lagstiftningsprocess" a="is"><i>lagstiftningsprocess</i><par n="adress__n"/></e>
 <e lm="gränskontroll" a="is"><i>gränskontroll</i><par n="ed__n_ut"/></e>
-<e lm="gränsvärd" a="is"><i>gränsvärd</i><par n="bil__n"/></e>
 <e lm="jordbruksproduktion" a="is"><i>jordbruksproduktion</i><par n="ed__n_ut"/></e>
 <e lm="jordbrukspolitik" a="is"><i>jordbrukspolitik</i><par n="mat__n"/></e>
 <e lm="jordbruksområde" a="is"><i>jordbruksområde</i><par n="äpple__n"/></e>
@@ -12015,7 +12011,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="barndom" a="is">  <i>barndom</i><par n="bil__n"/></e>
 <e lm="barnskyddsnämnd" a="is"><i>barnskyddsnämnd</i><par n="ed__n_ut"/></e>
 <e lm="baronessa" a="is"><i>baroness</i><par n="frug/a__n_ut"/></e>
-<e lm="basäng" a="is">   <i>basäng</i><par n="ed__n_ut"/></e>
 <e lm="bekvämligheter" a="is"><i>bekvämligheter</i><par n="böter__n"/></e>
 <e lm="benägenhet" a="is"><i>benägenhet</i><par n="ed__n_ut"/></e>
 <e lm="bildkonst" a="is"><i>bildkonst</i><par n="ed__n_ut"/></e>
@@ -12238,7 +12233,8 @@ obj = object form changed to the traditional acc = accusative
 <e lm="sejval" a="is">   <i>sejval</i><par n="bil__n"/></e>
 <e lm="sekreterare" a="is"><i>sekreterar</i><par n="apotekar/e__n"/></e>
 <e lm="senglacialtid" a="is"><i>senglacialtid</i><par n="ed__n_ut"/></e>
-<e lm="simbassäng" a="PT"><i>simbassäng</i><par n="ed__n_ut"/></e>
+<e lm="bassäng"><i>bassäng</i><par n="ed__n_ut"/></e>
+<e lm="basäng" c="typo">   <p><l>basäng</l><r><r>bassäng</r></r><par n="ed__n_ut"/></e>
 <e lm="simning" a="is">  <i>simning</i><par n="bil__n"/></e>
 
 <e lm="sjöjungfru" a="PT"><i>sjöjungfru</i><par n="aktie__n"/></e>
@@ -12454,7 +12450,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="universum" a="is"><i>universum</i><par n="sex__n"/></e>
 <e lm="uppförande" a="is"><i>uppförande</i><par n="aktstycke__n"/></e>
 <e lm="utland" a="is">   <i>utland</i><par n="ackord__n"/></e>
-<e lm="utrikesdepartament" a="is"><i>utrikesdepartament</i><par n="ackord__n"/></e>
+<e lm="utrikesdepartement" a="is"><i>utrikesdepartement</i><par n="ackord__n"/></e>
 <e lm="valförbund" a="is"><i>valförbund</i><par n="ackord__n"/></e>
 <e lm="vardagsliv" a="is"><i>vardagsliv</i><par n="ackord__n"/></e>
 <e lm="vattenpass" a="is"><i>vattenpass</i><par n="ackord__n"/></e>
@@ -13032,7 +13028,6 @@ obj = object form changed to the traditional acc = accusative
 <e lm="dansklubb" a="PT">              <i>dansklubb</i><par n="bil__n"/></e>
 <e lm="dansledare" a="PT">              <i>dansledar</i><par n="apotekar/e__n"/></e>
 <e lm="dikesren" a="PT">              <i>dikesren</i><par n="bil__n"/></e>
-<e lm="drevkedja" c="domain:jakt" a="PT">              <i>kedj</i><par n="frug/a__n_ut"/></e>
 <e lm="eka" c="domain:sjöochhav" a="PT">              <i>eka</i><par n="frug/a__n_ut"/></e>
 <e lm="enbärsdricka" c="domain:mat" a="PT">              <i>enbärsdrick</i><par n="frug/a__n_ut"/></e>
 <e lm="fik" c="style:fam" a="PT">              <i>fik</i><par n="ackord__n"/></e>
