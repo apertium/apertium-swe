@@ -1268,8 +1268,16 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p></e>
 </pardef>
 
-<pardef n="nonsens__n"> <!-- Neuter; no inflection -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
+
+<!-- TODO: incomplete pardefs, bidixes needs to know this -->
+<pardef n="trias__n_nt">
+  <e><p>          <l></l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
+</pardef>
+<pardef n="T9__n_nt">
+  <e><p>          <l></l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n=":-__case"/></e>
+</pardef>
+<pardef n="ve__n_nt">
+  <e><p>          <l></l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
 </pardef>
 
 <pardef n="bil__n" c="autoconcord:ut,sgpl"> <!-- Common; ~ / ~en / ~ar / ~arna -->
@@ -11426,7 +11434,129 @@ obj = object form changed to the traditional acc = accusative
 <e lm="nöd" a="is">      <i>nöd</i><par n="ackord__n"/></e>
 <e lm="nödsituation" a="is"><i>nödsituation</i><par n="ed__n_ut"/></e>
 <e lm="krissituation" a="is"><i>krissituation</i><par n="ed__n_ut"/></e>
-<e lm="norr" a="PT">     <i>norr</i><par n="nonsens__n"/></e>
+<e lm="MP3"><i>MP3</i><par n="T9__n_nt"/></e>
+<e lm="trias"><i>trias</i><par n="trias__n_nt"/></e>
+<e lm="mp3"><i>mp3</i><par n="T9__n_nt"/></e>
+<e lm="cesium-137"><i>cesium-137</i><par n="T9__n_nt"/></e>
+<e lm="afrikaans"><i>afrikaans</i><par n="trias__n_nt"/></e>
+<e lm="jod-131"><i>jod-131</i><par n="T9__n_nt"/></e>
+<e lm="T9"><i>T9</i><par n="T9__n_nt"/></e>
+<e lm="makrokosmos"><i>makrokosmos</i><par n="trias__n_nt"/></e>
+<e lm="kol-14"><i>kol-14</i><par n="T9__n_nt"/></e>
+<e lm="kohl"><i>kohl</i><par n="ve__n_nt"/></e>
+<e lm="tvåkomponents"><i>tvåkomponents</i><par n="trias__n_nt"/></e>
+<e lm="bukettgrönt"><i>bukettgrönt</i><par n="ve__n_nt"/></e>
+<e lm="muck"><i>muck</i><par n="ve__n_nt"/></e>
+<e lm="synhåll"><i>synhåll</i><par n="ve__n_nt"/></e>
+<e lm="fjärran"><i>fjärran</i><par n="ve__n_nt"/></e>
+<e lm="marienglas"><i>marienglas</i><par n="trias__n_nt"/></e>
+<e lm="världsformat"><i>världsformat</i><par n="ve__n_nt"/></e>
+<e lm="vinterny"><i>vinterny</i><par n="ve__n_nt"/></e>
+<e lm="kallskuret"><i>kallskuret</i><par n="ve__n_nt"/></e>
+<e lm="vaj"><i>vaj</i><par n="ve__n_nt"/></e>
+<e lm="print-on-demand"><i>print-on-demand</i><par n="ve__n_nt"/></e>
+<e lm="klerus"><i>klerus</i><par n="trias__n_nt"/></e>
+<e lm="noa"><i>noa</i><par n="ve__n_nt"/></e>
+<e lm="oasis"><i>oasis</i><par n="trias__n_nt"/></e>
+<e lm="belcanto"><i>belcanto</i><par n="ve__n_nt"/></e>
+<e lm="bas"><i>bas</i><par n="trias__n_nt"/></e>
+<e lm="kredit"><i>kredit</i><par n="ve__n_nt"/></e>
+<e lm="styr"><i>styr</i><par n="ve__n_nt"/></e>
+<e lm="hörhåll"><i>hörhåll</i><par n="ve__n_nt"/></e>
+<e lm="gingham"><i>gingham</i><par n="ve__n_nt"/></e>
+<e lm="otal"><i>otal</i><par n="ve__n_nt"/></e>
+<e lm="item"><i>item</i><par n="ve__n_nt"/></e>
+<e lm="köp-slit-och-släng"><i>köp-slit-och-släng</i><par n="ve__n_nt"/></e>
+<e lm="helgsmål"><i>helgsmål</i><par n="ve__n_nt"/></e>
+<e lm="fog"><i>fog</i><par n="ve__n_nt"/></e>
+<e lm="ankar"><i>ankar</i><par n="ve__n_nt"/></e>
+<e lm="go"><i>go</i><par n="ve__n_nt"/></e>
+<e lm="debet"><i>debet</i><par n="ve__n_nt"/></e>
+<e lm="kryddgrönt"><i>kryddgrönt</i><par n="ve__n_nt"/></e>
+<e lm="undseende"><i>undseende</i><par n="ve__n_nt"/></e>
+<e lm="gist"><i>gist</i><par n="ve__n_nt"/></e>
+<e lm="ödesmål"><i>ödesmål</i><par n="ve__n_nt"/></e>
+<e lm="tabelras"><i>tabelras</i><par n="trias__n_nt"/></e>
+<e lm="nödvärn"><i>nödvärn</i><par n="ve__n_nt"/></e>
+<e lm="räckhåll"><i>räckhåll</i><par n="ve__n_nt"/></e>
+<e lm="oting"><i>oting</i><par n="ve__n_nt"/></e>
+<e lm="imprimatur"><i>imprimatur</i><par n="ve__n_nt"/></e>
+<e lm="vintergrönt"><i>vintergrönt</i><par n="ve__n_nt"/></e>
+<e lm="kadmiumgult"><i>kadmiumgult</i><par n="ve__n_nt"/></e>
+<e lm="koboltblått"><i>koboltblått</i><par n="ve__n_nt"/></e>
+<e lm="titanvitt"><i>titanvitt</i><par n="ve__n_nt"/></e>
+<e lm="lila"><i>lila</i><par n="ve__n_nt"/></e>
+<e lm="signalrött"><i>signalrött</i><par n="ve__n_nt"/></e>
+<e lm="kenozoikum"><i>kenozoikum</i><par n="ve__n_nt"/></e>
+<e lm="internet"><i>internet</i><par n="ve__n_nt"/></e>
+<e lm="skön"><i>skön</i><par n="ve__n_nt"/></e>
+<e lm="kvartär"><i>kvartär</i><par n="ve__n_nt"/></e>
+<e lm="blygult"><i>blygult</i><par n="ve__n_nt"/></e>
+<e lm="zinkvitt"><i>zinkvitt</i><par n="ve__n_nt"/></e>
+<e lm="hausa"><i>hausa</i><par n="ve__n_nt"/></e>
+<e lm="hindi"><i>hindi</i><par n="ve__n_nt"/></e>
+<e lm="monstrum"><i>monstrum</i><par n="ve__n_nt"/></e>
+<e lm="paleozoikum"><i>paleozoikum</i><par n="ve__n_nt"/></e>
+<e lm="eluvium"><i>eluvium</i><par n="ve__n_nt"/></e>
+<e lm="kromgult"><i>kromgult</i><par n="ve__n_nt"/></e>
+<e lm="urdu"><i>urdu</i><par n="ve__n_nt"/></e>
+<e lm="kremservitt"><i>kremservitt</i><par n="ve__n_nt"/></e>
+<e lm="maranata"><i>maranata</i><par n="ve__n_nt"/></e>
+<e lm="sesam"><i>sesam</i><par n="ve__n_nt"/></e>
+<e lm="tertiär"><i>tertiär</i><par n="ve__n_nt"/></e>
+<e lm="holocen"><i>holocen</i><par n="ve__n_nt"/></e>
+<e lm="bromtymolblått"><i>bromtymolblått</i><par n="ve__n_nt"/></e>
+<e lm="devon"><i>devon</i><par n="ve__n_nt"/></e>
+<e lm="kambrium"><i>kambrium</i><par n="ve__n_nt"/></e>
+<e lm="schlaraffenland"><i>schlaraffenland</i><par n="ve__n_nt"/></e>
+<e lm="perm"><i>perm</i><par n="ve__n_nt"/></e>
+<e lm="sfumato"><i>sfumato</i><par n="ve__n_nt"/></e>
+<e lm="gujarati"><i>gujarati</i><par n="ve__n_nt"/></e>
+<e lm="kadmiumrött"><i>kadmiumrött</i><par n="ve__n_nt"/></e>
+<e lm="scharlakansrött"><i>scharlakansrött</i><par n="ve__n_nt"/></e>
+<e lm="kemikum"><i>kemikum</i><par n="ve__n_nt"/></e>
+<e lm="catch-as-catch-can"><i>catch-as-catch-can</i><par n="ve__n_nt"/></e>
+<e lm="waterloo"><i>waterloo</i><par n="ve__n_nt"/></e>
+<e lm="lä"><i>lä</i><par n="ve__n_nt"/></e>
+<e lm="schwyzerdütsch"><i>schwyzerdütsch</i><par n="ve__n_nt"/></e>
+<e lm="labour"><i>labour</i><par n="ve__n_nt"/></e>
+<e lm="fortuna"><i>fortuna</i><par n="ve__n_nt"/></e>
+<e lm="arkeikum"><i>arkeikum</i><par n="ve__n_nt"/></e>
+<e lm="zinkgult"><i>zinkgult</i><par n="ve__n_nt"/></e>
+<e lm="alkaliblått"><i>alkaliblått</i><par n="ve__n_nt"/></e>
+<e lm="Internet"><i>Internet</i><par n="ve__n_nt"/></e>
+<e lm="spe"><i>spe</i><par n="ve__n_nt"/></e>
+<e lm="swahili"><i>swahili</i><par n="ve__n_nt"/></e>
+<e lm="management"><i>management</i><par n="ve__n_nt"/></e>
+<e lm="ido"><i>ido</i><par n="ve__n_nt"/></e>
+<e lm="halma"><i>halma</i><par n="ve__n_nt"/></e>
+<e lm="blyvitt"><i>blyvitt</i><par n="ve__n_nt"/></e>
+<e lm="malakitgrönt"><i>malakitgrönt</i><par n="ve__n_nt"/></e>
+<e lm="numen"><i>numen</i><par n="ve__n_nt"/></e>
+<e lm="bladrött"><i>bladrött</i><par n="ve__n_nt"/></e>
+<e lm="lampsvart"><i>lampsvart</i><par n="ve__n_nt"/></e>
+<e lm="sputum"><i>sputum</i><par n="ve__n_nt"/></e>
+<e lm="eocen"><i>eocen</i><par n="ve__n_nt"/></e>
+<e lm="yttre"><i>yttre</i><par n="ve__n_nt"/></e>
+<e lm="väl"><i>väl</i><par n="ve__n_nt"/></e>
+<e lm="ve"><i>ve</i><par n="ve__n_nt"/></e>
+<e lm="sinkabirum"><i>sinkabirum</i><par n="ve__n_nt"/></e>
+<e lm="europium"><i>europium</i><par n="ve__n_nt"/></e>
+<e lm="berlinerblått"><i>berlinerblått</i><par n="ve__n_nt"/></e>
+<e lm="paleocen"><i>paleocen</i><par n="ve__n_nt"/></e>
+<e lm="chef-d'oeuvre"><i>chef-d'oeuvre</i><par n="ve__n_nt"/></e>
+<e lm="schwyzertütsch"><i>schwyzertütsch</i><par n="ve__n_nt"/></e>
+<e lm="sgraffito"><i>sgraffito</i><par n="ve__n_nt"/></e>
+<e lm="publikum"><i>publikum</i><par n="ve__n_nt"/></e>
+<e lm="metylenblått"><i>metylenblått</i><par n="ve__n_nt"/></e>
+<e lm="fortran"><i>fortran</i><par n="ve__n_nt"/></e>
+<e lm="pliocen"><i>pliocen</i><par n="ve__n_nt"/></e>
+<e lm="silvervitt"><i>silvervitt</i><par n="ve__n_nt"/></e>
+<e lm="mandarin"><i>mandarin</i><par n="ve__n_nt"/></e>
+<e lm="savoir-vivre"><i>savoir-vivre</i><par n="ve__n_nt"/></e>
+<e lm="mesozoikum"><i>mesozoikum</i><par n="ve__n_nt"/></e>
+<e lm="esperanto"><i>esperanto</i><par n="ve__n_nt"/></e>
+<e lm="norr" a="PT">     <i>norr</i><par n="ve__n_nt"/></e>
 <e lm="användande" a="is"><i>användande</i><par n="äpple__n"/></e>
 <e lm="användning" a="is"><i>användning</i><par n="bil__n"/></e>
 <e lm="grannland" a="is"><i>grannl</i><par n="l/and__n"/></e>
@@ -12360,7 +12490,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="rättsstatus" a="is"><i>rättsstatus</i><par n="mat__n"/></e>
 <e lm="stabilitet" a="is"><i>stabilitet</i><par n="mat__n"/></e>
 <e lm="pussel" a="is">   <i>puss</i><par n="med/el__n"/></e>
-<e lm="nonsens" a="PT">  <i>nonsens</i><par n="nonsens__n"/></e>
+<e lm="nonsens" a="PT">  <i>nonsens</i><par n="trias__n_nt"/></e>
 <e lm="mögel" a="is">    <i>mög</i><par n="sek/el__n"/></e>
 <e lm="mellanöra" a="is"><i>mellanör</i><par n="ög/a__n"/></e>
 <e lm="jubel" a="is">    <i>jub</i><par n="sek/el__n"/></e>
