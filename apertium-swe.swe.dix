@@ -26,11 +26,6 @@
 
 <!-- PT added abbreviations -->
 
-<!-- PT added support for compounds
-by using the pardefs from the pair nn-nb
-and bil_cp__n (common), ackord_cp__n (neuter)
--->
-
 <!-- PT started adding comments on register/genre/style of words when appropriate, e.g. c="domain:general style:fam" !
 
 neu = neutral (neutre)
@@ -196,15 +191,19 @@ obj = object form changed to the traditional acc = accusative
    <e r="LR"><p><l>s</l>         <r><s n="gen"/><s n="compound-R"/></r></p></e>
    <e>       <p><l>s</l>         <r><s n="gen"/></r></p></e>
 </pardef>
-<pardef n="cp-both\Ø_LR_s\'__case" c="As above, but with ' in the genitive case.">
+<pardef n="cp-both\Ø_LR_s\Ø__case" c="As above, but with no letter in the genitive case.">
    <e r="RL"><p><l></l>         <r><s n="cmp"/></r></p></e>
    <e r="LR"><p><l></l>          <r><s n="cmp"/><s n="compound-only-L"/></r></p></e>
    <e r="LR"><p><l>s</l>         <r><s n="cmp"/><s n="compound-only-L"/></r></p></e>
    <e>       <p><l>-</l>         <r><s n="cmp-split"/></r></p></e>
    <e r="LR"><p><l></l>          <r><s n="compound-R"/></r></p></e>
    <e>       <p><l></l>          <r></r></p></e>
+   <e r="LR"><p><l></l>         <r><s n="gen"/><s n="compound-R"/></r></p></e>
+   <e>       <p><l></l>         <r><s n="gen"/></r></p></e>
    <e r="LR"><p><l>'</l>         <r><s n="gen"/><s n="compound-R"/></r></p></e>
-   <e>       <p><l>'</l>         <r><s n="gen"/></r></p></e>
+   <e r="LR"><p><l>'</l>         <r><s n="gen"/></r></p></e>
+   <e c="typo" r="LR"><p><l>'s</l>         <r><s n="gen"/><s n="compound-R"/></r></p></e>
+   <e c="typo" r="LR"><p><l>'s</l>         <r><s n="gen"/></r></p></e>
 </pardef>
 
 
@@ -1288,15 +1287,7 @@ obj = object form changed to the traditional acc = accusative
 </pardef>
 
 <pardef n="is__n" c="autoconcord:ut,sgpl"> <!-- PT: Common; ~ / ~en / ~ar / ~arna  genitive without s in singualar, indefinite-->
-  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-  <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
-  <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
-  <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
-</pardef>
-
-<pardef n="bil_cp__n" c="Test of compounds breaks autoconcord"> <!-- Common; ~ / ~en / ~ar / ~arna -->
-  <e a="PT">       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="no-cp\Ø\S__case"/></e>
-  <!-- <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\S__case"/></e> -->
+  <e>       <p><l></l>          <r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="cp-both\Ø_LR_s\Ø__case"/></e>
   <e>       <p><l>en</l>        <r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l>ar</l>        <r><s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/><par n="cp-R"/></e>
   <e>       <p><l>arna</l>      <r><s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/><par n="cp-R"/></e>
@@ -7155,9 +7146,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="tjur">            <i>tjur</i><par n="bil__n"/></e>
 
 <e lm="tjuv">            <i>tjuv</i><par n="bil__n"/></e>
-<!--
-<e lm="tjuv" a="PT"><i>tjuv</i><par n="bil_cp__n"/></e>
- -->
+
 
 <e lm="tonåring">        <i>tonåring</i><par n="bil__n"/></e>
 <e lm="topp">            <i>topp</i><par n="bil__n"/></e>
