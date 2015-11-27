@@ -352,12 +352,6 @@
       <e><p>          <l>eln</l><r>el<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
       <e><p>          <l>ler</l><r>el<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
     </pardef>
-    <pardef n="vin__n_nt">
-      <e><p>          <l></l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
-      <e><p>          <l>et</l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
-      <e><p>          <l>erna</l><r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
-      <e><p>          <l>er</l><r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
-    </pardef>
     <pardef n="al__n_ut">
       <e><p>          <l></l><r><s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
       <e><p>          <l>en</l><r><s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -1176,12 +1170,6 @@
       <e><p>          <l>o</l><r>o<s n="n"/><s n="ut"/><s n="sg"/><s n="ind"/></r></p><par n="S__case"/></e>
       <e><p>          <l>i</l><r>o<s n="n"/><s n="ut"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
       <e><p>          <l>ina</l><r>o<s n="n"/><s n="ut"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
-    </pardef>
-    <pardef n="vax__n_nt">
-      <e><p>          <l></l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p><par n="Ø__case"/></e>
-      <e><p>          <l>et</l><r><s n="n"/><s n="nt"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
-      <e><p>          <l>erna</l><r><s n="n"/><s n="nt"/><s n="pl"/><s n="def"/></r></p><par n="S__case"/></e>
-      <e><p>          <l>er</l><r><s n="n"/><s n="nt"/><s n="pl"/><s n="ind"/></r></p><par n="S__case"/></e>
     </pardef>
     <pardef n="tap/e__n_ut">
       <e><p>          <l>en</l><r>e<s n="n"/><s n="ut"/><s n="sg"/><s n="def"/></r></p><par n="S__case"/></e>
@@ -3033,7 +3021,6 @@
     <e lm="självförebråelse"><i>självförebråelse</i><par n="tå__n_ut"/></e>
     <e lm="brott"><i>brott</i><par n="ök__n_nt"/></e>
     <e lm="laxkista"><i>laxkist</i><par n="bo/a__n_ut"/></e>
-    <e lm="brännvin"><i>brännvin</i><par n="vin__n_nt"/></e>
     <e lm="socialfall"><i>socialfall</i><par n="ök__n_nt"/></e>
     <e lm="diskvalificerande"><i>diskvalificerande</i><par n="ave__n_nt"/></e>
     <e lm="lagarbete"><i>lagarbete</i><par n="ave__n_nt"/></e>
@@ -3967,7 +3954,6 @@
     <e lm="tomhetskänsla"><i>tomhetskänsla</i><par n="so__n_ut"/></e>
     <e lm="brottare"><i>brottar</i><par n="åkar/e__n_ut"/></e>
     <e lm="väghyvel"><i>väghyv</i><par n="åt/el__n_ut"/></e>
-    <e lm="motgift"><i>motgift</i><par n="vin__n_nt"/></e>
     <e lm="reflekterbarhet"><i>reflekterbarhet</i><par n="ör__n_ut"/></e>
     <e lm="forskande"><i>forskande</i><par n="ave__n_nt"/></e>
     <e lm="klassförrädare"><i>klassförrädar</i><par n="åkar/e__n_ut"/></e>
@@ -4095,7 +4081,6 @@
     <e lm="graviditetskilo"><i>graviditetskilo</i><par n="öre__n_nt"/></e>
     <e lm="utlevelse"><i>utlevelse</i><par n="so__n_ut"/></e>
     <e lm="ädelträ"><i>ädelträ</i><par n="ly__n_nt"/></e>
-    <e lm="lättvin"><i>lättvin</i><par n="vin__n_nt"/></e>
     <e lm="midjeband"><i>midjeband</i><par n="ök__n_nt"/></e>
     <e lm="sjökort"><i>sjökort</i><par n="ök__n_nt"/></e>
     <e lm="kola"><i>kol</i><par n="bo/a__n_ut"/></e>
@@ -4504,7 +4489,6 @@
     <e lm="depressionsdiagnos"><i>depressionsdiagnos</i><par n="oas__n_ut"/></e>
     <e lm="preparat"><i>preparat</i><par n="ök__n_nt"/></e>
     <e lm="selleri"><i>selleri</i><par n="so__n_ut"/></e>
-    <e lm="läppsmink"><i>läppsmink</i><par n="vin__n_nt"/></e>
     <e lm="laxyngel"><i>laxyng</i><par n="hag/el__n_nt"/></e>
     <e lm="TV-studio"><i>TV-studio</i><par n="tå__n_ut"/></e>
     <e lm="takfall"><i>takfall</i><par n="ök__n_nt"/></e>
@@ -4557,7 +4541,6 @@
     <e lm="mörkerseende"><i>mörkerseende</i><par n="eke__n_nt"/></e>
     <e lm="sepia"><i>sepia</i><par n="so__n_ut"/></e>
     <e lm="bakfullhet"><i>bakfullhet</i><par n="ör__n_ut"/></e>
-    <e lm="mineralsalt"><i>mineralsalt</i><par n="vin__n_nt"/></e>
     <e lm="fältherre"><i>fältherr</i><par n="li/e__n_ut"/></e>
     <e lm="bortlovande"><i>bortlovande</i><par n="ave__n_nt"/></e>
     <e lm="havande"><i>havande</i><par n="ave__n_nt"/></e>
@@ -5791,7 +5774,6 @@
     <e lm="ättiksinläggning"><i>ättiksinläggning</i><par n="al__n_ut"/></e>
     <e lm="bänsel"><i>bäns</i><par n="åt/el__n_ut"/></e>
     <e lm="rumsnummer"><i>rumsnum</i><par n="num/mer__n_nt"/></e>
-    <e lm="golvlack"><i>golvlack</i><par n="vin__n_nt"/></e>
     <e lm="gnatande"><i>gnatande</i><par n="ave__n_nt"/></e>
     <e lm="stoppande"><i>stoppande</i><par n="ave__n_nt"/></e>
     <e lm="bilköp"><i>bilköp</i><par n="ök__n_nt"/></e>
@@ -6201,7 +6183,6 @@
     <e lm="hårplattång"><i>hårplatt</i><par n="t/ång__n_ut"/></e>
     <e lm="okontoriserbarhet"><i>okontoriserbarhet</i><par n="ör__n_ut"/></e>
     <e lm="munkorden"><i>munkord</i><par n="ord/en__n_ut"/></e>
-    <e lm="guanin"><i>guanin</i><par n="vin__n_nt"/></e>
     <e lm="motsägelse"><i>motsägelse</i><par n="tå__n_ut"/></e>
     <e lm="ramm"><i>ramm</i><par n="al__n_ut"/></e>
     <e lm="arbetsinställelse"><i>arbetsinställelse</i><par n="tå__n_ut"/></e>
@@ -6831,7 +6812,6 @@
     <e lm="stallbroder"><i>stallbr</i><par n="br/oder__n_ut"/></e>
     <e lm="silverbägare"><i>silverbägar</i><par n="åkar/e__n_ut"/></e>
     <e lm="fläskänger"><i>fläskäng</i><par n="ek/er__n_ut"/></e>
-    <e lm="gummiharts"><i>gummiharts</i><par n="vax__n_nt"/></e>
     <e lm="schvaback"><i>schvaback</i><par n="ör__n_ut"/></e>
     <e lm="biktstol"><i>biktstol</i><par n="al__n_ut"/></e>
     <e lm="tjurrusning"><i>tjurrusning</i><par n="al__n_ut"/></e>
@@ -7893,7 +7873,6 @@
     <e lm="fällning"><i>fällning</i><par n="al__n_ut"/></e>
     <e lm="kiliasm"><i>kiliasm</i><par n="ör__n_ut"/></e>
     <e lm="topas"><i>topas</i><par n="oas__n_ut"/></e>
-    <e lm="karotin"><i>karotin</i><par n="vin__n_nt"/></e>
     <e lm="egenskapsord"><i>egenskapsord</i><par n="ök__n_nt"/></e>
     <e lm="förgasare"><i>förgasar</i><par n="åkar/e__n_ut"/></e>
     <e lm="havsfru"><i>havsfru</i><par n="mo__n_ut"/></e>
@@ -8181,7 +8160,6 @@
     <e lm="gagnerikhet"><i>gagnerikhet</i><par n="ör__n_ut"/></e>
     <e lm="fraktionering"><i>fraktionering</i><par n="al__n_ut"/></e>
     <e lm="logistik"><i>logistik</i><par n="ör__n_ut"/></e>
-    <e lm="benporslin"><i>benporslin</i><par n="vin__n_nt"/></e>
     <e lm="vindicerbarhet"><i>vindicerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="högerregel"><i>högerregel</i><par n="so__n_ut"/></e>
     <e lm="kjoltyg"><i>kjoltyg</i><par n="ök__n_nt"/></e>
@@ -9598,7 +9576,6 @@
     <e lm="öronsnibb"><i>öronsnibb</i><par n="al__n_ut"/></e>
     <e lm="spricka"><i>sprick</i><par n="bo/a__n_ut"/></e>
     <e lm="kännarmin"><i>kännarmin</i><par n="ör__n_ut"/></e>
-    <e lm="rosévin"><i>rosévin</i><par n="vin__n_nt"/></e>
     <e lm="vagnsätt"><i>vagnsätt</i><par n="ök__n_nt"/></e>
     <e lm="loftbod"><i>loftbod</i><par n="al__n_ut"/></e>
     <e lm="belgier"><i>belgier</i><par n="lire__n_ut"/></e>
@@ -10146,7 +10123,6 @@
     <e lm="polonäs"><i>polonäs</i><par n="oas__n_ut"/></e>
     <e lm="badvatten"><i>badvatt</i><par n="vap/en__n_nt"/></e>
     <e lm="pantsättare"><i>pantsättar</i><par n="åkar/e__n_ut"/></e>
-    <e lm="årgångsvin"><i>årgångsvin</i><par n="vin__n_nt"/></e>
     <e lm="pliktande"><i>pliktande</i><par n="ave__n_nt"/></e>
     <e lm="stamlinje"><i>stamlinje</i><par n="tå__n_ut"/></e>
     <e lm="insöndrande"><i>insöndrande</i><par n="ave__n_nt"/></e>
@@ -10271,7 +10247,6 @@
     <e lm="opostulerbarhet"><i>opostulerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="polarflyg"><i>polarflyg</i><par n="ök__n_nt"/></e>
     <e lm="hinderbana"><i>hinderban</i><par n="bo/a__n_ut"/></e>
-    <e lm="perborat"><i>perborat</i><par n="vin__n_nt"/></e>
     <e lm="flörtlampa"><i>flörtlamp</i><par n="bo/a__n_ut"/></e>
     <e lm="gällande"><i>gällande</i><par n="ave__n_nt"/></e>
     <e lm="betygsättande"><i>betygsättande</i><par n="ave__n_nt"/></e>
@@ -10546,7 +10521,6 @@
     <e lm="oceanografi"><i>oceanografi</i><par n="kemi__n_ut"/></e>
     <e lm="mästerstycke"><i>mästerstycke</i><par n="ave__n_nt"/></e>
     <e lm="groddjur"><i>groddjur</i><par n="ök__n_nt"/></e>
-    <e lm="vax"><i>vax</i><par n="vax__n_nt"/></e>
     <e lm="privatbil"><i>privatbil</i><par n="al__n_ut"/></e>
     <e lm="kolerabakterie"><i>kolerabakterie</i><par n="tå__n_ut"/></e>
     <e lm="strålgångsmätare"><i>strålgångsmätar</i><par n="åkar/e__n_ut"/></e>
@@ -12060,7 +12034,6 @@
     <e lm="militärorkester"><i>militärorkest</i><par n="ek/er__n_ut"/></e>
     <e lm="strävpelare"><i>strävpelar</i><par n="åkar/e__n_ut"/></e>
     <e lm="kummin"><i>kummin</i><par n="id__n_un"/></e>
-    <e lm="kalisalt"><i>kalisalt</i><par n="vin__n_nt"/></e>
     <e lm="tungben"><i>tungben</i><par n="ök__n_nt"/></e>
     <e lm="göteborgsvits"><i>göteborgsvits</i><par n="as__n_ut"/></e>
     <e lm="läsupplevelse"><i>läsupplevelse</i><par n="tå__n_ut"/></e>
@@ -12545,7 +12518,6 @@
     <e lm="mimik"><i>mimik</i><par n="ör__n_ut"/></e>
     <e lm="undanträngande"><i>undanträngande</i><par n="ave__n_nt"/></e>
     <e lm="holdingbolag"><i>holdingbolag</i><par n="ök__n_nt"/></e>
-    <e lm="läppsnus"><i>läppsnus</i><par n="vax__n_nt"/></e>
     <e lm="änkestöt"><i>änkestöt</i><par n="al__n_ut"/></e>
     <e lm="avtalsrörelse"><i>avtalsrörelse</i><par n="tå__n_ut"/></e>
     <e lm="vedämne"><i>vedämne</i><par n="eke__n_nt"/></e>
@@ -13683,7 +13655,6 @@
     <e lm="segelbåt"><i>segelbåt</i><par n="al__n_ut"/></e>
     <e lm="styrkeförhållande"><i>styrkeförhållande</i><par n="ave__n_nt"/></e>
     <e lm="pill"><i>pill</i><par n="yl__n_nt"/></e>
-    <e lm="dessertvin"><i>dessertvin</i><par n="vin__n_nt"/></e>
     <e lm="karminsyra"><i>karminsyra</i><par n="so__n_ut"/></e>
     <e lm="hemulsman"><i>hemulsm</i><par n="förm/an__n_ut"/></e>
     <e lm="vrestall"><i>vrestall</i><par n="al__n_ut"/></e>
@@ -13982,7 +13953,6 @@
     <e lm="giftlära"><i>giftlära</i><par n="so__n_ut"/></e>
     <e lm="torrdestillerande"><i>torrdestillerande</i><par n="ave__n_nt"/></e>
     <e lm="ympstam"><i>ympstam</i><par n="kam__n_ut"/></e>
-    <e lm="histamin"><i>histamin</i><par n="vin__n_nt"/></e>
     <e lm="ärmhållare"><i>ärmhållar</i><par n="åkar/e__n_ut"/></e>
     <e lm="fluidiserbarhet"><i>fluidiserbarhet</i><par n="ör__n_ut"/></e>
     <e lm="serie"><i>serie</i><par n="tå__n_ut"/></e>
@@ -14685,7 +14655,6 @@
     <e lm="examinering"><i>examinering</i><par n="al__n_ut"/></e>
     <e lm="demonstrationståg"><i>demonstrationståg</i><par n="ök__n_nt"/></e>
     <e lm="koaxialkabel"><i>koaxialkab</i><par n="åt/el__n_ut"/></e>
-    <e lm="epitaf"><i>epitaf</i><par n="vin__n_nt"/></e>
     <e lm="återförening"><i>återförening</i><par n="al__n_ut"/></e>
     <e lm="signora"><i>signor</i><par n="bo/a__n_ut"/></e>
     <e lm="tärnande"><i>tärnande</i><par n="ave__n_nt"/></e>
@@ -14883,7 +14852,6 @@
     <e lm="satsbräde"><i>satsbräde</i><par n="ave__n_nt"/></e>
     <e lm="stimulering"><i>stimulering</i><par n="al__n_ut"/></e>
     <e lm="kastanje"><i>kastanje</i><par n="tå__n_ut"/></e>
-    <e lm="toxafen"><i>toxafen</i><par n="vin__n_nt"/></e>
     <e lm="valenstal"><i>valenstal</i><par n="ök__n_nt"/></e>
     <e lm="smörberg"><i>smörberg</i><par n="ök__n_nt"/></e>
     <e lm="cortège"><i>cortège</i><par n="tå__n_ut"/></e>
@@ -16086,7 +16054,6 @@
     <e lm="radiostörning"><i>radiostörning</i><par n="al__n_ut"/></e>
     <e lm="sand"><i>sand</i><par n="ör__n_ut"/></e>
     <e lm="polkagris"><i>polkagris</i><par n="as__n_ut"/></e>
-    <e lm="vittvin"><i>vittvin</i><par n="vin__n_nt"/></e>
     <e lm="sommardräkt"><i>sommardräkt</i><par n="ör__n_ut"/></e>
     <e lm="reprografi"><i>reprografi</i><par n="kemi__n_ut"/></e>
     <e lm="tillvaratagande"><i>tillvaratagande</i><par n="ave__n_nt"/></e>
@@ -17884,7 +17851,6 @@
     <e lm="kurrande"><i>kurrande</i><par n="ave__n_nt"/></e>
     <e lm="varubuss"><i>varubuss</i><par n="as__n_ut"/></e>
     <e lm="klassificering"><i>klassificering</i><par n="al__n_ut"/></e>
-    <e lm="moselvin"><i>moselvin</i><par n="vin__n_nt"/></e>
     <e lm="reparerbarhet"><i>reparerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="bouzouki"><i>bouzouki</i><par n="tuner__n_ut"/></e>
     <e lm="kakaoträd"><i>kakaoträd</i><par n="ök__n_nt"/></e>
@@ -18872,7 +18838,6 @@
     <e lm="brukslående"><i>brukslående</i><par n="ave__n_nt"/></e>
     <e lm="spiskrok"><i>spiskrok</i><par n="al__n_ut"/></e>
     <e lm="tonårsgäng"><i>tonårsgäng</i><par n="ök__n_nt"/></e>
-    <e lm="rendezvous"><i>rendezvous</i><par n="vax__n_nt"/></e>
     <e lm="flyg"><i>flyg</i><par n="ök__n_nt"/></e>
     <e lm="konkursbevakning"><i>konkursbevakning</i><par n="al__n_ut"/></e>
     <e lm="utbytande"><i>utbytande</i><par n="ave__n_nt"/></e>
@@ -19250,7 +19215,6 @@
     <e lm="tårsäck"><i>tårsäck</i><par n="al__n_ut"/></e>
     <e lm="länsvakthavande"><i>länsvakthavande</i><par n="kärande__n_ut"/></e>
     <e lm="avståndsverkan"><i>avståndsverkan</i><par n="satan__n_ut"/></e>
-    <e lm="endorfin"><i>endorfin</i><par n="vin__n_nt"/></e>
     <e lm="kuvertväska"><i>kuvertväsk</i><par n="bo/a__n_ut"/></e>
     <e lm="fysik"><i>fysik</i><par n="ör__n_ut"/></e>
     <e lm="datorkommunikation"><i>datorkommunikation</i><par n="ör__n_ut"/></e>
@@ -19954,7 +19918,6 @@
     <e lm="gestikulering"><i>gestikulering</i><par n="al__n_ut"/></e>
     <e lm="masscentrum"><i>masscentr</i><par n="centr/um__n_nt"/></e>
     <e lm="vakanssättande"><i>vakanssättande</i><par n="ave__n_nt"/></e>
-    <e lm="nattvardsvin"><i>nattvardsvin</i><par n="vin__n_nt"/></e>
     <e lm="gunga"><i>gung</i><par n="bo/a__n_ut"/></e>
     <e lm="gästnatt"><i>gästn</i><par n="hökn/att__n_ut"/></e>
     <e lm="planande"><i>planande</i><par n="ave__n_nt"/></e>
@@ -21012,7 +20975,6 @@
     <e lm="kniptångsmanöver"><i>kniptångsmanöv</i><par n="kad/er__n_ut"/></e>
     <e lm="förnekelse"><i>förnekelse</i><par n="tå__n_ut"/></e>
     <e lm="riskering"><i>riskering</i><par n="al__n_ut"/></e>
-    <e lm="hetvin"><i>hetvin</i><par n="vin__n_nt"/></e>
     <e lm="utblick"><i>utblick</i><par n="al__n_ut"/></e>
     <e lm="synfält"><i>synfält</i><par n="ök__n_nt"/></e>
     <e lm="abstinens"><i>abstinens</i><par n="lyx__n_ut"/></e>
@@ -21630,7 +21592,6 @@
     <e lm="oindikerbarhet"><i>oindikerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="husdjursartikel"><i>husdjursartik</i><par n="åt/el__n_ut"/></e>
     <e lm="skrivbordsstol"><i>skrivbordsstol</i><par n="al__n_ut"/></e>
-    <e lm="vitvin"><i>vitvin</i><par n="vin__n_nt"/></e>
     <e lm="kaffesked"><i>kaffesked</i><par n="al__n_ut"/></e>
     <e lm="färgrivning"><i>färgrivning</i><par n="al__n_ut"/></e>
     <e lm="rådfrågande"><i>rådfrågande</i><par n="ave__n_nt"/></e>
@@ -21948,7 +21909,6 @@
     <e lm="satellitradio"><i>satellitradio</i><par n="so__n_ut"/></e>
     <e lm="kompendium"><i>kompendi</i><par n="atri/um__n_nt"/></e>
     <e lm="ringberg"><i>ringberg</i><par n="ök__n_nt"/></e>
-    <e lm="smink"><i>smink</i><par n="vin__n_nt"/></e>
     <e lm="byggmästare"><i>byggmästar</i><par n="åkar/e__n_ut"/></e>
     <e lm="täckning"><i>täckning</i><par n="al__n_ut"/></e>
     <e lm="stråk"><i>stråk</i><par n="ök__n_nt"/></e>
@@ -23385,7 +23345,6 @@
     <e lm="kolsyra"><i>kolsyra</i><par n="so__n_ut"/></e>
     <e lm="korpgluggar"><i>korpgluggar</i><par n="anor__n_pl"/></e>
     <e lm="lärjungaskap"><i>lärjungaskap</i><par n="yl__n_nt"/></e>
-    <e lm="bigift"><i>bigift</i><par n="vin__n_nt"/></e>
     <e lm="oppvägande"><i>oppvägande</i><par n="ave__n_nt"/></e>
     <e lm="plankgång"><i>plankgång</i><par n="al__n_ut"/></e>
     <e lm="gatsten"><i>gatsten</i><par n="al__n_ut"/></e>
@@ -23619,7 +23578,6 @@
     <e lm="ryps"><i>ryps</i><par n="lyx__n_ut"/></e>
     <e lm="rutschelbana"><i>rutschelban</i><par n="bo/a__n_ut"/></e>
     <e lm="ändring"><i>ändring</i><par n="al__n_ut"/></e>
-    <e lm="C-vitamin"><i>C-vitamin</i><par n="vin__n_nt"/></e>
     <e lm="bropelare"><i>bropelar</i><par n="åkar/e__n_ut"/></e>
     <e lm="figurering"><i>figurering</i><par n="al__n_ut"/></e>
     <e lm="knirr"><i>knirr</i><par n="yl__n_nt"/></e>
@@ -23865,7 +23823,6 @@
     <e lm="retuscherbarhet"><i>retuscherbarhet</i><par n="ör__n_ut"/></e>
     <e lm="Köchelnummer"><i>Köchelnum</i><par n="num/mer__n_nt"/></e>
     <e lm="ringklocka"><i>ringklock</i><par n="bo/a__n_ut"/></e>
-    <e lm="exkrement"><i>exkrement</i><par n="vin__n_nt"/></e>
     <e lm="vattenkälla"><i>vattenkäll</i><par n="bo/a__n_ut"/></e>
     <e lm="ofog"><i>ofog</i><par n="ök__n_nt"/></e>
     <e lm="betesgång"><i>betesgång</i><par n="al__n_ut"/></e>
@@ -24395,7 +24352,6 @@
     <e lm="dambesök"><i>dambesök</i><par n="ök__n_nt"/></e>
     <e lm="kampkonstkrets"><i>kampkonstkrets</i><par n="as__n_ut"/></e>
     <e lm="vidtagande"><i>vidtagande</i><par n="ave__n_nt"/></e>
-    <e lm="lådvin"><i>lådvin</i><par n="vin__n_nt"/></e>
     <e lm="springbrunn"><i>springbrunn</i><par n="al__n_ut"/></e>
     <e lm="mosslik"><i>mosslik</i><par n="ök__n_nt"/></e>
     <e lm="tungband"><i>tungband</i><par n="ök__n_nt"/></e>
@@ -24403,7 +24359,6 @@
     <e lm="jätteorm"><i>jätteorm</i><par n="al__n_ut"/></e>
     <e lm="nitande"><i>nitande</i><par n="ave__n_nt"/></e>
     <e lm="datalingvistik"><i>datalingvistik</i><par n="ör__n_ut"/></e>
-    <e lm="närsalt"><i>närsalt</i><par n="vin__n_nt"/></e>
     <e lm="bondkalas"><i>bondkalas</i><par n="as__n_nt"/></e>
     <e lm="fysiljerande"><i>fysiljerande</i><par n="ave__n_nt"/></e>
     <e lm="tarantella"><i>tarantell</i><par n="bo/a__n_ut"/></e>
@@ -25201,7 +25156,6 @@
     <e lm="indianhydda"><i>indianhydd</i><par n="bo/a__n_ut"/></e>
     <e lm="skyltning"><i>skyltning</i><par n="al__n_ut"/></e>
     <e lm="uppvärmande"><i>uppvärmande</i><par n="ave__n_nt"/></e>
-    <e lm="parallelltrapets"><i>parallelltrapets</i><par n="vax__n_nt"/></e>
     <e lm="frosttålighet"><i>frosttålighet</i><par n="ör__n_ut"/></e>
     <e lm="basning"><i>basning</i><par n="al__n_ut"/></e>
     <e lm="vattenkoppling"><i>vattenkoppling</i><par n="al__n_ut"/></e>
@@ -25350,7 +25304,6 @@
     <e lm="trågdal"><i>trågdal</i><par n="al__n_ut"/></e>
     <e lm="oböjlighet"><i>oböjlighet</i><par n="ör__n_ut"/></e>
     <e lm="kombinationstävling"><i>kombinationstävling</i><par n="al__n_ut"/></e>
-    <e lm="gel"><i>gel</i><par n="vin__n_nt"/></e>
     <e lm="muskelbyggare"><i>muskelbyggar</i><par n="åkar/e__n_ut"/></e>
     <e lm="rekylerande"><i>rekylerande</i><par n="ave__n_nt"/></e>
     <e lm="pojkhals"><i>pojkhals</i><par n="as__n_ut"/></e>
@@ -25590,7 +25543,6 @@
     <e lm="rattstång"><i>rattst</i><par n="t/ång__n_ut"/></e>
     <e lm="strålkastarljus"><i>strålkastarljus</i><par n="as__n_nt"/></e>
     <e lm="vinterspårvagn"><i>vinterspårvagn</i><par n="al__n_ut"/></e>
-    <e lm="rhenvin"><i>rhenvin</i><par n="vin__n_nt"/></e>
     <e lm="engelskundervisning"><i>engelskundervisning</i><par n="ör__n_ut"/></e>
     <e lm="hedersman"><i>hedersm</i><par n="förm/an__n_ut"/></e>
     <e lm="frambringande"><i>frambringande</i><par n="ave__n_nt"/></e>
@@ -25909,7 +25861,6 @@
     <e lm="urskri"><i>urskri</i><par n="bo__n_nt"/></e>
     <e lm="råpluggande"><i>råpluggande</i><par n="ave__n_nt"/></e>
     <e lm="mjälte"><i>mjält</i><par n="li/e__n_ut"/></e>
-    <e lm="harts"><i>harts</i><par n="vax__n_nt"/></e>
     <e lm="otapetserbarhet"><i>otapetserbarhet</i><par n="ör__n_ut"/></e>
     <e lm="böjningsändelse"><i>böjningsändelse</i><par n="tå__n_ut"/></e>
     <e lm="jakobsstege"><i>jakobssteg</i><par n="li/e__n_ut"/></e>
@@ -27031,7 +26982,6 @@
     <e lm="ooktrojerbarhet"><i>ooktrojerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="formgods"><i>formgods</i><par n="ex__n_nt"/></e>
     <e lm="konjunkturkurva"><i>konjunkturkurv</i><par n="bo/a__n_ut"/></e>
-    <e lm="växtfett"><i>växtfett</i><par n="vin__n_nt"/></e>
     <e lm="accidenstryck"><i>accidenstryck</i><par n="ök__n_nt"/></e>
     <e lm="fåra"><i>får</i><par n="bo/a__n_ut"/></e>
     <e lm="abonnemang"><i>abonnemang</i><par n="ök__n_nt"/></e>
@@ -27831,7 +27781,6 @@
     <e lm="utförsbacke"><i>utförsback</i><par n="li/e__n_ut"/></e>
     <e lm="kvävegödselmedel"><i>kvävegödselmed</i><par n="hag/el__n_nt"/></e>
     <e lm="diande"><i>diande</i><par n="ave__n_nt"/></e>
-    <e lm="silversalt"><i>silversalt</i><par n="vin__n_nt"/></e>
     <e lm="raklödder"><i>raklödd</i><par n="läd/er__n_nt"/></e>
     <e lm="cellandning"><i>cellandning</i><par n="al__n_ut"/></e>
     <e lm="luftemboli"><i>luftemboli</i><par n="fe__n_ut"/></e>
@@ -28477,7 +28426,6 @@
     <e lm="svammel"><i>svam</i><par n="vim/mel__n_nt"/></e>
     <e lm="översida"><i>översid</i><par n="bo/a__n_ut"/></e>
     <e lm="kylvagn"><i>kylvagn</i><par n="al__n_ut"/></e>
-    <e lm="bivax"><i>bivax</i><par n="vax__n_nt"/></e>
     <e lm="skymflighet"><i>skymflighet</i><par n="ör__n_ut"/></e>
     <e lm="objektiv"><i>objektiv</i><par n="ök__n_nt"/></e>
     <e lm="rost"><i>rost</i><par n="al__n_ut"/></e>
@@ -29073,7 +29021,6 @@
     <e lm="lantan"><i>lantan</i><par n="id__n_un"/></e>
     <e lm="ålning"><i>ålning</i><par n="al__n_ut"/></e>
     <e lm="ridskola"><i>ridskol</i><par n="bo/a__n_ut"/></e>
-    <e lm="klarlack"><i>klarlack</i><par n="vin__n_nt"/></e>
     <e lm="tvistemål"><i>tvistemål</i><par n="ök__n_nt"/></e>
     <e lm="trumslag"><i>trumslag</i><par n="ök__n_nt"/></e>
     <e lm="bestickande"><i>bestickande</i><par n="ave__n_nt"/></e>
@@ -29617,7 +29564,6 @@
     <e lm="insvängning"><i>insvängning</i><par n="al__n_ut"/></e>
     <e lm="affärsavtal"><i>affärsavtal</i><par n="ök__n_nt"/></e>
     <e lm="vinsyra"><i>vinsyra</i><par n="so__n_ut"/></e>
-    <e lm="langarn"><i>langarn</i><par n="vin__n_nt"/></e>
     <e lm="citronläsk"><i>citronläsk</i><par n="ohm__n_ut"/></e>
     <e lm="italienska"><i>italiensk</i><par n="bo/a__n_ut"/></e>
     <e lm="storköksmat"><i>storköksmat</i><par n="ör__n_ut"/></e>
@@ -29824,7 +29770,6 @@
     <e lm="sanningskorn"><i>sanningskorn</i><par n="ök__n_nt"/></e>
     <e lm="volm"><i>volm</i><par n="al__n_ut"/></e>
     <e lm="vitaminiserbarhet"><i>vitaminiserbarhet</i><par n="ör__n_ut"/></e>
-    <e lm="växtgift"><i>växtgift</i><par n="vin__n_nt"/></e>
     <e lm="örike"><i>örike</i><par n="ave__n_nt"/></e>
     <e lm="gångbro"><i>gångbro</i><par n="mo__n_ut"/></e>
     <e lm="makedonska"><i>makedonsk</i><par n="bo/a__n_ut"/></e>
@@ -30209,7 +30154,6 @@
     <e lm="vetenskapare"><i>vetenskapar</i><par n="åkar/e__n_ut"/></e>
     <e lm="dödsbädd"><i>dödsbädd</i><par n="al__n_ut"/></e>
     <e lm="subventionerande"><i>subventionerande</i><par n="ave__n_nt"/></e>
-    <e lm="vintagevin"><i>vintagevin</i><par n="vin__n_nt"/></e>
     <e lm="gamande"><i>gamande</i><par n="ave__n_nt"/></e>
     <e lm="scenuttal"><i>scenuttal</i><par n="yl__n_nt"/></e>
     <e lm="dragerbarhet"><i>dragerbarhet</i><par n="ör__n_ut"/></e>
@@ -30371,7 +30315,6 @@
     <e lm="u-hjälp"><i>u-hjälp</i><par n="ör__n_ut"/></e>
     <e lm="björnbärsbuske"><i>björnbärsbusk</i><par n="li/e__n_ut"/></e>
     <e lm="brynande"><i>brynande</i><par n="ave__n_nt"/></e>
-    <e lm="protein"><i>protein</i><par n="vin__n_nt"/></e>
     <e lm="förrådande"><i>förrådande</i><par n="ave__n_nt"/></e>
     <e lm="satsförkortning"><i>satsförkortning</i><par n="al__n_ut"/></e>
     <e lm="framstående"><i>framstående</i><par n="ave__n_nt"/></e>
@@ -30671,7 +30614,6 @@
     <e lm="inledande"><i>inledande</i><par n="ave__n_nt"/></e>
     <e lm="fetknopp"><i>fetknopp</i><par n="al__n_ut"/></e>
     <e lm="pärlstickning"><i>pärlstickning</i><par n="al__n_ut"/></e>
-    <e lm="transfett"><i>transfett</i><par n="vin__n_nt"/></e>
     <e lm="grenklyka"><i>grenklyk</i><par n="bo/a__n_ut"/></e>
     <e lm="kaki"><i>kaki</i><par n="so__n_ut"/></e>
     <e lm="modekedja"><i>modekedj</i><par n="bo/a__n_ut"/></e>
@@ -31862,7 +31804,6 @@
     <e lm="husgud"><i>husgud</i><par n="al__n_ut"/></e>
     <e lm="förtingligande"><i>förtingligande</i><par n="eke__n_nt"/></e>
     <e lm="mjölk"><i>mjölk</i><par n="ör__n_ut"/></e>
-    <e lm="fett"><i>fett</i><par n="vin__n_nt"/></e>
     <e lm="mätningstal"><i>mätningstal</i><par n="ök__n_nt"/></e>
     <e lm="irrande"><i>irrande</i><par n="ave__n_nt"/></e>
     <e lm="samhällsjournalistik"><i>samhällsjournalistik</i><par n="ör__n_ut"/></e>
@@ -32311,7 +32252,6 @@
     <e lm="kvickrot"><i>kvickrot</i><par n="ör__n_ut"/></e>
     <e lm="uppsnappande"><i>uppsnappande</i><par n="ave__n_nt"/></e>
     <e lm="irrlära"><i>irrlär</i><par n="bo/a__n_ut"/></e>
-    <e lm="bagerimargarin"><i>bagerimargarin</i><par n="vin__n_nt"/></e>
     <e lm="kaffefilter"><i>kaffefilt</i><par n="rod/er__n_nt"/></e>
     <e lm="kanoniserande"><i>kanoniserande</i><par n="ave__n_nt"/></e>
     <e lm="värmande"><i>värmande</i><par n="ave__n_nt"/></e>
@@ -33404,7 +33344,6 @@
     <e lm="1400-tal"><i>1400-tal</i><par n="yl__n_nt"/></e>
     <e lm="bröstvärn"><i>bröstvärn</i><par n="ök__n_nt"/></e>
     <e lm="skådemynt"><i>skådemynt</i><par n="ök__n_nt"/></e>
-    <e lm="portvin"><i>portvin</i><par n="vin__n_nt"/></e>
     <e lm="miljöförorening"><i>miljöförorening</i><par n="al__n_ut"/></e>
     <e lm="väderstreck"><i>väderstreck</i><par n="ök__n_nt"/></e>
     <e lm="krypkörande"><i>krypkörande</i><par n="ave__n_nt"/></e>
@@ -34001,7 +33940,6 @@
     <e lm="rist"><i>rist</i><par n="gan__n_ut"/></e>
     <e lm="nagelbitning"><i>nagelbitning</i><par n="al__n_ut"/></e>
     <e lm="hundring"><i>hundring</i><par n="al__n_ut"/></e>
-    <e lm="golvvax"><i>golvvax</i><par n="vax__n_nt"/></e>
     <e lm="absorberbarhet"><i>absorberbarhet</i><par n="ör__n_ut"/></e>
     <e lm="gatlopp"><i>gatlopp</i><par n="ök__n_nt"/></e>
     <e lm="kubbe"><i>kubb</i><par n="med/e__n_ut"/></e>
@@ -35693,7 +35631,6 @@
     <e lm="chargerande"><i>chargerande</i><par n="ave__n_nt"/></e>
     <e lm="apotekare"><i>apotekar</i><par n="åkar/e__n_ut"/></e>
     <e lm="engångsföreteelse"><i>engångsföreteelse</i><par n="tå__n_ut"/></e>
-    <e lm="näringssalt"><i>näringssalt</i><par n="vin__n_nt"/></e>
     <e lm="krigsplacerande"><i>krigsplacerande</i><par n="ave__n_nt"/></e>
     <e lm="krikon"><i>krikon</i><par n="ök__n_nt"/></e>
     <e lm="volframnål"><i>volframnål</i><par n="al__n_ut"/></e>
@@ -35714,7 +35651,6 @@
     <e lm="startnyckel"><i>startnyck</i><par n="åt/el__n_ut"/></e>
     <e lm="polering"><i>polering</i><par n="al__n_ut"/></e>
     <e lm="vevande"><i>vevande</i><par n="ave__n_nt"/></e>
-    <e lm="slottsvin"><i>slottsvin</i><par n="vin__n_nt"/></e>
     <e lm="matsmör"><i>matsmör</i><par n="yl__n_nt"/></e>
     <e lm="kolbärare"><i>kolbärar</i><par n="åkar/e__n_ut"/></e>
     <e lm="nattvardskalk"><i>nattvardskalk</i><par n="al__n_ut"/></e>
@@ -35742,7 +35678,6 @@
     <e lm="kloroform"><i>kloroform</i><par n="ör__n_ut"/></e>
     <e lm="gräddmätare"><i>gräddmätar</i><par n="åkar/e__n_ut"/></e>
     <e lm="kevlar"><i>kevlar</i><par n="ör__n_ut"/></e>
-    <e lm="matfett"><i>matfett</i><par n="vin__n_nt"/></e>
     <e lm="vedkapsåg"><i>vedkapsåg</i><par n="al__n_ut"/></e>
     <e lm="skidfynd"><i>skidfynd</i><par n="ök__n_nt"/></e>
     <e lm="huggmejsel"><i>huggmejs</i><par n="åt/el__n_ut"/></e>
@@ -35908,7 +35843,6 @@
     <e lm="torktumlande"><i>torktumlande</i><par n="ave__n_nt"/></e>
     <e lm="närvaro"><i>närvaro</i><par n="so__n_ut"/></e>
     <e lm="trafikreglering"><i>trafikreglering</i><par n="al__n_ut"/></e>
-    <e lm="gift"><i>gift</i><par n="vin__n_nt"/></e>
     <e lm="kabaréorkester"><i>kabaréorkest</i><par n="ek/er__n_ut"/></e>
     <e lm="traggel"><i>tragg</i><par n="tad/el__n_nt"/></e>
     <e lm="arbetsträning"><i>arbetsträning</i><par n="al__n_ut"/></e>
@@ -37178,7 +37112,6 @@
     <e lm="gramkalori"><i>gramkalori</i><par n="fe__n_ut"/></e>
     <e lm="informering"><i>informering</i><par n="al__n_ut"/></e>
     <e lm="finkamning"><i>finkamning</i><par n="al__n_ut"/></e>
-    <e lm="östrogen"><i>östrogen</i><par n="vin__n_nt"/></e>
     <e lm="prismakikare"><i>prismakikar</i><par n="åkar/e__n_ut"/></e>
     <e lm="armborst"><i>armborst</i><par n="ök__n_nt"/></e>
     <e lm="artisteri"><i>artisteri</i><par n="ly__n_nt"/></e>
@@ -37990,7 +37923,6 @@
     <e lm="röstresurser"><i>röstresurser</i><par n="anor__n_pl"/></e>
     <e lm="malm"><i>malm</i><par n="gan__n_ut"/></e>
     <e lm="it-företag"><i>it-företag</i><par n="ök__n_nt"/></e>
-    <e lm="bariumsalt"><i>bariumsalt</i><par n="vin__n_nt"/></e>
     <e lm="förbrödrande"><i>förbrödrande</i><par n="ave__n_nt"/></e>
     <e lm="bromsblock"><i>bromsblock</i><par n="ök__n_nt"/></e>
     <e lm="hälsotecken"><i>hälsoteck</i><par n="vap/en__n_nt"/></e>
@@ -38489,7 +38421,6 @@
     <e lm="seminerande"><i>seminerande</i><par n="ave__n_nt"/></e>
     <e lm="diskrediterande"><i>diskrediterande</i><par n="ave__n_nt"/></e>
     <e lm="kablande"><i>kablande</i><par n="ave__n_nt"/></e>
-    <e lm="blodprotein"><i>blodprotein</i><par n="vin__n_nt"/></e>
     <e lm="premium"><i>premi</i><par n="atri/um__n_nt"/></e>
     <e lm="misskötsel"><i>misskötsel</i><par n="so__n_ut"/></e>
     <e lm="marscherbarhet"><i>marscherbarhet</i><par n="ör__n_ut"/></e>
@@ -40473,7 +40404,6 @@
     <e lm="fädernesland"><i>fädernesl</i><par n="i-l/and__n_nt"/></e>
     <e lm="frossa"><i>fross</i><par n="bo/a__n_ut"/></e>
     <e lm="kvinnoläkare"><i>kvinnoläkar</i><par n="åkar/e__n_ut"/></e>
-    <e lm="bilvax"><i>bilvax</i><par n="vax__n_nt"/></e>
     <e lm="ljuster"><i>ljust</i><par n="rod/er__n_nt"/></e>
     <e lm="söder"><i>söder</i><par n="so__n_ut"/></e>
     <e lm="tegskifte"><i>tegskifte</i><par n="eke__n_nt"/></e>
@@ -40655,7 +40585,6 @@
     <e lm="spontande"><i>spontande</i><par n="ave__n_nt"/></e>
     <e lm="skämttecknare"><i>skämttecknar</i><par n="åkar/e__n_ut"/></e>
     <e lm="askonsdag"><i>askonsdag</i><par n="al__n_ut"/></e>
-    <e lm="lättmargarin"><i>lättmargarin</i><par n="vin__n_nt"/></e>
     <e lm="osubsumerbarhet"><i>osubsumerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="appellerbarhet"><i>appellerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="snickarbälte"><i>snickarbälte</i><par n="ave__n_nt"/></e>
@@ -41737,7 +41666,6 @@
     <e lm="byte"><i>byte</i><par n="lire__n_ut"/></e>
     <e lm="genomresa"><i>genomres</i><par n="bo/a__n_ut"/></e>
     <e lm="forskningsarbete"><i>forskningsarbete</i><par n="ave__n_nt"/></e>
-    <e lm="portionssnus"><i>portionssnus</i><par n="vax__n_nt"/></e>
     <e lm="brevväxling"><i>brevväxling</i><par n="al__n_ut"/></e>
     <e lm="valv"><i>valv</i><par n="ök__n_nt"/></e>
     <e lm="andebesvärjelse"><i>andebesvärjelse</i><par n="tå__n_ut"/></e>
@@ -42310,7 +42238,6 @@
     <e lm="skidbacke"><i>skidback</i><par n="li/e__n_ut"/></e>
     <e lm="kvartsur"><i>kvartsur</i><par n="ök__n_nt"/></e>
     <e lm="vin"><i>vin</i><par n="te__n_ut"/></e>
-    <e lm="vin"><i>vin</i><par n="vin__n_nt"/></e>
     <e lm="glashylla"><i>glashyll</i><par n="bo/a__n_ut"/></e>
     <e lm="nöjesprogram"><i>nöjesprogram</i><par n="rim__n_nt"/></e>
     <e lm="dräll"><i>dräll</i><par n="ör__n_ut"/></e>
@@ -44396,7 +44323,6 @@
     <e lm="kurtisering"><i>kurtisering</i><par n="al__n_ut"/></e>
     <e lm="aeroplan"><i>aeroplan</i><par n="ök__n_nt"/></e>
     <e lm="kalkstensvägg"><i>kalkstensvägg</i><par n="al__n_ut"/></e>
-    <e lm="födgeni"><i>födgeni</i><par n="vin__n_nt"/></e>
     <e lm="glam"><i>glam</i><par n="slam__n_nt"/></e>
     <e lm="fjällkedja"><i>fjällkedj</i><par n="bo/a__n_ut"/></e>
     <e lm="sopkvast"><i>sopkvast</i><par n="al__n_ut"/></e>
@@ -45295,8 +45221,6 @@
     <e lm="yrväder"><i>yrväd</i><par n="rod/er__n_nt"/></e>
     <e lm="skolastik"><i>skolastik</i><par n="ör__n_ut"/></e>
     <e lm="snöslask"><i>snöslask</i><par n="yl__n_nt"/></e>
-    <e lm="palmvin"><i>palmvin</i><par n="vin__n_nt"/></e>
-    <e lm="smör"><i>smör</i><par n="vin__n_nt"/></e>
     <e lm="vederlagsgods"><i>vederlagsgods</i><par n="ex__n_nt"/></e>
     <e lm="avdrag"><i>avdrag</i><par n="ök__n_nt"/></e>
     <e lm="svärdsfejare"><i>svärdsfejar</i><par n="åkar/e__n_ut"/></e>
@@ -45304,7 +45228,6 @@
     <e lm="silkesodling"><i>silkesodling</i><par n="al__n_ut"/></e>
     <e lm="sulfa"><i>sulfa</i><par n="so__n_ut"/></e>
     <e lm="skivpratare"><i>skivpratar</i><par n="åkar/e__n_ut"/></e>
-    <e lm="cellgift"><i>cellgift</i><par n="vin__n_nt"/></e>
     <e lm="bilskojare"><i>bilskojar</i><par n="åkar/e__n_ut"/></e>
     <e lm="lågmosse"><i>lågmoss</i><par n="li/e__n_ut"/></e>
     <e lm="värderbarhet"><i>värderbarhet</i><par n="ör__n_ut"/></e>
@@ -45488,14 +45411,12 @@
     <e lm="bräm"><i>bräm</i><par n="ök__n_nt"/></e>
     <e lm="bytesmedel"><i>bytesmed</i><par n="hag/el__n_nt"/></e>
     <e lm="indrivning"><i>indrivning</i><par n="al__n_ut"/></e>
-    <e lm="miljögift"><i>miljögift</i><par n="vin__n_nt"/></e>
     <e lm="frikassé"><i>frikassé</i><par n="kö__n_ut"/></e>
     <e lm="tjärpapp"><i>tjärpapp</i><par n="ör__n_ut"/></e>
     <e lm="trädgårdssnäcka"><i>trädgårdssnäck</i><par n="bo/a__n_ut"/></e>
     <e lm="långtidsskydd"><i>långtidsskydd</i><par n="ök__n_nt"/></e>
     <e lm="ristorno"><i>ristorno</i><par n="eke__n_nt"/></e>
     <e lm="granskande"><i>granskande</i><par n="ave__n_nt"/></e>
-    <e lm="dubbelsalt"><i>dubbelsalt</i><par n="vin__n_nt"/></e>
     <e lm="behållande"><i>behållande</i><par n="ave__n_nt"/></e>
     <e lm="akvarellutställning"><i>akvarellutställning</i><par n="al__n_ut"/></e>
     <e lm="följande"><i>följande</i><par n="ave__n_nt"/></e>
@@ -46502,7 +46423,6 @@
     <e lm="vassgörande"><i>vassgörande</i><par n="ave__n_nt"/></e>
     <e lm="grönkulla"><i>grönkull</i><par n="bo/a__n_ut"/></e>
     <e lm="merceriserande"><i>merceriserande</i><par n="ave__n_nt"/></e>
-    <e lm="allod"><i>allod</i><par n="vin__n_nt"/></e>
     <e lm="transformering"><i>transformering</i><par n="al__n_ut"/></e>
     <e lm="solsnibb"><i>solsnibb</i><par n="al__n_ut"/></e>
     <e lm="radiobrus"><i>radiobrus</i><par n="ex__n_nt"/></e>
@@ -46668,7 +46588,6 @@
     <e lm="förlidande"><i>förlidande</i><par n="ave__n_nt"/></e>
     <e lm="flockdjur"><i>flockdjur</i><par n="ök__n_nt"/></e>
     <e lm="blindpipa"><i>blindpip</i><par n="bo/a__n_ut"/></e>
-    <e lm="bordsmargarin"><i>bordsmargarin</i><par n="vin__n_nt"/></e>
     <e lm="gaffelhjort"><i>gaffelhjort</i><par n="al__n_ut"/></e>
     <e lm="flyghavre"><i>flyghavre</i><par n="so__n_ut"/></e>
     <e lm="lycksalighet"><i>lycksalighet</i><par n="ör__n_ut"/></e>
@@ -46996,7 +46915,6 @@
     <e lm="biljettbokning"><i>biljettbokning</i><par n="al__n_ut"/></e>
     <e lm="tagg"><i>tagg</i><par n="al__n_ut"/></e>
     <e lm="sonderande"><i>sonderande</i><par n="ave__n_nt"/></e>
-    <e lm="järnsalt"><i>järnsalt</i><par n="vin__n_nt"/></e>
     <e lm="universitetsmatrikel"><i>universitetsmatrik</i><par n="åt/el__n_ut"/></e>
     <e lm="fettspruta"><i>fettsprut</i><par n="bo/a__n_ut"/></e>
     <e lm="färgsprutning"><i>färgsprutning</i><par n="ör__n_ut"/></e>
@@ -47351,7 +47269,6 @@
     <e lm="kärlekslyrik"><i>kärlekslyrik</i><par n="ör__n_ut"/></e>
     <e lm="utsirande"><i>utsirande</i><par n="ave__n_nt"/></e>
     <e lm="rustkammare"><i>rustkam</i><par n="kam/mare__n_ut"/></e>
-    <e lm="rödvin"><i>rödvin</i><par n="vin__n_nt"/></e>
     <e lm="snörmakare"><i>snörmakar</i><par n="åkar/e__n_ut"/></e>
     <e lm="hölja"><i>hölj</i><par n="bo/a__n_ut"/></e>
     <e lm="cirkulationsplats"><i>cirkulationsplats</i><par n="oas__n_ut"/></e>
@@ -47752,7 +47669,6 @@
     <e lm="samhällsliv"><i>samhällsliv</i><par n="yl__n_nt"/></e>
     <e lm="tillfälle"><i>tillfälle</i><par n="ave__n_nt"/></e>
     <e lm="specialisering"><i>specialisering</i><par n="al__n_ut"/></e>
-    <e lm="salt"><i>salt</i><par n="vin__n_nt"/></e>
     <e lm="buggande"><i>buggande</i><par n="ave__n_nt"/></e>
     <e lm="pentatonik"><i>pentatonik</i><par n="ör__n_ut"/></e>
     <e lm="grundtal"><i>grundtal</i><par n="ök__n_nt"/></e>
@@ -47805,7 +47721,6 @@
     <e lm="handelsavtal"><i>handelsavtal</i><par n="ök__n_nt"/></e>
     <e lm="besockrande"><i>besockrande</i><par n="ave__n_nt"/></e>
     <e lm="kaffegök"><i>kaffegök</i><par n="al__n_ut"/></e>
-    <e lm="lantvin"><i>lantvin</i><par n="vin__n_nt"/></e>
     <e lm="högaltare"><i>högaltar</i><par n="altar/e__n_nt"/></e>
     <e lm="oinventerbarhet"><i>oinventerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="matbord"><i>matbord</i><par n="ök__n_nt"/></e>
@@ -48200,7 +48115,6 @@
     <e lm="undergångsprofetia"><i>undergångsprofeti</i><par n="bo/a__n_ut"/></e>
     <e lm="kur"><i>kur</i><par n="gan__n_ut"/></e>
     <e lm="inpetning"><i>inpetning</i><par n="al__n_ut"/></e>
-    <e lm="B-vitamin"><i>B-vitamin</i><par n="vin__n_nt"/></e>
     <e lm="knottrande"><i>knottrande</i><par n="ave__n_nt"/></e>
     <e lm="badrumsskåp"><i>badrumsskåp</i><par n="ök__n_nt"/></e>
     <e lm="pappersmyntfot"><i>pappersmyntfot</i><par n="ör__n_ut"/></e>
@@ -48419,7 +48333,6 @@
     <e lm="approximerande"><i>approximerande</i><par n="ave__n_nt"/></e>
     <e lm="odetroniserbarhet"><i>odetroniserbarhet</i><par n="ör__n_ut"/></e>
     <e lm="snäckdjur"><i>snäckdjur</i><par n="ök__n_nt"/></e>
-    <e lm="porslin"><i>porslin</i><par n="vin__n_nt"/></e>
     <e lm="ackompanjerande"><i>ackompanjerande</i><par n="ave__n_nt"/></e>
     <e lm="mångguderi"><i>mångguderi</i><par n="ly__n_nt"/></e>
     <e lm="parafasi"><i>parafasi</i><par n="fe__n_ut"/></e>
@@ -48571,7 +48484,6 @@
     <e lm="viserbarhet"><i>viserbarhet</i><par n="ör__n_ut"/></e>
     <e lm="kroniker"><i>kroniker</i><par n="lire__n_ut"/></e>
     <e lm="hjärnsjukdom"><i>hjärnsjukdom</i><par n="al__n_ut"/></e>
-    <e lm="dioxin"><i>dioxin</i><par n="vin__n_nt"/></e>
     <e lm="rundsmörjning"><i>rundsmörjning</i><par n="al__n_ut"/></e>
     <e lm="livsyttring"><i>livsyttring</i><par n="al__n_ut"/></e>
     <e lm="magasinkärra"><i>magasinkärr</i><par n="bo/a__n_ut"/></e>
@@ -48638,7 +48550,6 @@
     <e lm="lastbilsförare"><i>lastbilsförar</i><par n="åkar/e__n_ut"/></e>
     <e lm="frontalangrepp"><i>frontalangrepp</i><par n="ök__n_nt"/></e>
     <e lm="antichambrerbarhet"><i>antichambrerbarhet</i><par n="ör__n_ut"/></e>
-    <e lm="badsalt"><i>badsalt</i><par n="vin__n_nt"/></e>
     <e lm="krycka"><i>kryck</i><par n="bo/a__n_ut"/></e>
     <e lm="prisras"><i>prisras</i><par n="as__n_nt"/></e>
     <e lm="navalmedicin"><i>navalmedicin</i><par n="ör__n_ut"/></e>
@@ -48918,7 +48829,6 @@
     <e lm="trampsax"><i>trampsax</i><par n="as__n_ut"/></e>
     <e lm="skottspole"><i>skottspol</i><par n="li/e__n_ut"/></e>
     <e lm="viktande"><i>viktande</i><par n="ave__n_nt"/></e>
-    <e lm="ormgift"><i>ormgift</i><par n="vin__n_nt"/></e>
     <e lm="onanering"><i>onanering</i><par n="al__n_ut"/></e>
     <e lm="utdebitering"><i>utdebitering</i><par n="al__n_ut"/></e>
     <e lm="backupp"><i>backupp</i><par n="foul__n_ut"/></e>
@@ -48932,7 +48842,6 @@
     <e lm="napolitanare"><i>napolitanar</i><par n="åkar/e__n_ut"/></e>
     <e lm="hundhalsband"><i>hundhalsband</i><par n="ök__n_nt"/></e>
     <e lm="tunna"><i>tunn</i><par n="bo/a__n_ut"/></e>
-    <e lm="insektsgift"><i>insektsgift</i><par n="vin__n_nt"/></e>
     <e lm="stalltips"><i>stalltips</i><par n="as__n_nt"/></e>
     <e lm="bävande"><i>bävande</i><par n="ave__n_nt"/></e>
     <e lm="ogörlighet"><i>ogörlighet</i><par n="ör__n_ut"/></e>
@@ -50583,7 +50492,6 @@
     <e lm="maffiaavslöjare"><i>maffiaavslöjar</i><par n="åkar/e__n_ut"/></e>
     <e lm="sandlåda"><i>sandlåd</i><par n="bo/a__n_ut"/></e>
     <e lm="dragbil"><i>dragbil</i><par n="al__n_ut"/></e>
-    <e lm="svinfett"><i>svinfett</i><par n="vin__n_nt"/></e>
     <e lm="skrap"><i>skrap</i><par n="yl__n_nt"/></e>
     <e lm="hjärnskada"><i>hjärnskad</i><par n="bo/a__n_ut"/></e>
     <e lm="gång"><i>gång</i><par n="gan__n_ut"/></e>
@@ -51235,7 +51143,6 @@
     <e lm="tvåvinge"><i>tvåving</i><par n="li/e__n_ut"/></e>
     <e lm="tjänstefel"><i>tjänstefel</i><par n="ök__n_nt"/></e>
     <e lm="rapsfrö"><i>rapsfrö</i><par n="frö__n_nt"/></e>
-    <e lm="vattengel"><i>vattengel</i><par n="vin__n_nt"/></e>
     <e lm="disharmoniering"><i>disharmoniering</i><par n="al__n_ut"/></e>
     <e lm="fenmetralin"><i>fenmetralin</i><par n="amin__n_un"/></e>
     <e lm="forskningsfält"><i>forskningsfält</i><par n="ök__n_nt"/></e>
@@ -51559,7 +51466,6 @@
     <e lm="skyddsmur"><i>skyddsmur</i><par n="al__n_ut"/></e>
     <e lm="duvnande"><i>duvnande</i><par n="ave__n_nt"/></e>
     <e lm="grundavdrag"><i>grundavdrag</i><par n="ök__n_nt"/></e>
-    <e lm="antihistamin"><i>antihistamin</i><par n="vin__n_nt"/></e>
     <e lm="bar"><i>bar</i><par n="rad__n_ut"/></e>
     <e lm="fordring"><i>fordring</i><par n="al__n_ut"/></e>
     <e lm="redogörelse"><i>redogörelse</i><par n="tå__n_ut"/></e>
@@ -51609,7 +51515,6 @@
     <e lm="värmeisolerbarhet"><i>värmeisolerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="arbetsnamn"><i>arbetsnamn</i><par n="ök__n_nt"/></e>
     <e lm="oockuperbarhet"><i>oockuperbarhet</i><par n="ör__n_ut"/></e>
-    <e lm="kroppsfett"><i>kroppsfett</i><par n="vin__n_nt"/></e>
     <e lm="tagetes"><i>tagetes</i><par n="as__n_ut"/></e>
     <e lm="strul"><i>strul</i><par n="yl__n_nt"/></e>
     <e lm="trevinklighet"><i>trevinklighet</i><par n="ör__n_ut"/></e>
@@ -52420,7 +52325,6 @@
     <e lm="världsdel"><i>världsdel</i><par n="al__n_ut"/></e>
     <e lm="kåldolme"><i>kåldolm</i><par n="li/e__n_ut"/></e>
     <e lm="fritis"><i>fritis</i><par n="as__n_nt"/></e>
-    <e lm="emaljlack"><i>emaljlack</i><par n="vin__n_nt"/></e>
     <e lm="kokosfiber"><i>kokosfib</i><par n="fib/er__n_ut"/></e>
     <e lm="samhällsskick"><i>samhällsskick</i><par n="ök__n_nt"/></e>
     <e lm="bestraffning"><i>bestraffning</i><par n="al__n_ut"/></e>
@@ -52636,7 +52540,6 @@
     <e lm="förvittring"><i>förvittring</i><par n="al__n_ut"/></e>
     <e lm="pisk"><i>pisk</i><par n="yl__n_nt"/></e>
     <e lm="blottare"><i>blottar</i><par n="åkar/e__n_ut"/></e>
-    <e lm="starkvin"><i>starkvin</i><par n="vin__n_nt"/></e>
     <e lm="onani"><i>onani</i><par n="kemi__n_ut"/></e>
     <e lm="idisslare"><i>idisslar</i><par n="åkar/e__n_ut"/></e>
     <e lm="våldgästande"><i>våldgästande</i><par n="ave__n_nt"/></e>
@@ -52939,7 +52842,6 @@
     <e lm="trålare"><i>trålar</i><par n="åkar/e__n_ut"/></e>
     <e lm="stilbildare"><i>stilbildar</i><par n="åkar/e__n_ut"/></e>
     <e lm="värk"><i>värk</i><par n="al__n_ut"/></e>
-    <e lm="nervgift"><i>nervgift</i><par n="vin__n_nt"/></e>
     <e lm="fattigbarn"><i>fattigbarn</i><par n="ök__n_nt"/></e>
     <e lm="orappellerbarhet"><i>orappellerbarhet</i><par n="ör__n_ut"/></e>
     <e lm="konsternerbarhet"><i>konsternerbarhet</i><par n="ör__n_ut"/></e>
@@ -53405,7 +53307,6 @@
     <e lm="uttalstecken"><i>uttalsteck</i><par n="vap/en__n_nt"/></e>
     <e lm="tofslärka"><i>tofslärk</i><par n="bo/a__n_ut"/></e>
     <e lm="raring"><i>raring</i><par n="al__n_ut"/></e>
-    <e lm="snus"><i>snus</i><par n="vax__n_nt"/></e>
     <e lm="sepiatoning"><i>sepiatoning</i><par n="al__n_ut"/></e>
     <e lm="flugblomster"><i>flugblomst</i><par n="rod/er__n_nt"/></e>
     <e lm="partitur"><i>partitur</i><par n="ök__n_nt"/></e>
@@ -53454,7 +53355,6 @@
     <e lm="utfall"><i>utfall</i><par n="ök__n_nt"/></e>
     <e lm="reservare"><i>reservar</i><par n="åkar/e__n_ut"/></e>
     <e lm="marinerande"><i>marinerande</i><par n="ave__n_nt"/></e>
-    <e lm="mjöl"><i>mjöl</i><par n="vin__n_nt"/></e>
     <e lm="badrumsdörr"><i>badrumsdörr</i><par n="al__n_ut"/></e>
     <e lm="hänvändelse"><i>hänvändelse</i><par n="tå__n_ut"/></e>
     <e lm="antipartikel"><i>antipartik</i><par n="åt/el__n_ut"/></e>
@@ -53950,7 +53850,6 @@
     <e lm="semaforflagga"><i>semaforflagg</i><par n="bo/a__n_ut"/></e>
     <e lm="lackskärp"><i>lackskärp</i><par n="ök__n_nt"/></e>
     <e lm="studie"><i>studie</i><par n="tå__n_ut"/></e>
-    <e lm="saponin"><i>saponin</i><par n="vin__n_nt"/></e>
     <e lm="kyrkbok"><i>kyrkb</i><par n="e-b/ok__n_ut"/></e>
     <e lm="arbetsmaterial"><i>arbetsmaterial</i><par n="ök__n_nt"/></e>
     <e lm="mineralisering"><i>mineralisering</i><par n="al__n_ut"/></e>
@@ -54615,7 +54514,6 @@
     <e lm="bodybuilding"><i>bodybuilding</i><par n="al__n_ut"/></e>
     <e lm="trastfågel"><i>trastfåg</i><par n="åt/el__n_ut"/></e>
     <e lm="ureas"><i>ureas</i><par n="oas__n_ut"/></e>
-    <e lm="antidot"><i>antidot</i><par n="vin__n_nt"/></e>
     <e lm="tjalk"><i>tjalk</i><par n="al__n_ut"/></e>
     <e lm="öronmärkande"><i>öronmärkande</i><par n="ave__n_nt"/></e>
     <e lm="vapenvägrare"><i>vapenvägrar</i><par n="åkar/e__n_ut"/></e>
@@ -54720,7 +54618,6 @@
     <e lm="stekburgare"><i>stekburgar</i><par n="åkar/e__n_ut"/></e>
     <e lm="solighet"><i>solighet</i><par n="ör__n_ut"/></e>
     <e lm="låsfirma"><i>låsfirm</i><par n="bo/a__n_ut"/></e>
-    <e lm="A-vitamin"><i>A-vitamin</i><par n="vin__n_nt"/></e>
     <e lm="slingerskott"><i>slingerskott</i><par n="ök__n_nt"/></e>
     <e lm="riktning"><i>riktning</i><par n="al__n_ut"/></e>
     <e lm="rektorat"><i>rektorat</i><par n="ök__n_nt"/></e>
@@ -54860,7 +54757,6 @@
     <e lm="vägräcke"><i>vägräcke</i><par n="ave__n_nt"/></e>
     <e lm="turiststuga"><i>turiststug</i><par n="bo/a__n_ut"/></e>
     <e lm="mineraliserande"><i>mineraliserande</i><par n="ave__n_nt"/></e>
-    <e lm="konstharts"><i>konstharts</i><par n="vax__n_nt"/></e>
     <e lm="parketterande"><i>parketterande</i><par n="ave__n_nt"/></e>
     <e lm="puka"><i>puk</i><par n="bo/a__n_ut"/></e>
     <e lm="saltbildare"><i>saltbildar</i><par n="åkar/e__n_ut"/></e>
@@ -55398,7 +55294,6 @@
     <e lm="kabelgenomföring"><i>kabelgenomföring</i><par n="al__n_ut"/></e>
     <e lm="banksparande"><i>banksparande</i><par n="ave__n_nt"/></e>
     <e lm="memento"><i>memento</i><par n="ave__n_nt"/></e>
-    <e lm="abstrakt"><i>abstrakt</i><par n="vin__n_nt"/></e>
     <e lm="eftersynkroniserande"><i>eftersynkroniserande</i><par n="ave__n_nt"/></e>
     <e lm="vinterpäron"><i>vinterpäron</i><par n="ök__n_nt"/></e>
     <e lm="onomatologi"><i>onomatologi</i><par n="kemi__n_ut"/></e>
@@ -55694,7 +55589,6 @@
     <e lm="storby"><i>storby</i><par n="mo__n_ut"/></e>
     <e lm="succé"><i>succé</i><par n="kö__n_ut"/></e>
     <e lm="odistribuerbarhet"><i>odistribuerbarhet</i><par n="ör__n_ut"/></e>
-    <e lm="palliativ"><i>palliativ</i><par n="vin__n_nt"/></e>
     <e lm="krakmandel"><i>krakmand</i><par n="åt/el__n_ut"/></e>
     <e lm="berkis"><i>berkis</i><par n="as__n_ut"/></e>
     <e lm="sändande"><i>sändande</i><par n="ave__n_nt"/></e>
@@ -55732,7 +55626,6 @@
     <e lm="lagomhetssträvan"><i>lagomhetssträvan</i><par n="satan__n_ut"/></e>
     <e lm="rekande"><i>rekande</i><par n="ave__n_nt"/></e>
     <e lm="folklivsforskare"><i>folklivsforskar</i><par n="åkar/e__n_ut"/></e>
-    <e lm="lysin"><i>lysin</i><par n="vin__n_nt"/></e>
     <e lm="moppande"><i>moppande</i><par n="ave__n_nt"/></e>
     <e lm="perser"><i>perser</i><par n="lire__n_ut"/></e>
     <e lm="damejeanne"><i>damejeanne</i><par n="tå__n_ut"/></e>
