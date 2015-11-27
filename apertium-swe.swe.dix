@@ -2220,6 +2220,10 @@ obj = object form changed to the traditional acc = accusative
   <e>       <p><l></l>          <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="S__case"/></e>
 </pardef>
 
+<pardef n="Doris__np">
+  <e>       <p><l></l>          <r><s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p><par n="Ø__case"/></e>
+</pardef>
+
 <pardef n="Jonas__np">
   <e>       <p><l>'</l>         <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="gen"/></r></p></e>
   <e>       <p><l></l>          <r><s n="np"/><s n="ant"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -13432,7 +13436,7 @@ obj = object form changed to the traditional acc = accusative
    <e lm="Torsten"><i>Torsten</i><par n="Trond__np"/></e>
    <e lm="Walter"><i>Walter</i><par n="Trond__np"/></e>
 
-   <e lm="Agnes"><i>Agnes</i><par n="Eva__np"/></e> <!-- genitiv blir feil -->
+   <e lm="Agnes"><i>Agnes</i><par n="Doris__np"/></e>
    <e lm="Barbro"><i>Barbro</i><par n="Eva__np"/></e>
    <e lm="Brita"><i>Brita</i><par n="Eva__np"/></e>
    <e lm="Gudrun"><i>Gudrun</i><par n="Eva__np"/></e>
@@ -14984,7 +14988,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Jörgen" a="is">    <i>Jörgen</i><par n="Trond__np"/></e>
 <e lm="Jören" a="is">    <i>Jören</i><par n="Trond__np"/></e>
 <e lm="Doha" a="is">     <i>Doha</i><par n="Afrika__np"/></e>
-<e lm="Doris" a="is">    <i>Doris</i><par n="Eva__np"/></e>
+<e lm="Doris" a="is">    <i>Doris</i><par n="Doris__np"/></e>
 <e lm="Doyle" a="is">    <i>Doyle</i><par n="Magnusson__np"/></e>
 <e lm="Duisenberg" a="is"><i>Duisenberg</i><par n="Magnusson__np"/></e>
 <e lm="Dublin" a="is">   <i>Dublin</i><par n="Afrika__np"/></e>
@@ -15557,7 +15561,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Riksbank" a="is"> <i>Riksbank</i><par n="Världshälsoorganisation__np"/></e>
 <e lm="Sigrid" a="is">   <i>Sigrid</i><par n="Eva__np"/></e>
 <e lm="Sigurjon" a="is"> <i>Sigurjon</i><par n="Trond__np"/></e>
-<e lm="Sigurrós" a="is"> <i>Sigurrós</i><par n="Eva__np"/></e>
+<e lm="Sigurrós" a="is"> <i>Sigurrós</i><par n="Doris__np"/></e>
 <e lm="Sigurd" a="is">   <i>Sigurd</i><par n="Trond__np"/></e>
 <e lm="Silla" a="is">    <i>Silla</i><par n="Eva__np"/></e>
 <e lm="Simmi" a="is">    <i>Simmi</i><par n="Eva__np"/></e>
@@ -15600,7 +15604,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="Vestmannaeyjar" a="is"><i>Vestmannaeyjar</i><par n="Azorerna__np"/></e>
 <e lm="Vetrarbraut" a="is"><i>Vetrarbraut</i><par n="Afrika__np"/></e>
 <e lm="Vico" a="is">     <i>Vico</i><par n="Trond__np"/></e>
-<e lm="Vigdis" a="is">   <i>Vigdis</i><par n="Eva__np"/></e>
+<e lm="Vigdis" a="is">   <i>Vigdis</i><par n="Doris__np"/></e>
 <e lm="Vilhelm" a="is">  <i>Vilhelm</i><par n="Trond__np"/></e>
 <e lm="Vidalin" a="is">  <i>Vidalin</i><par n="Eva__np"/></e>
 <e lm="Vidförli" a="is"> <i>Vidförli</i><par n="Wikipedia__np"/></e>
@@ -17031,6 +17035,25 @@ obj = object form changed to the traditional acc = accusative
 <e lm="kryptera" a="PT">    <i>kryptera</i><par n="adressera__vblex"/></e>
 <e lm="montera" a="PT">    <i>montera</i><par n="adressera__vblex"/></e>
 
+<e lm="störta"><i>störta</i><par n="adressera__vblex"/></e>
+<e lm="täta"><i>täta</i><par n="adressera__vblex"/></e>
+
+<!-- PT: Adjective: hårdför
+    <e lm="hårdföra"><i>hårdför</i><par n="hör/a__vblex"/></e>
+-->
+
+
+    <!-- Multiword verbs -->
+
+<e lm="ha rast">         <i>ha</i><par n="ha__vblex"/><p><l><b/>rast</l><r><g><b/>rast</g></r></p></e>
+
+<!-- PT: Added from sample domains BEGIN -->
+
+<e lm="slå vad" c="domain:spel" a="PT">         <i>sl</i><par n="sl/å__vblex"/><p><l><b/>vad</l><r><g><b/>vad</g></r></p></e>
+
+<!-- PT: Added from sample domains END -->
+
+
 <!-- PT: Added from sample domains END -->
 
   <!-- PT: Danish old nouns now translated BEGIN -->
@@ -17089,25 +17112,9 @@ obj = object form changed to the traditional acc = accusative
 
   <!-- PT: Danish old nouns now translated END -->
 
-<e lm="störta"><i>störta</i><par n="adressera__vblex"/></e>
-<e lm="täta"><i>täta</i><par n="adressera__vblex"/></e>
-
-<!-- PT: Adjective: hårdför
-    <e lm="hårdföra"><i>hårdför</i><par n="hör/a__vblex"/></e>
--->
 
 
-    <!-- Multiword verbs -->
-
-<e lm="ha rast">         <i>ha</i><par n="ha__vblex"/><p><l><b/>rast</l><r><g><b/>rast</g></r></p></e>
-
-<!-- PT: Added from sample domains BEGIN -->
-
-<e lm="slå vad" c="domain:spel" a="PT">         <i>sl</i><par n="sl/å__vblex"/><p><l><b/>vad</l><r><g><b/>vad</g></r></p></e>
-
-<!-- PT: Added from sample domains END -->
-
-  </section>
+    </section>
   <section id="pending" type="standard">
      <e lm="äggläggning"><i>äggläggning</i><par n="bil__n"/></e>
      <e lm="äktenskapsuppfattning"><i>äktenskapsuppfattning</i><par n="bil__n"/></e>
