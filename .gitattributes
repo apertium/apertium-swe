@@ -17,6 +17,8 @@ dev/adj[!!-~](5e).wiktionary-infl.speling -text
 dev/apertium-swe-dan.swe-dan.rlx -text
 dev/apertium-swe-dan.swe.comments.tsx -text
 dev/apertium-swe-dan.swe_old.tsx -text
+dev/saldo/fullform/download.sh -text
+dev/saldo/fullform/swe-words-paradigms.txt -text
 dev/saldo/saldo.nouns.dix -text
 dev/saldo/saldo.verbs.dix -text
 dev/saldo/scripts/getParadigms.sh -text
