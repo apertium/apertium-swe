@@ -13,9 +13,11 @@ def allsame(x):
 def lcp(x):
     return [i[0] for i in takewhile(allsame ,zip(*x))]
 
+lno=0
 d={}
 intable=False
 for line in sys.stdin:
+    lno+=1
     if re.match(".*<table>", line):
         intable=True
         table=[]
@@ -47,9 +49,9 @@ for line in sys.stdin:
         if not pdid in d[p]:
             d[p][pdid]=set()
         if(len(set(lemmas))) == 0:
-            print ("!!! EMPTY: {}".format(table))
+            print ("<!-- EMPTY TABLE: {}, at line {}, {} -->".format(table, lno, line))
         if(len(set(lemmas))) > 1:
-            print ("!!! NON_UNIQUE LEMMAS {}".format(",".join(set(lemmas))))
+            print ("<!-- NON-UNIQUE LEMMAS {}, at line {}, {}  -->".format(",".join(set(lemmas)), lno, line))
         d[p][pdid].add(prefix)
 
 TAGCHANGES={"indef":"ind",
@@ -58,31 +60,43 @@ TAGCHANGES={"indef":"ind",
 def fixtag(tag):
     return TAGCHANGES.get(tag, tag)
 
+def maybe_slash(r, pn):
+    if len(r)==0:
+        return p
+    elif p.endswith(r):
+        return p[:len(r)]+"/"+p[len(r):]
+    else:
+        return p+"/"
+
 
 print ("DONE reading, printing:")
+section=[]
 for p in d:
-    if len(d[p])!=1:
-        bang="!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    else:
-        bang=""
-    print ("!!! SALDO PAR: {}, has {} pdid's{}".format(p, len(d[p]), bang))
     for pdid in d[p]:
+        if pdid==():
+            print ("<!-- empty pdid! giving up on {}, {} -->".format(p, pdid))
+            continue
+        if len(set([r for l,r,t in pdid]))>1:
+            print ("<!-- more than one r! giving up on {}, {} -->".format(p, pdid))
+            continue
+        r=[r for l,r,t in pdid][0]
         if len(d[p])==1:
-            pn = p
+            pn = maybe_slash(r, p)
         else:
             shortest = sorted(list(d[p][pdid]),
                             key=len)[0]
-            pn = shortest+"_"+p
-        print ("!!!\tPDID: {}".format(pdid))
+            pn = maybe_slash(r, shortest+"_"+p)
         print ("<pardef n=\"{}\">".format(pn))
-        r=[r for l,r,t in pdid][0] # crashes if bad input :)
         for (l,r,t) in pdid:
             tags = map(fixtag, t.split())
             s = "<s n=\"{}\"/>".format("\"/><s n=\"".join(tags))
             print ("\t<e><p><l>{}</l>\t<r>{}{}</r></p></e>".format(l,r,s))
         print ("</pardef>")
-        print ("!!!\tPREFIXES: {}".format(len(d[p][pdid])))
         for prefix in d[p][pdid]:
             lemma=prefix+r
-            print ("\t\t<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma, prefix, pn))
+            e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma, prefix, pn)
+            section.append(e)
 
+print ("</pardefs>\n<section id=\"saldo\" type=\"standard\">\n\n")
+print ("\n".join(section))
+print ("\n\n</section>\n</dictionary>")
