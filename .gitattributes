@@ -18,6 +18,8 @@ dev/apertium-swe-dan.swe-dan.rlx -text
 dev/apertium-swe-dan.swe.comments.tsx -text
 dev/apertium-swe-dan.swe_old.tsx -text
 dev/saldo/fullform/download.sh -text
+dev/saldo/fullform/maybe-missing-from-saldo -text
+dev/saldo/fullform/saldo-to-dix.py -text
 dev/saldo/fullform/swe-words-paradigms.txt -text
 dev/saldo/saldo.nouns.dix -text
 dev/saldo/saldo.verbs.dix -text
