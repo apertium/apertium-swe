@@ -23,32 +23,40 @@ for line in sys.stdin:
         m = re.match("<w><form>(.*)</form><gf>(.*)</gf><pos>(.*)</pos><is>(.*)</is><msd>(.*)</msd><p>(.*)</p></w>", line)
         if not m:
             print ("WARNING: Couldn't parse line {}".format(line))
-        f = m.group(1)
-        l = m.group(2)
+        form = m.group(1)
+        lemma = m.group(2)
         t = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
         p = m.group(6)
-        table.append([f,l,t,p])
+        table.append([form,lemma,t,p])
         #print ([f,l,t,p])
     if re.match(".*</table>", line):
         intable=False
-        forms=[f for f,l,t,p in table]
-        lemmas=[l for f,l,t,p in table]
+        forms=[form for form,lemma,t,p in table]
+        lemmas=[lemma for form,lemma,t,p in table]
         fl = forms + lemmas
         prefix = "".join(lcp(fl))
         prelen = len(prefix)
         pdid = tuple(sorted(
             # p? (saldo parname)
-            (f[prelen:], l[prelen:], t)
-            for f,l,t,p in table
+            (form[prelen:], lemma[prelen:], t)
+            for form,lemma,t,p in table
         ))
         #print (prefix, pdid)
         if not p in d:
             d[p]={}
         if not pdid in d[p]:
             d[p][pdid]=set()
-        if(len(set(lemmas))) != 1:
+        if(len(set(lemmas))) == 0:
+            print ("!!! EMPTY: {}".format(table))
+        if(len(set(lemmas))) > 1:
             print ("!!! NON_UNIQUE LEMMAS {}".format(",".join(set(lemmas))))
         d[p][pdid].add(prefix)
+
+TAGCHANGES={"indef":"ind",
+            "nn":"n",
+            "u":"ut"}
+def fixtag(tag):
+    return TAGCHANGES.get(tag, tag)
 
 
 print ("DONE reading, printing:")
@@ -57,16 +65,24 @@ for p in d:
         bang="!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     else:
         bang=""
-    print ("SALDO PAR: {}, has {} pdid's{}".format(p, len(d[p]), bang))
+    print ("!!! SALDO PAR: {}, has {} pdid's{}".format(p, len(d[p]), bang))
     for pdid in d[p]:
-        print ("\tPDID: {}".format(pdid))
         if len(d[p])==1:
             pn = p
         else:
             shortest = sorted(list(d[p][pdid]),
                             key=len)[0]
-            pn = shortest
-        print ("\tPREFIXES: {}, shortest: {}".format(len(d[p][pdid]), shortest))
+            pn = shortest+"_"+p
+        print ("!!!\tPDID: {}".format(pdid))
+        print ("<pardef n=\"{}\">".format(pn))
+        r=[r for l,r,t in pdid][0] # crashes if bad input :)
+        for (l,r,t) in pdid:
+            tags = map(fixtag, t.split())
+            s = "<s n=\"{}\"/>".format("\"/><s n=\"".join(tags))
+            print ("\t<e><p><l>{}</l>\t<r>{}{}</r></p></e>".format(l,r,s))
+        print ("</pardef>")
+        print ("!!!\tPREFIXES: {}".format(len(d[p][pdid])))
         for prefix in d[p][pdid]:
-            print ("\t\t{}".format(prefix))
+            lemma=prefix+r
+            print ("\t\t<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma, prefix, pn))
 
