@@ -47,7 +47,7 @@ for line in sys.stdin:
         if not pdid in d[p]:
             d[p][pdid]=set()
         if(len(set(lemmas))) != 1:
-            print ("!!! NON_UNIQUE LEMMAS {}".set(lemmas))
+            print ("!!! NON_UNIQUE LEMMAS {}".format(",".join(set(lemmas))))
         d[p][pdid].add(prefix)
 
 
