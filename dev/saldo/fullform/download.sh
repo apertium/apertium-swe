@@ -2,7 +2,7 @@
 
 count=0;
 for i in `cat swe-words-paradigms.txt | tr ' ' '$' | tr '\t' ';'`; do
-	ord=`echo $i | cut -f1 -d';' | tr '$' ' '`;
+	ord=`echo $i | cut -f1 -d';' | tr '$' ' ' |sed 's|/|%2F|g'`;
 	ordklass=`echo $i | cut -f2 -d';' | tr '$' ' '`;
         # echo "${ord}"
         # echo "${ordklass}"
