@@ -13,3 +13,9 @@ for i in `cat swe-words-paradigms.txt | tr ' ' '$' | tr '\t' ';'`; do
         fi
 	count=`expr $count + 1`;
 done
+
+# TODO:
+# * paradigms/nl_n_fem/nittiofem.xml and some others have xml, but empty table
+# * paradigms/ppa_i_pga/c%2Fo.xml and some others are empty, 404
+
+

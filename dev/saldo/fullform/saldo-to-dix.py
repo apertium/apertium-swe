@@ -13,90 +13,109 @@ def allsame(x):
 def lcp(x):
     return [i[0] for i in takewhile(allsame ,zip(*x))]
 
-lno=0
-d={}
-intable=False
-for line in sys.stdin:
-    lno+=1
-    if re.match(".*<table>", line):
-        intable=True
-        table=[]
-    if re.match(".*<w>", line):
-        m = re.match("<w><form>(.*)</form><gf>(.*)</gf><pos>(.*)</pos><is>(.*)</is><msd>(.*)</msd><p>(.*)</p></w>", line)
-        if not m:
-            print ("WARNING: Couldn't parse line {}".format(line))
-        form = m.group(1)
-        lemma = m.group(2)
-        t = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
-        p = m.group(6)
-        table.append([form,lemma,t,p])
-        #print ([f,l,t,p])
-    if re.match(".*</table>", line):
-        intable=False
-        forms=[form for form,lemma,t,p in table]
-        lemmas=[lemma for form,lemma,t,p in table]
-        fl = forms + lemmas
-        prefix = "".join(lcp(fl))
-        prelen = len(prefix)
-        pdid = tuple(sorted(
-            # p? (saldo parname)
-            (form[prelen:], lemma[prelen:], t)
-            for form,lemma,t,p in table
-        ))
-        #print (prefix, pdid)
-        if not p in d:
-            d[p]={}
-        if not pdid in d[p]:
-            d[p][pdid]=set()
-        if(len(set(lemmas))) == 0:
-            print ("<!-- EMPTY TABLE: {}, at line {}, {} -->".format(table, lno, line))
-        if(len(set(lemmas))) > 1:
-            print ("<!-- NON-UNIQUE LEMMAS {}, at line {}, {}  -->".format(",".join(set(lemmas)), lno, line))
-        d[p][pdid].add(prefix)
+def readlines():
+    lno=0
+    d={}
+    intable=False
+    for line in sys.stdin:
+        lno+=1
+        if re.match(".*<table>", line):
+            intable=True
+            table=[]
+        if re.match(".*<w>", line):
+            m = re.match("<w><form>(.*)</form><gf>(.*)</gf><pos>(.*)</pos><is>(.*)</is><msd>(.*)</msd><p>(.*)</p></w>", line)
+            if not m:
+                print ("<!-- Couldn't parse line {}, {} -->".format(lno, line))
+            form = m.group(1)
+            lemma = m.group(2)
+            t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
+            t = tuple(fixtag(t) for t in t_spc.split())
+            saldoname = m.group(6)
+            table.append([form,lemma,t,saldoname])
+        if re.match(".*</table>", line):
+            intable=False
+            forms=[form for form,lemma,t,saldoname in table]
+            lemmas=[lemma for form,lemma,t,saldoname in table]
+            fl = forms + lemmas
+            prefix = "".join(lcp(fl))
+            prelen = len(prefix)
+            pdid = tuple(sorted(
+                (form[prelen:], lemma[prelen:], t)
+                for form,lemma,t,saldoname in table
+            ))
+            if not saldoname in d:
+                d[saldoname]={}
+            if not pdid in d[saldoname]:
+                d[saldoname][pdid]=set()
+            if(len(set(lemmas))) == 0:
+                print ("<!-- EMPTY TABLE: {}, at line {}, {} -->".format(table, lno, line))
+            if(len(set(lemmas))) > 1:
+                print ("<!-- NON-UNIQUE LEMMAS {}, at line {}, {}  -->".format(",".join(set(lemmas)), lno, line))
+            d[saldoname][pdid].add(prefix)
+    return d
 
 TAGCHANGES={"indef":"ind",
             "nn":"n",
+            "av":"adv",
+            "avm":"adv",        # difference vs av? interjectiony?
             "u":"ut"}
 def fixtag(tag):
     return TAGCHANGES.get(tag, tag)
 
 def maybe_slash(r, pn):
-    if len(r)==0:
-        return p
-    elif p.endswith(r):
-        return p[:len(r)]+"/"+p[len(r):]
+    if len(r)>len(pn):
+        print ("<!-- WARNING: strange parname {}, shorter than r {} -->".format(pn, r))
+        return pn
+    elif len(r)==0:
+        return pn
+    elif pn.endswith(r):
+        return pn[:-len(r)]+"/"+pn[-len(r):]
     else:
-        return p+"/"
+        return pn+"/"           # TODO odd stuff goes here
 
+def get_sdefs(d):
+    return set(
+        tag
+        for saldoname in d
+        for pdid in d[saldoname]
+        for f,l,t in pdid
+        for tag in t
+    )
 
-print ("DONE reading, printing:")
-section=[]
-for p in d:
-    for pdid in d[p]:
-        if pdid==():
-            print ("<!-- empty pdid! giving up on {}, {} -->".format(p, pdid))
-            continue
-        if len(set([r for l,r,t in pdid]))>1:
-            print ("<!-- more than one r! giving up on {}, {} -->".format(p, pdid))
-            continue
-        r=[r for l,r,t in pdid][0]
-        if len(d[p])==1:
-            pn = maybe_slash(r, p)
-        else:
-            shortest = sorted(list(d[p][pdid]),
-                            key=len)[0]
-            pn = maybe_slash(r, shortest+"_"+p)
-        print ("<pardef n=\"{}\">".format(pn))
-        for (l,r,t) in pdid:
-            tags = map(fixtag, t.split())
-            s = "<s n=\"{}\"/>".format("\"/><s n=\"".join(tags))
-            print ("\t<e><p><l>{}</l>\t<r>{}{}</r></p></e>".format(l,r,s))
-        print ("</pardef>")
-        for prefix in d[p][pdid]:
-            lemma=prefix+r
-            e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma, prefix, pn)
-            section.append(e)
+def main():
+    d = readlines()
+    sdefs = get_sdefs(d)
+    print (sdefs)
+    print ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dictionary>\n<pardefs>\n")
+    section=[]
+    for saldoname in d:
+        for pdid in d[saldoname]:
+            if pdid==():
+                print ("<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid))
+                continue
+            if len(set([r for l,r,t in pdid]))>1:
+                print ("<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid))
+                continue
+            r=[r for l,r,t in pdid][0]
+            if len(d[saldoname])==1:
+                pn = maybe_slash(r, saldoname)
+            else:
+                shortest = sorted(list(d[saldoname][pdid]),
+                                key=len)[0]
+                pn = maybe_slash(r, shortest+"_"+saldoname)
+            print ("<pardef n=\"{}\">".format(pn))
+            for (l,r,t) in pdid:
+                s = "<s n=\"{}\"/>".format("\"/><s n=\"".join(t))
+                print ("\t<e><p><l>{}</l>\t<r>{}{}</r></p></e>".format(l,r,s))
+            print ("</pardef>")
+            for prefix in d[saldoname][pdid]:
+                lemma=prefix+r
+                e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma, prefix, pn)
+                section.append(e)
 
-print ("</pardefs>\n<section id=\"saldo\" type=\"standard\">\n\n")
-print ("\n".join(section))
-print ("\n\n</section>\n</dictionary>")
+    print ("</pardefs>\n<section id=\"saldo\" type=\"standard\">\n\n")
+    print ("\n".join(section))
+    print ("\n\n</section>\n</dictionary>")
+
+if __name__ == "__main__":
+    main()
