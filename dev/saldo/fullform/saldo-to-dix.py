@@ -111,9 +111,9 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "v"         :"un",                   #"neuter--non-neuter",
     "h"         :"suffix",
     "w"         :"ntpl",                 # neuter-plural??
-    "no_masc"   :"not_masculine",
-    "konj"      :"subjunctive",       # verbs?
-    "invar"     :"invariant",
+    "no_masc"   :"fn",                   # not masculine
+    "konj"      :"subjunctive",          # verbs; see MTAGCHANGES
+    "invar"     :"invariant",            # remove?
 
     # TODO:
     "mxc"       :"multiword_prefix",
@@ -126,7 +126,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     # TODO:
     "c"         :"compound-only-L",#"compound form",
     "ci"        :"compound-only-L",#"compound form, initial",
-    "cm"        :"cmp-medial", #TODO: compound form, medial; remove these? (we don't distinguish from initial)
+    "cm"        :"LR.compound-only-L",#"compound form, medial", (we don't distinguish from initial, may overanalyse)
     "sms"       :"cmp-split",#"compound form, free-standing",
 
     # Ignore the distinction for these:
@@ -153,49 +153,59 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
 
     # semtags:
     "ph"        :"ant",                 #"human", TODO: no first name / last name tag :(
-    "aa"        :"artefact",            # (famous diamonds etc.)
-    "tm"        :"medicine_taxonymy",   # (multiple sclerosis, acr?)
+    "aa"        :"",#"artefact",            # (famous diamonds etc.)
+    "tm"        :"",#"medicine_taxonymy",   # (multiple sclerosis, acr?)
     "ac"        :"org",#"computer",
-    "en"        :"natural_event",       # (big bang)
+    "en"        :"",#"natural_event",       # (big bang)
     "ae"        :"food",                # (coca cola)
-    "eh"        :"historical_event",    # (french revolution)
+    "eh"        :"",#"historical_event",    # (french revolution)
     "ag"        :"org",#"ground transport" # (car brands)
     "af"        :"org",#"air transport",
     "oc"        :"org",#"cultral organization",
-    "am"        :"medical_artifact",    # (THX, acr?)
-    "ec"        :"cultural_event",      # (alla hjärtans dag)
-    "ap"        :"prizes",              # (Vasaorden)
-    "aw"        :"water_transport",     # (Noah's ark)
-    "es"        :"sports",              # (vasaloppet)
-    "er"        :"religious_event",     # (Marie bebådelse)
+    "am"        :"",#"medical_artifact",    # (THX, acr?)
+    "ec"        :"",#"cultural_event",      # (alla hjärtans dag)
+    "ap"        :"",#"prizes",              # (Vasaorden)
+    "aw"        :"",#"water_transport",     # (Noah's ark)
+    "es"        :"",#"sports",              # (vasaloppet)
+    "er"        :"",#"religious_event",     # (Marie bebådelse)
     "lf"        :"top",#"facility location",
     "lg"        :"top",#"geographical location",
-    "tz"        :"zoology",             # (Litorina)
+    "tz"        :"",#"zoology",             # (Litorina)
     "la"        :"top",#"astronomical location",
-    "pa"        :"animals",             # (Rosinante)
+    "pa"        :"",#"animals",             # (Rosinante)
     "ls"        :"top",#"streets",
     "lp"        :"top",#"political location",
     "pc"        :"org",#"collective",
-    "tb"        :"botany",              # (Ranunculus)
-    # Tag order matters 😦 a second pm is a mythological person, e.g. virgin mary
+    "tb"        :"",#"botany",              # (Ranunculus)
+    # Tag order matters 😦 see MTAGCHANGES
     #"pm"       :"mythological person",
-    "wc"        :"plays",               # (Hamlet)
-    "wb"        :"books",               # (Musse Pigg)
-    "wa"        :"art",                 # (Mona Lisa)
-    "wn"        :"org",#"news",         # (Aftonbladet)
-    "wm"        :"org",#"media",        # (Idol)
-    "wp"        :"plays",               # (Charta77)
+    "wc"        :"",#"plays",               # (Hamlet)
+    "wb"        :"",#"books",               # (Musse Pigg)
+    "wa"        :"",#"art",                 # (Mona Lisa)
+    "wn"        :"",#"org",#"news",         # (Aftonbladet)
+    "wm"        :"",#"org",#"media",        # (Idol)
+    "wp"        :"",#"plays",               # (Charta77)
     "og"        :"org",#"governmental organization",
     "os"        :"org",#"sport organization",
     "op"        :"org",#"political organization",
     "oa"        :"org",#"air industry",
-    "oe"        :"educational_event",   # (ABF, CERN, acr?)
+    "oe"        :"",#"educational_event",   # (ABF, CERN, acr?)
     "om"        :"org",#"media organization",
 }
 
-MTAGCHANGES={
+MTAGCHANGES={                   # happens after TAGCHANGES
     ("vblex","past","ind","actv"):("vblex","past","actv"),
     ("vblex","pres","ind","actv"):("vblex","pri","actv"),
+    ("vblex","pres","subjunctive","pasv"):("vblex","prs","pasv"),
+    # TODO: tag for past subjunctive?
+    ("vblex","past","subjunctive","pasv"):("vblex","pasts","pasv"),
+    ("vblex","pres","subjunctive","actv"):("vblex","prs","actv"),
+    ("vblex","past","subjunctive","actv"):("vblex","pasts","actv"),
+    ("np","f","np"): ("np","f"),
+    ("np","m","np"): ("np","m"),
+    ("np","ntpl","np"): ("np","ntpl"),
+    ("np","pl","np"): ("np","pl"),
+    ("np","ut","np"): ("np","ut"),
 }
 
 def fixtag(tag):
