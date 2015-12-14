@@ -197,10 +197,9 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("vblex","past","ind","actv"):("vblex","past","actv"),
     ("vblex","pres","ind","actv"):("vblex","pri","actv"),
     ("vblex","pres","subjunctive","pasv"):("vblex","prs","pasv"),
-    # TODO: tag for past subjunctive?
-    ("vblex","past","subjunctive","pasv"):("vblex","pasts","pasv"),
+    ("vblex","past","subjunctive","pasv"):("vblex","pis","pasv"),
     ("vblex","pres","subjunctive","actv"):("vblex","prs","actv"),
-    ("vblex","past","subjunctive","actv"):("vblex","pasts","actv"),
+    ("vblex","past","subjunctive","actv"):("vblex","pis","actv"),
     ("np","f","np"): ("np","f"),
     ("np","m","np"): ("np","m"),
     ("np","ntpl","np"): ("np","ntpl"),
