@@ -3,6 +3,12 @@
 # After running download.sh (until you have no 0-size files left), do
 # $ find paradigms -name '*xml' -type f -print0 |xargs -0 cat |python3 saldo-to-dix.py
 
+
+# TODO:
+# * <g> where possible
+# * skip prefixes/suffixes
+# * restrict compounding to certain PoS, length?
+
 import sys,re
 
 from itertools import takewhile, tee
@@ -96,7 +102,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "pret_part" :"pp",
     "ack"       :"acc",
     "gen"       :"gen",
-    "ind"       :"indic",
+    "ind"       :"",            # indicative; but that's the default; subjunctive uses <pis>/<prs>
     "inf"       :"inf",
     "poss"      :"poss",
     "pl"        :"pl",
@@ -123,7 +129,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "h"         :"suffix",
     "w"         :"",            # neuter-plural – remove; only proper nouns like "OD"
     "konj"      :"subjunctive",          # verbs; see MTAGCHANGES
-    "invar"     :"invariant",            # remove?
+    "invar"     :"",
 
     # TODO:
     "mxc"       :"multiword_prefix",
@@ -228,34 +234,55 @@ def fixtags(tags):
     LR = any(tag in NEEDS_LR for tag in tags)
     ts = ".".join(fixtag(tag) for tag in tags)
     ts = re.sub(r'[.][.]+', '.', ts)
+    ts = re.sub(r'^[.]|[.]$', '', ts)
     return LR, MTAGCHANGES.get(ts, ts)
 
-def maybe_slash(r, pn, shortest):
-    if len(r)>len(pn):
-        print ("<!-- WARNING: strange parname {}, shorter than r {} -->".format(pn, r))
-        return pn
+def maybe_slash(r, pword):
+    if len(r)>len(pword):
+        print ("<!-- WARNING: strange parname {}, shorter than r {} -->".format(pword, r))
+        return pword
     elif len(r)==0:
-        return pn
-    elif pn.endswith(r):
-        return pn[:-len(r)]+"/"+pn[-len(r):]
+        return pword
+    elif pword.endswith(r):
+        return pword[:-len(r)]+"/"+pword[-len(r):]
     else:
-        return pn+"_"+shortest+"/"+r           # e.g saldoname "be" used for "utb/e sig"
+        print ("<!-- WARNING: unexpected parname {} for r {} -->".format(pword, r))
+        return pword
 
-def uniq_pn(saldoname, d, pdid, r):
-    prefixes = d[saldoname][pdid]
-    pword = saldoname.split("_")[-1]
-    shortest = sorted(list(prefixes),
-                      key=len)[0]
-    if len(d[saldoname])==1 or pword in prefixes or pword.title() in prefixes:
-        return shortest, saldoname
+def get_mainpos(pdid):
+    _,_,_,tags = unzip(pdid)
+    if any(t.startswith("vb") for t in tags):
+        return "vblex"
     else:
-        return shortest, "{}_{}{}".format(saldoname, shortest, r)
+        return tags[0].split(".")[0]
 
-def make_pn(saldoname, d, pdid, r):
-    r_ = r.replace(" ", "_")
-    shortest, uniq = uniq_pn(saldoname, d, pdid, r_)
-    pn = maybe_slash(r_, uniq, shortest)
+def try_make_pn(saldoname, pnprefix, pdid, r):
+    pword = pnprefix + r
+    pwordslash = maybe_slash(r, pword)
+    pn = "{}__{}".format(pwordslash,
+                         get_mainpos(pdid))
     return pn.replace(" ", "_")
+
+def maybe_saldoprefix(prefixes, saldoword, r):
+    prefix = saldoword[:-len(r)]
+    if saldoword.endswith(r) and (prefix in prefixes
+                                  or prefix.title() in prefixes):
+        return [prefix]
+    else:
+        return []
+
+def make_pn(used, saldoname, d, pdid, r):
+    r = r.replace(" ", "_")
+    saldoword = saldoname.split("_")[-1]
+    prefixes = d[saldoname][pdid]
+    good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
+    for prefix in good_prefixes:
+        guess = try_make_pn(saldoname, prefix, pdid, r)
+        if not guess in used:
+            return guess
+    # Giving up and just prefixing with a number (seems to happen when
+    # some lemmas have duplicate pardefs)
+    return "{}_{}".format(len(used), guess)
 
 def get_sdefs(d):
     return set(
@@ -302,6 +329,7 @@ def main():
  <pardefs>
 """)
     section=[]
+    used_pns=set()
     for saldoname in d:
         for pdid in d[saldoname]:
             if pdid==():
@@ -311,8 +339,9 @@ def main():
                 print ("<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid))
                 continue
             r=[r for _,_,r,_ in pdid][0]
-            pn = make_pn(saldoname, d, pdid, r)
-            print ("  <pardef n=\"{}\" c=\"SALDO: {}\">".format(pn, saldoname))
+            pn = make_pn(used_pns, saldoname, d, pdid, r)
+            used_pns.add(pn)
+            print ("  <pardef n=\"{}\" c=\"SALDO: {} \">".format(pn, saldoname))
             longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
             for LR,l,r,t in uniq_gen(pdid):
                 s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
