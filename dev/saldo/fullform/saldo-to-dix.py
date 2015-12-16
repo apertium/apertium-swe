@@ -106,12 +106,12 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "n"         :"nt",
     "u"         :"ut",
     "pres"      :"pres",
+    "no_masc"   :"fn",                   # not masculine → f/nt
 
     # TODO:
     "v"         :"un",                   #"neuter--non-neuter",
     "h"         :"suffix",
-    "w"         :"ntpl",                 # neuter-plural??
-    "no_masc"   :"fn",                   # not masculine
+    "w"         :"",            # neuter-plural – remove; only proper nouns like "OD"
     "konj"      :"subjunctive",          # verbs; see MTAGCHANGES
     "invar"     :"invariant",            # remove?
 
@@ -182,8 +182,8 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "wc"        :"",#"plays",               # (Hamlet)
     "wb"        :"",#"books",               # (Musse Pigg)
     "wa"        :"",#"art",                 # (Mona Lisa)
-    "wn"        :"",#"org",#"news",         # (Aftonbladet)
-    "wm"        :"",#"org",#"media",        # (Idol)
+    "wn"        :"org",#"news",         # (Aftonbladet)
+    "wm"        :"org",#"media",        # (Idol)
     "wp"        :"",#"plays",               # (Charta77)
     "og"        :"org",#"governmental organization",
     "os"        :"org",#"sport organization",
