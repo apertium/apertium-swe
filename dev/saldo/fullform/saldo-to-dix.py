@@ -268,7 +268,7 @@ def uniq_gen(pdid):
         ret.add((LR, l, r, t))
         if not LR:
             gen.add((r,t))
-    return ret
+    return sorted(ret, key=lambda e: (e[2:])) # sort by analysis
 
 
 def main():
@@ -296,17 +296,20 @@ def main():
                 continue
             r=[r for _,_,r,_ in pdid][0]
             pn = maybe_slash(r, uniq_pn(saldoname, d, pdid, r))
-            print ("<pardef n=\"{}\" c=\"SALDO: {}\">".format(pn, saldoname))
+            print ("  <pardef n=\"{}\" c=\"SALDO: {}\">".format(pn, saldoname))
+            longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
             for LR,l,r,t in uniq_gen(pdid):
                 # first dot-join because TAGCHANGES sometimes
                 # specifies multiple dot-separated changes:
                 s = "<s n=\"{}\"/>".format(".".join(t).replace(".", "\"/><s n=\""))
-                rstr = " r=\"LR\"" if LR else ""
-                print ("\t<e{}><p><l>{}</l>\t<r>{}{}</r></p></e>".format(rstr,
-                                                                         l.replace(" ","<b/>"),
-                                                                         r.replace(" ","<b/>"),
-                                                                         s))
-            print ("</pardef>")
+                rstr = " r=\"LR\">" if LR else ">       "
+                sep = " "*(longest_form-len(l))
+                print ("<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>".format(rstr,
+                                                                       l.replace(" ","<b/>"),
+                                                                       sep,
+                                                                       r.replace(" ","<b/>"),
+                                                                       s))
+            print ("  </pardef>\n")
             for prefix in d[saldoname][pdid]:
                 lemma=prefix+r
                 e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma,
