@@ -5,13 +5,25 @@
 
 import sys,re
 
-from itertools import takewhile
+from itertools import takewhile, tee
 
 def allsame(x):
     return len(set(x)) == 1
 
+def unzip(list_of_lists):
+    return zip(*list_of_lists)
+
 def lcp(x):
-    return [i[0] for i in takewhile(allsame ,zip(*x))]
+    return [i[0] for i in takewhile(allsame, unzip(x))]
+
+def get_prefix(table, lno, line):
+    _, forms, lemmas, _, _ = unzip(table)
+    if(len(set(lemmas))) > 1:
+        print("NON-UNIQUE LEMMAS {}, at line {}, {}".format(",".join(set(lemmas)), lno, line.rstrip()),
+              file=sys.stderr)
+    prefix = "".join(lcp(forms + lemmas))
+    prelen = len(prefix)
+    return prefix, prelen
 
 def readlines():
     lno=0
@@ -31,30 +43,24 @@ def readlines():
             form = m.group(1)
             lemma = m.group(2)
             t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
-            t = fixtags(t_spc.split())
+            LR, t = fixtags(t_spc.split())
             saldoname = m.group(6)
-            table.append([form,lemma,t,saldoname])
+            table.append([LR,form,lemma,t,saldoname])
         if re.match(".*</table>", line):
             intable=False
-            forms=[form for form,lemma,t,saldoname in table]
-            lemmas=[lemma for form,lemma,t,saldoname in table]
-            fl = forms + lemmas
-            prefix = "".join(lcp(fl))
-            prelen = len(prefix)
+            if(len(table)) == 0:
+                print("EMPTY TABLE: {}, at line {}, {}".format(table, lno, line.rstrip()),
+                      file=sys.stderr)
+                continue
+            prefix, prelen = get_prefix(table, lno, line)
             pdid = tuple(sorted(
-                (form[prelen:], lemma[prelen:], t)
-                for form,lemma,t,saldoname in table
+                (LR, form[prelen:], lemma[prelen:], t)
+                for LR, form, lemma, t, saldoname in table
             ))
             if not saldoname in d:
                 d[saldoname]={}
             if not pdid in d[saldoname]:
                 d[saldoname][pdid]=set()
-            if(len(set(lemmas))) == 0:
-                print("EMPTY TABLE: {}, at line {}, {}".format(table, lno, line.rstrip()),
-                      file=sys.stderr)
-            if(len(set(lemmas))) > 1:
-                print("NON-UNIQUE LEMMAS {}, at line {}, {}".format(",".join(set(lemmas)), lno, line.rstrip()),
-                      file=sys.stderr)
             d[saldoname][pdid].add(prefix)
     return d
 
@@ -123,10 +129,9 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "avh"       :"adjective_suffix",
     "nnh"       :"noun_suffix",
 
-    # TODO:
-    "c"         :"compound-only-L",#"compound form",
-    "ci"        :"compound-only-L",#"compound form, initial",
-    "cm"        :"LR.compound-only-L",#"compound form, medial", (we don't distinguish from initial, may overanalyse)
+    "c"         :"cmp.compound-only-L",#"compound form",
+    "ci"        :"cmp.compound-only-L",#"compound form, initial",
+    "cm"        :"cmp.compound-only-L",#"compound form, medial", (we don't distinguish from initial, may overanalyse)
     "sms"       :"cmp-split",#"compound form, free-standing",
 
     # Ignore the distinction for these:
@@ -206,12 +211,15 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np","pl","np"): ("np","pl"),
     ("np","ut","np"): ("np","ut"),
 }
-
+NEEDS_LR = set([
+    "cm",
+    ])
 def fixtag(tag):
     return TAGCHANGES.get(tag, tag)
 def fixtags(tags):
-    ts = tuple(fixtag(t) for t in tags)
-    return MTAGCHANGES.get(ts, ts)
+    LR=any(tag in NEEDS_LR for tag in tags)
+    ts = tuple(fixtag(tag) for tag in tags)
+    return LR, MTAGCHANGES.get(ts, ts)
 
 def maybe_slash(r, pn):
     if len(r)>len(pn):
@@ -229,7 +237,7 @@ def get_sdefs(d):
         tag
         for saldoname in d
         for pdid in d[saldoname]
-        for f,l,t in pdid
+        for _,_,_,t in pdid
         for tag in t
     )
 
@@ -243,32 +251,61 @@ def uniq_pn(saldoname, d, pdid, r):
                           key=len)[0]
         return saldoname+"_"+shortest+r
 
+def LR_sort_key(e):
+    (LR,l,r,t) = e
+    return ("-" in l, l)
+
+def uniq_gen(pdid):
+    """Ensure we only generate one l for each r+t"""
+    gen=set()
+    ret=set()
+    # TODO: priority-sort pdid by looking at l's; generatable forms first
+    for LR,l,r,t in sorted(pdid, key=LR_sort_key):
+        # If we've already added a form for this analysis without LR,
+        # then ensure we don't generate this form:
+        if (r,t) in gen:
+            LR = True
+        ret.add((LR, l, r, t))
+        if not LR:
+            gen.add((r,t))
+    return ret
+
+
 def main():
     d = readlines()
     sdefs = get_sdefs(d)
-    print ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dictionary>\n'
-    print ('<alphabet>ÀÁÂÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÖØÙÚÛÜàáâäåæçèéêëìíîïñòóôöøùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</alphabet>\n');
-    print ('<sdefs>\n")
+    print ("""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<dictionary>
+ <alphabet>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÖØÙÚÛÜàáâäåæçèéêëìíîïñòóôöøùúûüŠš</alphabet>
+ <sdefs>
+""")
     print ("\n".join(("\t<sdef n=\"{}\" \tc=\"{}\"/>".format(s,s)
                       for s in sdefs)))
-    print ("\n</sdefs>\n<pardefs>\n")
+    print ("""
+ </sdefs>
+ <pardefs>
+""")
     section=[]
     for saldoname in d:
         for pdid in d[saldoname]:
             if pdid==():
                 print ("<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid))
                 continue
-            if len(set([r for l,r,t in pdid]))>1:
+            if len(set([r for _,_,r,_ in pdid]))>1:
                 print ("<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid))
                 continue
-            r=[r for l,r,t in pdid][0]
+            r=[r for _,_,r,_ in pdid][0]
             pn = maybe_slash(r, uniq_pn(saldoname, d, pdid, r))
             print ("<pardef n=\"{}\" c=\"SALDO: {}\">".format(pn, saldoname))
-            for (l,r,t) in pdid:
-                s = "<s n=\"{}\"/>".format("\"/><s n=\"".join(t))
-                print ("\t<e><p><l>{}</l>\t<r>{}{}</r></p></e>".format(l.replace(" ","<b/>"),
-                                                                       r.replace(" ","<b/>"),
-                                                                       s))
+            for LR,l,r,t in uniq_gen(pdid):
+                # first dot-join because TAGCHANGES sometimes
+                # specifies multiple dot-separated changes:
+                s = "<s n=\"{}\"/>".format(".".join(t).replace(".", "\"/><s n=\""))
+                rstr = " r=\"LR\"" if LR else ""
+                print ("\t<e{}><p><l>{}</l>\t<r>{}{}</r></p></e>".format(rstr,
+                                                                         l.replace(" ","<b/>"),
+                                                                         r.replace(" ","<b/>"),
+                                                                         s))
             print ("</pardef>")
             for prefix in d[saldoname][pdid]:
                 lemma=prefix+r
@@ -277,9 +314,15 @@ def main():
                                                                        pn)
                 section.append(e)
 
-    print ("</pardefs>\n<section id=\"saldo\" type=\"standard\">\n\n")
+    print (""" </pardefs>
+ <section id=\"saldo\" type=\"standard\">
+
+""")
     print ("\n".join(section))
-    print ("\n\n</section>\n</dictionary>")
+    print ("""
+
+ </section>
+</dictionary>""")
 
 if __name__ == "__main__":
     main()
