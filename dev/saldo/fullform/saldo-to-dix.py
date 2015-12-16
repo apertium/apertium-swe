@@ -5,9 +5,11 @@
 
 
 # TODO:
-# * <g> where possible
+# * <g> where possible (1380 of 2308 pardefs are vblex)
 # * skip prefixes/suffixes
 # * restrict compounding to certain PoS, length?
+# * check if there are more strange forms that could go into LR_sort_key
+# * sort pardefs and e's by mainpos
 
 import sys,re
 
@@ -264,7 +266,7 @@ def try_make_pn(saldoname, pnprefix, pdid, r):
     return pn.replace(" ", "_")
 
 def maybe_saldoprefix(prefixes, saldoword, r):
-    prefix = saldoword[:-len(r)]
+    prefix = saldoword[:-len(r)] if len(r)>0 else saldoword
     if saldoword.endswith(r) and (prefix in prefixes
                                   or prefix.title() in prefixes):
         return [prefix]
@@ -276,6 +278,7 @@ def make_pn(used, saldoname, d, pdid, r):
     saldoword = saldoname.split("_")[-1]
     prefixes = d[saldoname][pdid]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
+    print(saldoname+" "+",".join(good_prefixes))
     for prefix in good_prefixes:
         guess = try_make_pn(saldoname, prefix, pdid, r)
         if not guess in used:
