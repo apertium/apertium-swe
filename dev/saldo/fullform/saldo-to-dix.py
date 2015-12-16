@@ -199,21 +199,21 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
 }
 
 MTAGCHANGES={                   # happens after TAGCHANGES
-    ("vblex","past","ind","actv"):("vblex","past","actv"),
-    ("vblex","pres","ind","actv"):("vblex","pri","actv"),
-    ("vblex","pres","subjunctive","pasv"):("vblex","prs","pasv"),
-    ("vblex","past","subjunctive","pasv"):("vblex","pis","pasv"),
-    ("vblex","pres","subjunctive","actv"):("vblex","prs","actv"),
-    ("vblex","past","subjunctive","actv"):("vblex","pis","actv"),
-    ("np","f","np"): ("np","f"),
-    ("np","m","np"): ("np","m"),
-    ("np","ntpl","np"): ("np","ntpl"),
-    ("np","pl","np"): ("np","pl"),
-    ("np","ut","np"): ("np","ut"),
-    ("n","ut","cmp.compound-only-L"): ("n","ut","sg","ind","cmp.compound-only-L"),
-    ("n","nt","cmp.compound-only-L"): ("n","nt","sg","ind","cmp.compound-only-L"),
-    ("n","ut","cmp-split"): ("n","ut","sg","ind","cmp-split"),
-    ("n","nt","cmp-split"): ("n","nt","sg","ind","cmp-split"),
+    ("vblex.past.ind.actv")         :("vblex.past.actv"),
+    ("vblex.pres.ind.actv")         :("vblex.pri.actv"),
+    ("vblex.pres.subjunctive.pasv") :("vblex.prs.pasv"),
+    ("vblex.past.subjunctive.pasv") :("vblex.pis.pasv"),
+    ("vblex.pres.subjunctive.actv") :("vblex.prs.actv"),
+    ("vblex.past.subjunctive.actv") :("vblex.pis.actv"),
+    ("np.f.np")                     :("np.f"),
+    ("np.m.np")                     :("np.m"),
+    ("np.ntpl.np")                  :("np.ntpl"),
+    ("np.pl.np")                    :("np.pl"),
+    ("np.ut.np")                    :("np.ut"),
+    ("n.ut.cmp.compound-only-L")    :("n.ut.sg.ind.cmp.compound-only-L"),
+    ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.cmp.compound-only-L"),
+    ("n.ut.cmp-split")              :("n.ut.sg.ind.cmp-split"),
+    ("n.nt.cmp-split")              :("n.nt.sg.ind.cmp-split"),
 }
 NEEDS_LR = set([
     "cm",
@@ -221,11 +221,11 @@ NEEDS_LR = set([
 def fixtag(tag):
     return TAGCHANGES.get(tag, tag)
 def fixtags(tags):
-    LR=any(tag in NEEDS_LR for tag in tags)
-    ts = tuple(fixtag(tag) for tag in tags)
+    LR = any(tag in NEEDS_LR for tag in tags)
+    ts = ".".join(fixtag(tag) for tag in tags)
     return LR, MTAGCHANGES.get(ts, ts)
 
-def maybe_slash(r, pn):
+def maybe_slash(r, pn, shortest):
     if len(r)>len(pn):
         print ("<!-- WARNING: strange parname {}, shorter than r {} -->".format(pn, r))
         return pn
@@ -234,7 +234,23 @@ def maybe_slash(r, pn):
     elif pn.endswith(r):
         return pn[:-len(r)]+"/"+pn[-len(r):]
     else:
-        return pn+"/"           # TODO odd stuff goes here
+        return pn+"_"+shortest+"/"+r           # e.g saldoname "be" used for "utb/e sig"
+
+def uniq_pn(saldoname, d, pdid, r):
+    prefixes = d[saldoname][pdid]
+    pword = saldoname.split("_")[-1]
+    shortest = sorted(list(prefixes),
+                      key=len)[0]
+    if len(d[saldoname])==1 or pword in prefixes or pword.title() in prefixes:
+        return shortest, saldoname
+    else:
+        return shortest, "{}_{}{}".format(saldoname, shortest, r)
+
+def make_pn(saldoname, d, pdid, r):
+    r_ = r.replace(" ", "_")
+    shortest, uniq = uniq_pn(saldoname, d, pdid, r_)
+    pn = maybe_slash(r_, uniq, shortest)
+    return pn.replace(" ", "_")
 
 def get_sdefs(d):
     return set(
@@ -242,20 +258,11 @@ def get_sdefs(d):
         for saldoname in d
         for pdid in d[saldoname]
         for _,_,_,t in pdid
-        for tag in t
+        for tag in t.split(".")
     )
 
-def uniq_pn(saldoname, d, pdid, r):
-    prefixes = d[saldoname][pdid]
-    pword = saldoname.split("_")[-1]
-    if len(d[saldoname])==1 or pword in prefixes or pword.title() in prefixes:
-        return saldoname
-    else:
-        shortest = sorted(list(prefixes),
-                          key=len)[0]
-        return saldoname+"_"+shortest+r
-
 def LR_sort_key(e):
+    """Prioritise certain forms if we have several forms with one analysis"""
     (LR,l,r,t) = e
     return ("-" in l, l)
 
@@ -299,13 +306,11 @@ def main():
                 print ("<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid))
                 continue
             r=[r for _,_,r,_ in pdid][0]
-            pn = maybe_slash(r, uniq_pn(saldoname, d, pdid, r))
+            pn = make_pn(saldoname, d, pdid, r)
             print ("  <pardef n=\"{}\" c=\"SALDO: {}\">".format(pn, saldoname))
             longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
             for LR,l,r,t in uniq_gen(pdid):
-                # first dot-join because TAGCHANGES sometimes
-                # specifies multiple dot-separated changes:
-                s = "<s n=\"{}\"/>".format(".".join(t).replace(".", "\"/><s n=\""))
+                s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
                 rstr = " r=\"LR\">" if LR else ">       "
                 sep = " "*(longest_form-len(l))
                 print ("<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>".format(rstr,
