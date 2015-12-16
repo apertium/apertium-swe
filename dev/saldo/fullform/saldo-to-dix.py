@@ -210,6 +210,10 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np","ntpl","np"): ("np","ntpl"),
     ("np","pl","np"): ("np","pl"),
     ("np","ut","np"): ("np","ut"),
+    ("n","ut","cmp.compound-only-L"): ("n","ut","sg","ind","cmp.compound-only-L"),
+    ("n","nt","cmp.compound-only-L"): ("n","nt","sg","ind","cmp.compound-only-L"),
+    ("n","ut","cmp-split"): ("n","ut","sg","ind","cmp-split"),
+    ("n","nt","cmp-split"): ("n","nt","sg","ind","cmp-split"),
 }
 NEEDS_LR = set([
     "cm",
