@@ -227,6 +227,7 @@ def fixtag(tag):
 def fixtags(tags):
     LR = any(tag in NEEDS_LR for tag in tags)
     ts = ".".join(fixtag(tag) for tag in tags)
+    ts = re.sub(r'[.][.]+', '.', ts)
     return LR, MTAGCHANGES.get(ts, ts)
 
 def maybe_slash(r, pn, shortest):
