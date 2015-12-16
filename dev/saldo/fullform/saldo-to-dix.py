@@ -246,7 +246,9 @@ def uniq_pn(saldoname, d, pdid, r):
 def main():
     d = readlines()
     sdefs = get_sdefs(d)
-    print ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dictionary>\n<sdefs>\n")
+    print ("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dictionary>\n'
+    print ('<alphabet>ÀÁÂÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÖØÙÚÛÜàáâäåæçèéêëìíîïñòóôöøùúûüABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz</alphabet>\n');
+    print ('<sdefs>\n")
     print ("\n".join(("\t<sdef n=\"{}\" \tc=\"{}\"/>".format(s,s)
                       for s in sdefs)))
     print ("\n</sdefs>\n<pardefs>\n")
