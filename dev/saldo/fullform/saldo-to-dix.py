@@ -8,6 +8,7 @@
 # * skip prefixes/suffixes
 # * restrict compounding to certain PoS, length?
 # * check if there are more strange forms that could go into LR_sort_key
+# * 906_de/n__prn – where's this 906 from?
 
 import sys,re
 
@@ -45,7 +46,7 @@ def get_queue(table):
     spcs_i = set(rev_str(s).rfind(" ") for s in forms+lemmas)
     if len(set(spcs_i)) == 1:
         q1 = spcs_i.pop()
-        if q1 == -1:
+        if q1 == -1 or len(set(forms))==1:
             return '', None
         else:
             q = 1 + q1          # include the space
