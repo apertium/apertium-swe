@@ -5,7 +5,6 @@
 
 
 # TODO:
-# * <g> where possible (1380 of 2308 pardefs are vblex)
 # * skip prefixes/suffixes
 # * restrict compounding to certain PoS, length?
 # * check if there are more strange forms that could go into LR_sort_key
@@ -95,7 +94,7 @@ def readlines():
                 d[saldoname]={}
             if not pdid in d[saldoname]:
                 d[saldoname][pdid]=set()
-            d[saldoname][pdid].add(prefix, queue)
+            d[saldoname][pdid].add((prefix, queue))
     return d
 
 
@@ -312,7 +311,7 @@ def maybe_saldoprefix(prefixes, saldoword, r):
 def make_pn(used, saldoname, d, pdid, r):
     r = r.replace(" ", "_")
     saldoword = saldoname.split("_")[-1]
-    prefixes = d[saldoname][pdid]
+    prefixes = [p for p,q in d[saldoname][pdid]]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
     for prefix in good_prefixes:
         guess = try_make_pn(saldoname, prefix, pdid, r)
@@ -365,6 +364,7 @@ def main():
     print ("""
  </sdefs>
  <pardefs>
+
 """)
     section=[]
     used_pns=set()
@@ -391,14 +391,8 @@ def main():
                                                                        r.replace(" ","<b/>"),
                                                                        s))
             print ("  </pardef>\n")
-            for prefix, queue in d[saldoname][pdid]:
-                if queue == '':
-                lemma=prefix+r+queue
-                e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma,
-                                                                       prefix.replace(" ","<b/>"),
-                                                                       queue.replace(" ","<b/>"),
-                                                                       pn)
-                section.append(e)
+            for prefix, queue in sorted(d[saldoname][pdid]):
+                section.append(make_e(prefix, queue, r, pn))
 
     print (""" </pardefs>
  <section id=\"saldo\" type=\"standard\">
@@ -410,5 +404,13 @@ def main():
  </section>
 </dictionary>""")
 
+def make_e(prefix, queue, r, pn):
+    lemma=prefix+r+queue
+    g = "" if queue == "" else ' <p><l>{}</l><r><g>{}</g></r></p>'.format(queue.replace(" ","<b/>"),
+                                                                          queue.replace(" ","<b/>"))
+    return '<e lm="{}"><i>{}</i><par n="{}"/>{}</e>'.format(lemma,
+                                                            prefix.replace(" ","<b/>"),
+                                                            pn,
+                                                            g)
 if __name__ == "__main__":
     main()
