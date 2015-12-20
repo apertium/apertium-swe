@@ -254,7 +254,20 @@ def maybe_slash(r, pword):
 def get_mainpos(pdid):
     _,_,_,tags = unzip(pdid)
     if any(t.startswith("vb") for t in tags):
+        # adj+vblex pardef → vblex
         return "vblex"
+    elif all(t.startswith("n.") for t in tags):
+        gens = set(
+            ts[1]
+            for t in tags
+            for ts in t.split(".")
+            if len(ts)>1
+            and ts[1] in ["f","nt","m","ut","un"]
+        )
+        if len(gens)==1:
+            return "n_{}".format(gens.pop())
+        else:
+            return "n"
     else:
         return tags[0].split(".")[0]
 
@@ -278,7 +291,6 @@ def make_pn(used, saldoname, d, pdid, r):
     saldoword = saldoname.split("_")[-1]
     prefixes = d[saldoname][pdid]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
-    print(saldoname+" "+",".join(good_prefixes))
     for prefix in good_prefixes:
         guess = try_make_pn(saldoname, prefix, pdid, r)
         if not guess in used:
