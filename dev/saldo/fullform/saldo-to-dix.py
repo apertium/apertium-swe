@@ -9,6 +9,7 @@
 # * restrict compounding to certain PoS, length?
 # * check if there are more strange forms that could go into LR_sort_key
 # * 906_de/n__prn – where's this 906 from?
+# * merge even if same saldoname?
 
 import sys,re
 
@@ -294,7 +295,7 @@ def get_mainpos(pdid):
     else:
         return tags[0].split(".")[0]
 
-def try_make_pn(saldoname, pnprefix, pdid, r):
+def try_make_pn(pnprefix, pdid, r):
     pword = pnprefix + r
     pwordslash = maybe_slash(r, pword)
     pn = "{}__{}".format(pwordslash,
@@ -315,7 +316,7 @@ def make_pn(used, saldoname, d, pdid, r):
     prefixes = [p for p,q in d[saldoname][pdid]]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
     for prefix in good_prefixes:
-        guess = try_make_pn(saldoname, prefix, pdid, r)
+        guess = try_make_pn(prefix, pdid, r)
         if not guess in used:
             return guess
     # Giving up and just prefixing with a number (seems to happen when
