@@ -9,7 +9,6 @@
 # * skip prefixes/suffixes
 # * restrict compounding to certain PoS, length?
 # * check if there are more strange forms that could go into LR_sort_key
-# * sort pardefs and e's by mainpos
 
 import sys,re
 
@@ -345,8 +344,8 @@ def main():
 """)
     section=[]
     used_pns=set()
-    for saldoname in d:
-        for pdid in d[saldoname]:
+    for saldoname in sorted(d):
+        for pdid in sorted(d[saldoname]):
             if pdid==():
                 print ("<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid))
                 continue
