@@ -32,6 +32,28 @@ def get_prefix(table, lno, line):
     prelen = len(prefix)
     return prefix, prelen
 
+def rev_str(s):
+    return "".join(list(reversed(s)))
+
+def get_queue(table):
+    """Return pair of queue and negative queue length if all forms end in
+    an invariant queue started by a space. Return None as length if
+    there is no such queue. The returned `qback` is suitable for
+    chopping using `string[:qback]`
+
+    """
+    _, forms, lemmas, _, _ = unzip(table)
+    spcs_i = set(rev_str(s).rfind(" ") for s in forms+lemmas)
+    if len(set(spcs_i)) == 1:
+        q1 = spcs_i.pop()
+        if q1 == -1:
+            return '', None
+        else:
+            q = 1 + q1          # include the space
+            queue = lemmas[0][-q:]
+            return queue, -q
+    return '', None
+
 def readlines():
     lno=0
     d={}
@@ -64,16 +86,18 @@ def readlines():
                       file=sys.stderr)
                 continue
             prefix, prelen = get_prefix(table, lno, line)
+            queue, qback = get_queue(table)
             pdid = tuple(sorted(
-                (LR, form[prelen:], lemma[prelen:], t)
+                (LR, form[prelen:qback], lemma[prelen:qback], t)
                 for LR, form, lemma, t, saldoname in table
             ))
             if not saldoname in d:
                 d[saldoname]={}
             if not pdid in d[saldoname]:
                 d[saldoname][pdid]=set()
-            d[saldoname][pdid].add(prefix)
+            d[saldoname][pdid].add(prefix, queue)
     return d
+
 
 TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/tagset
     "vb"        :"vblex",
@@ -367,10 +391,12 @@ def main():
                                                                        r.replace(" ","<b/>"),
                                                                        s))
             print ("  </pardef>\n")
-            for prefix in d[saldoname][pdid]:
-                lemma=prefix+r
+            for prefix, queue in d[saldoname][pdid]:
+                if queue == '':
+                lemma=prefix+r+queue
                 e = "<e lm=\"{}\"><i>{}</i><par n=\"{}\"/></e>".format(lemma,
                                                                        prefix.replace(" ","<b/>"),
+                                                                       queue.replace(" ","<b/>"),
                                                                        pn)
                 section.append(e)
 
