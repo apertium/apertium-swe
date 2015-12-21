@@ -58,6 +58,7 @@ def get_queue(table):
 def readlines():
     lno=0
     d={}
+    saldonames={}
     intable=False
     for line in sys.stdin:
         lno+=1
@@ -92,12 +93,13 @@ def readlines():
                 (LR, form[prelen:qback], lemma[prelen:qback], t)
                 for LR, form, lemma, t, saldoname in table
             ))
-            if not saldoname in d:
-                d[saldoname]={}
-            if not pdid in d[saldoname]:
-                d[saldoname][pdid]=set()
-            d[saldoname][pdid].add((prefix, queue))
-    return d
+            if not pdid in d:
+                d[pdid]=set()
+            d[pdid].add((prefix, queue))
+            if not pdid in saldonames:
+                saldonames[pdid]=set()
+            saldonames[pdid].add(saldoname)
+    return saldonames, d
 
 
 TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/tagset
@@ -313,7 +315,7 @@ def maybe_saldoprefix(prefixes, saldoword, r):
 def make_pn(used, saldoname, d, pdid, r):
     r = r.replace(" ", "_")
     saldoword = saldoname.split("_")[-1]
-    prefixes = [p for p,q in d[saldoname][pdid]]
+    prefixes = [p for p,q in d[pdid]]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
     for prefix in good_prefixes:
         guess = try_make_pn(prefix, pdid, r)
@@ -326,8 +328,7 @@ def make_pn(used, saldoname, d, pdid, r):
 def get_sdefs(d):
     return set(
         tag
-        for saldoname in d
-        for pdid in d[saldoname]
+        for pdid in d
         for _,_,_,t in pdid
         for tag in t.split(".")
     )
@@ -352,9 +353,13 @@ def uniq_gen(pdid):
             gen.add((r,t))
     return sorted(ret, key=lambda e: (e[2:])) # sort by analysis
 
+def pardef_sort_key(pdid):
+    """Sort by tags, then lemma-suffix"""
+    # reversed so we call it "vblex" if both vblex and adj in one pardef:
+    return list(reversed([(t,r) for _,_,r,t in pdid]))
 
 def main():
-    d = readlines()
+    saldonames, d = readlines()
     sdefs = get_sdefs(d)
     print ("""<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 <dictionary>
@@ -370,14 +375,13 @@ def main():
 """)
     section=[]
     used_pns=set()
-    for saldoname in sorted(d):
-        for pdid in sorted(d[saldoname]):
-            pn, pdef = make_pardef(d, pdid, saldoname, used_pns)
-            print(pdef)
-            for prefix, queue in sorted(d[saldoname][pdid]):
-                r=[r for _,_,r,_ in pdid][0]
-                section.append(make_e(prefix, queue, r, pn))
-
+    for pdid in sorted(d, key=pardef_sort_key):
+        saldoname = "/".join(saldonames[pdid])
+        pn, pdef = make_pardef(d, pdid, saldoname, used_pns)
+        print(pdef)
+        for prefix, queue in sorted(d[pdid]):
+            r=[r for _,_,r,_ in pdid][0]
+            section.append(make_e(prefix, queue, r, pn))
     print (""" </pardefs>
  <section id=\"saldo\" type=\"standard\">
 
@@ -388,6 +392,9 @@ def main():
  </section>
 </dictionary>""")
 
+def bspc(word):
+    return word.replace(" ", "<b/>")
+
 def make_pardef(d, pdid, saldoname, used_pns):
     if pdid==():
         return "<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid)
@@ -396,28 +403,28 @@ def make_pardef(d, pdid, saldoname, used_pns):
     r=[r for _,_,r,_ in pdid][0]
     pn = make_pn(used_pns, saldoname, d, pdid, r)
     used_pns.add(pn)
-    longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
+    longest_form = sorted(map(len, [bspc(l) for _,l,_,_ in pdid]))[-1]
     elts = ""
     for LR,l,r,t in uniq_gen(pdid):
         s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
         rstr = " r=\"LR\">" if LR else ">       "
-        sep = " "*(longest_form-len(l))
-        elts += "<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>".format(rstr,
-                                                                l.replace(" ","<b/>"),
-                                                                sep,
-                                                                r.replace(" ","<b/>"),
-                                                                s)
-    return pn, """  <pardef n="{}" c="SALDO: {} ">
-{}
-  </pardef>
-""".format(pn, saldoname, elts)
+        sep = " "*(longest_form-len(bspc(l)))
+        elts += "<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>\n".format(rstr,
+                                                                  bspc(l),
+                                                                  sep,
+                                                                  bspc(r),
+                                                                  s)
+    return pn, """  <pardef n="{}" c="SALDO: {} ">\n{}  </pardef>\n""".format(pn,
+                                                                              saldoname,
+                                                                              elts)
+
 
 def make_e(prefix, queue, r, pn):
     lemma=prefix+r+queue
-    g = "" if queue == "" else ' <p><l>{}</l><r><g>{}</g></r></p>'.format(queue.replace(" ","<b/>"),
-                                                                          queue.replace(" ","<b/>"))
+    g = "" if queue == "" else ' <p><l>{}</l><r><g>{}</g></r></p>'.format(bspc(queue),
+                                                                          bspc(queue))
     return '<e lm="{}"><i>{}</i><par n="{}"/>{}</e>'.format(lemma,
-                                                            prefix.replace(" ","<b/>"),
+                                                            bspc(prefix),
                                                             pn,
                                                             g)
 if __name__ == "__main__":
