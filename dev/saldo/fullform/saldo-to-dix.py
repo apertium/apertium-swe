@@ -385,7 +385,7 @@ def main():
     section=[]
     used_pns=set()
     for pdid in sorted(d, key=pardef_sort_key):
-        saldoname = "/".join(saldonames[pdid])
+        saldoname = " / ".join(saldonames[pdid])
         pn, pdef = make_pardef(d, pdid, saldoname, used_pns)
         print(pdef)
         for prefix, queue in sorted(d[pdid]):
