@@ -372,28 +372,10 @@ def main():
     used_pns=set()
     for saldoname in sorted(d):
         for pdid in sorted(d[saldoname]):
-            if pdid==():
-                print ("<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid))
-                continue
-            if len(set([r for _,_,r,_ in pdid]))>1:
-                print ("<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid))
-                continue
-            r=[r for _,_,r,_ in pdid][0]
-            pn = make_pn(used_pns, saldoname, d, pdid, r)
-            used_pns.add(pn)
-            print ("  <pardef n=\"{}\" c=\"SALDO: {} \">".format(pn, saldoname))
-            longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
-            for LR,l,r,t in uniq_gen(pdid):
-                s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
-                rstr = " r=\"LR\">" if LR else ">       "
-                sep = " "*(longest_form-len(l))
-                print ("<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>".format(rstr,
-                                                                       l.replace(" ","<b/>"),
-                                                                       sep,
-                                                                       r.replace(" ","<b/>"),
-                                                                       s))
-            print ("  </pardef>\n")
+            pn, pdef = make_pardef(d, pdid, saldoname, used_pns)
+            print(pdef)
             for prefix, queue in sorted(d[saldoname][pdid]):
+                r=[r for _,_,r,_ in pdid][0]
                 section.append(make_e(prefix, queue, r, pn))
 
     print (""" </pardefs>
@@ -405,6 +387,30 @@ def main():
 
  </section>
 </dictionary>""")
+
+def make_pardef(d, pdid, saldoname, used_pns):
+    if pdid==():
+        return "<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid)
+    if len(set([r for _,_,r,_ in pdid]))>1:
+        return "<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid)
+    r=[r for _,_,r,_ in pdid][0]
+    pn = make_pn(used_pns, saldoname, d, pdid, r)
+    used_pns.add(pn)
+    longest_form = sorted(map(len, [l.replace(" ", "<b/>") for _,l,_,_ in pdid]))[-1]
+    elts = ""
+    for LR,l,r,t in uniq_gen(pdid):
+        s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
+        rstr = " r=\"LR\">" if LR else ">       "
+        sep = " "*(longest_form-len(l))
+        elts += "<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>".format(rstr,
+                                                                l.replace(" ","<b/>"),
+                                                                sep,
+                                                                r.replace(" ","<b/>"),
+                                                                s)
+    return pn, """  <pardef n="{}" c="SALDO: {} ">
+{}
+  </pardef>
+""".format(pn, saldoname, elts)
 
 def make_e(prefix, queue, r, pn):
     lemma=prefix+r+queue
