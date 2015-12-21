@@ -175,10 +175,10 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "u"         :"ut",
     "pres"      :"pres",
     "no_masc"   :"fn",                   # not masculine → f/nt
+    "h"         :"",# "suffix", # "De Geer", "Descartes", "Hus"
 
     # TODO:
     "v"         :"un",                   #"neuter--non-neuter",
-    "h"         :"suffix",
     "w"         :"",            # neuter-plural – remove; only proper nouns like "OD"
     "konj"      :"subjunctive",          # verbs; see MTAGCHANGES
     "invar"     :"",
