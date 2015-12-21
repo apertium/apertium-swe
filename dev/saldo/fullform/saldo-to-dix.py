@@ -310,7 +310,7 @@ def get_mainpos(pdid):
         gens = set(
             ts[1]
             for t in tags
-            for ts in t.split(".")
+            for ts in [t.split(".")]
             if len(ts)>1
             and ts[1] in ["f","nt","m","ut","un"]
         )
