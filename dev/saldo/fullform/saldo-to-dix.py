@@ -5,11 +5,9 @@
 
 
 # TODO:
-# * skip prefixes/suffixes
-# * restrict compounding to certain PoS, length?
+# * restrict compounding to certain length?
+# * compound on adj/vblex: yes/no? (possible to bidix-restrict, but a bit messy)
 # * check if there are more strange forms that could go into LR_sort_key
-# * 906_de/n__prn – where's this 906 from?
-# * merge even if same saldoname?
 
 import sys,re
 
@@ -80,6 +78,8 @@ def readlines():
                 print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
                       file=sys.stderr)
                 continue
+            if skip_entry(form,lemma,t,saldoname):
+                continue
             table.append([LR,form,lemma,t,saldoname])
         if re.match(".*</table>", line):
             intable=False
@@ -102,6 +102,13 @@ def readlines():
                 saldonames[pdid]=set()
             saldonames[pdid].add(saldoname)
     return saldonames, d
+
+def skip_entry(form,lemma,t,saldoname):
+    mainpos = t.split(".")[0]
+    if mainpos not in ["adj","vblex","n"] and ".cmp" in t:
+        # Only compound on adj/vblex/n:
+        return True
+    return False
 
 def skip_pdid(pdid):
     LRs,forms,lemmas,tags = unzip(pdid)
@@ -138,7 +145,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "pp"        :"pr",
     "in"        :"ij",
     "nl"        :"num",
-    "num"       :"numeral",            # difference with nl?
+    "num"       :"",            # subpos of nl it seems
     "pn"        :"prn",
     "sn"        :"cnjsub",
     "kn"        :"cnjcoo",
@@ -272,6 +279,7 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np.ntpl.np")                  :("np.ntpl"),
     ("np.pl.np")                    :("np.pl"),
     ("np.ut.np")                    :("np.ut"),
+    ("np.np")                       :("np"),
     ("n.ut.cmp.compound-only-L")    :("n.ut.sg.ind.cmp.compound-only-L"),
     ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.cmp.compound-only-L"),
     ("n.ut.cmp-split")              :("n.ut.sg.ind.cmp-split"),
@@ -287,7 +295,12 @@ def fixtags(tags):
     ts = ".".join(fixtag(tag) for tag in tags)
     ts = re.sub(r'[.][.]+', '.', ts)
     ts = re.sub(r'^[.]|[.]$', '', ts)
-    return LR, MTAGCHANGES.get(ts, ts)
+    for bad,good in sorted(MTAGCHANGES.items(),
+                           # LRLM:
+                           key=lambda kv: len(kv[0])):
+        if ts.startswith(bad):
+            ts = good + ts[len(bad):]
+    return LR, ts
 
 def maybe_slash(r, pword):
     if len(r)>len(pword):
