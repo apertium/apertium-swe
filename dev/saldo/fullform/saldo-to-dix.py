@@ -75,6 +75,8 @@ def readlines():
             lemma = m.group(2)
             t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
             LR, t = fixtags(t_spc.split())
+            if any(tag in SKIP_ENTRIES for tag in t):
+                continue
             saldoname = m.group(6)
             if lemma.strip()=="" or form.strip()=="" or t.strip()=="":
                 print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
@@ -101,7 +103,14 @@ def readlines():
             saldonames[pdid].add(saldoname)
     return saldonames, d
 
-
+SKIP_ENTRIES=set([               # after fixtags, skip any entry in this set
+    "multiword_prefix",
+    "multiword_clause",
+    "prefix",
+    "adverb_suffix",
+    "adjective_suffix",
+    "noun_suffix",
+])
 TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/tagset
     "vb"        :"vblex",
     "pm"        :"np",
@@ -159,7 +168,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "konj"      :"subjunctive",          # verbs; see MTAGCHANGES
     "invar"     :"",
 
-    # TODO:
+    # see SKIP_ENTRIES:
     "mxc"       :"multiword_prefix",
     "ssm"       :"multiword_clause",
     "sxc"       :"prefix",
@@ -200,7 +209,7 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "tm"        :"",#"medicine_taxonymy",   # (multiple sclerosis, acr?)
     "ac"        :"org",#"computer",
     "en"        :"",#"natural_event",       # (big bang)
-    "ae"        :"food",                # (coca cola)
+    "ae"        :"",#"food",                # (coca cola)
     "eh"        :"",#"historical_event",    # (french revolution)
     "ag"        :"org",#"ground transport" # (car brands)
     "af"        :"org",#"air transport",
