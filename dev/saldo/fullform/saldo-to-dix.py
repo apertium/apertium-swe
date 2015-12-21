@@ -75,8 +75,6 @@ def readlines():
             lemma = m.group(2)
             t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
             LR, t = fixtags(t_spc.split())
-            if any(tag in SKIP_ENTRIES for tag in t):
-                continue
             saldoname = m.group(6)
             if lemma.strip()=="" or form.strip()=="" or t.strip()=="":
                 print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
@@ -95,6 +93,8 @@ def readlines():
                 (LR, form[prelen:qback], lemma[prelen:qback], t)
                 for LR, form, lemma, t, saldoname in table
             ))
+            if skip_pdid(pdid):
+                continue
             if not pdid in d:
                 d[pdid]=set()
             d[pdid].add((prefix, queue))
@@ -102,6 +102,21 @@ def readlines():
                 saldonames[pdid]=set()
             saldonames[pdid].add(saldoname)
     return saldonames, d
+
+def skip_pdid(pdid):
+    LRs,forms,lemmas,tags = unzip(pdid)
+    flattags = set(tag
+                   for ts in tags
+                   for tag in ts.split("."))
+    if any(tag in SKIP_ENTRIES for tag in flattags):
+        return True
+    # MWE verbs with sig/sin aren't tagged for person/number, skip:
+    if "vblex" in flattags:
+        if any(" sig" in l for l in forms) and any(" dig" in l for l in forms):
+            return True
+        if any(" sin" in l for l in forms) and any(" din" in l for l in forms):
+            return True
+    return False
 
 SKIP_ENTRIES=set([               # after fixtags, skip any entry in this set
     "multiword_prefix",
