@@ -6,7 +6,6 @@
 
 # TODO:
 # * restrict compounding to certain length?
-# * compound on adj/vblex: yes/no? (possible to bidix-restrict, but a bit messy)
 # * check if there are more strange forms that could go into LR_sort_key
 
 import sys,re
@@ -105,8 +104,8 @@ def readlines():
 
 def skip_entry(form,lemma,t,saldoname):
     mainpos = t.split(".")[0]
-    if mainpos not in ["adj","vblex","n"] and ".cmp" in t:
-        # Only compound on adj/vblex/n:
+    if mainpos != "n" and ".cmp" in t:
+        # Only compound on n:
         return True
     return False
 
