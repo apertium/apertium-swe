@@ -7,6 +7,7 @@
 # TODO:
 # * restrict compounding to certain length?
 # * check if there are more strange forms that could go into LR_sort_key
+# * case and compounding pardefs-in-pardefs
 
 import sys,re
 
