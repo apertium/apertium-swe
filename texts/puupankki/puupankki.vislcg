@@ -1,0 +1,495 @@
+"<Tid>"
+	"tid" n ut sg ind
+"<är>"
+	"vara" vbser pres actv
+"<en>"
+	"en" det ind ut sg
+"<grundläggande>"
+	"grundläggande" adj pst un sp ind
+"<dimension>"
+	"dimension" n ut sg ind
+"<i vår>"
+	"i" pr
+		"vår" det pos ut sg
+"<tillvaro>"
+	"tillvaro" n ut sg ind
+"<som>"
+	"som" cnjsub
+"<gör>"
+	"göra" vblex pres actv
+"<att>"
+	"att" cnjsub
+"<vi>"
+	"vi" prn pers p1 un pl nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<beskriva>"
+	"beskriva" vblex inf actv
+"<händelser>"
+	"händelse" n ut pl ind nom
+"<i>"
+	"i" pr
+"<vad>"
+	"vad" prn rel nom
+"<som>"
+	"som" cnjsub
+"<har>"
+	"ha" vbhaver pres actv
+"<skett>"
+	"ske" vblex supn actv
+"<,>"
+	"," cm
+"<vad>"
+	"vad" prn rel nom
+"<som>"
+	"som" cnjsub
+"<sker>"
+	"ske" vblex pres actv
+"<nu>"
+	"nu" adv
+"<och>"
+	"och" cnjcoo
+"<vad>"
+	"vad" prn rel nom
+"<som>"
+	"som" cnjsub
+"<kommer>"
+	"komma" vblex pres actv
+"<att>"
+	"att" cnjsub
+"<hända>"
+	"hända" vblex inf actv
+"<senare>"
+	"senare" adv
+"<,>"
+	"," cm
+"<det>"
+	"det" prn pers p3 nt sg nom
+"<vill>"
+	"vilja" vaux pres actv
+"<säga>"
+	"säga" vblex inf actv
+"<ge>"
+	"ge" vblex inf actv
+"<en>"
+	"en" det ind ut sg
+"<ordnad>"
+	"ordna" vblex pp ut sg ind
+"<följd>"
+	"följd" n ut sg ind
+"<,>"
+	"," cm
+"<en>"
+	"en" det ind ut sg
+"<sekvens>"
+	"sekvens" n ut sg ind gen
+"<,>"
+	"," cm
+"<av>"
+	"av" pr
+"<händelser>"
+	"händelse" n ut pl ind nom
+"<.>"
+	"." sent
+
+"<I>"
+	"i" pr
+"<fysik>"
+	"fysik" n ut sg ind
+"<är>"
+	"vara" vbser pres actv
+"<tid>"
+	"tid" n ut sg ind
+"<,>"
+	"," cm
+"<något>"
+	"någon" prn ind nt sg nom
+"<förenklat>"
+	"förenkla" vblex pp nt sg ind
+"<,>"
+	"," cm
+"<definierad>"
+	"definiera" vblex pp ut sg ind
+"<som>"
+	"som" cnjsub
+"<avståndet>"
+	"avstånd" n nt sg def nom
+"<mellan>"
+	"mellan" pr
+"<händelser>"
+	"händelse" n ut pl ind nom
+"<längs>"
+	"längs" pr
+"<den>"
+	"den" det def ut sg
+"<fjärde>"
+	"fjärde" det ord un sp
+"<axeln>"
+	"axel" n ut sg def nom
+"<i>"
+	"i" pr
+"<rumtiden>"
+	"rumtid" n ut sg def nom
+"<.>"
+	"." sent
+
+"<Speciella>"
+	"speciell" adj pst un sp def
+"<relativitetsteorin>"
+	"teori" n ut sg def nom
+		"relativitet" n ut sg ind cmp
+"<visade>"
+	"visa" vblex past actv
+"<att>"
+	"att" cnjsub
+"<tid>"
+	"tid" n ut sg ind
+"<inte>"
+	"inte" adv
+"<kan>"
+	"kunna" vbmod pres actv
+"<tolkas>"
+	"tolka" vblex inf pasv
+"<på>"
+	"på" pr
+"<annat>"
+	"annan" det ind nt sg nom
+"<sätt>"
+	"sätt" n nt sp ind nom
+"<än>"
+	"än" adv
+"<som>"
+	"som" cnjsub
+"<del>"
+	"del" n ut sg ind
+"<av>"
+	"av" pr
+"<rumtiden>"
+	"rumtid" n ut sg def nom
+"<,>"
+	"," cm
+"<en>"
+	"en" det ind ut sg
+"<kombination>"
+	"kombination" n ut sg ind
+"<av>"
+	"av" pr
+"<rum>"
+	"rum" n nt sp ind nom
+"<och>"
+	"och" cnjcoo
+"<tid>"
+	"tid" n ut sg ind
+"<.>"
+	"." sent
+
+"<Avståndet>"
+	"avstånd" n nt sg def nom
+"<mellan>"
+	"mellan" pr
+"<händelser>"
+	"händelse" n ut pl ind nom
+"<beror>"
+	"bero" vblex pres actv
+"<då>"
+	"då" adv
+"<på>"
+	"på" pr
+"<observatörernas>"
+	"observatör" n ut pl def gen
+"<relativa>"
+	"relativ" adj pst un sp def
+"<hastighet>"
+	"hastighet" n ut sg ind
+"<till>"
+	"till" pr
+"<händelserna>"
+	"händelse" n ut pl def nom
+"<.>"
+	"." sent
+
+"<Något>"
+	"någon" det qnt nt sg
+"<allmänt>"
+	"allmän" adj pst nt sg ind
+"<objektivt>"
+	"objektiv" adj nt sg ind 
+"<tidsbegrepp>"
+	"begrepp" n nt sp ind nom
+		"tid" n ut sg ind cmp
+"<finns>"
+	"finna" vblex pres pasv
+"<alltså>"
+	"alltså" adv
+"<inte>"
+	"inte" adv
+"<.>"
+	"." sent
+
+"<Allmän>"
+	"allmän" adj pst ut sg ind
+"<relativitetsteori>"
+	"teori" n ut sg ind
+		"relativitet" n ut sg ind cmp
+"<ändrade>"
+	"ändra" vblex past actv
+"<ytterligare>"
+	"ytterligare" adv
+"<begreppet>"
+	"begrepp" n nt sg def nom
+"<om>"
+	"om" cnjadv
+"<tid>"
+	"tid" n ut sg ind
+"<genom>"
+	"genom" pr
+"<att>"
+	"att" cnjsub
+"<introducera>"
+	"introducera" vblex inf actv
+"<idén>"
+	"idé" n ut sg def nom
+"<om>"
+	"om" pr
+"<krökt>"
+	"kröka" vblex pp nt sg ind
+"<rumtid>"
+	"rumtid" n nt sg ind nom
+"<orsakad>"
+	"orsaka" vblex pp ut sg ind
+"<av>"
+	"av" pr
+"<gravitationen>"
+	"gravitation" n ut sg def nom
+"<.>"
+	"." sent
+
+"<Ett>"
+	"en" det ind nt sg
+"<påtagligt>"
+	"påtaglig" adj pst nt sg ind
+"<exempel>"
+	"exempel" n nt sp ind nom
+"<på>"
+	"på" adv
+"<att>"
+	"att" cnjsub
+"<tiden>"
+	"tid" n ut sg def nom
+"<är>"
+	"vara" vbser pres actv
+"<relativ>"
+	"relativ" adj pst ut sg ind
+"<är>"
+	"vara" vbser pres actv
+"<att>"
+	"att" cnjsub
+"<i>"
+	"i" pr
+"<en>"
+	"en" det ind ut sg
+"<partikelaccelerator>"
+	"partikelaccelerator" n sg ut ind nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<man>"
+	"man" prn pers p3 ut sg nom
+"<ge>"
+	"ge" vblex inf actv
+"<partiklar>"
+	"partikel" n ut pl ind nom
+"<ökad>"
+	"öka" vblex pp ut sg ind
+"<livslängd>"
+	"livslängd" n ut sg ind
+"<om>"
+	"om" cnjadv
+"<de>"
+	"de" prn pers p3 un pl nom
+"<får>"
+	"få" vblex pres actv
+"<färdas>"
+	"färdas" vblex pres actv
+"<nära>"
+	"nära" pr
+"<ljushastigheten>"
+	"ljushastighet" n ut sg def nom
+"<.>"
+	"." sent
+
+"<Det>"
+	"det" prn pers p3 nt sg nom
+"<finns>"
+	"finna" vblex pres pasv
+"<idag>"
+	"idag" adv
+"<fysiker>"
+	"fysik" n ut pl ind nom
+"<och>"
+	"och" cnjcoo
+"<filosofer>"
+	"filosof" n ut pl ind nom
+"<som>"
+	"som" cnjsub
+"<ifrågasätter>"
+	"ifrågasätta" vblex pres actv
+"<om>"
+	"om" cnjadv
+"<tiden>"
+	"tid" n ut sg def nom
+"<är>"
+	"vara" vbser pres actv
+"<en>"
+	"en" det ind ut sg
+"<fundamental>"
+	"fundamental" adj pst ut sg ind
+"<egenskap>"
+	"egenskap" n ut sg ind
+"<eller>"
+	"eller" cnjcoo
+"<om>"
+	"om" cnjadv
+"<den>"
+	"den" prn pers p3 ut sg nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<härledas>"
+	"härleda" vblex inf pasv
+"<ur>"
+	"ur" pr
+"<andra>"
+	"andra" det ord un sp
+"<fysikaliska>"
+	"fysikalisk" adj pst un pl ind
+"<fenomen>"
+	"fenomen" n nt sp ind nom
+"<.>"
+	"." sent
+
+"<Ett>"
+	"en" det ind nt sg
+"<typiskt>"
+	"typisk" adj pst nt sg ind
+"<argument>"
+	"argument" n nt sp ind nom
+"<tar>"
+	"ta" vblex pres actv
+"<sin>"
+	"sin" det pos ut sg
+"<utgångspunkt>"
+	"utgångspunkt" n ut sg ind
+"<från>"
+	"från" pr
+"<att>"
+	"att" cnjsub
+"<tiden>"
+	"tid" n ut sg def nom
+"<inte>"
+	"inte" adv
+"<ingår>"
+	"ingå" vblex pres actv
+"<i>"
+	"i" pr
+"<Wheeler>"
+	"Wheeler" np cog mf sg nom 
+"<->"
+	"-" guio
+"<DeWitts>"
+	"DeWitt" np cog mf sg gen
+"<ekvation>"
+	"ekvation" n ut sg ind
+"<,>"
+	"," cm
+"<som>"
+	"som" cnjsub
+"<beskriver>"
+	"beskriva" vblex pres actv
+"<en>"
+	"en" det ind ut sg
+"<vågfunktion>"
+	"funktion" n ut sg ind
+		"våg" n ut sg ind cmp
+"<för>"
+	"för" pr
+"<hela>"
+	"hel" adj pst un sp def
+"<universum>"
+	"universum" n nt sg ind nom
+"<,>"
+	"," cm
+"<utan>"
+	"utan" cnjcoo
+"<man>"
+	"man" prn pers p3 ut sg nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<sedan>"
+	"sedan" adv
+"<härleda>"
+	"härleda" vblex inf actv
+"<tiden>"
+	"tid" n ut sg def nom
+"<ur>"
+	"ur" pr
+"<den>"
+	"den" det def ut sg
+"<kvantmekaniska>"
+	"kvantmekanisk" adj pst un sp def
+"<vågfunktionen>"
+	"funktion" n ut sg def nom
+		"våg" n ut sg ind cmp
+"<.>"
+	"." sent
+
+"<Detta>"
+	"denna" prn dem nt sg nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<tolkas>"
+	"tolka" vblex inf pasv
+"<som>"
+	"som" cnjsub
+"<att>"
+	"att" cnjsub
+"<tiden>"
+	"tid" n ut sg def nom
+"<inte>"
+	"inte" adv
+"<är>"
+	"vara" vbser pres actv
+"<fundamental>"
+	"fundamental" adj pst ut sg ind
+"<.>"
+	"." sent
+
+"<Julian>"
+	"Julian" np ant m sg nom
+"<Barbour>"
+	"Barbour" np cog mf sg nom
+"<har>"
+	"ha" vbhaver pres actv
+"<till>"
+	"till" pr
+"<och>"
+	"och" cnjcoo
+"<med>"
+	"med" pr
+"<argumenterat>"
+	"argumentera" vblex supn actv
+"<för att>"
+	"för att" cnjsub
+"<tiden>"
+	"tid" n ut sg def nom
+"<kan>"
+	"kunna" vbmod pres actv
+"<härledas>"
+	"härleda" vblex inf pasv
+"<ur>"
+	"ur" pr
+"<klassisk>"
+	"klassisk" adj pst ut sg ind
+"<mekanik>"
+	"mekanik" n ut sg ind nom
+"<.>"
+	"." sent
+

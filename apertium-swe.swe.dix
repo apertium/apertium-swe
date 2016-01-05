@@ -6260,6 +6260,7 @@ obj = object form changed to the traditional acc = accusative
 <e lm="för tillfället" a="is"><i>för<b/>tillfället</i><par n="då__adv"/></e>
 <e lm="i veckan" a="is"> <i>i<b/>veckan</i><par n="då__adv"/></e>
 <e lm="i vår" a="is">    <i>i<b/>vår</i><par n="då__adv"/></e>
+<e lm="i vår" a="is">    <p><l>i<b/>vår</l><r>i<s n="pr"/><j/>vår<s n="det"/><s n="pos"/><s n="ut"/><s n="sg"/></r></p></e>
 <e lm="i sommar" a="is"> <i>i<b/>sommar</i><par n="då__adv"/></e>
 <e lm="i höst" a="is">   <i>i<b/>höst</i><par n="då__adv"/></e>
 <e lm="i vinter" a="is"> <i>i<b/>vinter</i><par n="då__adv"/></e>

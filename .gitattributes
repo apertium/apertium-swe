@@ -33,3 +33,5 @@ dev/wiktionary-nouns.speling -text
 /swe.prob -text
 texts/isbrytning.txt -text
 texts/isbrytning.vislcg.txt -text
+texts/puupankki/puupankki.vislcg -text
+texts/tid.tagged.txt -text

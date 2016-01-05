@@ -1,5 +1,7 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 
+SUBREADINGS = LTR ;
+
 SETS
 
 LIST N = (n) ;
@@ -78,4 +80,3 @@ SELECT:r5 Pers IF (O ("<det>")) (1 V) ;
 SELECT:r6 Pers IF (O ("<den>")) (1 V) ;
 SELECT:r7 Pers IF (O ("<de>")) (1 V) ;
 SELECT:r8 Past IF (O ("<var>")) ((-1 N) OR (-1 Pron));
-SELECT (n);
