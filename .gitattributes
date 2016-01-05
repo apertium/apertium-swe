@@ -31,3 +31,5 @@ dev/vb.wiktionary-infl.speling -text
 dev/wiktionary-nouns.speling -text
 /modes.xml -text
 /swe.prob -text
+texts/isbrytning.txt -text
+texts/isbrytning.vislcg.txt -text

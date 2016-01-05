@@ -1,0 +1,1406 @@
+"<Isbrytning>"
+	"brytning" n ut sg ind nom
+		"is" n ut sg ind cmp
+"<i>"
+	"i" pr
+"<Sverige>"
+	"Sverige" np top sg nom
+"<utförs>"
+	"utföra" vblex pres pasv
+"<idag>"
+	"idag" adv
+"<av>"
+	"av" pr
+"<tio>"
+	"tio" num un pl
+"<isbrytare>"
+	"*isbrytare"
+"<som>"
+	"som" cnjsub
+"<bryter>"
+	"bryta" vblex pres actv
+"<is>"
+	"is" n ut sg ind nom
+	"is" n ut sg ind gen
+"<runt>"
+	"runt" adv
+	"rund" adj pst nt sg ind nom
+"<Sveriges>"
+	"Sverige" np top sg gen
+"<kuster>"
+	"kust" n ut pl ind nom
+"<för att>"
+	"för att" cnjsub
+"<göra>"
+	"göra" vblex inf actv
+"<det>"
+	"den" det def nt sg
+	"det" prn pers p3 nt sg nom
+	"det" prn pers p3 nt sg acc
+"<möjligt>"
+	"möjlig" adj pst nt sg ind nom
+	"möjligt" adj pst un sp ind nom
+	"möjligt" adj pst un sp def
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<handelsfartyg>"
+	"handelsfartyg" n nt sp ind nom
+"<att>"
+	"att" cnjsub
+"<använda>"
+	"använda" vblex inf actv
+	"använda" vblex pp un sp def
+"<de>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<svenska>"
+	"svensk" adj pst un sp def
+	"svenska" n ut sg ind nom
+	"svensk" adj pst un pl ind nom
+"<hamnarna>"
+	"hamn" n ut pl def nom
+"<året>"
+	"år" n nt sg def nom
+"<runt>"
+	"runt" adv
+	"rund" adj pst nt sg ind nom
+"<.>"
+	"." sent
+
+"<Normalt>"
+	"normal" adj pst nt sg ind nom
+"<pågår>"
+	"pågå" vblex pres actv
+"<isbrytarsäsongen>"
+	"*isbrytarsäsongen"
+"<från>"
+	"från" pr
+"<nyår>"
+	"nyår" n nt sp ind nom
+"<till>"
+	"till" cnjadv
+	"till" pr
+"<slutet>"
+	"slut" n nt sg def nom
+"<av>"
+	"av" pr
+"<maj>"
+	"maj" n ut sg ind nom
+"<.>"
+	"." sent
+
+"<Isbrytning>"
+	"brytning" n ut sg ind nom
+		"is" n ut sg ind cmp
+"<har>"
+	"har" abbr
+	"ha" vbhaver pres actv
+"<bedrivits>"
+	"bedriva" vblex supn pasv
+"<i>"
+	"i" pr
+"<Sverige>"
+	"Sverige" np top sg nom
+"<sedan>"
+	"sedan" pr
+"<slutet>"
+	"slut" n nt sg def nom
+"<av>"
+	"av" pr
+"<1800>"
+	"1800" num
+"<->"
+	"-" guio
+"<talet>"
+	"tal" n nt sg def nom
+"<och>"
+	"och" cnjcoo
+"<sedan>"
+	"sedan" n ut sg ind nom
+;	"sedan" adv
+;	"sedan" pr
+"<1926>"
+	"1926" num
+"<sköts>"
+	"skjuta" vblex past pasv
+"<den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<av>"
+	"av" pr
+"<staten>"
+	"stat" n ut sg def nom
+"<.>"
+	"." sent
+
+"<Ansvaret>"
+	"ansvar" n nt sg def nom
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<isbrytningen>"
+	"brytning" n ut sg def nom
+		"is" n ut sg ind cmp
+"<ligger>"
+	"ligga" vblex pres actv
+"<hos>"
+	"hos" pr
+"<Sjöfartsverket>"
+	"verk" n nt sg def nom
+		"fart" n ut sg ind cmp
+			"sjö" n ut sg ind cmp
+"<och>"
+	"och" cnjcoo
+"<verksamheten>"
+	"verksamhet" n ut sg def nom
+"<leds>"
+	"led" n ut sg ind gen
+	"led" n nt sp ind gen
+;	"lida" vblex past pasv
+;	"leda" vblex pres pasv
+"<från>"
+	"från" pr
+"<isbrytarledningen>"
+	"*isbrytarledningen"
+"<i>"
+	"i" pr
+"<Norrköping>"
+	"*Norrköping"
+"<.>"
+	"." sent
+
+"<Bemanningen>"
+	"*Bemanningen"
+"<av>"
+	"av" pr
+"<isbrytarna>"
+	"*isbrytarna"
+"<sköttes>"
+	"sköta" vblex past pasv
+"<tidigare>"
+	"tidigare" adv
+	"tidig" adj comp un sp
+	"tidigare" adj pst un sp ind nom
+	"tidigare" adj pst un sp def
+"<av>"
+	"av" pr
+"<Marinen>"
+	"marin" n ut sg def nom
+"<,>"
+	"," cm
+"<men>"
+	"men" cnjcoo
+"<sedan>"
+	"sedan" pr
+"<år>"
+	"år" n nt sp ind nom
+"<2000>"
+	"2000" num
+"<är>"
+	"vara" vbser pres actv
+"<besättningarna>"
+	"besättning" n ut pl def nom
+"<civila>"
+	"civil" adj pst un pl ind nom
+	"civil" adj pst un sp def
+"<.>"
+	"." sent
+
+"<Den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<totala>"
+	"*totala"
+"<kostnaden>"
+	"kostnad" n ut sg def nom
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<svenska>"
+	"svenska" n ut sg ind nom
+;	"svensk" adj pst un pl ind nom
+;	"svensk" adj pst un sp def
+"<isbrytningen>"
+	"brytning" n ut sg def nom
+		"is" n ut sg ind cmp
+"<ligger>"
+	"ligga" vblex pres actv
+"<på>"
+	"på" adv
+	"på" pr
+"<drygt>"
+	"drygt" adv
+	"dryg" adj pst nt sg ind nom
+	"drygt" adj pst un sp ind nom
+	"drygt" adj pst un sp def
+"<200>"
+	"200" num
+"<miljoner>"
+	"*miljoner"
+"<kronor>"
+	"krona" n ut pl ind nom
+"<per>"
+	"per" pr
+"<år>"
+	"år" n nt sp ind nom
+"<,>"
+	"," cm
+"<och>"
+	"och" cnjcoo
+"<för att>"
+	"för att" cnjsub
+"<ekonomiskt>"
+	"ekonomisk" adj pst nt sg ind nom
+"<effektivisera>"
+	"effektivisera" vblex imp
+	"effektivisera" vblex inf actv
+"<isbrytningen>"
+	"brytning" n ut sg def nom
+		"is" n ut sg ind cmp
+"<sker>"
+	"ske" vblex pres actv
+"<ett>"
+	"en" num nt sg
+	"en" det ind nt sg
+"<stort>"
+	"stor" adj pst nt sg ind nom
+"<samarbete>"
+	"samarbete" n nt sg ind nom
+"<mellan>"
+	"mellan" pr
+"<samtliga>"
+	"samtliga" prn qnt
+"<Östersjöländers>"
+	"*Östersjöländers"
+"<isbrytartjänster>"
+	"*isbrytartjänster"
+"<.>"
+	"." sent
+
+"<År>"
+	"år" n nt sp ind nom
+"<2000>"
+	"2000" num
+"<var>"
+	"vara" vbser past actv
+"<det>"
+	"det" prn pers p3 nt sg nom
+"<över>"
+	"över" pr
+"<30>"
+	"30" num
+"<år>"
+	"år" n nt sp ind nom
+"<sedan>"
+	"sedan" n ut sg ind nom
+;	"sedan" adv
+;	"sedan" pr
+"<någon>"
+	"någon" det qnt ut sg
+	"någon" prn ind ut sg nom
+"<av>"
+	"av" pr
+"<de>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<viktiga>"
+	"viktig" adj pst un pl ind nom
+	"viktig" adj pst un sp def
+"<Bottenvikshamnarna>"
+	"hamn" n ut pl def nom
+		"vik" n ut sg ind cmp
+			"botten" n ut sg ind cmp
+"<varit>"
+	"vara" vbser supn actv
+"<tvungen>"
+	"tvungen" adj pst ut sg ind nom
+"<att>"
+	"att" cnjsub
+"<stänga>"
+	"stänga" vblex inf actv
+"<på grund av>"
+	"på grund av" pr
+"<isförhållandena>"
+	"förhållande" n nt pl def nom
+		"is" n ut sg ind cmp
+"<.>"
+	"." sent
+
+"<Innan>"
+	"innan" pr
+"<Sverige>"
+	"Sverige" np top sg nom
+"<byggde>"
+	"bygga" vblex past actv
+"<sina>"
+	"sin" det pos un pl
+"<första>"
+	"första" det ord un sp
+"<isbrytare>"
+	"*isbrytare"
+"<blev>"
+	"bli" vblex past actv
+	"bliva" vblex past actv
+"<Östersjön>"
+	"Östersjön" np top sg nom
+"<och>"
+	"och" cnjcoo
+"<även>"
+	"även" adv
+"<västkusten>"
+	"västkust" n ut sg def nom
+"<vid>"
+	"vid" pr
+	"vid" adj pst ut sg ind nom
+"<svåra>"
+	"svår" adj pst un pl ind nom
+	"svår" adj pst un sp def
+"<vintrar>"
+	"vinter" n ut pl ind nom
+"<ofarbara>"
+	"*ofarbara"
+"<från>"
+	"från" pr
+"<att>"
+	"att" cnjsub
+"<isen>"
+	"is" n ut sg def nom
+"<lade>"
+	"lägga" vblex past actv
+"<sig>"
+	"sig" prn ref p3 un sp
+"<i>"
+	"i" pr
+"<november>"
+	"november" n ut sg ind nom
+"<till>"
+	"till" cnjadv
+	"till" pr
+"<islossningen>"
+	"*islossningen"
+"<i>"
+	"i" pr
+"<maj>"
+	"maj" n ut sg ind nom
+"<utan>"
+	"utan" cnjcoo
+	"utan" pr
+"<att>"
+	"att" cnjsub
+"<något>"
+	"någon" det qnt nt sg
+	"någon" prn ind nt sg nom
+"<kunde>"
+	"kunna" vbmod past actv
+"<göras>"
+	"göra" vblex inf pasv
+"<åt>"
+	"åt" pr
+	"äta" vblex past actv
+"<det>"
+	"den" det def nt sg
+	"det" prn pers p3 nt sg nom
+	"det" prn pers p3 nt sg acc
+"<.>"
+	"." sent
+
+"<Detta>"
+	"denna" det dem nt sg
+	"denna" prn dem nt sg nom
+"<innebar>"
+	"innebära" vblex past actv
+"<att>"
+	"att" cnjsub
+"<de>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<svenska>"
+	"svenska" n ut sg ind nom
+;	"svensk" adj pst un pl ind nom
+;	"svensk" adj pst un sp def
+"<segelskutorna>"
+	"*segelskutorna"
+"<,>"
+	"," cm
+"<som>"
+	"som" cnjsub
+"<var>"
+	"var" adv itg
+	"vara" vbser past actv
+"<byggda>"
+	"bygga" vblex pp un sp def
+"<av>"
+	"av" pr
+"<trä>"
+	"trä" n nt sg ind nom
+"<,>"
+	"," cm
+"<blev>"
+	"bli" vblex past actv
+	"bliva" vblex past actv
+"<hamnliggande>"
+	"*hamnliggande"
+"<en>"
+	"en" num ut sg
+	"en" det ind ut sg
+"<stor>"
+	"stor" adj pst ut sg ind nom
+"<del>"
+	"del" n ut sg ind nom
+"<av>"
+	"av" pr
+"<året>"
+	"år" n nt sg def nom
+"<.>"
+	"." sent
+
+"<Under>"
+	"under" pr
+"<senare>"
+	"senare" adv
+	"sen" adj comp un sp
+	"senare" adj pst un sp ind nom
+	"senare" adj pst un sp def
+"<delen>"
+	"del" n ut sg def nom
+"<av>"
+	"av" pr
+"<1800>"
+	"1800" num
+"<->"
+	"-" guio
+"<talet>"
+	"tal" n nt sg def nom
+"<blev>"
+	"bli" vblex past actv
+	"bliva" vblex past actv
+"<ångfartyg>"
+	"*ångfartyg"
+"<allt>"
+	"all" predet nt sg
+	"all" prn def nt sg nom
+"<vanligare>"
+	"vanlig" adj comp un sp
+"<och>"
+	"och" cnjcoo
+"<eftersom>"
+	"eftersom" cnjsub
+"<dessa>"
+	"denna" det dem un pl
+	"denna" prn dem un pl nom
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<byggda>"
+	"bygga" vblex pp un sp def
+"<av>"
+	"av" pr
+"<stål>"
+	"stål" n nt sp ind nom
+"<fanns>"
+	"finna" vblex past pasv
+"<nu>"
+	"nu" adv
+"<kraften>"
+	"kraft" n ut sg def nom
+"<och>"
+	"och" cnjcoo
+"<styrkan>"
+	"styrka" n ut sg def nom
+"<i>"
+	"i" pr
+"<skrovet>"
+	"skrov" n nt sg def nom
+"<att>"
+	"att" cnjsub
+"<gå>"
+	"gå" vblex inf actv
+"<i>"
+	"i" pr
+"<is>"
+	"is" n ut sg ind nom
+	"is" n ut sg ind gen
+"<.>"
+	"." sent
+
+"<De>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<första>"
+	"första" det ord un sp
+"<svenska>"
+	"svenska" n ut sg ind nom
+;	"svensk" adj pst un pl ind nom
+;	"svensk" adj pst un sp def
+"<isbrytarna>"
+	"*isbrytarna"
+"<ägdes>"
+	"*ägdes"
+"<privat>"
+	"privat" adj pst un sg ind nom
+"<eller>"
+	"eller" cnjcoo
+"<kommunalt>"
+	"alt" n ut sg ind nom
+		"kommun" n ut sg ind cmp
+"<och>"
+	"och" cnjcoo
+"<nyttjades>"
+	"nyttja" vblex past pasv
+"<till att>"
+	"till att" cnjsub
+"<hålla>"
+	"hålla" vblex inf actv
+"<de>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<större>"
+	"stor" adj comp un sp
+"<hamnarna>"
+	"hamn" n ut pl def nom
+"<öppna>"
+	"öppna" vblex imp
+	"öppna" vblex inf actv
+	"öppen" adj pst un pl ind nom
+	"öppen" adj pst un sp def
+"<.>"
+	"." sent
+
+"<Den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<första>"
+	"första" det ord un sp
+"<var>"
+	"vara" vbser past actv
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<som>"
+	"som" cnjsub
+"<sjösattes>"
+	"*sjösattes"
+"<vid>"
+	"vid" pr
+	"vid" adj pst ut sg ind nom
+"<Lindholmens>"
+	"holm" n ut sg def gen
+		"lind" n ut sg ind cmp
+"<varv>"
+	"varv" n nt sp ind nom
+"<1883>"
+	"1883" num
+"<för att>"
+	"för att" cnjsub
+"<kunna>"
+	"kunna" vbmod inf actv
+"<hålla>"
+	"hålla" vblex inf actv
+"<Göteborgs>"
+	"Göteborg" np top sg gen
+"<hamn>"
+	"hamn" n ut sg ind nom
+"<isfri>"
+	"*isfri"
+"<,>"
+	"," cm
+"<även>"
+	"även" adv
+"<under>"
+	"under" pr
+"<de>"
+	"den" det def un pl
+	"de" prn pers p3 un pl nom
+"<strängaste>"
+	"*strängaste"
+"<vintrar>"
+	"vinter" n ut pl ind nom
+"<.>"
+	"." sent
+
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<kunde>"
+	"kunna" vbmod past actv
+"<bryta>"
+	"bryta" vblex inf actv
+"<upp till>"
+	"upp till" pr
+"<60>"
+	"60" num
+"<centimeter>"
+	"centimeter" n ut sp ind nom
+"<tjock>"
+	"tjock" adj pst ut sg ind nom
+"<is>"
+	"is" n ut sg ind nom
+	"is" n ut sg ind gen
+"<utan>"
+	"utan" cnjcoo
+	"utan" pr
+"<vallar>"
+	"vall" n ut pl ind nom
+"<.>"
+	"." sent
+
+"<I>"
+	"i" pr
+"<issörja>"
+	"*issörja"
+"<fungerade>"
+	"fungera" vblex past actv
+	"fungera" vblex pp un sp def
+"<hon>"
+	"hon" prn pers p3 f sg nom
+"<dock>"
+	"dock" adv
+"<sämre>"
+	"*sämre"
+"<och>"
+	"och" cnjcoo
+"<1893>"
+	"1893" num
+"<,>"
+	"," cm
+"<när>"
+	"när" cnjadv
+	"när" adv itg
+	"nära" vblex imp
+	"nära" vblex pres actv
+"<all>"
+	"all" predet ut sg
+	"all" prn def ut sg nom
+"<trafik>"
+	"trafik" n ut sg ind nom
+"<behövde>"
+	"behöva" vblex past actv
+"<assistans>"
+	"*assistans"
+"<från>"
+	"från" pr
+"<Skagen>"
+	"*Skagen"
+"<,>"
+	"," cm
+"<räckte>"
+	"räcka" vblex past actv
+"<inte>"
+	"inte" adv
+"<en>"
+	"en" num ut sg
+	"en" det ind ut sg
+"<enda>"
+	"enda" prn ref un sp nom
+"<isbrytare>"
+	"*isbrytare"
+"<till>"
+	"till" cnjadv
+	"till" pr
+"<.>"
+	"." sent
+
+"<År>"
+	"år" n nt sp ind nom
+"<1895>"
+	"1895" num
+"<levererades>"
+	"leverera" vblex past pasv
+"<därför>"
+	"därför" adv
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<II>"
+	"II" num
+"<,>"
+	"," cm
+"<som>"
+	"som" cnjsub
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<av>"
+	"av" pr
+"<så kallad>"
+	"så kallad" adj pst ut sg ind nom
+"<svensksundstyp>"
+	"*svensksundstyp"
+"<.>"
+	"." sent
+
+"<Typnamnet>"
+	"namn" n nt sg def nom
+		"typ" n ut sg ind cmp
+"<kom>"
+	"komma" vblex imp
+	"komma" vblex past actv
+"<av>"
+	"av" pr
+"<att>"
+	"att" cnjsub
+"<fartygets>"
+	"fartyg" n nt sg def gen
+"<förskepp>"
+	"*förskepp"
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<designat>"
+	"*designat"
+"<efter>"
+	"efter" pr
+"<den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<svenska>"
+	"svenska" n ut sg ind nom
+;	"svensk" adj pst un pl ind nom
+;	"svensk" adj pst un sp def
+"<kanonbåten>"
+	"*kanonbåten"
+"<Svensksund>"
+	"*Svensksund"
+"<,>"
+	"," cm
+"<som>"
+	"som" cnjsub
+"<hade>"
+	"ha" vbhaver past actv
+"<visat>"
+	"visa" vblex supn actv
+	"visa" vblex pp nt sg ind nom
+"<sig>"
+	"sig" prn ref p3 un sp
+"<vara>"
+	"vara" vbser imp
+	"vara" vbser inf actv
+;	"vara" vblex imp
+;	"vara" vblex inf actv
+;	"vara" n ut sg ind nom
+"<väl>"
+	"väl" n nt sg ind nom
+;	"väl" adv pst
+"<lämpad>"
+	"lämpa" vblex pp ut sg ind nom
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<gång>"
+	"gång" n ut sg ind nom
+"<i>"
+	"i" pr
+"<is>"
+	"is" n ut sg ind nom
+	"is" n ut sg ind gen
+"<.>"
+	"." sent
+
+"<Skillnaden>"
+	"skillnad" n ut sg def nom
+"<mellan>"
+	"mellan" pr
+"<denna>"
+	"denna" det dem ut sg
+	"denna" prn dem ut sg nom
+"<skrovform>"
+	"*skrovform"
+"<och>"
+	"och" cnjcoo
+"<tidigare>"
+	"tidigare" adv
+	"tidig" adj comp un sp
+	"tidigare" adj pst un sp ind nom
+	"tidigare" adj pst un sp def
+"<isbrytares>"
+	"*isbrytares"
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<att>"
+	"att" cnjsub
+"<svenskundstypen>"
+	"*svenskundstypen"
+"<hade>"
+	"ha" vbhaver past actv
+"<mer>"
+	"mer" adv
+	"mycket" adv comp
+"<skarpa>"
+	"skarp" adj pst un pl ind nom
+	"skarp" adj pst un sp def
+"<konkava>"
+	"*konkava"
+"<linjer>"
+	"linje" n ut pl ind nom
+"<i>"
+	"i" pr
+"<förskeppet>"
+	"*förskeppet"
+"<.>"
+	"." sent
+
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<II>"
+	"II" num
+"<fungerade>"
+	"fungera" vblex past actv
+	"fungera" vblex pp un sp def
+"<så>"
+	"så" adv
+	"så" cnjsub
+	"så" vblex imp
+	"så" vblex inf actv
+"<mycket>"
+	"mycket" adv pst
+"<bättre>"
+	"väl" adv comp
+	"god" adj comp un sp
+"<att>"
+	"att" cnjsub
+"<den>"
+	"den" det def ut sg
+	"den" prn pers p3 ut sg nom
+	"den" prn pers p3 ut sg acc
+"<snart>"
+	"snart" adv
+	"snar" adj pst nt sg ind nom
+"<kom>"
+	"komma" vblex imp
+	"komma" vblex past actv
+"<att>"
+	"att" cnjsub
+"<ersätta>"
+	"ersätta" vblex inf actv
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<helt>"
+	"hel" adj pst nt sg ind nom
+"<.>"
+	"." sent
+
+"<I>"
+	"i" pr
+"<början>"
+	"börja" n nt sg def nom
+"<av>"
+	"av" pr
+"<2000>"
+	"2000" num
+-
+"<talet>"
+	"tal" n nt sg def nom
+"<låg>"
+	"låg" adj pst ut sg ind nom
+	"ligga" vblex past actv
+"<svensksundsprincipen>"
+	"*svensksundsprincipen"
+"<till>"
+	"till" cnjadv
+	"till" pr
+"<grund>"
+	"grund" n ut sg ind nom
+	"grund" n nt sp ind nom
+;	"grund" adj pst ut sg ind nom
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<hur>"
+	"hur" ij
+	"hur" adv itg
+"<isbrytare>"
+	"*isbrytare"
+"<runt>"
+	"runt" adv
+	"rund" adj pst nt sg ind nom
+"<hela>"
+	"hel" adj pst un sp def
+;	"hel" adj pst un pl ind nom
+"<världen>"
+	"värld" n ut sg def nom
+"<utformas>"
+	"utforma" vblex inf pasv
+	"utforma" vblex pres pasv
+"<.>"
+	"." sent
+
+"<Malmö>"
+	"Malmö" np top sg nom
+"<hamn>"
+	"hamn" n ut sg ind nom
+"<lät>"
+	"låta" vblex past actv
+"<1894>"
+	"1894" num
+"<,>"
+	"," cm
+"<på>"
+	"på" adv
+	"på" pr
+"<Kockums>"
+	"*Kockums"
+"<varv>"
+	"varv" n nt sp ind nom
+"<i>"
+	"i" pr
+"<staden>"
+	"stad" n ut sg def nom
+"<,>"
+	"," cm
+"<bygga>"
+	"bygga" vblex inf actv
+"<isbrytaren>"
+	"*isbrytaren"
+"<SS>"
+	"ss" abbr
+	"SS" np al sg nom
+"<Bore>"
+	"*Bore"
+"<av>"
+	"av" pr
+"<Hamburgerklass>"
+	"*Hamburgerklass"
+"<med>"
+	"med" pr
+"<tillverkningsnummer>"
+	"nummer" n nt sp ind nom
+		"tillverkning" n ut sg ind cmp
+"<70>"
+	"70" num
+"<och>"
+	"och" cnjcoo
+"<med>"
+	"med" pr
+"<fartygsbeteckning>"
+	"*fartygsbeteckning"
+"<SELA>"
+	"*SELA"
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<isbrytning>"
+	"brytning" n ut sg ind nom
+		"is" n ut sg ind cmp
+"<i>"
+	"i" pr
+"<Malmö>"
+	"Malmö" np top sg nom
+"<hamn>"
+	"hamn" n ut sg ind nom
+"<och>"
+	"och" cnjcoo
+"<unik>"
+	"unik" adj pst ut sg ind nom
+"<såtillvida>"
+	"*såtillvida"
+"<att>"
+	"att" cnjsub
+"<hon>"
+	"hon" prn pers p3 f sg nom
+"<nu>"
+	"nu" adv
+"<är>"
+	"vara" vbser pres actv
+"<världens>"
+	"värld" n ut sg def gen
+"<äldsta>"
+	"gammal" adj sup un sp def
+"<isbrytare>"
+	"*isbrytare"
+"<.>"
+	"." sent
+
+"<Ångmaskinen>"
+	"ångmaskin" n ut sg def nom
+"<tillverkades>"
+	"tillverka" vblex past pasv
+"<av>"
+	"av" pr
+"<Motala>"
+	"*Motala"
+"<Verkstad>"
+	"verkstad" n ut sg ind nom
+"<med>"
+	"med" pr
+"<tillverkningsnummer>"
+	"nummer" n nt sp ind nom
+		"tillverkning" n ut sg ind cmp
+"<:>"
+	":" sent
+"<664>"
+	"664" num
+"<.>"
+	"." sent
+
+"<Fartyget>"
+	"fartyg" n nt sg def nom
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<också>"
+	"också" adv
+"<ämnat>"
+	"ämna" vblex supn actv
+	"ämna" vblex pp nt sg ind nom
+"<som>"
+	"som" cnjsub
+"<reserv>"
+	"reserv" n ut sg ind nom
+"<,>"
+	"," cm
+"<post>"
+	"post" n ut sg ind nom
+"<och>"
+	"och" cnjcoo
+"<passagerarfärja>"
+	"*passagerarfärja"
+"<mellan>"
+	"mellan" pr
+"<Malmö>"
+	"Malmö" np top sg nom
+"<och>"
+	"och" cnjcoo
+"<Köpenhamn>"
+	"Köpenhamn" np top sg nom
+"<för>"
+	"för" adv
+	"för" cnjsub
+	"för" cnjadv
+	"för" pr
+	"föra" vblex imp
+	"föra" vblex pres actv
+"<svåra>"
+	"svår" adj pst un pl ind nom
+	"svår" adj pst un sp def
+"<isvintrar>"
+	"vinter" n ut pl ind nom
+		"is" n ut sg ind cmp
+"<.>"
+	"." sent
+
+"<Fartyget>"
+	"fartyg" n nt sg def nom
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<under>"
+	"under" pr
+"<båda>"
+	"båda" prn def un pl nom
+"<världskrigen>"
+	"världskrig" n nt pl def nom
+"<rekvirerat>"
+	"*rekvirerat"
+"<av>"
+	"av" pr
+"<Marinen>"
+	"marin" n ut sg def nom
+"<som>"
+	"som" cnjsub
+"<kanonbåt>"
+	"*kanonbåt"
+"<och>"
+	"och" cnjcoo
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<således>"
+	"således" adv
+"<då>"
+	"då" adv
+	"då" cnjadv
+"<bestyckat>"
+	"*bestyckat"
+"<.>"
+	"." sent
+
+"<Efter att>"
+	"efter att" cnjsub
+"<ha>"
+	"ha" vbhaver imp
+	"ha" vbhaver inf actv
+"<haft>"
+	"ha" vbhaver supn actv
+	"ha" vbhaver pp nt sg ind nom
+"<Västerås>"
+	"*Västerås"
+"<som>"
+	"som" cnjsub
+"<hemmahamn>"
+	"*hemmahamn"
+"<under>"
+	"under" pr
+"<många>"
+	"många" det qnt un pl
+	"många" prn ind un pl nom
+	"många" adj pst un pl ind nom
+	"många" adj pst un pl def
+"<år>"
+	"år" n nt sp ind nom
+"<har>"
+	"har" abbr
+	"ha" vbhaver pres actv
+"<SS>"
+	"ss" abbr
+	"SS" np al sg nom
+"<Bore>"
+	"*Bore"
+"<nu>"
+	"nu" adv
+"<,>"
+	"," cm
+"<sedan>"
+	"sedan" n ut sg ind nom
+;	"sedan" adv
+;	"sedan" pr
+"<2012>"
+	"2012" num
+"<,>"
+	"," cm
+"<åter>"
+	"åter" adv
+"<Malmö>"
+	"Malmö" np top sg nom
+"<som>"
+	"som" cnjsub
+"<hemmahamn>"
+	"*hemmahamn"
+"<och>"
+	"och" cnjcoo
+"<är>"
+	"vara" vbser pres actv
+"<i>"
+	"i" pr
+"<funktionsdugligt>"
+	"*funktionsdugligt"
+"<originalskick>"
+	"*originalskick"
+"<.>"
+	"." sent
+
+"<Vissa>"
+	"viss" adj pst un pl ind nom
+	"viss" adj pst un sp def
+"<modifieringar>"
+	"*modifieringar"
+"<i>"
+	"i" pr
+
+"<enlighet>"
+	"enlighet" n ut sg ind nom
+"<med>"
+	"med" pr
+"<Transportstyrelsens>"
+	"styrelse" n ut sg def gen
+		"transport" n ut sg ind cmp
+"<regelverk>"
+	"regelverk" n nt sp ind nom
+"<till exempel>"
+	"till exempel" cnjadv
+"<radar>"
+	"ar" n nt sp ind nom
+		"rad" n ut sg ind cmp
+"<,>"
+	"," cm
+
+"<GPS>"
+	"GPS" np al
+"<och så vidare>"
+	"och så vidare" adv
+"<har>"
+	"ha" vbhaver pres actv
+"<dock>"
+	"dock" adv
+"<gjorts>"
+	"göra" vblex supn pasv
+"<för att>"
+	"för att" cnjsub
+"<möjliggöra>"
+	"möjliggöra" vblex inf actv
+"<drift>"
+	"drift" n ut sg ind nom
+"<till>"
+	"till" cnjadv
+	"till" pr
+"<sjöss>"
+	"*sjöss"
+"<som>"
+	"som" cnjsub
+"<traditionsfartyg>"
+	"fartyg" n nt sp ind nom
+		"tradition" n ut sg ind cmp
+"<med>"
+	"med" pr
+"<passagerare>"
+	"passagerare" n ut sp ind nom
+"<.>"
+	"." sent
+
+"<Stockholms>"
+	"Stockholm" np top sg gen
+"<hamn>"
+	"hamn" n ut sg ind nom
+"<byggde>"
+	"bygga" vblex past actv
+"<två>"
+	"två" num un pl
+"<stycken>"
+	"styck" n ut sg def nom
+	"stycke" n nt pl ind nom
+"<som>"
+	"som" cnjsub
+"<också>"
+	"också" adv
+"<hette>"
+	"heta" vblex past
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<I>"
+	"I" num
+"<och>"
+	"och" cnjcoo
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<II>"
+	"II" num
+"<.>"
+	"." sent
+
+"<Isbrytaren>"
+	"*Isbrytaren"
+"<II>"
+	"II" num
+"<var>"
+	"vara" vbser past actv
+;	"var" adv itg
+"<tillräckligt>"
+	"tillräckligt" adv
+	"tillräcklig" adj pst nt sg ind nom
+"<stark>"
+	"stark" adj pst ut sg ind nom
+"<för att>"
+	"för att" cnjsub
+"<kunna>"
+	"kunna" vbmod inf actv
+"<användas>"
+	"använda" vblex inf pasv
+"<även>"
+	"även" adv
+"<på>"
+	"på" adv
+	"på" pr
+"<öppet>"
+	"öppen" adj pst nt sg ind nom
+"<hav>"
+	"hav" n nt sp ind nom
+"<,>"
+	"," cm
+"<varför>"
+	"varför" ij
+	"varför" adv itg
+"<staten>"
+	"stat" n ut sg def nom
+"<skaffade>"
+	"skaffa" vblex past actv
+	"skaffa" vblex pp un sp def
+"<sig>"
+	"sig" prn ref p3 un sp
+"<dispositionsrätt>"
+	"rätt" n ut sg ind nom
+		"disposition" n ut sg ind cmp
+"<över>"
+	"över" pr
+"<fartyget>"
+	"fartyg" n nt sg def nom
+"<och>"
+	"och" cnjcoo
+"<kunde>"
+	"kunna" vbmod past actv
+"<använda>"
+	"använda" vblex inf actv
+	"använda" vblex pp un sp def
+"<det>"
+	"den" det def nt sg
+	"det" prn pers p3 nt sg nom
+	"det" prn pers p3 nt sg acc
+"<på>"
+	"på" adv
+	"på" pr
+"<andra>"
+	"andra" det ord un sp
+	"annan" prn ind un pl nom
+"<platser>"
+	"plats" n ut pl ind nom
+"<än>"
+	"än" adv
+"<i>"
+	"i" pr
+"<Stockholm>"
+	"Stockholm" np top sg nom
+"<.>"
+	"." sent
+
+"<I>"
+	"i" pr
+"<början>"
+	"börja" n nt sg def nom
+"<av>"
+	"av" pr
+"<1900>"
+	"1900" num
+"<->"
+	"-" guio
+"<talet>"
+	"tal" n nt sg def nom
+"<byggde>"
+	"bygga" vblex past actv
+"<även>"
+	"även" adv
+"<Gävles>"
+	"Gävle" np top sg gen
+"<,>"
+	"," cm
+"<Norrköpings>"
+	"Norrköping" np top sg gen
+"<och>"
+	"och" cnjcoo
+"<Luleås>"
+	"Luleå" np top sg gen
+"<hamnar>"
+	"hamn" n ut pl ind nom
+"<isbrytare>"
+	"*isbrytare"
+"<.>"
+	"." sent
+
