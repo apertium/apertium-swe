@@ -278,6 +278,13 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np.pl.np")                    :("np.pl"),
     ("np.ut.np")                    :("np.ut"),
     ("np.np")                       :("np"),
+    ("np.f.ant")                    :("np.ant.f"),
+    ("np.m.ant")                    :("np.ant.m"),
+    ("np.nt.org")                   :("np.org.nt"),
+    ("np.nt.top")                   :("np.top.nt"),
+    ("np.un.top")                   :("np.top.un"),
+    ("np.ut.org")                   :("np.org.ut"),
+    ("np.ut.top")                   :("np.top.ut"),
     # compound-only-L is sg.ind.nom so there
     ("n.un.pl.cmp.compound-only-L") :("n.un.sg.ind.nom.cmp.compound-only-L"),
     ("n.un.pl.cmp-split")           :("n.un.sg.ind.nom.cmp-split"),
