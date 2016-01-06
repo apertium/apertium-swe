@@ -69,7 +69,7 @@ def readlines():
                 form = m.group(1)
                 lemma = m.group(2)
                 t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
-                LR, t = fixtags(t_spc.split())
+                LR, t = fixtags(form, t_spc.split())
                 saldoname = m.group(6)
                 if lemma.strip()=="" or form.strip()=="" or t.strip()=="":
                     print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
@@ -86,7 +86,7 @@ def readlines():
             prefix, prelen = get_prefix(table, lno, line)
             queue, qback = get_queue(table)
             pdid_nosub = tuple(sorted(set(
-                (LR, form[prelen:qback], lemma[prelen:qback], t)
+                (LR, form[prelen:qback], lemma[prelen:qback], t, tuple())
                 for LR, form, lemma, t, saldoname in table
             )))
             subpars, pdid = with_subpar(uniq_gen(pdid_nosub))
@@ -102,7 +102,7 @@ def readlines():
 
 def skip_entry(form,lemma,t,saldoname):
     mainpos = t.split(".")[0]
-    if mainpos != "n" and ".cmp" in t:
+    if mainpos != "n" and ".compound-only-L" in t:
         # Only compound on n over a certain length:
         return len(form)>2
     return False
@@ -295,7 +295,7 @@ NEEDS_LR = set([
     ])
 def fixtag(tag):
     return TAGCHANGES.get(tag, tag)
-def fixtags(tags):
+def fixtags(form, tags):
     LR = any(tag in NEEDS_LR for tag in tags)
     ts = ".".join(fixtag(tag) for tag in tags)
     ts = re.sub(r'[.][.]+', '.', ts)
@@ -305,6 +305,9 @@ def fixtags(tags):
                            key=lambda kv: len(kv[0])):
         if ts.startswith(bad):
             ts = good + ts[len(bad):]
+    if len(form)>2 and ts.startswith('n.') and not (ts.endswith('.compound-only-L')
+                                                    or ts.endswith('.cmp-split')):
+        ts += '.compound-R'
     return LR, ts
 
 def rem_superfluous_LR(pdid):
@@ -316,37 +319,42 @@ def rem_superfluous_LR(pdid):
 
 def with_subpar(pdid):
     cpdids = {}
-    pats = [ ('.gen', '.nom'),
-             ('.nom.cmp.compound-only-L', '.nom'),
-             ('.nom.cmp-split', '.nom'),
+    pats = [ ('.gen'                     , '.nom'),
+             ('.nom.cmp.compound-only-L' , '.nom'),
+             ('.nom.cmp-split'           , '.nom'),
+             ('.gen.compound-R'          , '.nom.compound-R'),
+             ('.nom.cmp.compound-only-L' , '.nom.compound-R'),
+             ('.nom.cmp-split'           , '.nom.compound-R'),
              ]
     pdid = set(pdid)
     doRem = set()
     doAdd = set()
-    for pat,opat in pats:
-        es = [(LR,l,r,t) for (LR,l,r,t) in pdid if t.endswith(pat)]
+    for pat,pat_ in pats:
+        es = [e for e in pdid if e[3].endswith(pat)]
         for e in es:
-            LR,l,r,t = e
+            LR,l,r,t,p = e
             plain = t[:-len(pat)]
             for other in pdid:
-                LR_,l_,r_,t_ = other
-                if l.startswith(l_) and r==r_ and plain+opat==t_:
+                LR_,l_,r_,t_,p_ = other
+                if l.startswith(l_) and r==r_ and plain+pat_==t_:
                     doRem.add(other)
-                    other = (LR_, l_, r_, plain)
+                    other = (LR_, l_, r_, plain,p_)
                     doAdd.add(other)
                     if other not in cpdids: cpdids[other]=set()
-                    cpdids[other].add((LR, l[len(l_):], '',  pat.lstrip('.'), tuple()))
-                    cpdids[other].add((LR, '',          '', opat.lstrip('.'), tuple()))
+                    LRs  = False if LR==LR_ else LR
+                    LRs_ = False if LR==LR_ else LR_
+                    cpdids[other].add((LRs,  l[len(l_):], '',  pat.lstrip('.'), p ))
+                    cpdids[other].add((LRs_, '',          '', pat_.lstrip('.'), p_))
                     doRem.add(e)
-    cpdids = { other:rem_superfluous_LR(pdid)
-               for other,pdid in cpdids.items() }
+    cpdids = { other:rem_superfluous_LR(uniq_gen(cpdid))
+               for other,cpdid in cpdids.items() }
     with_sub=[]
     for e in (pdid-doRem)|doAdd:
-        LR,l,r,t=e
+        LR,l,r,t,p=e
         if e in cpdids:
-            with_sub.append((LR,l,r,t,tuple(sorted(cpdids[e]))))
+            with_sub.append((LR,l,r,t,cpdids[e]))
         else:
-            with_sub.append((LR,l,r,t,tuple()))
+            with_sub.append(e)
     return cpdids.values(), rem_superfluous_LR(with_sub)
 
 
@@ -426,18 +434,18 @@ def LR_sort_key(e):
     """Prioritise certain forms if we have several forms with one analysis"""
     return ("-" in e[1], e[1])
 
-def uniq_gen(pdid_nosub):
+def uniq_gen(pdid):
     """Ensure we only generate one l for each r+t"""
     gen=set()
     ret=set()
-    for LR,l,r,t in sorted(pdid_nosub, key=LR_sort_key):
+    for LR,l,r,t,p in sorted(pdid, key=LR_sort_key):
         # If we've already added a form for this analysis without LR,
         # then ensure we don't generate this form:
-        if (r,t) in gen:
+        if (r,t,p) in gen:
             LR = True
-        ret.add((LR, l, r, t))
+        ret.add((LR, l, r, t, p))
         if not LR:
-            gen.add((r,t))
+            gen.add((r,t,p))
     return ret
 
 def pardef_sort_key(pdid):
