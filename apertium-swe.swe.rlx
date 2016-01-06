@@ -3,34 +3,12 @@ SOFT-DELIMITERS = "<,>" cm ;
 
 SETS
 
-LIST N = (n) ;
-LIST A = (adj) ;
-LIST CS = (cnjsub) ;
-LIST Adv = (adv) ;
-LIST V = (vblex) (vbser) (vbmod) ;
-LIST Vbser = (vbser)  ;
-LIST PREP = (pr) ;
-LIST Interj = (ij) ;
-LIST Pron = (prn) ;
-LIST Pcle = (part) ;
-LIST Copula = (vbser);
-LIST Itg = (itg);
-
-LIST Pers = (pers) ;
-LIST Num = (num) ;
-
-LIST TV = (tv) ;
-LIST IV = (iv) ;
-
-LIST Imprt = (imp) ;
-LIST Pii = (pii) ;
-LIST Aor = (aor) ;
-LIST Prs = (pres) ;
-LIST Past = (past) ;
-
-LIST Sg = (sg) ;
-LIST Pl = (pl) ;
-LIST Count = (ct) ;
+LIST N = n ;
+LIST Det = det ;
+LIST Num = num ;
+LIST A = adj ;
+LIST V = vblex ; 
+LIST Prn = prn ;
 
 LIST Sg1 = (p1 sg) ;
 LIST Sg2 = (p2 sg) ;
@@ -39,26 +17,31 @@ LIST Pl1 = (p1 pl) ;
 LIST Pl2 = (p2 pl) ;
 LIST Pl3 = (p3 pl) ;
 
-LIST Nom = (nom) ;
-LIST Acc = (acc) ;
-LIST Gen = (gen) ;
-LIST Dat = (dat) ;
-LIST Voc = (voc) ;
+LIST Inf = inf ;
 
-LIST Def = (def) ;
-LIST Ind = (ind) ;
+LIST Interr = itg ; 
 
+LIST Nom = nom ;
+LIST Acc = acc ;
+LIST Gen = gen ;
 
-LIST NUMBER = sg pl ;
-LIST GENDER = m f nt mfn ;
-LIST PERSON = (p1 sg) (p2 sg) (p3 sg) (p1 pl) (p2 pl) (p3 pl) ;
-LIST NAGDV = nom acc dat gen voc ;
+LIST Def = def ;
+LIST Ind = ind ;
 
-SET V-IND-FIN = Prs OR Aor OR Pii ;
-SET V-COP = Copula ;
-SET SG2-OR-SG3 = Sg2 OR Sg3 ;
-SET REL-OR-ITG = (prn rel) OR (prn itg) ;
-SET S-BOUNDARY  = (prn itg) OR (prn rel) OR ("\;") OR (":") OR ("-") OR ("–") OR CS ;
+LIST Pres = pres ;
+LIST Past = past ;
+
+LIST Jag = "jag" ; 
+LIST Sex = "sex" ; 
+
+LIST Kunna = "kunna" ;
+LIST Vilja = "vilja" ;
+
+LIST Var = "<var>"i ;
+
+SET Aux = Kunna | Vilja ;
+
+SET Fin = Pres | Past ;
 
 ###############################################################################
 #  Morphological disambiguation
@@ -66,16 +49,20 @@ SET S-BOUNDARY  = (prn itg) OR (prn rel) OR ("\;") OR (":") OR ("-") OR ("–") 
 
 SECTION
 
-"<jag>" REMOVE (n);
-"<Jag>" REMOVE (n);
+SELECT Prn IF (0 Jag) ;
 
+SELECT Num IF (0 Sex) (1 N) ; 
 
-SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
-SELECT:r2 Num IF (0 ("sex")) (1 N) ;
-SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
-#SELECT:r4 Itg IF (O ("<var>")) (1 V) ;
-SELECT:r4 Vbser IF (O ("<var>")) (NOT 1 V) ;
-SELECT:r5 Pers IF (O ("<det>")) (1 V) ;
-SELECT:r6 Pers IF (O ("<den>")) (1 V) ;
-SELECT:r7 Pers IF (O ("<de>")) (1 V) ;
-SELECT:r8 Past IF (O ("<var>")) ((-1 N) OR (-1 Pron));
+SELECT Interr IF (0 Var) (1 Fin) ;
+
+SELECT V IF (0 Var) (NOT 1 Fin) ;
+
+REMOVE Det IF (1 Fin) ;
+
+SELECT Past IF (0 Var) (-1 N OR Prn) ;
+
+SELECT Inf IF (-1 Aux) ;
+
+#SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
+#SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
+
