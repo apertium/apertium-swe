@@ -7,7 +7,6 @@
 # TODO:
 # * restrict compounding to certain length?
 # * check if there are more strange forms that could go into LR_sort_key
-# * case and compounding pardefs-in-pardefs
 
 import sys,re
 
@@ -89,10 +88,11 @@ def readlines():
                 continue
             prefix, prelen = get_prefix(table, lno, line)
             queue, qback = get_queue(table)
-            pdid = tuple(sorted(
+            pdid_nosub = tuple(sorted(set(
                 (LR, form[prelen:qback], lemma[prelen:qback], t)
                 for LR, form, lemma, t, saldoname in table
-            ))
+            )))
+            subpars, pdid = with_subpar(pdid_nosub)
             if skip_pdid(pdid):
                 continue
             if not pdid in d:
@@ -111,7 +111,7 @@ def skip_entry(form,lemma,t,saldoname):
     return False
 
 def skip_pdid(pdid):
-    LRs,forms,lemmas,tags = unzip(pdid)
+    LRs,forms,lemmas,tags,_ = unzip(pdid)
     flattags = set(tag
                    for ts in tags
                    for tag in ts.split("."))
@@ -280,10 +280,10 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np.pl.np")                    :("np.pl"),
     ("np.ut.np")                    :("np.ut"),
     ("np.np")                       :("np"),
-    ("n.ut.cmp.compound-only-L")    :("n.ut.sg.ind.cmp.compound-only-L"),
-    ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.cmp.compound-only-L"),
-    ("n.ut.cmp-split")              :("n.ut.sg.ind.cmp-split"),
-    ("n.nt.cmp-split")              :("n.nt.sg.ind.cmp-split"),
+    ("n.ut.cmp.compound-only-L")    :("n.ut.sg.ind.nom.cmp.compound-only-L"),
+    ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.nom.cmp.compound-only-L"),
+    ("n.ut.cmp-split")              :("n.ut.sg.ind.nom.cmp-split"),
+    ("n.nt.cmp-split")              :("n.nt.sg.ind.nom.cmp-split"),
 }
 NEEDS_LR = set([
     "cm",
@@ -302,6 +302,49 @@ def fixtags(tags):
             ts = good + ts[len(bad):]
     return LR, ts
 
+def rem_superfluous_LR(pdid):
+    return tuple(sorted(set(
+        (LR,l,r,t,p)
+        for (LR,l,r,t,p) in pdid
+        if not (LR and (False,l,r,t,p) in pdid)
+    )))
+
+def with_subpar(pdid):
+    cpdids = {}
+    pats = [ ('.gen', '.nom'),
+             ('.nom.cmp.compound-only-L', '.nom'),
+             ('.nom.cmp-split', '.nom'),
+             ]
+    pdid = set(pdid)
+    doRem = set()
+    doAdd = set()
+    for pat,opat in pats:
+        es = [(LR,l,r,t) for (LR,l,r,t) in pdid if t.endswith(pat)]
+        for e in es:
+            LR,l,r,t = e
+            plain = t[:-len(pat)]
+            for other in pdid:
+                LR_,l_,r_,t_ = other
+                if l.startswith(l_) and r==r_ and plain+opat==t_:
+                    doRem.add(other)
+                    other = (LR_, l_, r_, plain)
+                    doAdd.add(other)
+                    if other not in cpdids: cpdids[other]=set()
+                    cpdids[other].add((LR, l[len(l_):], '',  pat.lstrip('.'), tuple()))
+                    cpdids[other].add((LR, '',          '', opat.lstrip('.'), tuple()))
+                    doRem.add(e)
+    cpdids = { other:rem_superfluous_LR(pdid)
+               for other,pdid in cpdids.items() }
+    with_sub=[]
+    for e in (pdid-doRem)|doAdd:
+        LR,l,r,t=e
+        if e in cpdids:
+            with_sub.append((LR,l,r,t,tuple(sorted(cpdids[e]))))
+        else:
+            with_sub.append((LR,l,r,t,tuple()))
+    return cpdids.values(), rem_superfluous_LR(with_sub)
+
+
 def maybe_slash(r, pword):
     if len(r)>len(pword):
         print ("<!-- WARNING: strange parname {}, shorter than r {} -->".format(pword, r))
@@ -315,7 +358,7 @@ def maybe_slash(r, pword):
         return pword
 
 def get_mainpos(pdid):
-    _,_,_,tags = unzip(pdid)
+    _,_,_,tags,_ = unzip(pdid)
     if any(t.startswith("vb") for t in tags):
         # adj+vblex pardef → vblex
         return "vblex"
@@ -350,10 +393,14 @@ def maybe_saldoprefix(prefixes, saldoword, r):
         return []
 
 def make_pn(used, saldoname, d, pdid, r):
+    if saldoname=="_SUB_":
+        # Just rename these manually afterwards:
+        return "{}_SUB".format(len(used))
     r = r.replace(" ", "_")
     saldoword = saldoname.split("_")[-1]
     prefixes = [p for p,q in d[pdid]]
     good_prefixes = maybe_saldoprefix(prefixes, saldoword, r) + sorted(prefixes, key=len)
+    guess = ""
     for prefix in good_prefixes:
         guess = try_make_pn(prefix, pdid, r)
         if not guess in used:
@@ -366,13 +413,13 @@ def get_sdefs(d):
     return set(
         tag
         for pdid in d
-        for _,_,_,t in pdid
+        for _,_,_,t,_ in pdid
         for tag in t.split(".")
     )
 
 def LR_sort_key(e):
     """Prioritise certain forms if we have several forms with one analysis"""
-    (LR,l,r,t) = e
+    (LR,l,r,t,_) = e
     return ("-" in l, l)
 
 def uniq_gen(pdid):
@@ -380,12 +427,12 @@ def uniq_gen(pdid):
     gen=set()
     ret=set()
     # TODO: priority-sort pdid by looking at l's; generatable forms first
-    for LR,l,r,t in sorted(pdid, key=LR_sort_key):
+    for LR,l,r,t,p in sorted(pdid, key=LR_sort_key):
         # If we've already added a form for this analysis without LR,
         # then ensure we don't generate this form:
         if (r,t) in gen:
             LR = True
-        ret.add((LR, l, r, t))
+        ret.add((LR, l, r, t, p))
         if not LR:
             gen.add((r,t))
     return sorted(ret, key=lambda e: (e[2:])) # sort by analysis
@@ -393,7 +440,7 @@ def uniq_gen(pdid):
 def pardef_sort_key(pdid):
     """Sort by tags, then lemma-suffix"""
     # reversed so we call it "vblex" if both vblex and adj in one pardef:
-    return list(reversed([(t,r) for _,_,r,t in pdid]))
+    return list(reversed([(t,r) for _,_,r,t,_ in pdid]))
 
 def main():
     saldonames, d = readlines()
@@ -412,12 +459,19 @@ def main():
 """)
     section=[]
     used_pns=set()
+    pnmap={}
+    subpardefs = set(p for pdid in d for _,_,_,_,p in pdid if p)
+    for sub in subpardefs:
+        pn, pdef = make_pardef({sub:set()}, sub, "_SUB_", used_pns, pnmap)
+        pnmap[sub]=pn
+        print (pdef)
     for pdid in sorted(d, key=pardef_sort_key):
         saldoname = " / ".join(saldonames[pdid])
-        pn, pdef = make_pardef(d, pdid, saldoname, used_pns)
+        pn, pdef = make_pardef(d, pdid, saldoname, used_pns, pnmap)
+        pnmap[pdid]=pn
         print(pdef)
         for prefix, queue in sorted(d[pdid]):
-            r=[r for _,_,r,_ in pdid][0]
+            r=[r for _,_,r,_,_ in pdid][0]
             section.append(make_e(prefix, queue, r, pn))
     print (""" </pardefs>
  <section id=\"saldo\" type=\"standard\">
@@ -432,25 +486,27 @@ def main():
 def bspc(word):
     return word.replace(" ", "<b/>")
 
-def make_pardef(d, pdid, saldoname, used_pns):
+def make_pardef(d, pdid, saldoname, used_pns, pnmap):
     if pdid==():
         return "<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid)
-    if len(set([r for _,_,r,_ in pdid]))>1:
+    if len(set([r for _,_,r,_,_ in pdid]))>1:
         return "<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid)
-    r=[r for _,_,r,_ in pdid][0]
+    r=[r for _,_,r,_,_ in pdid][0]
     pn = make_pn(used_pns, saldoname, d, pdid, r)
     used_pns.add(pn)
-    longest_form = sorted(map(len, [bspc(l) for _,l,_,_ in pdid]))[-1]
+    longest_form = sorted(map(len, [bspc(l) for _,l,_,_,_ in pdid]))[-1]
     elts = ""
-    for LR,l,r,t in uniq_gen(pdid):
+    for LR,l,r,t,p in uniq_gen(pdid):
         s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
         rstr = " r=\"LR\">" if LR else ">       "
         sep = " "*(longest_form-len(bspc(l)))
-        elts += "<e{}<p><l>{}</l> {}<r>{}{}</r></p></e>\n".format(rstr,
-                                                                  bspc(l),
-                                                                  sep,
-                                                                  bspc(r),
-                                                                  s)
+        sub = "<par n=\"{}\"/>".format(pnmap[p]) if p in pnmap else ""
+        elts += "<e{}<p><l>{}</l> {}<r>{}{}</r></p>{}</e>\n".format(rstr,
+                                                                    bspc(l),
+                                                                    sep,
+                                                                    bspc(r),
+                                                                    s,
+                                                                    sub)
     return pn, """  <pardef n="{}" c="SALDO: {} ">\n{}  </pardef>\n""".format(pn,
                                                                               saldoname,
                                                                               elts)
