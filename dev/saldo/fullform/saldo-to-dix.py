@@ -276,13 +276,21 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np.f.np")                     :("np.f"),
     ("np.m.np")                     :("np.m"),
     ("np.ntpl.np")                  :("np.ntpl"),
+    ("n.pl.pl")                     :("n.un.pl"),
     ("np.pl.np")                    :("np.pl"),
     ("np.ut.np")                    :("np.ut"),
     ("np.np")                       :("np"),
+    # compound-only-L is sg.ind.nom so there
+    ("n.un.pl.cmp.compound-only-L") :("n.un.sg.ind.nom.cmp.compound-only-L"),
+    ("n.un.pl.cmp-split")           :("n.un.sg.ind.nom.cmp-split"),
+    ("n.pl.cmp.compound-only-L")    :("n.un.sg.ind.nom.cmp.compound-only-L"),
+    ("n.pl.cmp-split")              :("n.un.sg.ind.nom.cmp-split"),
     ("n.ut.cmp.compound-only-L")    :("n.ut.sg.ind.nom.cmp.compound-only-L"),
-    ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.nom.cmp.compound-only-L"),
     ("n.ut.cmp-split")              :("n.ut.sg.ind.nom.cmp-split"),
+    ("n.nt.cmp.compound-only-L")    :("n.nt.sg.ind.nom.cmp.compound-only-L"),
     ("n.nt.cmp-split")              :("n.nt.sg.ind.nom.cmp-split"),
+    ("n.un.cmp.compound-only-L")    :("n.un.sg.ind.nom.cmp.compound-only-L"),
+    ("n.un.cmp-split")              :("n.un.sg.ind.nom.cmp-split"),
 }
 NEEDS_LR = set([
     "cm",
