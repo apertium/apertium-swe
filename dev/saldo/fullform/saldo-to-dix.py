@@ -65,20 +65,20 @@ def readlines():
             if not m:
                 print("WARNING: Couldn't parse line {}, {}".format(lno, line.rstrip()),
                       file=sys.stderr)
-                continue
-            form = m.group(1)
-            lemma = m.group(2)
-            t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
-            LR, t = fixtags(t_spc.split())
-            saldoname = m.group(6)
-            if lemma.strip()=="" or form.strip()=="" or t.strip()=="":
-                print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
-                      file=sys.stderr)
-                continue
-            if skip_entry(form,lemma,t,saldoname):
-                continue
-            table.append([LR,form,lemma,t,saldoname])
-        if re.match(".*</table>", line):
+            else:
+                form = m.group(1)
+                lemma = m.group(2)
+                t_spc = "{} {} {}".format(m.group(3), m.group(4), m.group(5))
+                LR, t = fixtags(t_spc.split())
+                saldoname = m.group(6)
+                if lemma.strip()=="" or form.strip()=="" or t.strip()=="":
+                    print("WARNING: skipping empty form/lemma/tags at line {}, {}".format(lno, line.rstrip()),
+                          file=sys.stderr)
+                elif skip_entry(form,lemma,t,saldoname):
+                    pass
+                else:
+                    table.append([LR,form,lemma,t,saldoname])
+        if re.search("</table>", line):
             if(len(table)) == 0:
                 print("EMPTY TABLE: {}, at line {}, {}".format(table, lno, line.rstrip()),
                       file=sys.stderr)
