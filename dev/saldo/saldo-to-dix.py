@@ -89,7 +89,7 @@ def readlines():
                 (LR, form[prelen:qback], lemma[prelen:qback], t, tuple())
                 for LR, form, lemma, t, saldoname in table
             )))
-            subpars, pdid = with_subpar(uniq_gen(pdid_nosub))
+            subpars, pdid = with_subpar(uniq_gen(sint_adj(pdid_nosub)))
             if skip_pdid(pdid):
                 continue
             if not pdid in d:
@@ -160,12 +160,12 @@ TAGCHANGES={                    # http://spraakbanken.gu.se/eng/research/saldo/t
     "gen"       :"gen",
     "ind"       :"",            # indicative; but that's the default; subjunctive uses <pis>/<prs>
     "inf"       :"inf",
-    "poss"      :"poss",
+    "poss"      :"pos",
     "pl"        :"pl",
     "p"         :"pl",                   # difference with pl?
     "nom"       :"nom",
     "komp"      :"comp",
-    "pos"       :"pos",
+    "pos"       :"pst",
     "ord"       :"ord",
     "super"     :"sup",
     "sg"        :"sg",
@@ -285,6 +285,23 @@ MTAGCHANGES={                   # happens after TAGCHANGES
     ("np.un.top")                   :("np.top.un"),
     ("np.ut.org")                   :("np.org.ut"),
     ("np.ut.top")                   :("np.top.ut"),
+
+    # nno/nob: comp.un.sp
+    ("adj.comp")          :("adj.comp.un.sp"),
+    # nno/nob: pst.{mf,nt}.sg.ind
+    ("adj.pst.ind.sg.ut") :("adj.pst.ut.sg.ind"),
+    ("adj.pst.ind.sg.nt") :("adj.pst.nt.sg.ind"),
+    # nno/nob: pst.un.pl.ind
+    ("adj.pst.ind.pl")    :("adj.pst.un.pl.ind"),
+    #          pst.un.sp.def
+    ("adj.pst.def.pl")    :("adj.pst.un.pl.def"),
+    ("adj.pst.def.sg.fn") :("adj.pst.fn.sg.def"),
+    ("adj.pst.def.sg.m")  :("adj.pst.m.sg.def"),
+    # nno/nob: sup.un.sp.{ind,def}
+    ("adj.sup.def.fn")    :("adj.sup.fn.sp.def"),
+    ("adj.sup.def.m")     :("adj.sup.m.sp.def"),
+    ("adj.sup.ind")       :("adj.sup.un.sp.ind"),
+
     # compound-only-L is sg.ind.nom so there
     ("n.un.pl.cmp.compound-only-L") :("n.un.sg.ind.nom.cmp.compound-only-L"),
     ("n.un.pl.cmp-split")           :("n.un.sg.ind.nom.cmp-split"),
@@ -323,6 +340,16 @@ def rem_superfluous_LR(pdid):
         for (LR,l,r,t,p) in pdid
         if not (LR and (False,l,r,t,p) in pdid)
     )))
+
+def sint_adj(pdid):
+    _,_,_,tags,_ = unzip(pdid)
+    if any(t.startswith("adj.comp") or t.startswith("adj.sup") for t in tags):
+        return tuple(sorted(set(
+            (LR,l,r,t.replace('adj.', 'adj.sint.'),p)
+            for (LR,l,r,t,p) in pdid
+        )))
+    else:
+        return pdid
 
 def with_subpar(pdid):
     cpdids = {}
