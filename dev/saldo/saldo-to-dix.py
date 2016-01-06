@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# After running download.sh (until you have no 0-size files left), do
+# After running scrape-paradigms.sh (until you have ~no 0-size files left), do
 # $ find paradigms -name '*xml' -type f -print0 |xargs -0 cat |python3 saldo-to-dix.py
 
 
