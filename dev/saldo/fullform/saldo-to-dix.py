@@ -5,7 +5,6 @@
 
 
 # TODO:
-# * restrict compounding to certain length?
 # * check if there are more strange forms that could go into LR_sort_key
 
 import sys,re
@@ -106,8 +105,8 @@ def readlines():
 def skip_entry(form,lemma,t,saldoname):
     mainpos = t.split(".")[0]
     if mainpos != "n" and ".cmp" in t:
-        # Only compound on n:
-        return True
+        # Only compound on n over a certain length:
+        return len(form)>2
     return False
 
 def skip_pdid(pdid):
