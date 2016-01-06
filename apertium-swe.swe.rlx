@@ -1,6 +1,5 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
-
-SUBREADINGS = LTR ;
+SOFT-DELIMITERS = "<,>" cm ;
 
 SETS
 
