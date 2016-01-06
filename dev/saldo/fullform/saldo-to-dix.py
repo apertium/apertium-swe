@@ -55,11 +55,10 @@ def readlines():
     lno=0
     d={}
     saldonames={}
-    intable=False
+    table=[]
     for line in sys.stdin:
         lno+=1
         if re.match(".*<table>", line):
-            intable=True
             table=[]
         if re.match(".*<w>", line):
             m = re.match("<w><form>(.*)</form><gf>(.*)</gf><pos>(.*)</pos><is>(.*)</is><msd>(.*)</msd><p>(.*)</p></w>", line)
@@ -80,7 +79,6 @@ def readlines():
                 continue
             table.append([LR,form,lemma,t,saldoname])
         if re.match(".*</table>", line):
-            intable=False
             if(len(table)) == 0:
                 print("EMPTY TABLE: {}, at line {}, {}".format(table, lno, line.rstrip()),
                       file=sys.stderr)
@@ -91,7 +89,7 @@ def readlines():
                 (LR, form[prelen:qback], lemma[prelen:qback], t)
                 for LR, form, lemma, t, saldoname in table
             )))
-            subpars, pdid = with_subpar(pdid_nosub)
+            subpars, pdid = with_subpar(uniq_gen(pdid_nosub))
             if skip_pdid(pdid):
                 continue
             if not pdid in d:
@@ -426,23 +424,21 @@ def get_sdefs(d):
 
 def LR_sort_key(e):
     """Prioritise certain forms if we have several forms with one analysis"""
-    (LR,l,r,t,_) = e
-    return ("-" in l, l)
+    return ("-" in e[1], e[1])
 
-def uniq_gen(pdid):
+def uniq_gen(pdid_nosub):
     """Ensure we only generate one l for each r+t"""
     gen=set()
     ret=set()
-    # TODO: priority-sort pdid by looking at l's; generatable forms first
-    for LR,l,r,t,p in sorted(pdid, key=LR_sort_key):
+    for LR,l,r,t in sorted(pdid_nosub, key=LR_sort_key):
         # If we've already added a form for this analysis without LR,
         # then ensure we don't generate this form:
         if (r,t) in gen:
             LR = True
-        ret.add((LR, l, r, t, p))
+        ret.add((LR, l, r, t))
         if not LR:
             gen.add((r,t))
-    return sorted(ret, key=lambda e: (e[2:])) # sort by analysis
+    return ret
 
 def pardef_sort_key(pdid):
     """Sort by tags, then lemma-suffix"""
@@ -495,15 +491,15 @@ def bspc(word):
 
 def make_pardef(d, pdid, saldoname, used_pns, pnmap):
     if pdid==():
-        return "<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid)
+        return "", "<!-- empty pdid! giving up on {}, {} -->".format(saldoname, pdid)
     if len(set([r for _,_,r,_,_ in pdid]))>1:
-        return "<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid)
+        return "", "<!-- more than one r! giving up on {}, {} -->".format(saldoname, pdid)
     r=[r for _,_,r,_,_ in pdid][0]
     pn = make_pn(used_pns, saldoname, d, pdid, r)
     used_pns.add(pn)
     longest_form = sorted(map(len, [bspc(l) for _,l,_,_,_ in pdid]))[-1]
     elts = ""
-    for LR,l,r,t,p in uniq_gen(pdid):
+    for LR,l,r,t,p in sorted(pdid, key=lambda e: (e[2:])): # sort by analysis
         s = "<s n=\"{}\"/>".format(t.replace(".", "\"/><s n=\""))
         rstr = " r=\"LR\">" if LR else ">       "
         sep = " "*(longest_form-len(bspc(l)))
