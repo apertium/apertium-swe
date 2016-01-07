@@ -5,7 +5,7 @@
 "<en>"
 	"en" det ind ut sg
 "<grundläggande>"
-	"grundläggande" adj pst un sp ind nom
+	"grundläggande" adj
 "<dimension>"
 	"dimension" n ut sg ind nom
 "<i vår>"
@@ -391,11 +391,11 @@
 "<i>"
 	"i" pr
 "<Wheeler>"
-	"Wheeler" np cog mf sg nom
+	"Wheeler" np cog nom
 "<->"
 	"-" guio
 "<DeWitts>"
-	"DeWitt" np cog mf sg gen
+	"DeWitt" np cog gen
 "<ekvation>"
 	"ekvation" n ut sg ind nom
 "<,>"
@@ -463,9 +463,9 @@
 	"." sent
 
 "<Julian>"
-	"Julian" np ant m sg nom
+	"Julian" np ant m nom
 "<Barbour>"
-	"Barbour" np cog mf sg nom
+	"Barbour" np cog mf nom
 "<har>"
 	"ha" vblex pres actv
 "<till>"
@@ -653,7 +653,7 @@
 	"." sent
 
 "<Zenons>"
-	"Zenons" np ant m sg gen
+	"Zenon" np ant m gen
 "<paradoxer>"
 	"paradox" n ut pl ind nom
 "<utmanade>"
@@ -702,7 +702,7 @@
 	"." sent
 
 "<Parmenides>"
-	"Parmenides" np ant m sg nom
+	"Parmenides" np ant m nom
 "<(>"
 	"(" lpar
 "<av>"
@@ -710,7 +710,7 @@
 "<vilken>"
 	"vilken" prn itg ut sg nom
 "<Zenon>"
-	"Zenon" np ant m sg nom
+	"Zenon" np ant m nom
 "<var>"
 	"vara" vblex past actv
 "<en>"

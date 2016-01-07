@@ -4,9 +4,12 @@ SOFT-DELIMITERS = "<,>" cm ;
 SETS
 
 LIST N = n ;
+LIST Adv = adv ; 
+LIST Pr = pr ;
 LIST Det = det ;
 LIST Num = num ;
 LIST A = adj ;
+LIST Prop = np ;
 LIST V = vblex ; 
 LIST Prn = prn ;
 
@@ -18,6 +21,8 @@ LIST Pl2 = (p2 pl) ;
 LIST Pl3 = (p3 pl) ;
 
 LIST Inf = inf ;
+LIST Supn = supn ;
+LIST PrsPrc = pprs ;
 
 LIST Interr = itg ; 
 
@@ -28,6 +33,7 @@ LIST Gen = gen ;
 LIST Def = def ;
 LIST Ind = ind ;
 
+
 LIST Pres = pres ;
 LIST Past = past ;
 
@@ -36,12 +42,19 @@ LIST Sex = "sex" ;
 
 LIST Kunna = "kunna" ;
 LIST Vilja = "vilja" ;
+LIST Ha = "ha" ;
+
+LIST Sg = sg ; 
+LIST Pl = pl ;
+LIST Sp = sp ;
 
 LIST Var = "<var>"i ;
 
 SET Aux = Kunna | Vilja ;
 
 SET Fin = Pres | Past ;
+
+SET Number = Pl | Sg ;
 
 ###############################################################################
 #  Morphological disambiguation
@@ -63,6 +76,17 @@ SELECT Past IF (0 Var) (-1 N OR Prn) ;
 
 SELECT Inf IF (-1 Aux) ;
 
+REMOVE Def IF (0 Prop) ;
+
+SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
+
+SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
+
+
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
+
+#SELECT A IF (0 A OR PrsPrc OR N) (1 N)  ;
+
+#SELECT A + $$Number IF (0 A) (NOT 0 Pr) (1 N + $$Number) ;
 
