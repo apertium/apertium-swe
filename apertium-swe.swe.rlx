@@ -1,17 +1,22 @@
+# -*- cg-pre-pipe: "apertium -d . swe-morph|cg-conv -a 2>/dev/null" -*-
+
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 SOFT-DELIMITERS = "<,>" cm ;
 
 SETS
 
 LIST N = n ;
-LIST Adv = adv ; 
+LIST Adv = adv ;
 LIST Pr = pr ;
 LIST Det = det ;
 LIST Num = num ;
+LIST Num/Qnt/årstalet = num qnt ("[0-9]+-tal"ri def) ;
 LIST A = adj ;
 LIST Prop = np ;
-LIST V = vblex ; 
+LIST V = vblex ;
 LIST Prn = prn ;
+LIST Cnjsub = cnjsub ;
+LIST Cnjcoo = cnjcoo ;
 
 LIST Sg1 = (p1 sg) ;
 LIST Sg2 = (p2 sg) ;
@@ -24,7 +29,7 @@ LIST Inf = inf ;
 LIST Supn = supn ;
 LIST PrsPrc = pprs ;
 
-LIST Interr = itg ; 
+LIST Interr = itg ;
 
 LIST Nom = nom ;
 LIST Acc = acc ;
@@ -37,14 +42,11 @@ LIST Ind = ind ;
 LIST Pres = pres ;
 LIST Past = past ;
 
-LIST Jag = "jag" ; 
-LIST Sex = "sex" ; 
-
 LIST Kunna = "kunna" ;
 LIST Vilja = "vilja" ;
 LIST Ha = "ha" ;
 
-LIST Sg = sg ; 
+LIST Sg = sg ;
 LIST Pl = pl ;
 LIST Sp = sp ;
 
@@ -60,21 +62,36 @@ SET Number = Pl | Sg ;
 #  Morphological disambiguation
 #
 
-SECTION
+SECTION frequent;
 
-SELECT Prn IF (0 Jag) ;
+SELECT Prn IF (0 ("<jag>"i)) (NOT -1 ("<ett>"i)) ;
 
-SELECT Num IF (0 Sex) (1 N) ; 
+SELECT Num IF (0 ("sex"i)) (1 N) ;
+
+"<för>" SELECT:för-att Pr IF (1 ("att")) ;
+"<sedan>" SELECT:sedan-1926 Pr IF (1 Num/Qnt/årstalet) ;
+"<sedan>" SELECT:sedan-1926 Pr IF (1 ("år")) (2 Num/Qnt/årstalet) ;
+
+
+SECTION grammatical;
+
+SELECT:som-bryter Cnjsub IF (-1 (*)) (0 Adv) (1 Fin) ;
 
 SELECT Interr IF (0 Var) (1 Fin) ;
 
 SELECT V IF (0 Var) (NOT 1 Fin) ;
+
+SELECT:den-totala-kostnaden A + Def IF
+        (-1 Det + Def)
+        (1C N + Def)
+        ;
 
 REMOVE Det IF (1 Fin) ;
 
 SELECT Past IF (0 Var) (-1 N OR Prn) ;
 
 SELECT Inf IF (-1 Aux) ;
+SELECT:att Inf IF (-1 ("att")) ;
 
 REMOVE Def IF (0 Prop) ;
 
@@ -90,3 +107,10 @@ SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
 
 #SELECT A + $$Number IF (0 A) (NOT 0 Pr) (1 N + $$Number) ;
 
+SECTION heuristic;
+
+SELECT Pr IF (0 ("<i>"i)) ;
+
+SELECT Pr IF (0 ("<av>"i)) ;
+
+"<för>" SELECT Pr ;
