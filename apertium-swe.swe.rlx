@@ -52,6 +52,9 @@ LIST Sp = sp ;
 
 LIST Var = "<var>"i ;
 
+LIST EOS = <<<;
+LIST BOS = >>>;
+
 SET Aux = Kunna | Vilja ;
 
 SET Fin = Pres | Past ;
@@ -99,7 +102,6 @@ SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
 SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
 
-
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
 
@@ -114,5 +116,9 @@ SELECT Pr IF (0 ("<i>"i)) ;
 SELECT Pr IF (0 ("<av>"i)) ;
 
 REMOVE N IF (0 ("<mitt>"i)) ;
+
+REMOVE N IF (0 ("<vad>"i)) ;
+
+"<er>" SELECT Acc IF (NOT 1 N + Ind);
 
 "<för>" SELECT Pr ;
