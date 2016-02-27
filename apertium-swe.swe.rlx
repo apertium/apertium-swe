@@ -113,4 +113,6 @@ SELECT Pr IF (0 ("<i>"i)) ;
 
 SELECT Pr IF (0 ("<av>"i)) ;
 
+REMOVE N IF (0 ("<mitt>"i)) ;
+
 "<för>" SELECT Pr ;
