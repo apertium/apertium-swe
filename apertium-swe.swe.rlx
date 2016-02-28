@@ -40,6 +40,7 @@ LIST Ind = ind ;
 
 
 LIST Pres = pres ;
+LIST Imp = imp ;
 LIST Past = past ;
 
 LIST Kunna = "kunna" ;
@@ -118,6 +119,8 @@ SELECT Pr IF (0 ("<av>"i)) ;
 REMOVE N IF (0 ("<mitt>"i)) ;
 
 REMOVE N IF (0 ("<vad>"i)) ;
+
+REMOVE Imp;
 
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
 
