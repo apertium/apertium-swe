@@ -38,6 +38,9 @@ LIST Gen = gen ;
 LIST Def = def ;
 LIST Ind = ind ;
 
+LIST Masc = ut m ;
+LIST Fem = f fn ut ;
+LIST Neut = nt fn ;
 
 LIST Pres = pres ;
 LIST Imp = imp ;
@@ -104,6 +107,10 @@ SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
 
 REMOVE A IF (0 V) (1 Pr);
+
+REMOVE Prn IF (0 Det + Masc) (1C N + Masc);
+REMOVE Prn IF (0 Det + Fem)  (1C N + Fem);
+REMOVE Prn IF (0 Det + Neut) (1C N + Neut);
 
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
