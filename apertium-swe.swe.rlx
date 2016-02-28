@@ -13,7 +13,7 @@ LIST Num = num ;
 LIST Num/Qnt/årstalet = num qnt ("[0-9]+-tal"ri def) ;
 LIST A = adj ;
 LIST Prop = np ;
-LIST V = vblex ;
+LIST V = vblex vbser vbmod vaux vbhaver ;
 LIST Prn = prn ;
 LIST Cnjsub = cnjsub ;
 LIST Cnjcoo = cnjcoo ;
@@ -102,6 +102,8 @@ REMOVE Def IF (0 Prop) ;
 SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
 SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
+
+REMOVE A IF (0 V) (1 Pr);
 
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
