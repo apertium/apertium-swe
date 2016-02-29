@@ -17,6 +17,7 @@ LIST V = vblex vbser vbmod vaux vbhaver ;
 LIST Prn = prn ;
 LIST Cnjsub = cnjsub ;
 LIST Cnjcoo = cnjcoo ;
+LIST Ij = Ij ;
 
 LIST Sg1 = (p1 sg) ;
 LIST Sg2 = (p2 sg) ;
@@ -130,6 +131,7 @@ REMOVE N IF (0 ("<mitt>"i)) ;
 REMOVE N IF (0 ("<vad>"i)) ;
 
 REMOVE Imp;
+REMOVE Ij;
 
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
 
