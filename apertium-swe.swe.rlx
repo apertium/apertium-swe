@@ -82,6 +82,9 @@ SECTION frequent;
 
 SELECT Prn IF (0 ("<jag>"i)) (NOT -1 ("<ett>"i)) ;
 
+REMOVE N IF (0 ("<med>"i)) (NOT *0 ("<släde>"i)) ;
+
+
 SELECT Num IF (0 ("sex"i)) (1 N) ;
 
 "<för>" SELECT:för-att Pr IF (1 ("att")) ;
@@ -114,7 +117,7 @@ REMOVE Def IF (0 Prop) ;
 
 SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
-SELECT N + $$Number IF (-1C A + $$Number) (0 N) ;
+SELECT:dina-barn N + $$Number IF (-1C A + $$Number) (0 N) ;
 
 REMOVE A IF (0 V) (1 Pr);
 
