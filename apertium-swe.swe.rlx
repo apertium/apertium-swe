@@ -19,6 +19,8 @@ LIST Cnjsub = cnjsub ;
 LIST Cnjcoo = cnjcoo ;
 LIST Ij = Ij ;
 
+LIST Cop = "vara¹" "bli";
+
 LIST Sg1 = (p1 sg) ;
 LIST Sg2 = (p2 sg) ;
 LIST Sg3 = (p3 sg) ;
@@ -29,6 +31,7 @@ LIST Pl3 = (p3 pl) ;
 LIST Inf = inf ;
 LIST Supn = supn ;
 LIST PrsPrc = pprs ;
+LIST Pp = pp ;
 
 LIST Interr = itg ;
 
@@ -62,9 +65,14 @@ LIST BOS = >>>;
 
 SET Aux = Kunna | Vilja ;
 
+SET Nomen = N or Prop;
+
 SET Fin = Pres | Past ;
 
 SET Number = Pl | Sg ;
+
+SET NotAdv = (*) - Adv;
+SET NotA = (*) - A;
 
 ###############################################################################
 #  Morphological disambiguation
@@ -98,6 +106,7 @@ REMOVE Det IF (1 Fin) ;
 
 SELECT Past IF (0 Var) (-1 N OR Prn) ;
 
+
 SELECT Inf IF (-1 Aux) ;
 SELECT:att Inf IF (-1 ("att")) ;
 
@@ -105,13 +114,23 @@ REMOVE Def IF (0 Prop) ;
 
 SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
-SELECT N + $$Number IF (-1 A + $$Number) (0 N) ;
+SELECT N + $$Number IF (-1C A + $$Number) (0 N) ;
 
 REMOVE A IF (0 V) (1 Pr);
 
 REMOVE Prn IF (0 Det + Masc) (1C N + Masc);
 REMOVE Prn IF (0 Det + Fem)  (1C N + Fem);
 REMOVE Prn IF (0 Det + Neut) (1C N + Neut);
+
+SELECT:dina-barn-skriker N + $$Number IF (-1 Det LINK 0C $$Number);
+
+SELECT:äpplena-är-ätna A + $$Number IF (*-1 N + $$Number BARRIER (*) - V);
+
+REMOVE:Han+berättade+mig Pp + $$Number IF
+        (0 V)
+        (NEGATE *1 N + $$Number BARRIER NotA)
+        (NEGATE *-1 Cop BARRIER NotAdv LINK *-1 N + $$Number BARRIER NotAdv)
+        ;
 
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
@@ -122,6 +141,8 @@ REMOVE Prn IF (0 Det + Neut) (1C N + Neut);
 
 SECTION heuristic;
 
+SELECT Pr IF (1 Nomen) ;
+
 SELECT Pr IF (0 ("<i>"i)) ;
 
 SELECT Pr IF (0 ("<av>"i)) ;
@@ -129,6 +150,8 @@ SELECT Pr IF (0 ("<av>"i)) ;
 REMOVE N IF (0 ("<mitt>"i)) ;
 
 REMOVE N IF (0 ("<vad>"i)) ;
+
+REMOVE N IF (0 ("<med>"i)) ;
 
 REMOVE Imp;
 REMOVE Ij;
