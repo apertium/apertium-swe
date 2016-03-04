@@ -60,6 +60,8 @@ LIST Sp = sp ;
 
 LIST Var = "<var>"i ;
 
+LIST IndA = (adj ind) (adj comp) ;
+
 LIST EOS = <<<;
 LIST BOS = >>>;
 
@@ -71,8 +73,9 @@ SET Fin = Pres | Past ;
 
 SET Number = Pl | Sg ;
 
-SET NotAdv = (*) - Adv;
-SET NotA = (*) - A;
+SET NotAdv = (*) - Adv ;
+SET NotA = (*) - A ;
+SET NotIndA = (*) - IndA ;
 
 ###############################################################################
 #  Morphological disambiguation
@@ -114,6 +117,8 @@ SELECT Inf IF (-1 Aux) ;
 SELECT:att Inf IF (-1 ("att")) ;
 
 REMOVE Def IF (0 Prop) ;
+
+REMOVE:en-blå-kon N + Def IF (0 N + Ind) (*-1 Det + Ind CBARRIER NotIndA) ;
 
 SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
