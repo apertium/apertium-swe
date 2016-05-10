@@ -146,6 +146,8 @@ REMOVE:Han+berättade+mig Pp + $$Number IF
         (NEGATE *-1 Cop BARRIER NotAdv LINK *-1 N + $$Number BARRIER NotAdv)
         ;
 
+REMOVE:sex-år N IF (0C N OR Det) (1C N);
+
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
 
@@ -177,3 +179,5 @@ REMOVE Ij;
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
 
 "<för>" SELECT Pr ;
+
+"<Fast>" SELECT Cnjcoo;
