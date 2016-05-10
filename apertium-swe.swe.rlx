@@ -79,6 +79,8 @@ SET NotAdv = (*) - Adv ;
 SET NotA = (*) - A ;
 SET NotIndA = (*) - IndA ;
 
+LIST farliga-N = "<mitt>"i "<vad>"i "<med>"i "<sedan>"i "<sitter>"i;
+
 ###############################################################################
 #  Morphological disambiguation
 #
@@ -99,7 +101,7 @@ SELECT Num IF (0 ("sex"i)) (1 N) ;
 
 SECTION grammatical;
 
-SELECT:som-bryter Cnjsub IF (-1 (*)) (0 Adv) (1 Fin) ;
+SELECT:som-bryter Cnjsub IF (NOT -1 BOS) (0 Adv) (1 Fin) ;
 
 SELECT Interr IF (0 Var) (1 Fin) ;
 
@@ -163,11 +165,7 @@ SELECT Pr IF (0 ("<i>"i)) ;
 
 SELECT Pr IF (0 ("<av>"i)) ;
 
-REMOVE N IF (0 ("<mitt>"i)) ;
-
-REMOVE N IF (0 ("<vad>"i)) ;
-
-REMOVE N IF (0 ("<med>"i)) ;
+REMOVE:farliga-N N + farliga-N;
 
 REMOVE ("vara²") ;
 
