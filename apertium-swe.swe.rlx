@@ -80,6 +80,7 @@ SET NotA = (*) - A ;
 SET NotIndA = (*) - IndA ;
 
 LIST farliga-N = "<mitt>"i "<vad>"i "<med>"i "<sedan>"i "<sitter>"i;
+LIST farliga-V = "<vart>"i "<sakta>"i;
 
 ###############################################################################
 #  Morphological disambiguation
@@ -166,6 +167,7 @@ SELECT Pr IF (0 ("<i>"i)) ;
 SELECT Pr IF (0 ("<av>"i)) ;
 
 REMOVE:farliga-N N + farliga-N;
+REMOVE:farliga-V V + farliga-V;
 
 REMOVE ("vara²") ;
 
