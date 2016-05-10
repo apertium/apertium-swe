@@ -19,6 +19,8 @@ LIST Cnjsub = cnjsub ;
 LIST Cnjcoo = cnjcoo ;
 LIST Ij = Ij ;
 
+LIST Dem = dem ;
+
 LIST Cop = "vara¹" "bli";
 
 LIST Sg1 = (p1 sg) ;
@@ -130,7 +132,11 @@ REMOVE Prn IF (0 Det + Masc) (1C N + Masc);
 REMOVE Prn IF (0 Det + Fem)  (1C N + Fem);
 REMOVE Prn IF (0 Det + Neut) (1C N + Neut);
 
-SELECT:dina-barn-skriker N + $$Number IF (-1 Det LINK 0C $$Number);
+SELECT:dina-barn-skriker N + $$Number IF
+        (-1 Det LINK 0C $$Number)
+        (NEGATE 0 V LINK -1 Prn)
+        (NEGATE 0 Ind LINK -1 Dem)
+        ;
 
 SELECT:äpplena-är-ätna A + $$Number IF (*-1 N + $$Number BARRIER (*) - V);
 
@@ -161,8 +167,12 @@ REMOVE N IF (0 ("<vad>"i)) ;
 
 REMOVE N IF (0 ("<med>"i)) ;
 
+REMOVE ("vara²") ;
+
 REMOVE Imp;
 REMOVE Ij;
+
+"<vara>" REMOVE:det-vara N IF (NOT -1 Det + Ind);
 
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
 
