@@ -1,6 +1,6 @@
 # -*- cg-pre-pipe: "apertium -d . swe-morph|cg-conv -a 2>/dev/null" -*-
 
-DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>" cm ;
 
 SETS
@@ -104,7 +104,8 @@ SECTION grammatical;
 
 SELECT:som-bryter Cnjsub IF (NOT -1 BOS) (0 Adv) (1 Fin) ;
 
-SELECT Interr IF (0 Var) (1 Fin) ;
+SELECT Adv IF (0 Var) (1 Fin) ;
+SELECT Adv IF (0 Var) (2C Fin) ;
 
 SELECT V IF (0 Var) (NOT 1 Fin) ;
 
@@ -171,6 +172,7 @@ REMOVE:farliga-V V + farliga-V;
 
 REMOVE ("vara²") ;
 
+SELECT:Tala-om-för-mig Imp IF (0C V) (-1 BOS) (0 ("<[A-ZÄÖÅ].*>"r)) ;
 REMOVE Imp;
 REMOVE Ij;
 
