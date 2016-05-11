@@ -35,6 +35,8 @@ LIST Supn = supn ;
 LIST PrsPrc = pprs ;
 LIST Pp = pp ;
 
+LIST Poss = pos ;
+
 LIST Interr = itg ;
 
 LIST Nom = nom ;
@@ -106,6 +108,8 @@ SELECT Num IF (0 ("sex"i)) (1 N) ;
 "<fast>" SELECT:stod-fast Adv IF (-1 ("stå") OR ("slå")) ;
 "<fast>" SELECT:en-fast-idé A IF (-1C Det OR Prn) (1C N OR Prop) ;
 
+"<sina>" REMOVE:sina V IF (*0 V);
+
 
 SECTION grammatical;
 
@@ -121,7 +125,9 @@ SELECT:den-totala-kostnaden A + Def IF
         (1C N + Def)
         ;
 
-REMOVE Det IF (1 Fin) ;
+REMOVE Det IF (1C Fin) ;
+
+SELECT:sina-händer Det IF (0C Det OR Prn) (0C Poss) (1 N - Def) ;
 
 SELECT Past IF (0 Var) (-1 N OR Prn) ;
 
@@ -188,6 +194,8 @@ REMOVE Ij;
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
 
 "<för>" SELECT Pr ;
+
+"<sina>" REMOVE:sina V;
 
 SELECT Cnjcoo IF (0 ("<fast>"i)) (-1 BOS) (NOT *1 Comma);
 SELECT Cnjsub IF (0 ("<fast>"i)) (*0 Comma);
