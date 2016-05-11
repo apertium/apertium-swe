@@ -179,7 +179,7 @@ REMOVE:farliga-V V + farliga-V;
 
 REMOVE ("vara²") ;
 
-SELECT:Tala-om-för-mig Imp IF (0C V) (-1 BOS) (0 ("<[A-ZÄÖÅ].*>"r)) ;
+SELECT:Tala-om-för-mig Imp IF (0C V) (-1 BOS) (0 ("<[A-ZÄÖÅ].*>"r)) (NOT *1 ("?")) ;
 REMOVE Imp;
 REMOVE Ij;
 
