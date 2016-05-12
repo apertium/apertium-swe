@@ -75,7 +75,9 @@ SET Aux = Kunna | Vilja ;
 
 SET Nomen = N or Prop;
 
-SET Fin = Pres | Past ;
+LIST Possessed = (n ind) (a sup);
+
+SET Fin = Pres | Past | Imp ;
 
 SET Number = Pl | Sg ;
 
@@ -155,7 +157,9 @@ SELECT:dina-barn-skriker N + $$Number IF
         (NEGATE 0 Ind LINK -1 Dem)
         ;
 
-SELECT:äpplena-är-ätna A + $$Number IF (*-1 N + $$Number BARRIER (*) - V);
+SELECT:äpplena-är-ätna A + $$Number IF
+        (*-1 N + $$Number BARRIER (*) - V LINK *1 Cop)
+        ;
 
 REMOVE:Han+berättade+mig Pp + $$Number IF
         (0 V)
@@ -163,7 +167,15 @@ REMOVE:Han+berättade+mig Pp + $$Number IF
         (NEGATE *-1 Cop BARRIER NotAdv LINK *-1 N + $$Number BARRIER NotAdv)
         ;
 
-REMOVE:sex-år N IF (0C N OR Det) (1C N);
+REMOVE:sex-år N IF
+        (0C N OR Det)
+        (1C N)
+        ;
+
+SELECT:flygledarnas-händer Possessed IF
+        (0C Possessed OR V OR A)
+        (-1C Gen)
+        ;
 
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
