@@ -192,6 +192,9 @@ SELECT Pr IF (0 ("<i>"i)) ;
 
 SELECT Pr IF (0 ("<av>"i)) ;
 
+"<dess>" SELECT Adv (-1 ("sedan"));
+
+
 REMOVE:farliga-N N + farliga-N;
 REMOVE:farliga-V V + farliga-V;
 
