@@ -80,6 +80,7 @@ LIST Possessed = (n ind) (a sup);
 SET Fin = Pres | Past | Imp ;
 
 SET Number = Pl | Sg ;
+SET Gender = Masc | Fem | Neut ;
 
 SET NotAdv = (*) - Adv ;
 SET NotA = (*) - A ;
@@ -143,7 +144,20 @@ REMOVE:en-blå-kon N + Def IF (0 N + Ind) (*-1 Det + Ind CBARRIER NotIndA) ;
 
 SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
 
-SELECT:dina-barn N + $$Number IF (-1C A + $$Number) (0 N) ;
+SELECT:en-dansk-ö N + $$Number IF
+        (-1 A + $$Number)
+        (-1C A OR N)
+        ;
+
+SELECT:en-dansk-ö N + $$Gender IF
+        (-1 A + $$Gender)
+        (-1C A OR N)
+        ;
+
+SELECT:en-dansk-ö A + $$Number IF
+        (1C N + $$Number)
+        (0C A OR N)
+        ;
 
 REMOVE A IF (0 V) (1 Pr);
 
@@ -155,10 +169,17 @@ SELECT:dina-barn-skriker N + $$Number IF
         (-1 Det LINK 0C $$Number)
         (NEGATE 0 V LINK -1 Prn)
         (NEGATE 0 Ind LINK -1 Dem)
+        (NEGATE 0 A OR Det LINK 1 N)
+        ;
+
+SELECT:mycket-låg Adv IF
+        (0C Adv OR A OR Prn)
+        (1 A)
         ;
 
 SELECT:äpplena-är-ätna A + $$Number IF
         (*-1 N + $$Number BARRIER (*) - V LINK *1 Cop)
+        (NEGATE 0 Adv LINK 1 A)
         ;
 
 REMOVE:Han+berättade+mig Pp + $$Number IF
