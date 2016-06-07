@@ -65,6 +65,8 @@ LIST Sp = sp ;
 LIST Comma = cm;
 
 LIST Var = "<var>"i ;
+LIST Här = "<här>"i ;
+LIST Den = "den" ;
 
 LIST IndA = (adj ind) (adj comp) ;
 
@@ -235,3 +237,5 @@ REMOVE Ij;
 
 SELECT Cnjcoo IF (0 ("<fast>"i)) (-1 BOS) (NOT *1 Comma);
 SELECT Cnjsub IF (0 ("<fast>"i)) (*0 Comma);
+
+REMOVE N IF (0 Här) (-1 Den + Neut) ;
