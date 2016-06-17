@@ -18,6 +18,7 @@ dev/apertium-swe-dan.swe-dan.rlx -text
 dev/apertium-swe-dan.swe.comments.tsx -text
 dev/apertium-swe-dan.swe_old.tsx -text
 dev/apertium-swe.pre-saldo-swe.dix -text
+dev/make-ngrams.sh -text
 dev/saldo/maybe-missing-from-saldo -text
 dev/saldo/saldo-to-dix.py -text
 dev/saldo/scrape-paradigms.sh -text
@@ -30,6 +31,11 @@ dev/wiktionary-nouns.speling -text
 texts/isbrytning.txt -text
 texts/isbrytning.vislcg.txt -text
 texts/kalmar.txt -text
+texts/ngrams.1 -text
+texts/ngrams.2 -text
+texts/ngrams.3 -text
+texts/ngrams.4 -text
+texts/ngrams.5 -text
 texts/puupankki/puupankki.vislcg -text
 texts/tid.tagged.txt -text
 texts/udhr.txt -text
