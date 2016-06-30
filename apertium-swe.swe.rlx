@@ -20,6 +20,7 @@ LIST Cnjcoo = cnjcoo ;
 LIST Ij = Ij ;
 
 LIST Dem = dem ;
+LIST Emph = emph ;
 
 LIST Cop = "vara¹" "bli";
 
@@ -31,6 +32,7 @@ LIST Pl2 = (p2 pl) ;
 LIST Pl3 = (p3 pl) ;
 
 LIST Inf = inf ;
+LIST Pasv = pasv ;
 LIST Supn = supn ;
 LIST PrsPrc = pprs ;
 LIST Pp = pp ;
@@ -54,10 +56,6 @@ LIST Pres = pres ;
 LIST Imp = imp ;
 LIST Past = past ;
 
-LIST Kunna = "kunna" ;
-LIST Vilja = "vilja" ;
-LIST Ha = "ha" ;
-
 LIST Sg = sg ;
 LIST Pl = pl ;
 LIST Sp = sp ;
@@ -73,7 +71,7 @@ LIST IndA = (adj ind) (adj comp) ;
 LIST EOS = <<<;
 LIST BOS = >>>;
 
-SET Aux = Kunna | Vilja ;
+LIST Aux = "kunna" "måste" "vara¹" "bli" "ha" ;
 
 SET Nomen = N or Prop;
 
@@ -140,11 +138,13 @@ SELECT Past IF (0 Var) (-1 N OR Prn) ;
 SELECT Inf IF (-1 Aux) ;
 SELECT:att Inf IF (-1 ("att")) ;
 
+SELECT:kan-ses Inf + Pasv IF (*-1 Aux BARRIER Fin OR Cnjsub) ;
+
 REMOVE Def IF (0 Prop) ;
 
 REMOVE:en-blå-kon N + Def IF (0 N + Ind) (*-1 Det + Ind CBARRIER NotIndA) ;
 
-SELECT Supn IF (-1* Ha BARRIER (*) - Adv) ;
+SELECT Supn IF (-1* ("ha") BARRIER (*) - Adv) ;
 
 SELECT:en-dansk-ö N + $$Number IF
         (-1 A + $$Number)
@@ -200,6 +200,9 @@ SELECT:flygledarnas-händer Possessed IF
         (-1C Gen)
         ;
 
+"<vid>" SELECT:vid-behov Pr IF (1 ("behov")) ;
+"<vid>" SELECT:i-vid-mening A IF (-1 ("<i>")) (1 N + Ind) ;
+
 #SELECT:r1 Def IF (0 A) (0 Pl) (1C N) (1C Def) ;
 #SELECT:r3 Vbser IF (0 ("<vara>")) (NOT -1 ("<en>")) ;
 
@@ -207,9 +210,12 @@ SELECT:flygledarnas-händer Possessed IF
 
 #SELECT A + $$Number IF (0 A) (NOT 0 Pr) (1 N + $$Number) ;
 
+SELECT Emph IF (-1 ("sin"));
+
 SECTION heuristic;
 
-SELECT Pr IF (1 Nomen) ;
+SELECT Pr OR A IF (1 N) ;
+SELECT Pr IF (1 Nomen) (NOT 0 A) ;
 
 SELECT Pr IF (0 ("<i>"i)) ;
 
