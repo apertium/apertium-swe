@@ -20,6 +20,7 @@ LIST Cnjcoo = cnjcoo ;
 LIST Ij = Ij ;
 
 LIST Dem = dem ;
+LIST Qnt = qnt ;
 LIST Emph = emph ;
 
 LIST Cop = "vara¹" "bli";
@@ -212,7 +213,11 @@ REMOVE ("stadion") IF (0 ("stadium"));
 
 #SELECT A + $$Number IF (0 A) (NOT 0 Pr) (1 N + $$Number) ;
 
-SELECT Emph IF (-1 ("sin"));
+SELECT:sina-egna Emph IF (-1 ("sin"));
+
+"<de>" REMOVE Prop IF (NEGATE -1 Prop) ;
+
+REMOVE:alla-de-ämnen Prn IF (-1 Qnt OR ("båda") OR ("bägge")) (0 Dem + $$Number) (1 N + $$Number) ;
 
 SECTION heuristic;
 
@@ -223,7 +228,9 @@ SELECT Pr IF (0 ("<i>"i)) ;
 
 SELECT Pr IF (0 ("<av>"i)) ;
 
-"<dess>" SELECT Adv (-1 ("sedan"));
+"<dess>" SELECT:sedan Adv (-1 ("sedan"));
+
+"<båda>" REMOVE:båda V OR N;
 
 
 REMOVE:farliga-N N + farliga-N;
