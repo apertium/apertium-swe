@@ -141,8 +141,6 @@ SELECT:att Inf IF (-1 ("att")) ;
 
 SELECT:kan-ses Inf + Pasv IF (*-1 Aux BARRIER Fin OR Cnjsub) ;
 
-REMOVE Def IF (0 Prop) ;
-
 REMOVE:en-blå-kon N + Def IF (0 N + Ind) (*-1 Det + Ind CBARRIER NotIndA) ;
 
 SELECT Supn IF (-1* ("ha") BARRIER (*) - Adv) ;
@@ -219,6 +217,12 @@ SELECT:sina-egna Emph IF (-1 ("sin"));
 
 REMOVE:alla-de-ämnen Prn IF (-1 Qnt OR ("båda") OR ("bägge")) (0 Dem + $$Number) (1 N + $$Number) ;
 
+REMOVE:stora-barn Def IF
+        (0C A)
+        (1C N)
+        (NOT 1 Def)
+        ;
+
 SECTION heuristic;
 
 SELECT Pr OR A IF (1 N) ;
@@ -254,3 +258,6 @@ SELECT Cnjcoo IF (0 ("<fast>"i)) (-1 BOS) (NOT *1 Comma);
 SELECT Cnjsub IF (0 ("<fast>"i)) (*0 Comma);
 
 REMOVE N IF (0 Här) (-1 Den + Neut) ;
+
+REMOVE:why Def IF (0 Prop) ;
+# example?
