@@ -96,6 +96,7 @@ LIST farliga-V = "<vart>"i "<sakta>"i;
 
 SECTION frequent;
 
+SELECT:hon Prn IF (0 ("<hon>"i)) ; # any safe contexts for the noun?
 SELECT:jag Prn IF (0 ("<jag>"i)) (NOT -1 ("<ett>"i)) ;
 
 REMOVE:med N IF (0 ("<med>"i)) (NOT *0 ("<släde>"i)) ;
