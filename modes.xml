@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
-  <mode name="swe-morph">
+  <mode name="swe-morph" install="yes">
     <pipeline>
       <program name="lt-proc -e -w">
         <file name="swe.automorf.bin"/>
@@ -9,7 +9,7 @@
     </pipeline>
   </mode>
 
-  <mode name="swe-gener">
+  <mode name="swe-gener" install="yes">
     <pipeline>
       <program name="lt-proc -g">
         <file name="swe.autogen.bin"/>
@@ -17,7 +17,7 @@
     </pipeline>
   </mode>
 
-  <mode name="swe-tagger">
+  <mode name="swe-tagger" install="yes">
     <pipeline>
       <program name="lt-proc -e -w">
         <file name="swe.automorf.bin"/>
@@ -31,7 +31,7 @@
     </pipeline>
   </mode>
 
-  <mode name="swe-disam">
+  <mode name="swe-disam" install="yes">
     <pipeline>
       <program name="lt-proc -e -w">
         <file name="swe.automorf.bin"/>
