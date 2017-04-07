@@ -25,6 +25,12 @@ dev/saldo/scrape-paradigms.sh -text
 dev/saldo/swe-words-paradigms.txt -text
 dev/swe-nor.prob -text svneol=unset#unset
 dev/vb.wiktionary-infl.speling -text
+dev/vin_coding_challenge/README.md -text
+dev/vin_coding_challenge/convert.py -text
+dev/vin_coding_challenge/mapping -text
+dev/vin_coding_challenge/sv-da.udpipe -text
+dev/vin_coding_challenge/sv-ud-train.aptags.conllu -text
+dev/vin_coding_challenge/sv-ud-train.conllu -text
 dev/wiktionary-nouns.speling -text
 /modes.xml -text
 /swe.prob -text
