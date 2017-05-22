@@ -172,6 +172,13 @@ SELECT:dina-barn-skriker N + $$Number IF
         (NEGATE 0 V LINK -1 Prn)
         (NEGATE 0 Ind LINK -1 Dem)
         (NEGATE 0 A OR Det LINK 1 N)
+        (NEGATE 0 A OR Det LINK 1 A LINK 1 N)
+        ;
+
+SELECT:en-oberoende-ideell-förening A + Ind + $$Number + $$Gender IF
+        (-1 Det LINK 0C $$Number)
+        (1 A + Ind + $$Number + $$Gender LINK 1 N)
+        (NEGATE 0 V LINK -1 Prn)
         ;
 
 SELECT:mycket-låg Adv IF
