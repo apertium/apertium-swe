@@ -34,6 +34,7 @@ dev/vin_coding_challenge/sv-ud-train.conllu -text
 dev/wiktionary-nouns.speling -text
 /modes.xml -text
 /swe.prob -text
+/test-scandivoc -text
 texts/isbrytning.txt -text
 texts/isbrytning.vislcg.txt -text
 texts/kalmar.txt -text
