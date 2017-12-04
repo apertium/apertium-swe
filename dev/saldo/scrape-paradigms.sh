@@ -8,6 +8,7 @@ for i in `cat swe-words-paradigms.txt | tr ' ' '$' | tr '\t' ';'`; do
         # echo "${ord}"
         # echo "${ordklass}"
         # echo "${count}"
+        mkdir -p paradigms/$ordklass
         if ! test -s "paradigms/$ordklass/$ord.xml"; then
             printf "%06d ||| %s ||| %s\n" "$count" "$ord" "$ordklass"
             wget -q "http://spraakbanken.gu.se/ws/saldo-ws/gen/xml/$ordklass/$ord" -O "paradigms/$ordklass/$ord.xml"
