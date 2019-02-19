@@ -115,6 +115,8 @@ SELECT Num IF (0 ("sex"i)) (1 N) ;
 
 "<sina>" REMOVE:sina V IF (*0 V);
 
+REMOVE:unlikely ("<bara>"i "bar");
+
 
 SECTION grammatical;
 
