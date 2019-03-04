@@ -93,7 +93,7 @@ clean-local:
 
 test: all
 	echo 'Pippi var ett mycket märkvärdigt barn' | apertium -d . swe-morph | tee .test-mt
-	@echo '^Pippi/pippi<n><ut><sg><ind>/pippi<n><ut><sg><ind>$$ ^var/var<adj>/var<adv>/vara<vblex><past><actv>/var<prn><ut><sg>/var<n><nt><sg><ind>/var<n><nt><sg><ind>$$ ^ett/en<det><ind><nt><sg>/en<num><nt><sg>$$ ^mycket/mycket<adv><pst>/mycken<prn><pst><ind><nt><sg>$$ ^märkvärdigt/märkvärdig<adj><sint><pst><nt><sg><ind>$$ ^barn/barn<n><nt><sg><ind>/barn<n><nt><pl><ind>/barn<n><nt><sg><ind>/barn<n><nt><pl><ind>$$^./.<sent>$' > .test-ref
+	@echo '^Pippi/Pippi<np><ant><f>/Pippi<np><ant><f>/pippi<n><ut><sg><ind>/pippi<n><ut><sg><ind>$$ ^var/vara¹<vblex><past><actv>/var<adv>/var<n><nt><sg><ind>/var<adj><pst><un><pl><def>/var<adj><pst><un><pl><ind>/var<adj><pst><fn><sg><def>/var<adj><pst><m><sg><def>/var<adj><pst><nt><sg><ind>/var<adj><pst><ut><sg><ind>/var<n><nt><sg><ind>/var<prn><def><ut><sg><nom>$$ ^ett/en<det><qnt><nt><sg>/en<det><ind><nt><sg>$$ ^mycket/mycket<adv><pst>/mycken<adj><sint><pst><nt><sg><ind>/mycken<prn><pst><ind><nt><sg><nom>$$ ^märkvärdigt/märkvärdig<adj><sint><pst><nt><sg><ind>$$ ^barn/barn<n><nt><sg><ind>/barn<n><nt><pl><ind>/barn<n><nt><sg><ind>/barn<n><nt><pl><ind>$$^./.<sent>$$' > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
 
