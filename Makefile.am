@@ -2,8 +2,6 @@
 ## Makefile for apertium-swe
 ###############################################################################
 
-RELEASE=0.7
-VERSION=0.7.0
 LANG1=swe
 BASENAME=apertium-$(LANG1)
 
