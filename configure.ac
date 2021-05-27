@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Swedish], [0.8.1], [apertium-stuff@lists.sourceforge.net], [apertium-swe], [http://wiki.apertium.org/wiki/Apertium-swe])
+AC_INIT([Apertium Swedish], [0.8.1], [apertium-stuff@lists.sourceforge.net], [apertium-swe], [https://wiki.apertium.org/wiki/Apertium-swe])
 AM_INIT_AUTOMAKE
 AC_PROG_AWK
 
