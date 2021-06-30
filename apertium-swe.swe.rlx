@@ -269,5 +269,7 @@ SELECT Cnjsub IF (0 ("<fast>"i)) (*0 Comma);
 
 REMOVE N IF (0 Här) (-1 Den + Neut) ;
 
+REMOVE Masc + ("val") IF (0 Neut); # vanlegvis røysting, ikkje kval
+
 REMOVE:why Def IF (0 Prop) ;
 # example?
