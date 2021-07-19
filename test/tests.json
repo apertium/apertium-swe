@@ -1,0 +1,6 @@
+{
+    "swe-morph": {
+        "input": "swe-morph-input.txt",
+        "mode": "swe-morph"
+    }
+}
