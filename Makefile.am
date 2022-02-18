@@ -23,7 +23,7 @@ $(LANG1).autogen.bin: $(BASENAME).$(LANG1).dix .deps/.d
 
 $(LANG1).automorf.bin: $(BASENAME).$(LANG1).dix
 	apertium-validate-dictionary $<
-	test ! -f ./test-scandivoc || ./test-scandivoc
+	test ! -f ./test-scandivoc || ./test-scandivoc || true
 	lt-comp lr $< $@ $(BASENAME).$(LANG1).acx
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.bin
