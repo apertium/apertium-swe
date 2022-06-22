@@ -264,6 +264,9 @@ REMOVE Ij;
 
 "<sina>" REMOVE:sina V;
 
+"<funnits>" SELECT:default ("finnas");
+"<kallas>" SELECT:default V;
+
 SELECT Cnjcoo IF (0 ("<fast>"i)) (-1 BOS) (NOT *1 Comma);
 SELECT Cnjsub IF (0 ("<fast>"i)) (*0 Comma);
 
