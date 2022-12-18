@@ -258,6 +258,9 @@ SELECT:Tala-om-för-mig Imp IF (0C V) (-1 BOS) (0 ("<[A-ZÄÖÅ].*>"r)) (NOT *1 
 REMOVE Imp;
 REMOVE Ij;
 
+"<man>" SELECT N IF (-1 Det);
+"<man>" REMOVE:default N;
+
 "<vara>" REMOVE:det-vara N IF (NOT -1 Det + Ind);
 
 "<er>" SELECT Acc IF (NOT 1 N + Ind);
