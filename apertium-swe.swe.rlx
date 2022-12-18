@@ -114,9 +114,11 @@ SELECT Num IF (0 ("sex"i)) (1 N) ;
 "<fast>" SELECT:en-fast-idé A IF (-1C Det OR Prn) (1C N OR Prop) ;
 
 "<sina>" REMOVE:sina V IF (*0 V);
+"<andra>"i REMOVE V IF (*0 V) (0 Det OR A);
 
 REMOVE:unlikely ("<bara>"i "bar");
 
+"<början>" SELECT Def IF (-1 ("i")) ;
 
 SECTION grammatical;
 
